@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+.vscode
+TODO.md
+cjs
+coverage
+es
+index.d.ts
+node_modules
+umd

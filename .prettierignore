@@ -1,0 +1,7 @@
+*.md
+cjs
+coverage
+es
+index.d.ts
+package.json
+umd
