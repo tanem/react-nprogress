@@ -1,8 +1,8 @@
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/index.tsx'],
+  collectCoverageFrom: ['src/*.{ts,tsx}'],
   globals: {
-    'ts-jest': { tsConfigFile: require.resolve('../../tsconfig.test.json') }
+    'ts-jest': { tsConfig: require.resolve('../../tsconfig.test.json') }
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   rootDir: process.cwd(),
