@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
+    "@types/mock-raf": "^1.0.2",
     "emotion": "^9.2.10",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
@@ -94,6 +95,7 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "glob": "^7.1.3",
     "jest": "^23.6.0",
+    "mock-raf": "^1.0.0",
     "npm-run-all": "^4.1.3",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
