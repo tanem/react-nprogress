@@ -1,5 +1,5 @@
 {
-  "name": "react-nprogress",
+  "name": "@tanem/react-nprogress",
   "version": "0.0.1",
   "description": "Slim progress bars inspired by Google, YouTube, and Medium.",
   "main": "index.js",
