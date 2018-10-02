@@ -1,4 +1,4 @@
-let handle: number
+let handle: number | undefined
 
 export const cancel = () => {
   if (handle) {
@@ -6,17 +6,15 @@ export const cancel = () => {
   }
 }
 
-export const timeout = (cb: () => void, delay: number) => {
+export const timeout = (callback: () => void, delay: number) => {
   let deltaTime
-  let now
   let start: number | undefined
 
-  const frame = () => {
-    start = start || window.performance.now()
-    now = window.performance.now()
-    deltaTime = now - start
+  const frame: FrameRequestCallback = time => {
+    start = start || time
+    deltaTime = time - start
     if (deltaTime > delay) {
-      cb()
+      callback()
       return
     }
     handle = window.requestAnimationFrame(frame)
