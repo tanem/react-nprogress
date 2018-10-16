@@ -3,7 +3,8 @@
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
     "interface-name": [true, "never-prefix"],
-    "member-access": [true, "no-public"],
-    "jsx-no-lambda": false
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "member-access": [true, "no-public"]
   }
 }

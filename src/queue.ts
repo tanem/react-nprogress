@@ -14,6 +14,7 @@ const next: Next = () => {
 }
 
 export const clear = () => {
+  isRunning = false
   pending = []
 }
 

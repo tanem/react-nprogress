@@ -11,7 +11,7 @@ const spinner = keyframes`
   }
 `
 
-const Spinner: React.SFC = () => (
+const Spinner = () => (
   <div
     className={css({
       display: 'block',
