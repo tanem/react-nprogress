@@ -5,12 +5,11 @@ import { clear as clearQueue, queue } from './queue'
 import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 
 export interface Props {
+  animationDuration: number
   children?: any // TODO: Fix typedef
+  isAnimating: boolean
   minimum: number
-  play: boolean
-  render?: any // TODO: Fix typedef
-  speed: number
-  trickleSpeed: number
+  incrementDuration: number
 }
 
 export interface State {
@@ -20,10 +19,10 @@ export interface State {
 
 class ReactNProgress extends React.Component<Props, State> {
   static defaultProps = {
-    minimum: 0.08,
-    play: false,
-    speed: 200,
-    trickleSpeed: 800
+    animationDuration: 200,
+    incrementDuration: 800,
+    isAnimating: false,
+    minimum: 0.08
   }
 
   initialState = {
@@ -40,7 +39,7 @@ class ReactNProgress extends React.Component<Props, State> {
         timeout(() => {
           work()
           next()
-        }, this.props.trickleSpeed)
+        }, this.props.incrementDuration)
       })
     }
 
@@ -57,7 +56,7 @@ class ReactNProgress extends React.Component<Props, State> {
     queue(next => {
       this.setState(
         () => ({ progress: n }),
-        () => timeout(next, this.props.speed)
+        () => timeout(next, this.props.animationDuration)
       )
     })
 
@@ -78,17 +77,17 @@ class ReactNProgress extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-    if (this.props.play) {
+    if (this.props.isAnimating) {
       this.start()
     }
   }
 
   componentDidUpdate(prevProps: Props) {
-    if (prevProps.play && !this.props.play) {
+    if (prevProps.isAnimating && !this.props.isAnimating) {
       this.done()
     }
 
-    if (!prevProps.play && this.props.play) {
+    if (!prevProps.isAnimating && this.props.isAnimating) {
       this.setState(() => this.initialState, () => this.start())
     }
   }
@@ -98,10 +97,10 @@ class ReactNProgress extends React.Component<Props, State> {
   }
 
   render() {
-    const { children, render, speed } = this.props
-    const renderArg = { ...this.state, speed }
-
-    return render ? render(renderArg) : children(renderArg)
+    return this.props.children({
+      ...this.state,
+      animationDuration: this.props.animationDuration
+    })
   }
 }
 

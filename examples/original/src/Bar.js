@@ -1,7 +1,7 @@
 import { css } from 'emotion'
 import * as React from 'react'
 
-const Bar = ({ progress, speed }) => (
+const Bar = ({ progress, animationDuration }) => (
   <div
     className={css({
       background: '#29d',
@@ -10,7 +10,7 @@ const Bar = ({ progress, speed }) => (
       marginLeft: `${(-1 + progress) * 100}%`,
       position: 'fixed',
       top: 0,
-      transition: `margin-left ${speed}ms linear`,
+      transition: `margin-left ${animationDuration}ms linear`,
       width: '100%',
       zIndex: 1031
     })}
