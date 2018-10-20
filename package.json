@@ -65,7 +65,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "lodash": "^4.17.11",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {

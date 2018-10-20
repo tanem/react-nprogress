@@ -1,5 +1,5 @@
-import clamp from 'lodash/clamp'
 import * as React from 'react'
+import { clamp } from './clamp'
 import { increment } from './increment'
 import { clear as clearQueue, queue } from './queue'
 import { cancel as cancelCurrentTimeout, timeout } from './timeout'
