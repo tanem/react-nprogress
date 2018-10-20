@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.1](https://github.com/tanem/react-nprogress/tree/v1.0.1) (2018-10-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.0...v1.0.1)
+
+**Merged pull requests:**
+
+- Fix publish script [\#10](https://github.com/tanem/react-nprogress/pull/10) ([tanem](https://github.com/tanem))
+
 ## [v1.0.0](https://github.com/tanem/react-nprogress/tree/v1.0.0) (2018-10-20)
 **Merged pull requests:**
 
