@@ -29,7 +29,7 @@
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "tslint -t stylish -p .",
     "postcompile": "del '*.d.ts' '!index.d.ts'",
-    "postversion": "git push && git push --tags && npm publish",
+    "postversion": "git push && git push --tags && npm publish --access=public",
     "release": "npm version -m 'Release v%s'",
     "test": "run-s check:* lint build test:*",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
