@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.3](https://github.com/tanem/react-nprogress/tree/v1.0.3) (2018-10-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.2...v1.0.3)
+
+**Merged pull requests:**
+
+- Remove UMD examples [\#12](https://github.com/tanem/react-nprogress/pull/12) ([tanem](https://github.com/tanem))
+
 ## [v1.0.2](https://github.com/tanem/react-nprogress/tree/v1.0.2) (2018-10-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.1...v1.0.2)
 

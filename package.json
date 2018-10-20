@@ -1,6 +1,6 @@
 {
   "name": "@tanem/react-nprogress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React primitive for building slim progress bars inspired by Google, YouTube, and Medium.",
   "main": "index.js",
   "module": "es/react-nprogress.js",
