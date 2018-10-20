@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ReactNProgress from 'react-nprogress'
+import NProgress from 'react-nprogress'
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
@@ -25,14 +25,17 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <ReactNProgress play={this.state.isLoading}>
-          {({ isFinished, progress, speed }) => (
-            <Container isFinished={isFinished} speed={speed}>
-              <Bar progress={progress} speed={speed} />
+        <NProgress isAnimating={this.state.isLoading}>
+          {({ isFinished, progress, animationDuration }) => (
+            <Container
+              isFinished={isFinished}
+              animationDuration={animationDuration}
+            >
+              <Bar progress={progress} animationDuration={animationDuration} />
               <Spinner />
             </Container>
           )}
-        </ReactNProgress>
+        </NProgress>
         <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
       </React.Fragment>
     )

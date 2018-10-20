@@ -1,4 +1,4 @@
-import clamp from 'lodash/clamp'
+import { clamp } from './clamp'
 
 export const increment = (progress: number) => {
   let amount = 0
