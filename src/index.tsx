@@ -6,7 +6,7 @@ import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 
 export interface Props {
   animationDuration: number
-  children?: any // TODO: Fix typedef
+  children: (props: State & Pick<Props, 'animationDuration'>) => React.ReactNode
   isAnimating: boolean
   minimum: number
   incrementDuration: number
