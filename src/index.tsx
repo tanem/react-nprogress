@@ -6,7 +6,7 @@ import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 
 export interface Props {
   animationDuration: number
-  children: (props: State & Pick<Props, 'animationDuration'>) => React.ReactNode
+  children: (renderProps: RenderProps) => React.ReactNode
   isAnimating: boolean
   minimum: number
   incrementDuration: number
@@ -16,6 +16,8 @@ export interface State {
   isFinished: boolean
   progress: number
 }
+
+export type RenderProps = State & Pick<Props, 'animationDuration'>
 
 class ReactNProgress extends React.Component<Props, State> {
   static defaultProps = {

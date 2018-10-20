@@ -1,13 +1,13 @@
 import { mount, ReactWrapper } from 'enzyme'
 import createMockRaf from 'mock-raf'
 import * as React from 'react'
-import ReactNProgress, { Props, State } from '../src'
+import ReactNProgress, { Props, RenderProps, State } from '../src'
 
 const mockRaf = createMockRaf()
 window.requestAnimationFrame = mockRaf.raf
 window.cancelAnimationFrame = mockRaf.cancel
 
-const Child = () => <div />
+const Child: React.SFC<RenderProps> = () => <div />
 
 let wrapper: ReactWrapper<Props, State, ReactNProgress>
 
