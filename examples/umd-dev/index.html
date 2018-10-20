@@ -2,20 +2,34 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>ReactSVG UMD Dev Example</title>
+  <title>ReactNProgress UMD Dev Example</title>
   <script src="https://unpkg.com/react/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/react-dom/umd/react-dom-server.browser.development.js"></script>
   <script src="https://unpkg.com/prop-types/prop-types.js"></script>
   <script src="https://unpkg.com/babel-standalone/babel.js"></script>
-  <script src="https://unpkg.com/react-svg/umd/react-svg.development.js"></script>
+  <script src="https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.development.js"></script>
 </head>
 
 <body>
   <div id="app"></div>
   <script type="text/babel">
 		ReactDOM.render(
-		  <ReactSVG src="svg.svg" />, document.getElementById("app")
+      <React.Fragment>
+        <NProgress isAnimating={this.state.isLoading}>
+          {({ isFinished, progress, animationDuration }) => (
+            <Container
+              isFinished={isFinished}
+              animationDuration={animationDuration}
+            >
+              <Bar progress={progress} animationDuration={animationDuration} />
+              <Spinner />
+            </Container>
+          )}
+        </NProgress>
+        <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
+      </React.Fragment>,
+      document.getElementById('app')
 		);
 	</script>
 </body>

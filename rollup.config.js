@@ -148,7 +148,7 @@ const getUmdConfig = bundleType => ({
       'react-dom': 'ReactDOM',
       react: 'React'
     },
-    name: 'ReactNProgress',
+    name: 'NProgress',
     sourcemap: true
   },
   plugins: getPlugins(bundleType)

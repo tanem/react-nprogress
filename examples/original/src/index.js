@@ -1,6 +1,6 @@
+import NProgress from '@tanem/react-nprogress'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import NProgress from 'react-nprogress'
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
