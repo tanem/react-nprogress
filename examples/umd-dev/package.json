@@ -1,8 +1,8 @@
 {
   "name": "umd-dev",
-  "description": "ReactSVG UMD Dev Example",
+  "description": "ReactNProgress UMD Dev Example",
   "keywords": [
-    "react-svg"
+    "react-nprogress"
   ],
   "version": "0.1.0",
   "private": true,

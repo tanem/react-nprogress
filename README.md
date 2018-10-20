@@ -18,12 +18,12 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s nifty [`nprogr
 > Refer to the Live Examples to see this approach in action.
 
 ```jsx
-import React from 'react'
-import { render } from 'react-dom'
-import NProgress from 'react-nprogress';
 import Bar from './Bar'
 import Container from './Container'
+import NProgress from '@tanem/react-nprogress';
+import React from 'react'
 import Spinner from './Spinner'
+import { render } from 'react-dom'
 
 render(
   <NProgress isAnimating>
@@ -74,7 +74,7 @@ render(
 ## Installation
 
 ```
-$ npm install react-nprogress
+$ npm install @tanem/react-nprogress
 ```
 
 There are also UMD builds available via [unpkg](https://unpkg.com/):

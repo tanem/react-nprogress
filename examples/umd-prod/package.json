@@ -1,8 +1,8 @@
 {
   "name": "umd-prod",
-  "description": "ReactSVG UMD Prod Example",
+  "description": "ReactNProgress UMD Prod Example",
   "keywords": [
-    "react-svg"
+    "react-nprogress"
   ],
   "version": "0.1.0",
   "private": true,
