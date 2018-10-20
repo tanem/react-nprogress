@@ -45,13 +45,13 @@
     "url": "github:tanem/react-nprogress"
   },
   "keywords": [
-    "javascript",
-    "typescript",
-    "react",
     "component",
+    "javascript",
     "loading",
+    "nprogress",
+    "react",
     "spinner",
-    "nprogress"
+    "typescript"
   ],
   "author": "Tane Morgan <tane.morgan@gmail.com>",
   "license": "MIT",
