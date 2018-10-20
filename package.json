@@ -80,7 +80,7 @@
     "@types/lodash": "^4.14.117",
     "@types/mock-raf": "^1.0.2",
     "@types/prop-types": "^15.5.6",
-    "@types/react": "^16.4.17",
+    "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
