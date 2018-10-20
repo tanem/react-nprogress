@@ -16,6 +16,7 @@
     "authors": "shelljs-authors > AUTHORS",
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
+    "changelog": "github_changelog_generator --no-issues --header-label \"# Changelog\" --future-release v$npm_package_version",
     "check:format": "prettier --list-different \"**/*.{js,ts,tsx}\"",
     "check:types": "tsc --noEmit && tsc -p tsconfig.test.json --noEmit",
     "clean": "run-p clean:*",
@@ -38,7 +39,7 @@
     "test:umd": "jest --config ./scripts/jest/config.umd.js",
     "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
     "updatedeps": "node scripts/update-deps",
-    "version": "run-s test authors && git add ."
+    "version": "run-s test changelog authors && git add ."
   },
   "repository": {
     "type": "git",
@@ -107,6 +108,7 @@
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^6.0.0",
     "shelljs": "^0.8.2",
+    "shelljs-plugin-authors": "^2.0.6",
     "ts-jest": "^23.10.4",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
