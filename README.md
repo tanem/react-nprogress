@@ -1,9 +1,9 @@
 # react-nprogress
 
-[![build status][travis-image]][travis-url]
-[![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
-[![npm downloads][npmd-image]][npmd-url]
+[![npm version](https://img.shields.io/npm/v/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
+[![build status](https://img.shields.io/travis/tanem/react-nprogress/master.svg?style=flat-square)](https://travis-ci.org/tanem/react-nprogress)
+[![coverage status](https://img.shields.io/codecov/c/github/tanem/react-nprogress.svg?style=flat-square)](https://codecov.io/gh/tanem/react-nprogress)
+[![npm downloads](https://img.shields.io/npm/dm/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
 
 > A React primitive for building slim progress bars inspired by Google, YouTube, and Medium.
 
@@ -79,8 +79,8 @@ $ npm install react-nprogress
 
 There are also UMD builds available via [unpkg](https://unpkg.com/):
 
-- https://unpkg.com/react-nprogress/umd/react-nprogress.development.js
-- https://unpkg.com/react-nprogress/umd/react-nprogress.production.min.js
+- https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.development.js
+- https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js
 
 For the non-minified development version, make sure you have already included:
 
@@ -96,12 +96,3 @@ For the minified production version, make sure you have already included:
 ## License
 
 MIT
-
-[travis-image]: https://img.shields.io/travis/tanem/react-nprogress/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/tanem/react-nprogress
-[codecov-image]: https://img.shields.io/codecov/c/github/tanem/react-nprogress.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/tanem/react-nprogress
-[npmv-image]: https://img.shields.io/npm/v/@tanem/react-nprogress.svg?style=flat-square
-[npmv-url]: https://www.npmjs.com/package/@tanem/react-nprogress
-[npmd-image]: https://img.shields.io/npm/dm/@tanem/react-nprogress.svg?style=flat-square
-[npmd-url]: https://www.npmjs.com/package/@tanem/react-nprogress
