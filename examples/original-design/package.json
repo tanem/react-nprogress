@@ -1,6 +1,6 @@
 {
-  "name": "original",
-  "description": "ReactNProgress Original Example",
+  "name": "original-design",
+  "description": "ReactNProgress Original Design Example",
   "keywords": [
     "@tanem/react-nprogress"
   ],
@@ -8,12 +8,17 @@
   "private": true,
   "dependencies": {
     "@tanem/react-nprogress": "latest",
-    "emotion": "^9.2.12",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5"
   },
   "scripts": {
     "start": "react-scripts start"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

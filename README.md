@@ -41,7 +41,7 @@ render(
 
 ## Live Examples
 
-- Original: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original)
+- Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
 - UMD Build (Development): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-dev) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/umd-dev)
 - UMD Build (Production): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-prod) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/umd-prod)
 

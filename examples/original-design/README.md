@@ -1,4 +1,4 @@
-# ReactNProgress Original Example
+# ReactNProgress Original Design Example
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

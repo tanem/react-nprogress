@@ -1,9 +1,8 @@
-import { css } from 'emotion'
 import * as React from 'react'
 
 const Bar = ({ progress, animationDuration }) => (
   <div
-    className={css({
+    style={{
       background: '#29d',
       height: 2,
       left: 0,
@@ -13,10 +12,10 @@ const Bar = ({ progress, animationDuration }) => (
       transition: `margin-left ${animationDuration}ms linear`,
       width: '100%',
       zIndex: 1031
-    })}
+    }}
   >
     <div
-      className={css({
+      style={{
         boxShadow: '0 0 10px #29d, 0 0 5px #29d',
         display: 'block',
         height: '100%',
@@ -25,7 +24,7 @@ const Bar = ({ progress, animationDuration }) => (
         right: 0,
         transform: 'rotate(3deg) translate(0px, -4px)',
         width: 100
-      })}
+      }}
     />
   </div>
 )
