@@ -1,3 +1,4 @@
+import * as PropTypes from 'prop-types'
 import * as React from 'react'
 import { clamp } from './clamp'
 import { increment } from './increment'
@@ -25,6 +26,14 @@ class ReactNProgress extends React.Component<Props, State> {
     incrementDuration: 800,
     isAnimating: false,
     minimum: 0.08
+  }
+
+  static propTypes = {
+    animationDuration: PropTypes.number,
+    children: PropTypes.func,
+    incrementDuration: PropTypes.number,
+    isAnimating: PropTypes.bool,
+    minimum: PropTypes.number
   }
 
   initialState = {
