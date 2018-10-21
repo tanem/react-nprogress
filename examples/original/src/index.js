@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Bar from './Bar'
 import Container from './Container'
+import './index.css'
 import Spinner from './Spinner'
 
 const callFakeAPI = delay =>
