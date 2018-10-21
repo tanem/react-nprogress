@@ -8,9 +8,9 @@ import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 export interface Props {
   animationDuration: number
   children: (renderProps: RenderProps) => React.ReactNode
+  incrementDuration: number
   isAnimating: boolean
   minimum: number
-  incrementDuration: number
 }
 
 export interface State {
