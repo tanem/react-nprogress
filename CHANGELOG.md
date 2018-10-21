@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.4](https://github.com/tanem/react-nprogress/tree/v1.0.4) (2018-10-21)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.3...v1.0.4)
+
+**Merged pull requests:**
+
+- Add umd prod example [\#15](https://github.com/tanem/react-nprogress/pull/15) ([tanem](https://github.com/tanem))
+- Fix umd dev example on CodeSandbox [\#14](https://github.com/tanem/react-nprogress/pull/14) ([tanem](https://github.com/tanem))
+- Add umd dev example [\#13](https://github.com/tanem/react-nprogress/pull/13) ([tanem](https://github.com/tanem))
+
 ## [v1.0.3](https://github.com/tanem/react-nprogress/tree/v1.0.3) (2018-10-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.2...v1.0.3)
 
