@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.6](https://github.com/tanem/react-nprogress/tree/v1.0.6) (2018-10-21)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.5...v1.0.6)
+
+**Merged pull requests:**
+
+- Add gzip size badge [\#17](https://github.com/tanem/react-nprogress/pull/17) ([tanem](https://github.com/tanem))
+
 ## [v1.0.5](https://github.com/tanem/react-nprogress/tree/v1.0.5) (2018-10-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.4...v1.0.5)
 
