@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.7](https://github.com/tanem/react-nprogress/tree/v1.0.7) (2018-10-22)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.6...v1.0.7)
+
+**Merged pull requests:**
+
+- Remove emotion from original example [\#18](https://github.com/tanem/react-nprogress/pull/18) ([tanem](https://github.com/tanem))
+
 ## [v1.0.6](https://github.com/tanem/react-nprogress/tree/v1.0.6) (2018-10-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.5...v1.0.6)
 
