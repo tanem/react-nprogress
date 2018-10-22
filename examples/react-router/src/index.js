@@ -12,7 +12,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Bar from './Bar'
 import Container from './Container'
 import './index.css'
-import Spinner from './Spinner'
 
 class AnimationExample extends React.Component {
   state = {
@@ -43,7 +42,11 @@ class AnimationExample extends React.Component {
                       progress={progress}
                       animationDuration={animationDuration}
                     />
-                    <Spinner />
+                    {/*
+                    Note that this example doesn't use a spinner component so
+                    the UI stays tidy. You're free to render whatever is
+                    appropriate for your use-case.
+                    */}
                   </Container>
                 )}
               </NProgress>
