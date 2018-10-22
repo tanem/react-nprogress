@@ -25,6 +25,11 @@ class AnimationExample extends React.Component {
         <Route
           render={({ location }) => (
             <React.Fragment>
+              {/*
+              Setting a key based on the pathname means that a new NProgress
+              instance is created if the route is changing, giving us the UI
+              behaviour we want. See: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key.
+              */}
               <NProgress
                 isAnimating={this.state.isLoading}
                 key={location.pathname}
