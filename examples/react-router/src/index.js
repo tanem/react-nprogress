@@ -43,9 +43,9 @@ class AnimationExample extends React.Component {
                       animationDuration={animationDuration}
                     />
                     {/*
-                    Note that this example doesn't use a spinner component so
-                    the UI stays tidy. You're free to render whatever is
-                    appropriate for your use-case.
+                    This example doesn't use a spinner component so the UI stays
+                    tidy. You're free to render whatever is appropriate for your
+                    use-case.
                     */}
                   </Container>
                 )}
@@ -64,10 +64,14 @@ class AnimationExample extends React.Component {
                 </ul>
                 <div style={styles.content}>
                   <TransitionGroup>
+                    {/*
+                    Timeout has been increased by 4x from the original version
+                    for demo purposes.
+                    */}
                     <CSSTransition
                       key={location.key}
                       classNames="fade"
-                      timeout={3000}
+                      timeout={1200}
                       onEnter={() => {
                         this.setState(() => ({
                           isLoading: true

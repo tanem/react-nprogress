@@ -5,7 +5,10 @@
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 2500ms ease-in;
+  /*
+  Duration has been increased by 4x from the original version for demo purposes.
+  */
+  transition: opacity 1000ms ease-in;
 }
 
 @keyframes spinner {
