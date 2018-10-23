@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.0.7](https://github.com/tanem/react-nprogress/tree/v1.0.7) (2018-10-22)
+## [v1.0.8](https://github.com/tanem/react-nprogress/tree/v1.0.8) (2018-10-24)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.7...v1.0.8)
+
+**Merged pull requests:**
+
+- Update deps [\#20](https://github.com/tanem/react-nprogress/pull/20) ([tanem](https://github.com/tanem))
+- Add React Router example [\#19](https://github.com/tanem/react-nprogress/pull/19) ([tanem](https://github.com/tanem))
+
+## [v1.0.7](https://github.com/tanem/react-nprogress/tree/v1.0.7) (2018-10-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.6...v1.0.7)
 
 **Merged pull requests:**
