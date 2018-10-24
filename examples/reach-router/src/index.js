@@ -3,13 +3,7 @@ import NProgress from '@tanem/react-nprogress'
 import React from 'react'
 import { render } from 'react-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import Bar from './Bar'
-import Container from './Container'
 import './index.css'
-
-// TODO: Think about to immediately execute the stop
-// maybe have to clear up the "dead" time in the increment timer, in other words
-// execute immediately after the "animationSpeed" timeout is done, hmm.
 
 const App = () => (
   <div className="app">
@@ -25,18 +19,60 @@ const App = () => (
   </div>
 )
 
+const Page = props => (
+  <div
+    className="page"
+    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
+  >
+    {props.page}
+  </div>
+)
+
+const Container = ({ children, isFinished, animationDuration }) => (
+  <div
+    style={{
+      opacity: isFinished ? 0 : 1,
+      pointerEvents: 'none',
+      transition: `opacity ${animationDuration}ms linear`
+    }}
+  >
+    {children}
+  </div>
+)
+
+const Bar = ({ progress, animationDuration }) => (
+  <div
+    style={{
+      background: '#29d',
+      height: 2,
+      left: 0,
+      marginLeft: `${(-1 + progress) * 100}%`,
+      position: 'fixed',
+      top: 0,
+      transition: `margin-left ${animationDuration}ms linear`,
+      width: '100%',
+      zIndex: 1031
+    }}
+  >
+    <div
+      style={{
+        boxShadow: '0 0 10px #29d, 0 0 5px #29d',
+        display: 'block',
+        height: '100%',
+        opacity: 1,
+        position: 'absolute',
+        right: 0,
+        transform: 'rotate(3deg) translate(0px, -4px)',
+        width: 100
+      }}
+    />
+  </div>
+)
+
 class FadeTransitionRouter extends React.Component {
   state = {
     isLoading: false
   }
-
-  // TODO: Get derived state from props? We don't want to show the spinner if
-  // we just hit the same location again?
-  // OR do we even care? github doesn't do that...
-  // extract loader then use SCU to determine whether to re-render/re-instance?
-  // return { hasPathnameChanged: blah }
-  // OR can this be done down in the transition component
-  // I.E: CAN WE SAY DONT SET LOADING IF LOCATION NOT CHANGING?
 
   render() {
     return (
@@ -72,10 +108,6 @@ class FadeTransitionRouter extends React.Component {
                   }))
                 }}
               >
-                {/* the only difference between a router animation and
-              any other animation is that you have to pass the
-              location to the router so the old screen renders
-              the "old location" */}
                 <Router location={location} className="router">
                   {this.props.children}
                 </Router>
@@ -87,14 +119,5 @@ class FadeTransitionRouter extends React.Component {
     )
   }
 }
-
-const Page = props => (
-  <div
-    className="page"
-    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
-  >
-    {props.page}
-  </div>
-)
 
 render(<App />, document.getElementById('root'))
