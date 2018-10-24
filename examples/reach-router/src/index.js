@@ -3,8 +3,6 @@ import NProgress from '@tanem/react-nprogress'
 import React from 'react'
 import { render } from 'react-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import Bar from './Bar'
-import Container from './Container'
 import './index.css'
 
 const App = () => (
@@ -18,6 +16,56 @@ const App = () => (
       <Page path="/" page="1" />
       <Page path="page/:page" />
     </FadeTransitionRouter>
+  </div>
+)
+
+const Page = props => (
+  <div
+    className="page"
+    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
+  >
+    {props.page}
+  </div>
+)
+
+const Container = ({ children, isFinished, animationDuration }) => (
+  <div
+    style={{
+      opacity: isFinished ? 0 : 1,
+      pointerEvents: 'none',
+      transition: `opacity ${animationDuration}ms linear`
+    }}
+  >
+    {children}
+  </div>
+)
+
+const Bar = ({ progress, animationDuration }) => (
+  <div
+    style={{
+      background: '#29d',
+      height: 2,
+      left: 0,
+      marginLeft: `${(-1 + progress) * 100}%`,
+      position: 'fixed',
+      top: 0,
+      transition: `margin-left ${animationDuration}ms linear`,
+      width: '100%',
+      zIndex: 1031
+    }}
+  >
+    <div
+      style={{
+        boxShadow: '0 0 10px #29d, 0 0 5px #29d',
+        display: 'block',
+        height: '100%',
+        opacity: 1,
+        position: 'absolute',
+        right: 0,
+        transform: 'rotate(3deg) translate(0px, -4px)',
+        width: 100
+      }}
+    />
   </div>
 )
 
@@ -71,14 +119,5 @@ class FadeTransitionRouter extends React.Component {
     )
   }
 }
-
-const Page = props => (
-  <div
-    className="page"
-    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
-  >
-    {props.page}
-  </div>
-)
 
 render(<App />, document.getElementById('root'))
