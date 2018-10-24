@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.0.8](https://github.com/tanem/react-nprogress/tree/v1.0.8) (2018-10-24)
+## [v1.0.9](https://github.com/tanem/react-nprogress/tree/v1.0.9) (2018-10-25)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.8...v1.0.9)
+
+**Merged pull requests:**
+
+- Tidy example [\#21](https://github.com/tanem/react-nprogress/pull/21) ([tanem](https://github.com/tanem))
+
+## [v1.0.8](https://github.com/tanem/react-nprogress/tree/v1.0.8) (2018-10-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.7...v1.0.8)
 
 **Merged pull requests:**
