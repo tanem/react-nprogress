@@ -64,18 +64,29 @@ class ReactNProgress extends React.Component<Props, State> {
   set(n: number) {
     n = clamp(n, this.props.minimum, 1)
 
+    if (n === 1) {
+      this.cleanup()
+
+      queue(next => {
+        this.setState(
+          () => ({ progress: n }),
+          () => timeout(next, this.props.animationDuration)
+        )
+      })
+
+      queue(() => {
+        this.setState(() => ({ isFinished: true }), this.cleanup)
+      })
+
+      return
+    }
+
     queue(next => {
       this.setState(
         () => ({ progress: n }),
         () => timeout(next, this.props.animationDuration)
       )
     })
-
-    if (n === 1) {
-      queue(() => {
-        this.setState(() => ({ isFinished: true }), () => this.cleanup())
-      })
-    }
   }
 
   cleanup() {
