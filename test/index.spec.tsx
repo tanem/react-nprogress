@@ -88,13 +88,6 @@ test('animates to finish if isAnimating was changed from true to false', () => {
 
   wrapper.setProps({ isAnimating: false })
 
-  // Step through the two callbacks queued from the initial mount.
-  mockRaf.step()
-  mockRaf.step({ time: wrapper.prop('animationDuration') + 1 })
-  mockRaf.step()
-  mockRaf.step({ time: wrapper.prop('incrementDuration') + 1 })
-
-  // Step through the callback that handles our finished state.
   mockRaf.step()
   mockRaf.step({ time: wrapper.prop('animationDuration') + 1 })
 
