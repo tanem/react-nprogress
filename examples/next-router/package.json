@@ -1,0 +1,22 @@
+{
+  "name": "next-router",
+  "description": "ReactNProgress Next Router Example",
+  "keywords": [
+    "@tanem/react-nprogress"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tanem/react-nprogress": "latest",
+    "next": "latest",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "uuid": "^3.3.2"
+  }
+}
