@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.12](https://github.com/tanem/react-nprogress/tree/v1.0.12) (2018-10-28)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.11...v1.0.12)
+
+**Merged pull requests:**
+
+- Ignore .next from prettier [\#25](https://github.com/tanem/react-nprogress/pull/25) ([tanem](https://github.com/tanem))
+- Add Next.js router example [\#24](https://github.com/tanem/react-nprogress/pull/24) ([tanem](https://github.com/tanem))
+
 ## [v1.0.11](https://github.com/tanem/react-nprogress/tree/v1.0.11) (2018-10-27)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.10...v1.0.11)
 
