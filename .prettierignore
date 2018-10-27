@@ -1,4 +1,5 @@
 *.md
+.next
 cjs
 coverage
 es
