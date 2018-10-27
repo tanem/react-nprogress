@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.0.10](https://github.com/tanem/react-nprogress/tree/v1.0.10) (2018-10-25)
+## [v1.0.11](https://github.com/tanem/react-nprogress/tree/v1.0.11) (2018-10-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.10...v1.0.11)
+
+**Merged pull requests:**
+
+- Ensure end animations run immediately [\#23](https://github.com/tanem/react-nprogress/pull/23) ([tanem](https://github.com/tanem))
+
+## [v1.0.10](https://github.com/tanem/react-nprogress/tree/v1.0.10) (2018-10-24)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.9...v1.0.10)
 
 **Merged pull requests:**
