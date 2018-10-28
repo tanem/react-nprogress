@@ -10,13 +10,9 @@
 
 ## Background
 
-This is a React port of [rstacruz](https://github.com/rstacruz)'s nifty [`nprogress`](https://github.com/rstacruz/nprogress) module. It exposes an API that encapsulates the logic of `nprogress` and renders nothing, giving you complete control over rendering.
+This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](https://github.com/rstacruz/nprogress) module. It exposes an API that encapsulates the logic of `nprogress` and renders nothing, giving you complete control over rendering.
 
-## Basic Usage
-
-> Note: `Container`, `Bar` and `Spinner` are function components that you
-> create. You're free to create and style whatever components suit your context.
-> Refer to the Live Examples to see this approach in action.
+## Usage
 
 ```jsx
 import Bar from './Bar'
@@ -37,6 +33,14 @@ render(
   </NProgress>,
   document.getElementById('root')
 )
+```
+
+`Container`, `Bar` and `Spinner` are custom components. `NProgress` is the only component exposed by this package. It doesn't render anything itself, it just calls the render function and renders that:
+
+```jsx
+<NProgress>
+  {({/* parameters here */}) => (/* your render code here */)}
+</NProgress>
 ```
 
 ## Live Examples
