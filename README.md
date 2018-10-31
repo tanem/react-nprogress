@@ -6,7 +6,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
 [![gzip size](http://img.badgesize.io/https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js?style=flat-square&compression=gzip)](https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js)
 
-> A React primitive for building slim progress bars inspired by Google, YouTube, and Medium.
+> A React primitive for building slim progress bars.
 
 ## Background
 
