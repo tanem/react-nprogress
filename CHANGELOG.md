@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.0.14](https://github.com/tanem/react-nprogress/tree/v1.0.14) (2018-11-01)
+## [v1.0.15](https://github.com/tanem/react-nprogress/tree/v1.0.15) (2018-11-06)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.14...v1.0.15)
+
+**Merged pull requests:**
+
+- Fix security issue [\#28](https://github.com/tanem/react-nprogress/pull/28) ([tanem](https://github.com/tanem))
+
+## [v1.0.14](https://github.com/tanem/react-nprogress/tree/v1.0.14) (2018-10-31)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.13...v1.0.14)
 
 **Merged pull requests:**
