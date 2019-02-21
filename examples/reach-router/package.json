@@ -9,10 +9,10 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "@tanem/react-nprogress": "latest",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.0",
-    "react-transition-group": "^2.5.0"
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "react-transition-group": "^2.5.3"
   },
   "scripts": {
     "start": "react-scripts start"

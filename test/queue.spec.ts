@@ -1,4 +1,3 @@
-import { identity } from 'lodash'
 import { clear, queue } from '../src/queue'
 
 jest.useFakeTimers()
@@ -15,7 +14,7 @@ test('starts running when the first callback is pushed onto the queue', () => {
 })
 
 test('executes callbacks in the queue sequentially', () => {
-  const mockFn = jest.fn(identity)
+  const mockFn = jest.fn(str => str)
 
   queue(next => {
     setTimeout(() => {
