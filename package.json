@@ -78,6 +78,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "@types/enzyme": "^3.1.18",
     "@types/enzyme-adapter-react-16": "^1.0.4",
+    "@types/hoist-non-react-statics": "^3.0.1",
     "@types/jest": "^24.0.6",
     "@types/mock-raf": "^1.0.2",
     "@types/prop-types": "^15.5.9",
