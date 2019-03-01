@@ -1,0 +1,24 @@
+{
+  "name": "hoc",
+  "description": "ReactNProgress HOC Example",
+  "keywords": [
+    "@tanem/react-nprogress"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tanem/react-nprogress": "latest",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
