@@ -83,7 +83,7 @@ export default withNProgress(Inner)
 - `isAnimating` - _Optional_ Boolean indicating if the progress bar is animating. Defaults to `false`.
 - `minimum` - _Optional_ Number between `0` and `1` indicating the minimum value of the progress bar. Defaults to `0.08`.
 
-**Example**
+**Render Props Example**
 
 ```jsx
 <NProgress
@@ -92,13 +92,33 @@ export default withNProgress(Inner)
   isAnimating
   minimum={0.1}
 >
-  {({ isFinished, progress, animationDuration }) => (
-    <Container isFinished={isFinished} animationDuration={animationDuration}>
-      <Bar progress={progress} animationDuration={animationDuration} />
+  {({ animationDuration, isFinished, progress }) => (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
       <Spinner />
     </Container>
   )}
 </NProgress>
+```
+
+**HOC Example**
+
+```jsx
+const Inner = ({ animationDuration, isFinished, progress }) => (
+  <Container animationDuration={animationDuration} isFinished={isFinished}>
+    <Bar animationDuration={animationDuration} progress={progress} />
+    <Spinner />
+  </Container>
+)
+
+const Enhanced = withNProgress(Inner)
+
+<Enhanced
+  animationDuration={300}
+  incrementDuration={500}
+  isAnimating
+  minimum={0.1}
+/>
 ```
 
 ## Installation
