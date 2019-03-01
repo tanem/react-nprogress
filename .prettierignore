@@ -1,8 +1,10 @@
 *.md
 .next
+NProgress.d.ts
 cjs
 coverage
 es
 index.d.ts
 package.json
 umd
+withNProgress.d.ts
