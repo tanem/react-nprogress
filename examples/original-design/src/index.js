@@ -1,4 +1,4 @@
-import NProgress from '@tanem/react-nprogress'
+import { NProgress } from '@tanem/react-nprogress'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Bar from './Bar'
