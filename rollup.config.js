@@ -15,6 +15,7 @@ const UMD_DEV = 'UMD_DEV'
 const UMD_PROD = 'UMD_PROD'
 
 const input = './src/index.tsx'
+const exports = 'named'
 
 const getExternal = bundleType => {
   const peerDependencies = Object.keys(pkg.peerDependencies)
@@ -115,6 +116,7 @@ const getCjsConfig = bundleType => ({
   input,
   external: getExternal(bundleType),
   output: {
+    exports,
     file: `cjs/react-nprogress.${
       isProduction(bundleType) ? 'production.min' : 'development'
     }.js`,
@@ -128,6 +130,7 @@ const getEsConfig = () => ({
   input,
   external: getExternal(ES),
   output: {
+    exports,
     file: pkg.module,
     format: 'es',
     sourcemap: true
@@ -139,6 +142,7 @@ const getUmdConfig = bundleType => ({
   input,
   external: getExternal(bundleType),
   output: {
+    exports,
     file: `umd/react-nprogress.${
       isProduction(bundleType) ? 'production.min' : 'development'
     }.js`,
