@@ -17,9 +17,9 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 ```jsx
 import Bar from './Bar'
 import Container from './Container'
-import NProgress from '@tanem/react-nprogress';
 import React from 'react'
 import Spinner from './Spinner'
+import { NProgress } from '@tanem/react-nprogress';
 import { render } from 'react-dom'
 
 render(
