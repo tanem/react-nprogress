@@ -46,6 +46,7 @@ render(
 ## Live Examples
 
 - Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
+- HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
 - React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
 - Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
 - Next Router: [Source](https://github.com/tanem/react-nprogress/tree/add-next-example/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/add-next-example/examples/next-router)
