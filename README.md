@@ -14,6 +14,8 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 
 ## Usage
 
+### Render Props
+
 ```jsx
 import Bar from './Bar'
 import Container from './Container'
@@ -24,9 +26,9 @@ import { render } from 'react-dom'
 
 render(
   <NProgress isAnimating>
-    {({ isFinished, progress, animationDuration }) => (
-      <Container isFinished={isFinished} animationDuration={animationDuration}>
-        <Bar progress={progress} animationDuration={animationDuration} />
+    {({ animationDuration, isFinished, progress }) => (
+      <Container  animationDuration={animationDuration} isFinished={isFinished}>
+        <Bar animationDuration={animationDuration} progress={progress} />
         <Spinner />
       </Container>
     )}
@@ -35,12 +37,31 @@ render(
 )
 ```
 
-`Container`, `Bar` and `Spinner` are custom components. `NProgress` is the only component exposed by this package. It doesn't render anything itself, it just calls the render function and renders that:
+`Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself, it just calls the render function and renders that:
 
 ```jsx
 <NProgress>
   {({/* parameters here */}) => (/* your render code here */)}
 </NProgress>
+```
+
+### HOC
+
+```jsx
+import Bar from './Bar'
+import Container from './Container'
+import React from 'react'
+import Spinner from './Spinner'
+import { withNProgress } from '@tanem/react-nprogress'
+
+const Inner = ({ animationDuration, isFinished, progress }) => (
+  <Container animationDuration={animationDuration} isFinished={isFinished}>
+    <Bar animationDuration={animationDuration} progress={progress} />
+    <Spinner />
+  </Container>
+)
+
+export default withNProgress(Inner)
 ```
 
 ## Live Examples
