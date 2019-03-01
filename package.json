@@ -7,10 +7,12 @@
   "jsnext:main": "es/react-nprogress.js",
   "typings": "index.d.ts",
   "files": [
+    "NProgress.d.ts",
     "cjs",
     "es",
     "index.d.ts",
-    "umd"
+    "umd",
+    "withNProgress.d.ts"
   ],
   "scripts": {
     "authors": "shelljs-authors > AUTHORS",
@@ -28,7 +30,7 @@
     "compile": "tsc --emitDeclarationOnly",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "tslint -t stylish -p .",
-    "postcompile": "del '*.d.ts' '!index.d.ts'",
+    "postcompile": "del '*.d.ts' '!index.d.ts' '!NProgress.d.ts' '!withNProgress.d.ts'",
     "postversion": "git push && git push --tags && npm publish --access=public",
     "release": "npm version -m 'Release v%s'",
     "test": "run-s check:* lint build test:*",
