@@ -5,8 +5,6 @@ import { increment } from './increment'
 import { clear as clearQueue, queue } from './queue'
 import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 
-// TODO: Move the types to a types file?
-
 export interface Props {
   animationDuration: number
   children: (renderProps: RenderProps) => React.ReactNode
