@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.1.0](https://github.com/tanem/react-nprogress/tree/v1.1.0) (2019-03-05)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.16...v1.1.0)
+
+**Merged pull requests:**
+
+- Expose as HOC [\#30](https://github.com/tanem/react-nprogress/pull/30) ([tanem](https://github.com/tanem))
+
 ## [v1.0.16](https://github.com/tanem/react-nprogress/tree/v1.0.16) (2019-02-22)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.15...v1.0.16)
 
