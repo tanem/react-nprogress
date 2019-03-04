@@ -21,13 +21,13 @@ import Bar from './Bar'
 import Container from './Container'
 import React from 'react'
 import Spinner from './Spinner'
-import { NProgress } from '@tanem/react-nprogress';
+import { NProgress } from '@tanem/react-nprogress'
 import { render } from 'react-dom'
 
 render(
   <NProgress isAnimating>
     {({ animationDuration, isFinished, progress }) => (
-      <Container  animationDuration={animationDuration} isFinished={isFinished}>
+      <Container animationDuration={animationDuration} isFinished={isFinished}>
         <Bar animationDuration={animationDuration} progress={progress} />
         <Spinner />
       </Container>
@@ -52,6 +52,7 @@ import Bar from './Bar'
 import Container from './Container'
 import React from 'react'
 import Spinner from './Spinner'
+import { render } from 'react-dom'
 import { withNProgress } from '@tanem/react-nprogress'
 
 const Inner = ({ animationDuration, isFinished, progress }) => (
@@ -61,7 +62,9 @@ const Inner = ({ animationDuration, isFinished, progress }) => (
   </Container>
 )
 
-export default withNProgress(Inner)
+const Enhanced = withNProgress(Inner)
+
+render(<Enhanced isAnimating />, document.getElementById('root'))
 ```
 
 ## Live Examples
