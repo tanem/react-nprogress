@@ -1,18 +1,16 @@
 {
-  "name": "reach-router",
-  "description": "ReactNProgress Reach Router Example",
+  "name": "hoc",
+  "description": "ReactNProgress HOC Example",
   "keywords": [
     "@tanem/react-nprogress"
   ],
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reach/router": "^1.2.1",
     "@tanem/react-nprogress": "latest",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "react-transition-group": "^2.6.0"
+    "react-scripts": "2.1.5"
   },
   "scripts": {
     "start": "react-scripts start"

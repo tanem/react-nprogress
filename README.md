@@ -14,19 +14,21 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 
 ## Usage
 
+### Render Props
+
 ```jsx
 import Bar from './Bar'
 import Container from './Container'
-import NProgress from '@tanem/react-nprogress';
 import React from 'react'
 import Spinner from './Spinner'
+import { NProgress } from '@tanem/react-nprogress'
 import { render } from 'react-dom'
 
 render(
   <NProgress isAnimating>
-    {({ isFinished, progress, animationDuration }) => (
-      <Container isFinished={isFinished} animationDuration={animationDuration}>
-        <Bar progress={progress} animationDuration={animationDuration} />
+    {({ animationDuration, isFinished, progress }) => (
+      <Container animationDuration={animationDuration} isFinished={isFinished}>
+        <Bar animationDuration={animationDuration} progress={progress} />
         <Spinner />
       </Container>
     )}
@@ -35,7 +37,7 @@ render(
 )
 ```
 
-`Container`, `Bar` and `Spinner` are custom components. `NProgress` is the only component exposed by this package. It doesn't render anything itself, it just calls the render function and renders that:
+`Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself, it just calls the render function and renders that:
 
 ```jsx
 <NProgress>
@@ -43,9 +45,32 @@ render(
 </NProgress>
 ```
 
+### HOC
+
+```jsx
+import Bar from './Bar'
+import Container from './Container'
+import React from 'react'
+import Spinner from './Spinner'
+import { render } from 'react-dom'
+import { withNProgress } from '@tanem/react-nprogress'
+
+const Inner = ({ animationDuration, isFinished, progress }) => (
+  <Container animationDuration={animationDuration} isFinished={isFinished}>
+    <Bar animationDuration={animationDuration} progress={progress} />
+    <Spinner />
+  </Container>
+)
+
+const Enhanced = withNProgress(Inner)
+
+render(<Enhanced isAnimating />, document.getElementById('root'))
+```
+
 ## Live Examples
 
 - Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
+- HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
 - React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
 - Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
 - Next Router: [Source](https://github.com/tanem/react-nprogress/tree/add-next-example/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/add-next-example/examples/next-router)
@@ -61,7 +86,7 @@ render(
 - `isAnimating` - _Optional_ Boolean indicating if the progress bar is animating. Defaults to `false`.
 - `minimum` - _Optional_ Number between `0` and `1` indicating the minimum value of the progress bar. Defaults to `0.08`.
 
-**Example**
+**Render Props Example**
 
 ```jsx
 <NProgress
@@ -70,13 +95,33 @@ render(
   isAnimating
   minimum={0.1}
 >
-  {({ isFinished, progress, animationDuration }) => (
-    <Container isFinished={isFinished} animationDuration={animationDuration}>
-      <Bar progress={progress} animationDuration={animationDuration} />
+  {({ animationDuration, isFinished, progress }) => (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
       <Spinner />
     </Container>
   )}
 </NProgress>
+```
+
+**HOC Example**
+
+```jsx
+const Inner = ({ animationDuration, isFinished, progress }) => (
+  <Container animationDuration={animationDuration} isFinished={isFinished}>
+    <Bar animationDuration={animationDuration} progress={progress} />
+    <Spinner />
+  </Container>
+)
+
+const Enhanced = withNProgress(Inner)
+
+<Enhanced
+  animationDuration={300}
+  incrementDuration={500}
+  isAnimating
+  minimum={0.1}
+/>
 ```
 
 ## Installation

@@ -1,7 +1,7 @@
 import { mount, ReactWrapper } from 'enzyme'
 import createMockRaf from 'mock-raf'
 import * as React from 'react'
-import ReactNProgress, { Props, RenderProps, State } from '../src'
+import { NProgress, Props, RenderProps, State } from '../src'
 
 const mockRaf = createMockRaf()
 window.requestAnimationFrame = mockRaf.raf
@@ -9,15 +9,13 @@ window.cancelAnimationFrame = mockRaf.cancel
 
 const Child: React.SFC<RenderProps> = () => <div />
 
-let wrapper: ReactWrapper<Props, State, ReactNProgress>
+let wrapper: ReactWrapper<Props, State, NProgress>
 
 afterEach(() => wrapper.unmount())
 
 test('does not animate on mount if isAnimating is false', () => {
   wrapper = mount(
-    <ReactNProgress>
-      {({ ...childProps }) => <Child {...childProps} />}
-    </ReactNProgress>
+    <NProgress>{({ ...childProps }) => <Child {...childProps} />}</NProgress>
   )
 
   expect(wrapper.find(Child).props()).toEqual({
@@ -29,9 +27,9 @@ test('does not animate on mount if isAnimating is false', () => {
 
 test('starts animating on mount if isAnimating is true', () => {
   wrapper = mount(
-    <ReactNProgress isAnimating>
+    <NProgress isAnimating>
       {({ ...childProps }) => <Child {...childProps} />}
-    </ReactNProgress>
+    </NProgress>
   )
 
   expect(wrapper.find(Child).props()).toEqual({
@@ -43,9 +41,7 @@ test('starts animating on mount if isAnimating is true', () => {
 
 test('starts animating on mount if isAnimating was changed from false to true', () => {
   wrapper = mount(
-    <ReactNProgress>
-      {({ ...childProps }) => <Child {...childProps} />}
-    </ReactNProgress>
+    <NProgress>{({ ...childProps }) => <Child {...childProps} />}</NProgress>
   )
 
   wrapper.setProps({ isAnimating: true })
@@ -60,9 +56,9 @@ test('starts animating on mount if isAnimating was changed from false to true', 
 
 test('increments correctly', () => {
   wrapper = mount(
-    <ReactNProgress isAnimating>
+    <NProgress isAnimating>
       {({ ...childProps }) => <Child {...childProps} />}
-    </ReactNProgress>
+    </NProgress>
   )
 
   mockRaf.step()
@@ -81,9 +77,9 @@ test('increments correctly', () => {
 
 test('animates to finish if isAnimating was changed from true to false', () => {
   wrapper = mount(
-    <ReactNProgress isAnimating>
+    <NProgress isAnimating>
       {({ ...childProps }) => <Child {...childProps} />}
-    </ReactNProgress>
+    </NProgress>
   )
 
   wrapper.setProps({ isAnimating: false })

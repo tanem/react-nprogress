@@ -1,10 +1,7 @@
-import { NProgress } from '@tanem/react-nprogress'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bar from './Bar'
-import Container from './Container'
 import './index.css'
-import Spinner from './Spinner'
+import Progress from './Progress'
 
 const callFakeAPI = delay =>
   new Promise(resolve => {
@@ -26,17 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NProgress isAnimating={this.state.isLoading}>
-          {({ isFinished, progress, animationDuration }) => (
-            <Container
-              isFinished={isFinished}
-              animationDuration={animationDuration}
-            >
-              <Bar progress={progress} animationDuration={animationDuration} />
-              <Spinner />
-            </Container>
-          )}
-        </NProgress>
+        <Progress isAnimating={this.state.isLoading} />
         <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
       </React.Fragment>
     )
