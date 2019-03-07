@@ -4,7 +4,7 @@
 [![build status](https://img.shields.io/travis/tanem/react-nprogress/master.svg?style=flat-square)](https://travis-ci.org/tanem/react-nprogress)
 [![coverage status](https://img.shields.io/codecov/c/github/tanem/react-nprogress.svg?style=flat-square)](https://codecov.io/gh/tanem/react-nprogress)
 [![npm downloads](https://img.shields.io/npm/dm/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
-[![gzip size](http://img.badgesize.io/https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js?style=flat-square&compression=gzip)](https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js?style=flat-square&compression=gzip)](https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js) [![Greenkeeper badge](https://badges.greenkeeper.io/tanem/react-nprogress.svg)](https://greenkeeper.io/)
 
 > A React primitive for building slim progress bars.
 
