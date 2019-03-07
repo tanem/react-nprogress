@@ -1,6 +1,20 @@
 # Changelog
 
-## [v1.1.0](https://github.com/tanem/react-nprogress/tree/v1.1.0) (2019-03-05)
+## [v1.1.1](https://github.com/tanem/react-nprogress/tree/v1.1.1) (2019-03-08)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.0...v1.1.1)
+
+**Merged pull requests:**
+
+- Update react monorepo to v16.8.4 [\#39](https://github.com/tanem/react-nprogress/pull/39) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.5.0 [\#38](https://github.com/tanem/react-nprogress/pull/38) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency jest to v24.3.0 [\#37](https://github.com/tanem/react-nprogress/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.7 [\#36](https://github.com/tanem/react-nprogress/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/hoist-non-react-statics to v3.3.0 [\#35](https://github.com/tanem/react-nprogress/pull/35) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure Renovate [\#34](https://github.com/tanem/react-nprogress/pull/34) ([tanem](https://github.com/tanem))
+- Pin dependencies [\#33](https://github.com/tanem/react-nprogress/pull/33) ([renovate[bot]](https://github.com/apps/renovate))
+- Configure Renovate [\#31](https://github.com/tanem/react-nprogress/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.0](https://github.com/tanem/react-nprogress/tree/v1.1.0) (2019-03-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.16...v1.1.0)
 
 **Merged pull requests:**
