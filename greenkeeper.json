@@ -1,0 +1,16 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/hoc/package.json",
+        "examples/next-router/package.json",
+        "examples/original-design/package.json",
+        "examples/reach-router/package.json",
+        "examples/react-router/package.json",
+        "examples/umd-dev/package.json",
+        "examples/umd-prod/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
