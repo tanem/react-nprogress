@@ -7,12 +7,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reach/router": "^1.2.1",
+    "@reach/router": "1.2.1",
     "@tanem/react-nprogress": "latest",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
     "react-scripts": "2.1.5",
-    "react-transition-group": "^2.6.0"
+    "react-transition-group": "2.6.0"
   },
   "scripts": {
     "start": "react-scripts start"
