@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.1.3](https://github.com/tanem/react-nprogress/tree/v1.1.3) (2019-03-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.2...v1.1.3)
+
+**Merged pull requests:**
+
+- Update dependency react-scripts to v2.1.8 [\#45](https://github.com/tanem/react-nprogress/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+- Pin dependencies [\#44](https://github.com/tanem/react-nprogress/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure Renovate [\#43](https://github.com/tanem/react-nprogress/pull/43) ([tanem](https://github.com/tanem))
+
 ## [v1.1.2](https://github.com/tanem/react-nprogress/tree/v1.1.2) (2019-03-09)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.1...v1.1.2)
 
