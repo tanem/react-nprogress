@@ -1,6 +1,18 @@
 # Changelog
 
-## [v1.1.4](https://github.com/tanem/react-nprogress/tree/v1.1.4) (2019-03-12)
+## [v1.1.5](https://github.com/tanem/react-nprogress/tree/v1.1.5) (2019-03-16)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.4...v1.1.5)
+
+**Merged pull requests:**
+
+- Update dependency react-transition-group to v2.6.1 [\#53](https://github.com/tanem/react-nprogress/pull/53) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency enzyme-adapter-react-16 to v1.11.2 [\#52](https://github.com/tanem/react-nprogress/pull/52) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency tslint to v5.14.0 [\#51](https://github.com/tanem/react-nprogress/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.8 [\#50](https://github.com/tanem/react-nprogress/pull/50) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency parcel-bundler to v1.12.2 [\#49](https://github.com/tanem/react-nprogress/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency jest to v24.5.0 [\#48](https://github.com/tanem/react-nprogress/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.4](https://github.com/tanem/react-nprogress/tree/v1.1.4) (2019-03-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.3...v1.1.4)
 
 **Merged pull requests:**
