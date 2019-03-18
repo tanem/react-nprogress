@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.1.5](https://github.com/tanem/react-nprogress/tree/v1.1.5) (2019-03-16)
+## [v1.1.6](https://github.com/tanem/react-nprogress/tree/v1.1.6) (2019-03-19)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.5...v1.1.6)
+
+**Merged pull requests:**
+
+- Roll back dependency react-router-dom to 4.4.0-beta.8 [\#55](https://github.com/tanem/react-nprogress/pull/55) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-router-dom to v4.4.0 [\#54](https://github.com/tanem/react-nprogress/pull/54) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.5](https://github.com/tanem/react-nprogress/tree/v1.1.5) (2019-03-15)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.4...v1.1.5)
 
 **Merged pull requests:**
