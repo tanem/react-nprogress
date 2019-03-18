@@ -10,7 +10,7 @@
     "@tanem/react-nprogress": "latest",
     "react": "16.8.4",
     "react-dom": "16.8.4",
-    "react-router-dom": "4.4.0",
+    "react-router-dom": "4.4.0-beta.8",
     "react-scripts": "2.1.8",
     "react-transition-group": "2.6.1"
   },
