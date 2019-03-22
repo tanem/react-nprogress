@@ -78,7 +78,7 @@
     "@babel/preset-env": "7.3.4",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
-    "@types/enzyme": "3.9.0",
+    "@types/enzyme": "3.9.1",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/hoist-non-react-statics": "3.3.0",
     "@types/jest": "24.0.11",
