@@ -1,6 +1,23 @@
 # Changelog
 
-## [v1.1.6](https://github.com/tanem/react-nprogress/tree/v1.1.6) (2019-03-19)
+## [v1.1.7](https://github.com/tanem/react-nprogress/tree/v1.1.7) (2019-03-23)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.6...v1.1.7)
+
+**Merged pull requests:**
+
+- Update react monorepo to v16.8.5 [\#66](https://github.com/tanem/react-nprogress/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-transition-group to v2.7.0 [\#65](https://github.com/tanem/react-nprogress/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react-dom to v16.8.3 [\#64](https://github.com/tanem/react-nprogress/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency parcel-bundler to v1.12.3 [\#63](https://github.com/tanem/react-nprogress/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency regenerator-runtime to v0.13.2 [\#62](https://github.com/tanem/react-nprogress/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.7.0 [\#61](https://github.com/tanem/react-nprogress/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency typescript to v3.3.4000 [\#60](https://github.com/tanem/react-nprogress/pull/60) ([renovate[bot]](https://github.com/apps/renovate))
+- Update babel monorepo [\#59](https://github.com/tanem/react-nprogress/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/enzyme to v3.9.1 [\#58](https://github.com/tanem/react-nprogress/pull/58) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-router-dom to v5 [\#57](https://github.com/tanem/react-nprogress/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-replace to v2.1.1 [\#56](https://github.com/tanem/react-nprogress/pull/56) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.6](https://github.com/tanem/react-nprogress/tree/v1.1.6) (2019-03-18)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.5...v1.1.6)
 
 **Merged pull requests:**
