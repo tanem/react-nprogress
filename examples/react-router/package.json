@@ -12,7 +12,7 @@
     "react-dom": "16.8.5",
     "react-router-dom": "5.0.0",
     "react-scripts": "2.1.8",
-    "react-transition-group": "2.7.0"
+    "react-transition-group": "2.7.1"
   },
   "scripts": {
     "start": "react-scripts start"
