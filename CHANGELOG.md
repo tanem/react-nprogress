@@ -1,5 +1,18 @@
 # Changelog
 
+## [v1.1.8](https://github.com/tanem/react-nprogress/tree/v1.1.8) (2019-03-30)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.7...v1.1.8)
+
+**Merged pull requests:**
+
+- Update dependency typescript to v3.4.1 [\#73](https://github.com/tanem/react-nprogress/pull/73) ([renovate[bot]](https://github.com/apps/renovate))
+- Update react monorepo to v16.8.6 [\#72](https://github.com/tanem/react-nprogress/pull/72) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.10 [\#71](https://github.com/tanem/react-nprogress/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency tslint-react to v4 [\#70](https://github.com/tanem/react-nprogress/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-transition-group to v2.7.1 [\#69](https://github.com/tanem/react-nprogress/pull/69) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-commonjs to v9.2.2 [\#68](https://github.com/tanem/react-nprogress/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.7.4 [\#67](https://github.com/tanem/react-nprogress/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.1.7](https://github.com/tanem/react-nprogress/tree/v1.1.7) (2019-03-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.6...v1.1.7)
 
