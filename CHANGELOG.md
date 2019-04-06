@@ -1,5 +1,24 @@
 # Changelog
 
+## [v1.1.9](https://github.com/tanem/react-nprogress/tree/v1.1.9) (2019-04-07)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.8...v1.1.9)
+
+**Merged pull requests:**
+
+- Update dependency enzyme-adapter-react-16 to v1.12.0 [\#86](https://github.com/tanem/react-nprogress/pull/86) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency typescript to v3.4.2 [\#85](https://github.com/tanem/react-nprogress/pull/85) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v4.2.0 [\#84](https://github.com/tanem/react-nprogress/pull/84) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/hoist-non-react-statics to v3.3.1 [\#83](https://github.com/tanem/react-nprogress/pull/83) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.12 [\#82](https://github.com/tanem/react-nprogress/pull/82) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency codecov to v3.3.0 [\#81](https://github.com/tanem/react-nprogress/pull/81) ([renovate[bot]](https://github.com/apps/renovate))
+- Update babel monorepo to v7.4.3 [\#80](https://github.com/tanem/react-nprogress/pull/80) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-transition-group to v2.9.0 [\#79](https://github.com/tanem/react-nprogress/pull/79) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-commonjs to v9.3.4 [\#78](https://github.com/tanem/react-nprogress/pull/78) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.9.0 [\#77](https://github.com/tanem/react-nprogress/pull/77) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency tslint to v5.15.0 [\#76](https://github.com/tanem/react-nprogress/pull/76) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency jest to v24.7.1 [\#75](https://github.com/tanem/react-nprogress/pull/75) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency ts-jest to v24.0.2 [\#74](https://github.com/tanem/react-nprogress/pull/74) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.1.8](https://github.com/tanem/react-nprogress/tree/v1.1.8) (2019-03-30)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.7...v1.1.8)
 
