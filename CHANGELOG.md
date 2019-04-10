@@ -1,6 +1,18 @@
 # Changelog
 
-## [v1.1.9](https://github.com/tanem/react-nprogress/tree/v1.1.9) (2019-04-07)
+## [v1.1.10](https://github.com/tanem/react-nprogress/tree/v1.1.10) (2019-04-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.9...v1.1.10)
+
+**Merged pull requests:**
+
+- Update dependency rollup-plugin-replace to v2.2.0 [\#92](https://github.com/tanem/react-nprogress/pull/92) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.9.3 [\#91](https://github.com/tanem/react-nprogress/pull/91) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency typescript to v3.4.3 [\#90](https://github.com/tanem/react-nprogress/pull/90) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.13 [\#89](https://github.com/tanem/react-nprogress/pull/89) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v4.2.2 [\#88](https://github.com/tanem/react-nprogress/pull/88) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency enzyme-adapter-react-16 to v1.12.1 [\#87](https://github.com/tanem/react-nprogress/pull/87) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.9](https://github.com/tanem/react-nprogress/tree/v1.1.9) (2019-04-06)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.8...v1.1.9)
 
 **Merged pull requests:**
