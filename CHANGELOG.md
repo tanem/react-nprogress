@@ -1,6 +1,19 @@
 # Changelog
 
-## [v1.1.10](https://github.com/tanem/react-nprogress/tree/v1.1.10) (2019-04-11)
+## [v1.1.11](https://github.com/tanem/react-nprogress/tree/v1.1.11) (2019-04-13)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.10...v1.1.11)
+
+**Merged pull requests:**
+
+- Update react monorepo to ^16.8.6 [\#99](https://github.com/tanem/react-nprogress/pull/99) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @babel/runtime to ^7.4.3 [\#98](https://github.com/tanem/react-nprogress/pull/98) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure Renovate [\#97](https://github.com/tanem/react-nprogress/pull/97) ([tanem](https://github.com/tanem))
+- Update dependency prettier to v1.17.0 [\#96](https://github.com/tanem/react-nprogress/pull/96) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react-dom to v16.8.4 [\#95](https://github.com/tanem/react-nprogress/pull/95) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.10.0 [\#94](https://github.com/tanem/react-nprogress/pull/94) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v4.2.3 [\#93](https://github.com/tanem/react-nprogress/pull/93) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.10](https://github.com/tanem/react-nprogress/tree/v1.1.10) (2019-04-10)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.9...v1.1.10)
 
 **Merged pull requests:**
