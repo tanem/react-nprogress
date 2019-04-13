@@ -1,4 +1,5 @@
 {
   "extends": ["config:base", ":disableRateLimiting"],
-  "ignorePaths": ["**/node_modules/**"]
+  "ignorePaths": ["**/node_modules/**"],
+  "rangeStrategy": "bump"
 }
