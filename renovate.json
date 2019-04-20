@@ -1,5 +1,15 @@
 {
   "extends": ["config:base", ":disableRateLimiting"],
   "ignorePaths": ["**/node_modules/**"],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "groupName": "dev dependencies"
+    }
+  ]
 }
