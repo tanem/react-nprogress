@@ -72,10 +72,10 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/core": "7.4.3",
-    "@babel/plugin-proposal-class-properties": "7.4.0",
-    "@babel/plugin-transform-runtime": "7.4.3",
-    "@babel/preset-env": "7.4.3",
+    "@babel/core": "7.4.4",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
     "@types/enzyme": "3.9.1",
@@ -116,6 +116,6 @@
     "tslint": "5.16.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
-    "typescript": "3.4.4"
+    "typescript": "3.4.5"
   }
 }
