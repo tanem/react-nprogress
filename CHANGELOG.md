@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.1.14](https://github.com/tanem/react-nprogress/tree/v1.1.14) (2019-04-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.13...v1.1.14)
+
+**Merged pull requests:**
+
+- Update dependency @babel/runtime to ^7.4.4 [\#113](https://github.com/tanem/react-nprogress/pull/113) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [\#112](https://github.com/tanem/react-nprogress/pull/112) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-scripts to v3 [\#111](https://github.com/tanem/react-nprogress/pull/111) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.1.13](https://github.com/tanem/react-nprogress/tree/v1.1.13) (2019-04-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.12...v1.1.13)
 
