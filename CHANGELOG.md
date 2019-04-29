@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.1.14](https://github.com/tanem/react-nprogress/tree/v1.1.14) (2019-04-27)
+## [v1.1.15](https://github.com/tanem/react-nprogress/tree/v1.1.15) (2019-04-30)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.14...v1.1.15)
+
+**Merged pull requests:**
+
+- Update dependency @types/jest to v24.0.12 [\#114](https://github.com/tanem/react-nprogress/pull/114) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.14](https://github.com/tanem/react-nprogress/tree/v1.1.14) (2019-04-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.13...v1.1.14)
 
 **Merged pull requests:**
