@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.1.16](https://github.com/tanem/react-nprogress/tree/v1.1.16) (2019-05-09)
+## [v1.1.17](https://github.com/tanem/react-nprogress/tree/v1.1.17) (2019-05-10)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.16...v1.1.17)
+
+**Merged pull requests:**
+
+- Update dependency codecov to v3.4.0 [\#117](https://github.com/tanem/react-nprogress/pull/117) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-scripts to v3.0.1 [\#116](https://github.com/tanem/react-nprogress/pull/116) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.16](https://github.com/tanem/react-nprogress/tree/v1.1.16) (2019-05-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.15...v1.1.16)
 
 **Merged pull requests:**
