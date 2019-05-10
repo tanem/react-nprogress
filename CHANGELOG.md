@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.1.17](https://github.com/tanem/react-nprogress/tree/v1.1.17) (2019-05-10)
+## [v1.1.18](https://github.com/tanem/react-nprogress/tree/v1.1.18) (2019-05-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.17...v1.1.18)
+
+**Merged pull requests:**
+
+- Update dependency react-transition-group to v4.0.1 [\#118](https://github.com/tanem/react-nprogress/pull/118) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.17](https://github.com/tanem/react-nprogress/tree/v1.1.17) (2019-05-09)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.16...v1.1.17)
 
 **Merged pull requests:**
