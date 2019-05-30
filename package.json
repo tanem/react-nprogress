@@ -78,13 +78,13 @@
     "@babel/preset-env": "7.4.5",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
-    "@types/enzyme": "3.9.2",
+    "@types/enzyme": "3.9.3",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "24.0.13",
     "@types/mock-raf": "1.0.2",
     "@types/prop-types": "15.7.1",
-    "@types/react": "16.8.18",
+    "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
     "babel-core": "6.26.3",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
@@ -92,7 +92,7 @@
     "cross-env": "5.2.0",
     "del-cli": "1.1.0",
     "enzyme": "3.9.0",
-    "enzyme-adapter-react-16": "1.13.1",
+    "enzyme-adapter-react-16": "1.13.2",
     "glob": "7.1.4",
     "jest": "24.8.0",
     "mock-raf": "1.0.1",
@@ -102,7 +102,7 @@
     "react-dom": "16.8.6",
     "react-test-renderer": "16.8.6",
     "regenerator-runtime": "0.13.2",
-    "rollup": "1.12.3",
+    "rollup": "1.12.5",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-commonjs": "10.0.0",
     "rollup-plugin-filesize": "6.1.0",
@@ -116,6 +116,6 @@
     "tslint": "5.16.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
-    "typescript": "3.4.5"
+    "typescript": "3.5.1"
   }
 }
