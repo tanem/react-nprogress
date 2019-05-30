@@ -90,7 +90,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "codecov": "3.5.0",
     "cross-env": "5.2.0",
-    "del-cli": "1.1.0",
+    "del-cli": "2.0.0",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.13.2",
     "glob": "7.1.4",
