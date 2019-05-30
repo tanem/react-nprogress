@@ -1,6 +1,15 @@
 # Changelog
 
-## [v1.1.22](https://github.com/tanem/react-nprogress/tree/v1.1.22) (2019-05-24)
+## [v1.1.23](https://github.com/tanem/react-nprogress/tree/v1.1.23) (2019-05-31)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.22...v1.1.23)
+
+**Merged pull requests:**
+
+- Update dependency react-transition-group to v4.1.0 [\#127](https://github.com/tanem/react-nprogress/pull/127) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency del-cli to v2 [\#126](https://github.com/tanem/react-nprogress/pull/126) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [\#125](https://github.com/tanem/react-nprogress/pull/125) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.22](https://github.com/tanem/react-nprogress/tree/v1.1.22) (2019-05-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.21...v1.1.22)
 
 **Merged pull requests:**
