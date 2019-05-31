@@ -1,15 +1,16 @@
 {
-  "extends": ["config:base", ":disableRateLimiting"],
+  "extends": [
+    "config:base",
+    ":disableRateLimiting",
+    ":automergeMinor",
+    ":rebaseStalePrs"
+  ],
   "ignorePaths": ["**/node_modules/**"],
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "widen"
-    },
-    {
-      "depTypeList": ["devDependencies"],
-      "groupName": "dev dependencies"
     }
   ]
 }
