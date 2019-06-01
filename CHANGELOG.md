@@ -1,6 +1,16 @@
 # Changelog
 
-## [v1.1.23](https://github.com/tanem/react-nprogress/tree/v1.1.23) (2019-05-31)
+## [v1.1.24](https://github.com/tanem/react-nprogress/tree/v1.1.24) (2019-06-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.23...v1.1.24)
+
+**Merged pull requests:**
+
+- Update dependency tslint to v5.17.0 [\#132](https://github.com/tanem/react-nprogress/pull/132) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v5.0.1 [\#131](https://github.com/tanem/react-nprogress/pull/131) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.13.0 [\#130](https://github.com/tanem/react-nprogress/pull/130) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure renovate [\#129](https://github.com/tanem/react-nprogress/pull/129) ([tanem](https://github.com/tanem))
+
+## [v1.1.23](https://github.com/tanem/react-nprogress/tree/v1.1.23) (2019-05-30)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.22...v1.1.23)
 
 **Merged pull requests:**
