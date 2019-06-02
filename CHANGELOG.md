@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.1.25](https://github.com/tanem/react-nprogress/tree/v1.1.25) (2019-06-03)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.24...v1.1.25)
+
+**Merged pull requests:**
+
+- Update dependency rollup to v1.13.1 [\#133](https://github.com/tanem/react-nprogress/pull/133) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.1.24](https://github.com/tanem/react-nprogress/tree/v1.1.24) (2019-06-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.23...v1.1.24)
 
