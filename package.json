@@ -92,7 +92,7 @@
     "cross-env": "5.2.0",
     "del-cli": "2.0.0",
     "enzyme": "3.9.0",
-    "enzyme-adapter-react-16": "1.13.2",
+    "enzyme-adapter-react-16": "1.14.0",
     "glob": "7.1.4",
     "jest": "24.8.0",
     "mock-raf": "1.0.1",
