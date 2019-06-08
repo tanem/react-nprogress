@@ -1,6 +1,23 @@
 # Changelog
 
-## [v1.1.25](https://github.com/tanem/react-nprogress/tree/v1.1.25) (2019-06-03)
+## [v1.1.26](https://github.com/tanem/react-nprogress/tree/v1.1.26) (2019-06-09)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.25...v1.1.26)
+
+**Merged pull requests:**
+
+- Update dependency shelljs-plugin-authors to v2.0.9 [\#144](https://github.com/tanem/react-nprogress/pull/144) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.4 [\#143](https://github.com/tanem/react-nprogress/pull/143) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency prettier to v1.18.2 [\#142](https://github.com/tanem/react-nprogress/pull/142) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.3 [\#141](https://github.com/tanem/react-nprogress/pull/141) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency shelljs-plugin-authors to v2.0.8 [\#140](https://github.com/tanem/react-nprogress/pull/140) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.2 [\#139](https://github.com/tanem/react-nprogress/pull/139) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.1 [\#138](https://github.com/tanem/react-nprogress/pull/138) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.0 [\#137](https://github.com/tanem/react-nprogress/pull/137) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-router-dom to v5.0.1 [\#136](https://github.com/tanem/react-nprogress/pull/136) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency enzyme to v3.10.0 [\#135](https://github.com/tanem/react-nprogress/pull/135) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency enzyme-adapter-react-16 to v1.14.0 [\#134](https://github.com/tanem/react-nprogress/pull/134) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.25](https://github.com/tanem/react-nprogress/tree/v1.1.25) (2019-06-02)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.24...v1.1.25)
 
 **Merged pull requests:**
