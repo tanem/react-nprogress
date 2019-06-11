@@ -1,6 +1,17 @@
 # Changelog
 
-## [v1.1.26](https://github.com/tanem/react-nprogress/tree/v1.1.26) (2019-06-09)
+## [v1.1.27](https://github.com/tanem/react-nprogress/tree/v1.1.27) (2019-06-12)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.26...v1.1.27)
+
+**Merged pull requests:**
+
+- Update dependency rollup to v1.15.1 [\#149](https://github.com/tanem/react-nprogress/pull/149) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.0 [\#148](https://github.com/tanem/react-nprogress/pull/148) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-transition-group to v4.1.1 [\#147](https://github.com/tanem/react-nprogress/pull/147) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.6 [\#146](https://github.com/tanem/react-nprogress/pull/146) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.14.5 [\#145](https://github.com/tanem/react-nprogress/pull/145) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.26](https://github.com/tanem/react-nprogress/tree/v1.1.26) (2019-06-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.25...v1.1.26)
 
 **Merged pull requests:**
