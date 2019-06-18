@@ -1,6 +1,25 @@
 # Changelog
 
-## [v1.1.27](https://github.com/tanem/react-nprogress/tree/v1.1.27) (2019-06-12)
+## [v1.1.28](https://github.com/tanem/react-nprogress/tree/v1.1.28) (2019-06-19)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.27...v1.1.28)
+
+**Merged pull requests:**
+
+- Reconfigure renovate [\#162](https://github.com/tanem/react-nprogress/pull/162) ([tanem](https://github.com/tanem))
+- Update dependency rollup-plugin-filesize to v6.1.1 [\#161](https://github.com/tanem/react-nprogress/pull/161) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v5.0.3 [\#160](https://github.com/tanem/react-nprogress/pull/160) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/jest to v24.0.15 [\#159](https://github.com/tanem/react-nprogress/pull/159) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.6 [\#158](https://github.com/tanem/react-nprogress/pull/158) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.5 [\#157](https://github.com/tanem/react-nprogress/pull/157) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.4 [\#156](https://github.com/tanem/react-nprogress/pull/156) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v16.8.20 [\#155](https://github.com/tanem/react-nprogress/pull/155) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency typescript to v3.5.2 [\#154](https://github.com/tanem/react-nprogress/pull/154) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.3 [\#153](https://github.com/tanem/react-nprogress/pull/153) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup-plugin-node-resolve to v5.0.2 [\#152](https://github.com/tanem/react-nprogress/pull/152) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.15.2 [\#151](https://github.com/tanem/react-nprogress/pull/151) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/jest to v24.0.14 [\#150](https://github.com/tanem/react-nprogress/pull/150) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.27](https://github.com/tanem/react-nprogress/tree/v1.1.27) (2019-06-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.26...v1.1.27)
 
 **Merged pull requests:**
@@ -76,6 +95,7 @@
 
 - Update dev dependencies \(major\) [\#121](https://github.com/tanem/react-nprogress/pull/121) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dev dependencies [\#120](https://github.com/tanem/react-nprogress/pull/120) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/jest to v24.0.12 [\#114](https://github.com/tanem/react-nprogress/pull/114) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.1.19](https://github.com/tanem/react-nprogress/tree/v1.1.19) (2019-05-12)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.18...v1.1.19)
@@ -108,10 +128,6 @@
 
 ## [v1.1.15](https://github.com/tanem/react-nprogress/tree/v1.1.15) (2019-04-29)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.14...v1.1.15)
-
-**Merged pull requests:**
-
-- Update dependency @types/jest to v24.0.12 [\#114](https://github.com/tanem/react-nprogress/pull/114) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.1.14](https://github.com/tanem/react-nprogress/tree/v1.1.14) (2019-04-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.13...v1.1.14)
@@ -194,6 +210,7 @@
 - Update dependency react-transition-group to v2.7.1 [\#69](https://github.com/tanem/react-nprogress/pull/69) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup-plugin-commonjs to v9.2.2 [\#68](https://github.com/tanem/react-nprogress/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup to v1.7.4 [\#67](https://github.com/tanem/react-nprogress/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+- Update babel monorepo [\#59](https://github.com/tanem/react-nprogress/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.1.7](https://github.com/tanem/react-nprogress/tree/v1.1.7) (2019-03-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.6...v1.1.7)
@@ -207,7 +224,6 @@
 - Update dependency regenerator-runtime to v0.13.2 [\#62](https://github.com/tanem/react-nprogress/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup to v1.7.0 [\#61](https://github.com/tanem/react-nprogress/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency typescript to v3.3.4000 [\#60](https://github.com/tanem/react-nprogress/pull/60) ([renovate[bot]](https://github.com/apps/renovate))
-- Update babel monorepo [\#59](https://github.com/tanem/react-nprogress/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency @types/enzyme to v3.9.1 [\#58](https://github.com/tanem/react-nprogress/pull/58) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency react-router-dom to v5 [\#57](https://github.com/tanem/react-nprogress/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup-plugin-replace to v2.1.1 [\#56](https://github.com/tanem/react-nprogress/pull/56) ([renovate[bot]](https://github.com/apps/renovate))
