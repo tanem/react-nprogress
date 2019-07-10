@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.1.30](https://github.com/tanem/react-nprogress/tree/v1.1.30) (2019-07-03)
+## [v1.1.31](https://github.com/tanem/react-nprogress/tree/v1.1.31) (2019-07-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.30...v1.1.31)
+
+**Merged pull requests:**
+
+- Update dependency @babel/runtime to ^7.5.4 [\#169](https://github.com/tanem/react-nprogress/pull/169) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [\#168](https://github.com/tanem/react-nprogress/pull/168) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.1.30](https://github.com/tanem/react-nprogress/tree/v1.1.30) (2019-07-02)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.29...v1.1.30)
 
 **Merged pull requests:**
@@ -13,7 +21,6 @@
 
 **Merged pull requests:**
 
-- Update dependency react-transition-group to v4.2.0 [\#165](https://github.com/tanem/react-nprogress/pull/165) ([renovate[bot]](https://github.com/apps/renovate))
 - Pin dev deps [\#164](https://github.com/tanem/react-nprogress/pull/164) ([tanem](https://github.com/tanem))
 - Update dev dependencies [\#163](https://github.com/tanem/react-nprogress/pull/163) ([renovate[bot]](https://github.com/apps/renovate))
 
@@ -22,6 +29,7 @@
 
 **Merged pull requests:**
 
+- Update dependency react-transition-group to v4.2.0 [\#165](https://github.com/tanem/react-nprogress/pull/165) ([renovate[bot]](https://github.com/apps/renovate))
 - Reconfigure renovate [\#162](https://github.com/tanem/react-nprogress/pull/162) ([tanem](https://github.com/tanem))
 - Update dependency rollup-plugin-filesize to v6.1.1 [\#161](https://github.com/tanem/react-nprogress/pull/161) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup-plugin-node-resolve to v5.0.3 [\#160](https://github.com/tanem/react-nprogress/pull/160) ([renovate[bot]](https://github.com/apps/renovate))
