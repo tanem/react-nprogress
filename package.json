@@ -18,7 +18,7 @@
     "authors": "shelljs-authors > AUTHORS",
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
-    "changelog": "github_changelog_generator --no-issues --header-label \"# Changelog\" --future-release v$npm_package_version",
+    "changelog": "github-changelog-generator -f v$npm_package_version > CHANGELOG.md",
     "check:format": "prettier --list-different \"**/*.{js,ts,tsx}\"",
     "check:types": "tsc --noEmit && tsc -p tsconfig.test.json --noEmit",
     "clean": "run-p clean:*",
