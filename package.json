@@ -78,6 +78,7 @@
     "@babel/preset-env": "7.5.4",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
+    "@tanem/github-changelog-generator": "1.0.1",
     "@types/enzyme": "3.10.2",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/hoist-non-react-statics": "3.3.1",
