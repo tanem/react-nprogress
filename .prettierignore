@@ -1,10 +1,4 @@
-*.md
-.next
-NProgress.d.ts
-cjs
+compiled
 coverage
-es
-index.d.ts
+dist
 package.json
-umd
-withNProgress.d.ts

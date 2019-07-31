@@ -1,11 +1,10 @@
-import { DEFAULT_EXTENSIONS } from '@babel/core'
 import babel from 'rollup-plugin-babel'
 import commonjs from 'rollup-plugin-commonjs'
-import filesize from 'rollup-plugin-filesize'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import replace from 'rollup-plugin-replace'
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import sourcemaps from 'rollup-plugin-sourcemaps'
-import { uglify } from 'rollup-plugin-uglify'
+import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 const CJS_DEV = 'CJS_DEV'
@@ -14,7 +13,7 @@ const ES = 'ES'
 const UMD_DEV = 'UMD_DEV'
 const UMD_PROD = 'UMD_PROD'
 
-const input = './src/index.tsx'
+const input = './compiled/index.js'
 const exports = 'named'
 
 const getExternal = bundleType => {
@@ -49,17 +48,9 @@ const getBabelConfig = bundleType => {
   const options = {
     babelrc: false,
     exclude: 'node_modules/**',
-    presets: [
-      ['@babel/env', { loose: true, modules: false }],
-      '@babel/react',
-      '@babel/typescript'
-    ],
-    plugins: [
-      ['@babel/proposal-class-properties', { loose: true }],
-      '@babel/transform-runtime'
-    ],
-    runtimeHelpers: true,
-    extensions: [...DEFAULT_EXTENSIONS, '.ts', '.tsx']
+    presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
+    plugins: ['@babel/transform-runtime'],
+    runtimeHelpers: true
   }
 
   switch (bundleType) {
@@ -86,9 +77,7 @@ const getBabelConfig = bundleType => {
 }
 
 const getPlugins = bundleType => [
-  nodeResolve({
-    extensions: ['.js', '.ts', '.tsx']
-  }),
+  nodeResolve(),
   commonjs({
     include: 'node_modules/**',
     namedExports: {
@@ -102,14 +91,25 @@ const getPlugins = bundleType => [
     }
   }),
   babel(getBabelConfig(bundleType)),
-  bundleType !== ES &&
-    replace({
-      'process.env.NODE_ENV': JSON.stringify(
-        isProduction(bundleType) ? 'production' : 'development'
-      )
-    }),
+  replace({
+    'process.env.NODE_ENV': JSON.stringify(
+      isProduction(bundleType) ? 'production' : 'development'
+    )
+  }),
   sourcemaps(),
-  ...(isProduction(bundleType) ? [filesize(), uglify()] : [])
+  sizeSnapshot(),
+  isProduction(bundleType) &&
+    terser({
+      sourcemap: true,
+      output: { comments: false },
+      compress: {
+        keep_infinity: true, // eslint-disable-line @typescript-eslint/camelcase
+        pure_getters: true // eslint-disable-line @typescript-eslint/camelcase
+      },
+      warnings: true,
+      ecma: 5,
+      toplevel: false
+    })
 ]
 
 const getCjsConfig = bundleType => ({
@@ -117,8 +117,8 @@ const getCjsConfig = bundleType => ({
   external: getExternal(bundleType),
   output: {
     exports,
-    file: `cjs/react-nprogress.${
-      isProduction(bundleType) ? 'production.min' : 'development'
+    file: `dist/react-nprogress.cjs.${
+      isProduction(bundleType) ? 'production' : 'development'
     }.js`,
     format: 'cjs',
     sourcemap: true
@@ -143,8 +143,8 @@ const getUmdConfig = bundleType => ({
   external: getExternal(bundleType),
   output: {
     exports,
-    file: `umd/react-nprogress.${
-      isProduction(bundleType) ? 'production.min' : 'development'
+    file: `dist/react-nprogress.umd.${
+      isProduction(bundleType) ? 'production' : 'development'
     }.js`,
     format: 'umd',
     globals: {

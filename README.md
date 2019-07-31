@@ -132,8 +132,8 @@ $ npm install @tanem/react-nprogress
 
 There are also UMD builds available via [unpkg](https://unpkg.com/):
 
-- https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.development.js
-- https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.production.min.js
+- https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.development.js
+- https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.production.js
 
 For the non-minified development version, make sure you have already included:
 
