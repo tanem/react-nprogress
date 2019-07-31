@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.0.0](https://github.com/tanem/react-nprogress/tree/v2.0.0) (2019-08-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.33...v2.0.0)
+
+**Merged pull requests:**
+
+- Refactor build process [#178](https://github.com/tanem/react-nprogress/pull/178) ([tanem](https://github.com/tanem))
+
 ## [v1.1.33](https://github.com/tanem/react-nprogress/tree/v1.1.33) (2019-08-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.32...v1.1.33)
 
