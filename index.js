@@ -1,7 +1,7 @@
 'use strict'
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./cjs/react-nprogress.production.min.js')
+  module.exports = require('./react-nprogress.cjs.production.js')
 } else {
-  module.exports = require('./cjs/react-nprogress.development.js')
+  module.exports = require('./react-nprogress.cjs.development.js')
 }

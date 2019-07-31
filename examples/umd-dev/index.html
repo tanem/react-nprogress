@@ -1,131 +1,130 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReactNProgress UMD Dev Example</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/prop-types/prop-types.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script>
+    <script src="https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.development.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>ReactNProgress UMD Dev Example</title>
-  <link href="main.css" rel="stylesheet">
-  <script src="https://unpkg.com/react/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/prop-types/prop-types.js"></script>
-  <script src="https://unpkg.com/babel-standalone/babel.js"></script>
-  <script src="https://unpkg.com/@tanem/react-nprogress/umd/react-nprogress.development.js"></script>
-</head>
-
-<body>
-  <div id="app"></div>
-  <script type="text/babel">
-    const Container = ({ children, isFinished, animationDuration }) => (
-      <div
-        style={{
-          opacity: isFinished ? 0 : 1,
-          pointerEvents: 'none',
-          transition: `opacity ${animationDuration}ms linear`
-        }}
-      >
-        {children}
-      </div>
-    )
-
-    const Bar = ({ progress, animationDuration }) => (
-      <div
-        style={{
-          background: '#29d',
-          height: 2,
-          left: 0,
-          marginLeft: `${(-1 + progress) * 100}%`,
-          position: 'fixed',
-          top: 0,
-          transition: `margin-left ${animationDuration}ms linear`,
-          width: '100%',
-          zIndex: 1031
-        }}
-      >
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const Container = ({ children, isFinished, animationDuration }) => (
         <div
           style={{
-            boxShadow: '0 0 10px #29d, 0 0 5px #29d',
+            opacity: isFinished ? 0 : 1,
+            pointerEvents: 'none',
+            transition: `opacity ${animationDuration}ms linear`
+          }}
+        >
+          {children}
+        </div>
+      )
+
+      const Bar = ({ progress, animationDuration }) => (
+        <div
+          style={{
+            background: '#29d',
+            height: 2,
+            left: 0,
+            marginLeft: `${(-1 + progress) * 100}%`,
+            position: 'fixed',
+            top: 0,
+            transition: `margin-left ${animationDuration}ms linear`,
+            width: '100%',
+            zIndex: 1031
+          }}
+        >
+          <div
+            style={{
+              boxShadow: '0 0 10px #29d, 0 0 5px #29d',
+              display: 'block',
+              height: '100%',
+              opacity: 1,
+              position: 'absolute',
+              right: 0,
+              transform: 'rotate(3deg) translate(0px, -4px)',
+              width: 100
+            }}
+          />
+        </div>
+      )
+
+      const Spinner = () => (
+        <div
+          style={{
             display: 'block',
-            height: '100%',
-            opacity: 1,
-            position: 'absolute',
-            right: 0,
-            transform: 'rotate(3deg) translate(0px, -4px)',
-            width: 100
+            position: 'fixed',
+            right: 15,
+            top: 15,
+            zIndex: 1031
           }}
-        />
-      </div>
-    )
+        >
+          <div
+            style={{
+              animation: 'spinner 400ms linear infinite',
+              borderBottom: '2px solid transparent',
+              borderLeft: '2px solid #29d',
+              borderRadius: '50%',
+              borderRight: '2px solid transparent',
+              borderTop: '2px solid #29d',
+              boxSizing: 'border-box',
+              height: 18,
+              width: 18
+            }}
+          />
+        </div>
+      )
 
-    const Spinner = () => (
-      <div
-        style={{
-          display: 'block',
-          position: 'fixed',
-          right: 15,
-          top: 15,
-          zIndex: 1031
-        }}
-      >
-        <div
-          style={{
-            animation: 'spinner 400ms linear infinite',
-            borderBottom: '2px solid transparent',
-            borderLeft: '2px solid #29d',
-            borderRadius: '50%',
-            borderRight: '2px solid transparent',
-            borderTop: '2px solid #29d',
-            boxSizing: 'border-box',
-            height: 18,
-            width: 18
-          }}
-        />
-      </div>
-    )
+      const callFakeAPI = delay =>
+        new Promise(resolve => {
+          setTimeout(resolve, delay)
+        })
 
-    const callFakeAPI = delay =>
-      new Promise(resolve => {
-        setTimeout(resolve, delay)
-      })
+      class App extends React.Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            isLoading: true
+          }
+        }
 
-    class App extends React.Component {
-      constructor(props) {
-        super(props)
-        this.state = {
-          isLoading: true
+        componentDidMount() {
+          callFakeAPI(3000).then(() => {
+            this.setState(() => ({
+              isLoading: false
+            }))
+          })
+        }
+
+        render() {
+          return (
+            <React.Fragment>
+              <NProgress isAnimating={this.state.isLoading}>
+                {({ isFinished, progress, animationDuration }) => (
+                  <Container
+                    isFinished={isFinished}
+                    animationDuration={animationDuration}
+                  >
+                    <Bar
+                      progress={progress}
+                      animationDuration={animationDuration}
+                    />
+                    <Spinner />
+                  </Container>
+                )}
+              </NProgress>
+              <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
+            </React.Fragment>
+          )
         }
       }
 
-      componentDidMount() {
-        callFakeAPI(3000).then(() => {
-          this.setState(() => ({
-            isLoading: false
-          }))
-        })
-      }
-
-      render() {
-        return (
-          <React.Fragment>
-            <NProgress isAnimating={this.state.isLoading}>
-              {({ isFinished, progress, animationDuration }) => (
-                <Container
-                  isFinished={isFinished}
-                  animationDuration={animationDuration}
-                >
-                  <Bar progress={progress} animationDuration={animationDuration} />
-                  <Spinner />
-                </Container>
-              )}
-            </NProgress>
-            <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
-          </React.Fragment>
-        )
-      }
-    }
-
-		ReactDOM.render(
-		  <App />, document.getElementById("app")
-		);
-	</script>
-</body>
-
+      ReactDOM.render(<App />, document.getElementById('app'))
+    </script>
+  </body>
 </html>

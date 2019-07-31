@@ -1,13 +1,7 @@
 *.log
 .DS_Store
 .vscode
-NProgress.d.ts
-TODO.md
-cjs
+compiled
 coverage
-es
-examples/*/package-lock.json
-index.d.ts
+dist
 node_modules
-umd
-withNProgress.d.ts
