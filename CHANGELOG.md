@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.1.33](https://github.com/tanem/react-nprogress/tree/v1.1.33) (2019-08-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.32...v1.1.33)
+
+**Merged pull requests:**
+
+- Update dev dependencies [#175](https://github.com/tanem/react-nprogress/pull/175) ([renovate[bot]](https://github.com/apps/renovate))
+- Use @tanem/authors [#177](https://github.com/tanem/react-nprogress/pull/177) ([tanem](https://github.com/tanem))
+
 ## [v1.1.32](https://github.com/tanem/react-nprogress/tree/v1.1.32) (2019-07-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.31...v1.1.32)
 
