@@ -14,7 +14,7 @@ export default class MyApp extends App {
     loadingKey: null
   }
 
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
     if (Component.getInitialProps) {

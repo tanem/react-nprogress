@@ -22,7 +22,7 @@
     "clean:dist": "del dist",
     "compile": "tsc -p tsconfig.base.json",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
-    "lint": "tslint -t stylish -p .",
+    "lint": "eslint .",
     "postbundle": "del compiled && cp-cli ./index.js ./dist/index.js",
     "postversion": "git push && git push --tags && npm publish --access=public",
     "release": "npm version -m 'Release v%s'",
@@ -80,6 +80,8 @@
     "@types/prop-types": "15.7.1",
     "@types/react": "16.8.24",
     "@types/react-dom": "16.8.5",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "@typescript-eslint/parser": "1.13.0",
     "babel-core": "6.26.3",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "codecov": "3.5.0",
@@ -88,6 +90,9 @@
     "del-cli": "2.0.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-react": "7.14.3",
     "glob": "7.1.4",
     "jest": "24.8.0",
     "mock-raf": "1.0.1",
@@ -108,9 +113,6 @@
     "rollup-plugin-terser": "5.1.1",
     "rollup-plugin-uglify": "6.0.2",
     "ts-jest": "24.0.2",
-    "tslint": "5.18.0",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-react": "4.0.0",
     "typescript": "3.5.3"
   }
 }

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const Bar = ({ progress, animationDuration }) => (
@@ -28,5 +29,10 @@ const Bar = ({ progress, animationDuration }) => (
     />
   </div>
 )
+
+Bar.propTypes = {
+  animationDuration: PropTypes.number.isRequired,
+  progress: PropTypes.number.isRequired
+}
 
 export default Bar

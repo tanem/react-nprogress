@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default () => <p>Hello Next!</p>
+const Hello = () => <p>Hello Next!</p>
+
+export default Hello
