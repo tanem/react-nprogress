@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.0.1](https://github.com/tanem/react-nprogress/tree/v2.0.1) (2019-08-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.0...v2.0.1)
+
+**Merged pull requests:**
+
+- Move from tslint to eslint [#179](https://github.com/tanem/react-nprogress/pull/179) ([tanem](https://github.com/tanem))
+
 ## [v2.0.0](https://github.com/tanem/react-nprogress/tree/v2.0.0) (2019-08-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.33...v2.0.0)
 
