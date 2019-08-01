@@ -1,5 +1,6 @@
 import { Link, Location, Router } from '@reach/router'
 import { NProgress } from '@tanem/react-nprogress'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { render } from 'react-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
@@ -28,6 +29,10 @@ const Page = props => (
   </div>
 )
 
+Page.propTypes = {
+  page: PropTypes.string.isRequired
+}
+
 const Container = ({ children, isFinished, animationDuration }) => (
   <div
     style={{
@@ -39,6 +44,12 @@ const Container = ({ children, isFinished, animationDuration }) => (
     {children}
   </div>
 )
+
+Container.propTypes = {
+  animationDuration: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
+  isFinished: PropTypes.bool.isRequired
+}
 
 const Bar = ({ progress, animationDuration }) => (
   <div
@@ -69,7 +80,16 @@ const Bar = ({ progress, animationDuration }) => (
   </div>
 )
 
+Bar.propTypes = {
+  animationDuration: PropTypes.number.isRequired,
+  progress: PropTypes.number.isRequired
+}
+
 class FadeTransitionRouter extends React.Component {
+  propTypes = {
+    children: PropTypes.node
+  }
+
   state = {
     isLoading: false
   }

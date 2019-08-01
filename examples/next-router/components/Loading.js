@@ -1,4 +1,5 @@
 import { NProgress } from '@tanem/react-nprogress'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const Loading = ({ isRouteChanging, loadingKey }) => (
@@ -41,5 +42,10 @@ const Loading = ({ isRouteChanging, loadingKey }) => (
     )}
   </NProgress>
 )
+
+Loading.propTypes = {
+  isRouteChanging: PropTypes.bool.isRequired,
+  loadingKey: PropTypes.string
+}
 
 export default Loading
