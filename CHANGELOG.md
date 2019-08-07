@@ -1,5 +1,15 @@
 # Changelog
 
+## [v2.0.2](https://github.com/tanem/react-nprogress/tree/v2.0.2) (2019-08-08)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.1...v2.0.2)
+
+**Merged pull requests:**
+
+- Remove unneeded README badge [#183](https://github.com/tanem/react-nprogress/pull/183) ([tanem](https://github.com/tanem))
+- Update dependency react-transition-group to v4.2.2 [#181](https://github.com/tanem/react-nprogress/pull/181) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#180](https://github.com/tanem/react-nprogress/pull/180) ([renovate[bot]](https://github.com/apps/renovate))
+- Use tanem-scripts [#182](https://github.com/tanem/react-nprogress/pull/182) ([tanem](https://github.com/tanem))
+
 ## [v2.0.1](https://github.com/tanem/react-nprogress/tree/v2.0.1) (2019-08-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.0...v2.0.1)
 
