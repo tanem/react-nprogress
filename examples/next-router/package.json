@@ -15,8 +15,8 @@
   "dependencies": {
     "@tanem/react-nprogress": "latest",
     "next": "latest",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
     "uuid": "3.3.2"
   }
 }
