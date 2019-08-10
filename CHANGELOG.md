@@ -1,5 +1,14 @@
 # Changelog
 
+## [v2.0.3](https://github.com/tanem/react-nprogress/tree/v2.0.3) (2019-08-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.2...v2.0.3)
+
+**Merged pull requests:**
+
+- Update dependency react-scripts to v3.1.0 [#186](https://github.com/tanem/react-nprogress/pull/186) ([renovate[bot]](https://github.com/apps/renovate))
+- Update react monorepo to v16.9.0 [#185](https://github.com/tanem/react-nprogress/pull/185) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#184](https://github.com/tanem/react-nprogress/pull/184) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v2.0.2](https://github.com/tanem/react-nprogress/tree/v2.0.2) (2019-08-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.1...v2.0.2)
 
