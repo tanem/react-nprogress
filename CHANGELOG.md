@@ -1,5 +1,15 @@
 # Changelog
 
+## [v2.0.4](https://github.com/tanem/react-nprogress/tree/v2.0.4) (2019-08-21)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.3...v2.0.4)
+
+**Merged pull requests:**
+
+- Update dependency uuid to v3.3.3 [#190](https://github.com/tanem/react-nprogress/pull/190) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-scripts to v3.1.1 [#187](https://github.com/tanem/react-nprogress/pull/187) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#189](https://github.com/tanem/react-nprogress/pull/189) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies to v2 (major) [#188](https://github.com/tanem/react-nprogress/pull/188) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v2.0.3](https://github.com/tanem/react-nprogress/tree/v2.0.3) (2019-08-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.2...v2.0.3)
 
