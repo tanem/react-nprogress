@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.0.5](https://github.com/tanem/react-nprogress/tree/v2.0.5) (2019-08-25)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.4...v2.0.5)
+
+**Merged pull requests:**
+
+- Update dev dependencies [#191](https://github.com/tanem/react-nprogress/pull/191) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v2.0.4](https://github.com/tanem/react-nprogress/tree/v2.0.4) (2019-08-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.3...v2.0.4)
 
