@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.0.1](https://github.com/tanem/react-nprogress/tree/v3.0.1) (2019-09-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.0...v3.0.1)
+
+**Merged pull requests:**
+
+- Pin dependencies [#199](https://github.com/tanem/react-nprogress/pull/199) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#198](https://github.com/tanem/react-nprogress/pull/198) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.0](https://github.com/tanem/react-nprogress/tree/v3.0.0) (2019-09-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.5...v3.0.0)
 
