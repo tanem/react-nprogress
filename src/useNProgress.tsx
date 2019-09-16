@@ -12,6 +12,7 @@ interface State {
   sideEffect: () => void
 }
 
+/* istanbul ignore next */
 const noop = () => undefined
 
 const initialState: State = {
