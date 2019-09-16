@@ -61,7 +61,6 @@
   "dependencies": {
     "@babel/runtime": "^7.6.0",
     "hoist-non-react-statics": "^3.3.0",
-    "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react-use": "^12.2.0"
   },
@@ -78,7 +77,6 @@
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "24.0.18",
-    "@types/lodash": "^4.14.138",
     "@types/mock-raf": "1.0.2",
     "@types/prop-types": "15.7.2",
     "@types/react": "16.9.2",

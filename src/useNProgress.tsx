@@ -1,4 +1,3 @@
-import { noop } from 'lodash'
 import { useEffect, useRef } from 'react'
 import { useEffectOnce, useGetSetState, useUpdateEffect } from 'react-use'
 import { clamp } from './clamp'
@@ -12,6 +11,8 @@ interface State {
   progress: number
   sideEffect: () => void
 }
+
+const noop = () => undefined
 
 const initialState: State = {
   isFinished: false,
@@ -36,7 +37,7 @@ export const useNProgress = ({
     set(increment(get().progress))
   }
 
-  const savedTrickle = useRef<typeof trickle | null>(null)
+  const savedTrickle = useRef<() => void>(noop)
 
   useEffect(() => {
     savedTrickle.current = trickle
@@ -63,7 +64,7 @@ export const useNProgress = ({
 
   const start = () => {
     const work = () => {
-      savedTrickle.current && savedTrickle.current()
+      trickle()
       queue(next => {
         timeout(() => {
           work()
@@ -89,10 +90,7 @@ export const useNProgress = ({
       })
 
       queue(() => {
-        setState({
-          isFinished: true,
-          sideEffect: cleanup
-        })
+        setState({ isFinished: true, sideEffect: cleanup })
       })
 
       return
