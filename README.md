@@ -7,18 +7,6 @@
 
 > A React primitive for building slim progress bars.
 
-## Table of Contents
-
-- [Background](#background)
-- [Usage](#usage)
-  - [Hook](#hook)
-  - [Render Props](#render-props)
-  - [HOC](#hoc)
-- [Live Examples](#live-examples)
-- [API](#api)
-- [Installation](#installation)
-- [License](#license)
-
 ## Background
 
 This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](https://github.com/rstacruz/nprogress) module. It exposes an API that encapsulates the logic of `nprogress` and renders nothing, giving you complete control over rendering.
@@ -27,7 +15,7 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 
 In the following examples, `Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself.
 
-### Hook
+**Hook**
 
 ```jsx
 import { useNProgress } from '@tanem/react-nprogress'
@@ -53,7 +41,7 @@ const Progress = ({ isAnimating }) => {
 render(<Progress isAnimating />, document.getElementById('root'))
 ```
 
-### Render Props
+**Render Props**
 
 ```jsx
 import { NProgress } from '@tanem/react-nprogress'
@@ -76,7 +64,7 @@ render(
 )
 ```
 
-### HOC
+**HOC**
 
 ```jsx
 import { withNProgress } from '@tanem/react-nprogress'
@@ -133,7 +121,7 @@ const Progress = ({
     isAnimating,
     minimum
   })
-  
+
   return (
     <Container animationDuration={animationDuration} isFinished={isFinished}>
       <Bar animationDuration={animationDuration} progress={progress} />
