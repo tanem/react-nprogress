@@ -9,7 +9,6 @@ export const cancel = () => {
 export const timeout = (callback: () => void, delay: number) => {
   let deltaTime
   let start: number | undefined
-
   const frame: FrameRequestCallback = time => {
     start = start || time
     deltaTime = time - start

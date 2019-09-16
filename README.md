@@ -13,15 +13,43 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 
 ## Usage
 
-### Render Props
+In the following examples, `Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself.
+
+**Hook**
 
 ```jsx
+import { useNProgress } from '@tanem/react-nprogress'
+import React from 'react'
+import { render } from 'react-dom'
 import Bar from './Bar'
 import Container from './Container'
-import React from 'react'
 import Spinner from './Spinner'
+
+const Progress = ({ isAnimating }) => {
+  const { animationDuration, isFinished, progress } = useNProgress({
+    isAnimating
+  })
+
+  return (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
+      <Spinner />
+    </Container>
+  )
+}
+
+render(<Progress isAnimating />, document.getElementById('root'))
+```
+
+**Render Props**
+
+```jsx
 import { NProgress } from '@tanem/react-nprogress'
+import React from 'react'
 import { render } from 'react-dom'
+import Bar from './Bar'
+import Container from './Container'
+import Spinner from './Spinner'
 
 render(
   <NProgress isAnimating>
@@ -36,23 +64,15 @@ render(
 )
 ```
 
-`Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself, it just calls the render function and renders that:
+**HOC**
 
 ```jsx
-<NProgress>
-  {({/* parameters here */}) => (/* your render code here */)}
-</NProgress>
-```
-
-### HOC
-
-```jsx
+import { withNProgress } from '@tanem/react-nprogress'
+import React from 'react'
+import { render } from 'react-dom'
 import Bar from './Bar'
 import Container from './Container'
-import React from 'react'
 import Spinner from './Spinner'
-import { render } from 'react-dom'
-import { withNProgress } from '@tanem/react-nprogress'
 
 const Inner = ({ animationDuration, isFinished, progress }) => (
   <Container animationDuration={animationDuration} isFinished={isFinished}>
@@ -68,11 +88,12 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 
 ## Live Examples
 
-- Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
 - HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
-- React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
-- Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
+- Hook: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hook) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hook)
 - Next Router: [Source](https://github.com/tanem/react-nprogress/tree/add-next-example/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/add-next-example/examples/next-router)
+- Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
+- Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
+- React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
 - UMD Build (Development): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-dev) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/umd-dev)
 - UMD Build (Production): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-prod) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/umd-prod)
 
@@ -84,6 +105,38 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 - `incrementDuration` - _Optional_ Number indicating the length of time between progress bar increments in `ms`. Defaults to `800`.
 - `isAnimating` - _Optional_ Boolean indicating if the progress bar is animating. Defaults to `false`.
 - `minimum` - _Optional_ Number between `0` and `1` indicating the minimum value of the progress bar. Defaults to `0.08`.
+
+**Hook Example**
+
+```jsx
+const Progress = ({
+  animationDuration,
+  incrementDuration,
+  isAnimating,
+  minimum
+}) => {
+  const { isFinished, progress } = useNProgress({
+    animationDuration,
+    incrementDuration,
+    isAnimating,
+    minimum
+  })
+
+  return (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
+      <Spinner />
+    </Container>
+  )
+}
+
+<Progress
+  animationDuration={300}
+  incrementDuration={500}
+  isAnimating
+  minimum={0.1}
+/>
+```
 
 **Render Props Example**
 

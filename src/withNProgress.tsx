@@ -1,18 +1,17 @@
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import * as React from 'react'
-import { NProgress, Props, RenderProps } from './NProgress'
+import { Options } from './types'
+import { useNProgress } from './useNProgress'
 
-type EnhancedProps<P> = P &
-  Partial<Pick<Props, Exclude<keyof Props, 'children'>>>
+type Outer<P> = P & Options
 
-export function withNProgress<P>(
-  BaseComponent: React.ComponentType<EnhancedProps<P>>
-) {
-  const WithNProgress: React.FC<EnhancedProps<P>> = props => (
-    <NProgress {...props}>
-      {(p: RenderProps) => <BaseComponent {...props} {...p} />}
-    </NProgress>
-  )
+type Inner<P> = P & ReturnType<typeof useNProgress>
+
+export function withNProgress<P>(BaseComponent: React.ComponentType<Inner<P>>) {
+  const WithNProgress: React.FC<Outer<P>> = props => {
+    const hookProps = useNProgress(props)
+    return <BaseComponent {...props} {...hookProps} />
+  }
 
   hoistNonReactStatics(WithNProgress, BaseComponent)
 

@@ -1,36 +1,36 @@
 {
   "dist/react-nprogress.cjs.development.js": {
-    "bundled": 5091,
-    "minified": 2922,
-    "gzipped": 1073
+    "bundled": 4966,
+    "minified": 2468,
+    "gzipped": 1005
   },
   "dist/react-nprogress.cjs.production.js": {
-    "bundled": 4860,
-    "minified": 2722,
-    "gzipped": 1021
+    "bundled": 4966,
+    "minified": 2468,
+    "gzipped": 1005
   },
   "dist/react-nprogress.esm.js": {
-    "bundled": 4767,
-    "minified": 2654,
-    "gzipped": 988,
+    "bundled": 4688,
+    "minified": 2244,
+    "gzipped": 915,
     "treeshaked": {
       "rollup": {
-        "code": 149,
-        "import_statements": 149
+        "code": 124,
+        "import_statements": 124
       },
       "webpack": {
-        "code": 3188
+        "code": 1207
       }
     }
   },
   "dist/react-nprogress.umd.development.js": {
-    "bundled": 23218,
-    "minified": 9222,
-    "gzipped": 2953
+    "bundled": 25263,
+    "minified": 9194,
+    "gzipped": 3085
   },
   "dist/react-nprogress.umd.production.js": {
-    "bundled": 15010,
-    "minified": 6392,
-    "gzipped": 2184
+    "bundled": 16798,
+    "minified": 6364,
+    "gzipped": 2308
   }
 }
