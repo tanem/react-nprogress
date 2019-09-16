@@ -1,16 +1,16 @@
 {
   "dist/react-nprogress.cjs.development.js": {
-    "bundled": 4966,
+    "bundled": 4994,
     "minified": 2468,
     "gzipped": 1005
   },
   "dist/react-nprogress.cjs.production.js": {
-    "bundled": 4966,
+    "bundled": 4994,
     "minified": 2468,
     "gzipped": 1005
   },
   "dist/react-nprogress.esm.js": {
-    "bundled": 4688,
+    "bundled": 4716,
     "minified": 2244,
     "gzipped": 915,
     "treeshaked": {
@@ -24,12 +24,12 @@
     }
   },
   "dist/react-nprogress.umd.development.js": {
-    "bundled": 25263,
+    "bundled": 25293,
     "minified": 9194,
     "gzipped": 3085
   },
   "dist/react-nprogress.umd.production.js": {
-    "bundled": 16798,
+    "bundled": 16828,
     "minified": 6364,
     "gzipped": 2308
   }
