@@ -6,6 +6,7 @@
   "module": "dist/react-nprogress.esm.js",
   "jsnext:main": "dist/react-nprogress.esm.js",
   "typings": "dist/index.d.ts",
+  "sideEffects": false,
   "files": [
     "dist"
   ],
