@@ -66,10 +66,34 @@ const Enhanced = withNProgress(Inner)
 render(<Enhanced isAnimating />, document.getElementById('root'))
 ```
 
+### Hook
+
+```jsx
+import Bar from './Bar'
+import Container from './Container'
+import React from 'react'
+import Spinner from './Spinner'
+import { render } from 'react-dom'
+import { useNProgress } from '@tanem/react-nprogress'
+
+const Progress = ({ animationDuration, isAnimating, isFinished, progress }) => {
+  const { animationDuration, isFinished, progress } = useNProgress()
+  return (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
+      <Spinner />
+    </Container>
+  )
+}
+
+render(<Progress isAnimating />, document.getElementById('root'))
+```
+
 ## Live Examples
 
 - Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
 - HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
+- Hook: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hook) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hook)
 - React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
 - Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
 - Next Router: [Source](https://github.com/tanem/react-nprogress/tree/add-next-example/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/add-next-example/examples/next-router)
@@ -116,6 +140,37 @@ const Inner = ({ animationDuration, isFinished, progress }) => (
 const Enhanced = withNProgress(Inner)
 
 <Enhanced
+  animationDuration={300}
+  incrementDuration={500}
+  isAnimating
+  minimum={0.1}
+/>
+```
+
+**Hook Example**
+
+```jsx
+const Progress = ({
+  animationDuration,
+  incrementDuration,
+  isAnimating,
+  minimum
+}) => {
+  const { animationDuration, isFinished, progress } = useNProgress({
+    animationDuration,
+    incrementDuration,
+    isAnimating,
+    minimum
+  })
+  return (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
+      <Spinner />
+    </Container>
+  )
+}
+
+;<Progress
   animationDuration={300}
   incrementDuration={500}
   isAnimating
