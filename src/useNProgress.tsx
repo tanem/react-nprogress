@@ -33,49 +33,6 @@ export const useNProgress = ({
 }: Options = {}) => {
   const [get, setState] = useGetSetState(initialState)
 
-  const trickle = () => {
-    set(increment(get().progress))
-  }
-
-  const savedTrickle = useRef<() => void>(noop)
-
-  useEffect(() => {
-    savedTrickle.current = trickle
-  })
-
-  useEffectOnce(() => {
-    if (isAnimating) {
-      start()
-    }
-    return cleanup
-  })
-
-  useUpdateEffect(() => {
-    get().sideEffect()
-  }, [get().sideEffect])
-
-  useUpdateEffect(() => {
-    if (!isAnimating) {
-      set(1)
-    } else {
-      setState({ sideEffect: start })
-    }
-  }, [isAnimating])
-
-  const start = () => {
-    const work = () => {
-      trickle()
-      queue(next => {
-        timeout(() => {
-          work()
-          next()
-        }, incrementDuration)
-      })
-    }
-
-    work()
-  }
-
   const set = (n: number) => {
     n = clamp(n, minimum, 1)
 
@@ -103,6 +60,49 @@ export const useNProgress = ({
       })
     })
   }
+
+  const trickle = () => {
+    set(increment(get().progress))
+  }
+
+  const start = () => {
+    const work = () => {
+      trickle()
+      queue(next => {
+        timeout(() => {
+          work()
+          next()
+        }, incrementDuration)
+      })
+    }
+
+    work()
+  }
+
+  const savedTrickle = useRef<() => void>(noop)
+
+  useEffect(() => {
+    savedTrickle.current = trickle
+  })
+
+  useEffectOnce(() => {
+    if (isAnimating) {
+      start()
+    }
+    return cleanup
+  })
+
+  useUpdateEffect(() => {
+    get().sideEffect()
+  }, [get().sideEffect])
+
+  useUpdateEffect(() => {
+    if (!isAnimating) {
+      set(1)
+    } else {
+      setState({ sideEffect: start })
+    }
+  }, [isAnimating])
 
   return {
     animationDuration,
