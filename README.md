@@ -76,8 +76,11 @@ import Spinner from './Spinner'
 import { render } from 'react-dom'
 import { useNProgress } from '@tanem/react-nprogress'
 
-const Progress = ({ animationDuration, isAnimating, isFinished, progress }) => {
-  const { animationDuration, isFinished, progress } = useNProgress()
+const Progress = ({ isAnimating }) => {
+  const { animationDuration, isFinished, progress } = useNProgress({
+    isAnimating
+  })
+
   return (
     <Container animationDuration={animationDuration} isFinished={isFinished}>
       <Bar animationDuration={animationDuration} progress={progress} />
@@ -156,7 +159,7 @@ const Progress = ({
   isAnimating,
   minimum
 }) => {
-  const { animationDuration, isFinished, progress } = useNProgress({
+  const { isFinished, progress } = useNProgress({
     animationDuration,
     incrementDuration,
     isAnimating,
