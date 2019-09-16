@@ -41,11 +41,18 @@
     "url": "github:tanem/react-nprogress"
   },
   "keywords": [
+    "animation",
     "component",
+    "higher-order-component",
+    "hoc",
+    "hook",
+    "hooks",
     "javascript",
     "loading",
     "nprogress",
+    "progress",
     "react",
+    "render-props",
     "spinner",
     "typescript"
   ],
