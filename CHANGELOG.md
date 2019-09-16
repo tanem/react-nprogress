@@ -1,5 +1,12 @@
 # Changelog
 
+## [v3.0.2](https://github.com/tanem/react-nprogress/tree/v3.0.2) (2019-09-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.1...v3.0.2)
+
+**Merged pull requests:**
+
+- Ignore code block from coverage [#201](https://github.com/tanem/react-nprogress/pull/201) ([tanem](https://github.com/tanem))
+
 ## [v3.0.1](https://github.com/tanem/react-nprogress/tree/v3.0.1) (2019-09-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.0...v3.0.1)
 
