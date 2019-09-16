@@ -1,5 +1,18 @@
 # Changelog
 
+## [v3.0.0](https://github.com/tanem/react-nprogress/tree/v3.0.0) (2019-09-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.5...v3.0.0)
+
+**Merged pull requests:**
+
+- Add migration notes for v3.0.0 [#200](https://github.com/tanem/react-nprogress/pull/200) ([tanem](https://github.com/tanem))
+- Expose a hook [#197](https://github.com/tanem/react-nprogress/pull/197) ([tanem](https://github.com/tanem))
+- Update dependency del-cli to v3 [#196](https://github.com/tanem/react-nprogress/pull/196) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @babel/runtime to ^7.6.0 [#195](https://github.com/tanem/react-nprogress/pull/195) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-transition-group to v4.3.0 [#194](https://github.com/tanem/react-nprogress/pull/194) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#192](https://github.com/tanem/react-nprogress/pull/192) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump eslint-utils from 1.4.0 to 1.4.2 [#193](https://github.com/tanem/react-nprogress/pull/193) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.0.5](https://github.com/tanem/react-nprogress/tree/v2.0.5) (2019-08-25)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v2.0.4...v2.0.5)
 
