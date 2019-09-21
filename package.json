@@ -91,7 +91,7 @@
     "@typescript-eslint/parser": "2.3.0",
     "babel-core": "6.26.3",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
-    "codecov": "3.5.0",
+    "codecov": "3.6.1",
     "cp-cli": "2.0.0",
     "cross-env": "5.2.1",
     "del-cli": "3.0.0",
@@ -116,7 +116,7 @@
     "rollup-plugin-size-snapshot": "0.10.0",
     "rollup-plugin-sourcemaps": "0.4.2",
     "rollup-plugin-terser": "5.1.2",
-    "tanem-scripts": "2.0.8",
+    "tanem-scripts": "2.0.10",
     "ts-jest": "24.1.0",
     "typescript": "3.6.3"
   }
