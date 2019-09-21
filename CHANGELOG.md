@@ -1,5 +1,14 @@
 # Changelog
 
+## [v3.0.3](https://github.com/tanem/react-nprogress/tree/v3.0.3) (2019-09-22)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.2...v3.0.3)
+
+**Merged pull requests:**
+
+- Update dependency react-scripts to v3.1.2 [#204](https://github.com/tanem/react-nprogress/pull/204) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency cross-env to v6 [#203](https://github.com/tanem/react-nprogress/pull/203) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#202](https://github.com/tanem/react-nprogress/pull/202) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.2](https://github.com/tanem/react-nprogress/tree/v3.0.2) (2019-09-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.1...v3.0.2)
 
