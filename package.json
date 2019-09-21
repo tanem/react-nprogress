@@ -93,7 +93,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "codecov": "3.6.1",
     "cp-cli": "2.0.0",
-    "cross-env": "5.2.1",
+    "cross-env": "6.0.0",
     "del-cli": "3.0.0",
     "eslint": "6.4.0",
     "eslint-config-prettier": "6.3.0",
