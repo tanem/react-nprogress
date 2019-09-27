@@ -90,7 +90,7 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 
 - HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
 - Hook: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hook) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hook)
-- Next Router: [Source](https://github.com/tanem/react-nprogress/tree/add-next-example/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/add-next-example/examples/next-router)
+- Next Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/next-router)
 - Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
 - Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
 - React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/react-router)
