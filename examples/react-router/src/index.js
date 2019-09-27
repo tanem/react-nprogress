@@ -1,4 +1,5 @@
 import { NProgress } from '@tanem/react-nprogress'
+import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {
