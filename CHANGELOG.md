@@ -1,5 +1,16 @@
 # Changelog
 
+## [v3.0.4](https://github.com/tanem/react-nprogress/tree/v3.0.4) (2019-09-28)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.3...v3.0.4)
+
+**Merged pull requests:**
+
+- Update dependency react-router-dom to v5.1.0 [#208](https://github.com/tanem/react-nprogress/pull/208) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @babel/runtime to ^7.6.2 [#207](https://github.com/tanem/react-nprogress/pull/207) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency react-use to ^12.2.2 [#206](https://github.com/tanem/react-nprogress/pull/206) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#205](https://github.com/tanem/react-nprogress/pull/205) ([renovate[bot]](https://github.com/apps/renovate))
+- Fix examples [#209](https://github.com/tanem/react-nprogress/pull/209) ([tanem](https://github.com/tanem))
+
 ## [v3.0.3](https://github.com/tanem/react-nprogress/tree/v3.0.3) (2019-09-22)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.2...v3.0.3)
 
