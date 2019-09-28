@@ -1,5 +1,15 @@
 # Changelog
 
+## [v3.0.5](https://github.com/tanem/react-nprogress/tree/v3.0.5) (2019-09-29)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.4...v3.0.5)
+
+**Merged pull requests:**
+
+- Update dependency react-router-dom to v5.1.1 [#212](https://github.com/tanem/react-nprogress/pull/212) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#213](https://github.com/tanem/react-nprogress/pull/213) ([renovate[bot]](https://github.com/apps/renovate))
+- Update react monorepo to v16.10.1 [#211](https://github.com/tanem/react-nprogress/pull/211) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#210](https://github.com/tanem/react-nprogress/pull/210) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.4](https://github.com/tanem/react-nprogress/tree/v3.0.4) (2019-09-28)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.3...v3.0.4)
 
