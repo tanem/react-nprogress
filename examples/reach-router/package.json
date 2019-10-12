@@ -9,8 +9,8 @@
   "dependencies": {
     "@reach/router": "1.2.1",
     "@tanem/react-nprogress": "latest",
-    "react": "16.10.1",
-    "react-dom": "16.10.1",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
     "react-scripts": "3.2.0",
     "react-transition-group": "4.3.0"
   },
