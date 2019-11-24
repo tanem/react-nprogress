@@ -80,7 +80,7 @@
     "@babel/preset-react": "7.6.3",
     "@babel/preset-typescript": "7.6.0",
     "@testing-library/react": "9.3.0",
-    "@testing-library/react-hooks": "2.0.3",
+    "@testing-library/react-hooks": "3.2.1",
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "24.0.18",
     "@types/mock-raf": "1.0.2",
@@ -116,7 +116,7 @@
     "rollup-plugin-size-snapshot": "0.10.0",
     "rollup-plugin-sourcemaps": "0.4.2",
     "rollup-plugin-terser": "5.1.2",
-    "tanem-scripts": "2.0.14",
+    "tanem-scripts": "4.0.2",
     "ts-jest": "24.1.0",
     "typescript": "3.6.4"
   }
