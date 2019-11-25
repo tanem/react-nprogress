@@ -1,5 +1,14 @@
 # Changelog
 
+## [v3.0.7](https://github.com/tanem/react-nprogress/tree/v3.0.7) (2019-11-26)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.6...v3.0.7)
+
+**Merged pull requests:**
+
+- Reconfigure tooling [#232](https://github.com/tanem/react-nprogress/pull/232) ([tanem](https://github.com/tanem))
+- Reconfigure renovate [#229](https://github.com/tanem/react-nprogress/pull/229) ([tanem](https://github.com/tanem))
+- Reset state when restarting animation [#228](https://github.com/tanem/react-nprogress/pull/228) ([tanem](https://github.com/tanem))
+
 ## [v3.0.6](https://github.com/tanem/react-nprogress/tree/v3.0.6) (2019-10-13)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.5...v3.0.6)
 
