@@ -22,6 +22,7 @@
     "clean:coverage": "del coverage",
     "clean:dist": "del dist",
     "compile": "tsc -p tsconfig.base.json",
+    "coverage": "codecov",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint --ext js,ts,tsx .",
     "postbundle": "del compiled && cp-cli ./index.js ./dist/index.js",
@@ -34,7 +35,7 @@
     "test:src": "jest --config ./scripts/jest/config.src.js",
     "test:umd": "jest --config ./scripts/jest/config.umd.js",
     "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
-    "version": "run-s test changelog authors && git add ."
+    "version": "run-s changelog authors && git add ."
   },
   "repository": {
     "type": "git",
