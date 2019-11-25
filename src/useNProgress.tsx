@@ -101,7 +101,10 @@ export const useNProgress = ({
     if (!isAnimating) {
       set(1)
     } else {
-      setState({ sideEffect: start })
+      setState({
+        ...initialState,
+        sideEffect: start
+      })
     }
   }, [isAnimating])
 

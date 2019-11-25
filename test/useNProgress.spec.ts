@@ -91,3 +91,40 @@ test('animates to finish if isAnimating was changed from true to false', () => {
 
   unmount()
 })
+
+test('correctly restarts a finished animation', () => {
+  const { result, rerender, unmount } = renderHook(
+    ({ isAnimating }) => useNProgress({ isAnimating }),
+    { initialProps: { isAnimating: true } }
+  )
+
+  rerender({ isAnimating: false })
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current).toEqual({
+    animationDuration: 200,
+    isFinished: true,
+    progress: 1
+  })
+
+  rerender({ isAnimating: true })
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+    mockRaf.step()
+    mockRaf.step({ time: 801 })
+  })
+
+  expect(result.current).toEqual({
+    animationDuration: 200,
+    isFinished: false,
+    progress: 0.2
+  })
+
+  unmount()
+})
