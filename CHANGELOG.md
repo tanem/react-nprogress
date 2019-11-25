@@ -1,5 +1,15 @@
 # Changelog
 
+## [v3.0.8](https://github.com/tanem/react-nprogress/tree/v3.0.8) (2019-11-26)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.7...v3.0.8)
+
+**Merged pull requests:**
+
+- Fix build [#239](https://github.com/tanem/react-nprogress/pull/239) ([tanem](https://github.com/tanem))
+- Update dependency @types/react-dom to v16.9.4 [#234](https://github.com/tanem/react-nprogress/pull/234) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/jest to v24.0.23 [#233](https://github.com/tanem/react-nprogress/pull/233) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @testing-library/react to v9.3.2 [#230](https://github.com/tanem/react-nprogress/pull/230) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.7](https://github.com/tanem/react-nprogress/tree/v3.0.7) (2019-11-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.6...v3.0.7)
 
