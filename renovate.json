@@ -1,16 +1,18 @@
 {
-  "extends": ["config:base", ":disableRateLimiting", ":rebaseStalePrs"],
-  "ignorePaths": ["**/node_modules/**"],
-  "rangeStrategy": "bump",
+  "extends": [
+    "config:js-lib",
+    ":rebaseStalePrs",
+    ":automergeMinor",
+    ":label(internal)",
+    ":masterIssue",
+    ":assignee(tanem)"
+  ],
+  "stabilityDays": 3,
+  "prCreation": "not-pending",
   "packageRules": [
     {
-      "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "widen"
-    },
-    {
-      "depTypeList": ["devDependencies"],
-      "groupName": "dev dependencies",
-      "rangeStrategy": "pin"
+      "updateTypes": ["major"],
+      "masterIssueApproval": true
     }
   ]
 }
