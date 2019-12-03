@@ -11,6 +11,10 @@
   "prCreation": "not-pending",
   "packageRules": [
     {
+      "packageNames": ["tanem-scripts"],
+      "stabilityDays": 0
+    },
+    {
       "updateTypes": ["major"],
       "masterIssueApproval": true
     }
