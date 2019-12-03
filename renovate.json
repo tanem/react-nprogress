@@ -12,7 +12,6 @@
   "packageRules": [
     {
       "packageNames": ["tanem-scripts"],
-      "prCreation": "immediate",
       "stabilityDays": 0
     },
     {
