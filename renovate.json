@@ -7,9 +7,11 @@
     ":masterIssue"
   ],
   "stabilityDays": 3,
+  "prCreation": "not-pending",
   "packageRules": [
     {
       "packageNames": ["tanem-scripts"],
+      "prCreation": "immediate",
       "stabilityDays": 0
     }
   ]
