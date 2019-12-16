@@ -79,7 +79,7 @@
     "@babel/preset-env": "7.7.6",
     "@babel/preset-react": "7.7.4",
     "@babel/preset-typescript": "7.7.4",
-    "@testing-library/react": "9.3.2",
+    "@testing-library/react": "9.4.0",
     "@testing-library/react-hooks": "3.2.1",
     "@types/hoist-non-react-statics": "3.3.1",
     "@types/jest": "24.0.23",
