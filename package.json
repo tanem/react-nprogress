@@ -67,7 +67,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.3",
+    "@babel/runtime": "^7.7.6",
     "hoist-non-react-statics": "^3.3.0",
     "prop-types": "^15.7.2",
     "react-use": "^13.0.0"
