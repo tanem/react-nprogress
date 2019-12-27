@@ -1,5 +1,67 @@
 # Changelog
 
+## [v3.0.10](https://github.com/tanem/react-nprogress/tree/v3.0.10) (2019-12-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.9...v3.0.10)
+
+#### :house: Internal
+
+- [#310](https://github.com/tanem/react-nprogress/pull/310) Update typescript-eslint monorepo to v2.13.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#308](https://github.com/tanem/react-nprogress/pull/308) Update dependency rollup to v1.27.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#307](https://github.com/tanem/react-nprogress/pull/307) Update dependency typescript to v3.7.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#306](https://github.com/tanem/react-nprogress/pull/306) Update dependency eslint to v6.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#305](https://github.com/tanem/react-nprogress/pull/305) Update dependency @types/react to v16.9.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#309](https://github.com/tanem/react-nprogress/pull/309) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#304](https://github.com/tanem/react-nprogress/pull/304) Update babel monorepo to v7.7.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#303](https://github.com/tanem/react-nprogress/pull/303) Update dependency @types/jest to v24.0.24 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#274](https://github.com/tanem/react-nprogress/pull/274) Update dependency rollup to v1.27.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#296](https://github.com/tanem/react-nprogress/pull/296) Update typescript-eslint monorepo to v2.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#302](https://github.com/tanem/react-nprogress/pull/302) Update dependency react-use to ^13.12.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#301](https://github.com/tanem/react-nprogress/pull/301) Update dependency hoist-non-react-statics to ^3.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#300](https://github.com/tanem/react-nprogress/pull/300) Update dependency @babel/runtime to ^7.7.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#299](https://github.com/tanem/react-nprogress/pull/299) Reconfigure renovate ([@tanem](https://github.com/tanem))
+- [#298](https://github.com/tanem/react-nprogress/pull/298) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#297](https://github.com/tanem/react-nprogress/pull/297) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#270](https://github.com/tanem/react-nprogress/pull/270) Update dependency @testing-library/react to v9.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#295](https://github.com/tanem/react-nprogress/pull/295) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#294](https://github.com/tanem/react-nprogress/pull/294) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#293](https://github.com/tanem/react-nprogress/pull/293) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#292](https://github.com/tanem/react-nprogress/pull/292) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#291](https://github.com/tanem/react-nprogress/pull/291) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#290](https://github.com/tanem/react-nprogress/pull/290) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#289](https://github.com/tanem/react-nprogress/pull/289) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#288](https://github.com/tanem/react-nprogress/pull/288) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#272](https://github.com/tanem/react-nprogress/pull/272) Update dependency rollup-plugin-terser to v5.1.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#287](https://github.com/tanem/react-nprogress/pull/287) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#286](https://github.com/tanem/react-nprogress/pull/286) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#285](https://github.com/tanem/react-nprogress/pull/285) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#284](https://github.com/tanem/react-nprogress/pull/284) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#283](https://github.com/tanem/react-nprogress/pull/283) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#282](https://github.com/tanem/react-nprogress/pull/282) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#281](https://github.com/tanem/react-nprogress/pull/281) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#280](https://github.com/tanem/react-nprogress/pull/280) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#275](https://github.com/tanem/react-nprogress/pull/275) Update typescript-eslint monorepo to v2.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#273](https://github.com/tanem/react-nprogress/pull/273) Update dependency @types/react to v16.9.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#279](https://github.com/tanem/react-nprogress/pull/279) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#278](https://github.com/tanem/react-nprogress/pull/278) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#277](https://github.com/tanem/react-nprogress/pull/277) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#276](https://github.com/tanem/react-nprogress/pull/276) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#271](https://github.com/tanem/react-nprogress/pull/271) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#269](https://github.com/tanem/react-nprogress/pull/269) Configure Renovate ([@renovate[bot]](https://github.com/apps/renovate))
+- [#268](https://github.com/tanem/react-nprogress/pull/268) Recreate renovate ([@tanem](https://github.com/tanem))
+- [#258](https://github.com/tanem/react-nprogress/pull/258) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#267](https://github.com/tanem/react-nprogress/pull/267) Update dependency rollup to v1.27.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#266](https://github.com/tanem/react-nprogress/pull/266) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#265](https://github.com/tanem/react-nprogress/pull/265) Update react monorepo to v16.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#264](https://github.com/tanem/react-nprogress/pull/264) Update dependency react-scripts to v3.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#263](https://github.com/tanem/react-nprogress/pull/263) Reconfigure renovate ([@tanem](https://github.com/tanem))
+- [#259](https://github.com/tanem/react-nprogress/pull/259) Update dependency @types/react to v16.9.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#260](https://github.com/tanem/react-nprogress/pull/260) Update dependency typescript to v3.7.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#261](https://github.com/tanem/react-nprogress/pull/261) Update dependency tanem-scripts to v5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#262](https://github.com/tanem/react-nprogress/pull/262) Reduce pr creation noise ([@tanem](https://github.com/tanem))
+- [#257](https://github.com/tanem/react-nprogress/pull/257) Simplify renovate config ([@tanem](https://github.com/tanem))
+- [#256](https://github.com/tanem/react-nprogress/pull/256) Update typescript-eslint monorepo to v2.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#255](https://github.com/tanem/react-nprogress/pull/255) Update dependency rollup to v1.27.8 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.9](https://github.com/tanem/react-nprogress/tree/v3.0.9) (2019-12-03)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.8...v3.0.9)
 
@@ -55,6 +117,10 @@
 ## [v3.0.6](https://github.com/tanem/react-nprogress/tree/v3.0.6) (2019-10-12)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.5...v3.0.6)
 
+#### :house: Internal
+
+- [#214](https://github.com/tanem/react-nprogress/pull/214) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+
 #### :question: Unlabelled
 
 - [#219](https://github.com/tanem/react-nprogress/pull/219) Update dependency @babel/runtime to ^7.6.3 ([@renovate[bot]](https://github.com/apps/renovate))
@@ -62,7 +128,6 @@
 - [#217](https://github.com/tanem/react-nprogress/pull/217) Update react monorepo to v16.10.2 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#216](https://github.com/tanem/react-nprogress/pull/216) Update dependency react-scripts to v3.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#215](https://github.com/tanem/react-nprogress/pull/215) Update dependency react-router-dom to v5.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
-- [#214](https://github.com/tanem/react-nprogress/pull/214) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
 ## [v3.0.5](https://github.com/tanem/react-nprogress/tree/v3.0.5) (2019-09-28)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.4...v3.0.5)
@@ -351,11 +416,14 @@
 ## [v1.1.14](https://github.com/tanem/react-nprogress/tree/v1.1.14) (2019-04-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.13...v1.1.14)
 
+#### :house: Internal
+
+- [#111](https://github.com/tanem/react-nprogress/pull/111) Update dependency react-scripts to v3 ([@renovate[bot]](https://github.com/apps/renovate))
+
 #### :question: Unlabelled
 
 - [#113](https://github.com/tanem/react-nprogress/pull/113) Update dependency @babel/runtime to ^7.4.4 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#112](https://github.com/tanem/react-nprogress/pull/112) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
-- [#111](https://github.com/tanem/react-nprogress/pull/111) Update dependency react-scripts to v3 ([@renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.1.13](https://github.com/tanem/react-nprogress/tree/v1.1.13) (2019-04-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.12...v1.1.13)
@@ -376,11 +444,14 @@
 ## [v1.1.11](https://github.com/tanem/react-nprogress/tree/v1.1.11) (2019-04-13)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.10...v1.1.11)
 
+#### :house: Internal
+
+- [#94](https://github.com/tanem/react-nprogress/pull/94) Update dependency rollup to v1.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 #### :question: Unlabelled
 
 - [#99](https://github.com/tanem/react-nprogress/pull/99) Update react monorepo to ^16.8.6 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#96](https://github.com/tanem/react-nprogress/pull/96) Update dependency prettier to v1.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
-- [#94](https://github.com/tanem/react-nprogress/pull/94) Update dependency rollup to v1.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#93](https://github.com/tanem/react-nprogress/pull/93) Update dependency rollup-plugin-node-resolve to v4.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#95](https://github.com/tanem/react-nprogress/pull/95) Update dependency @types/react-dom to v16.8.4 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#98](https://github.com/tanem/react-nprogress/pull/98) Update dependency @babel/runtime to ^7.4.3 ([@renovate[bot]](https://github.com/apps/renovate))
@@ -495,6 +566,10 @@
 ## [v1.1.1](https://github.com/tanem/react-nprogress/tree/v1.1.1) (2019-03-07)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.1.0...v1.1.1)
 
+#### :house: Internal
+
+- [#31](https://github.com/tanem/react-nprogress/pull/31) Configure Renovate - old ([@renovate[bot]](https://github.com/apps/renovate))
+
 #### :question: Unlabelled
 
 - [#39](https://github.com/tanem/react-nprogress/pull/39) Update react monorepo to v16.8.4 ([@renovate[bot]](https://github.com/apps/renovate))
@@ -504,7 +579,6 @@
 - [#38](https://github.com/tanem/react-nprogress/pull/38) Update dependency rollup to v1.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#34](https://github.com/tanem/react-nprogress/pull/34) Reconfigure Renovate ([@tanem](https://github.com/tanem))
 - [#33](https://github.com/tanem/react-nprogress/pull/33) Pin dependencies ([@renovate[bot]](https://github.com/apps/renovate))
-- [#31](https://github.com/tanem/react-nprogress/pull/31) Configure Renovate ([@renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.1.0](https://github.com/tanem/react-nprogress/tree/v1.1.0) (2019-03-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v1.0.16...v1.1.0)
