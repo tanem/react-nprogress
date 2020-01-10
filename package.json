@@ -70,7 +70,7 @@
     "@babel/runtime": "^7.7.7",
     "hoist-non-react-statics": "^3.3.1",
     "prop-types": "^15.7.2",
-    "react-use": "^13.14.0"
+    "react-use": "^13.14.3"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
