@@ -1,5 +1,23 @@
 # Changelog
 
+## [v3.0.12](https://github.com/tanem/react-nprogress/tree/v3.0.12) (2020-01-15)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.11...v3.0.12)
+
+#### :house: Internal
+
+- [#327](https://github.com/tanem/react-nprogress/pull/327) Update dependency rollup-plugin-terser to v5.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#329](https://github.com/tanem/react-nprogress/pull/329) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#326](https://github.com/tanem/react-nprogress/pull/326) Update dependency rollup to v1.29.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#325](https://github.com/tanem/react-nprogress/pull/325) Update dependency react-use to ^13.14.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#324](https://github.com/tanem/react-nprogress/pull/324) Update dependency ts-jest to v24.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#323](https://github.com/tanem/react-nprogress/pull/323) Update typescript-eslint monorepo to v2.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#320](https://github.com/tanem/react-nprogress/pull/320) Update dependency rollup to v1.28.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#318](https://github.com/tanem/react-nprogress/pull/318) Update dependency rollup-plugin-sourcemaps to v0.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#317](https://github.com/tanem/react-nprogress/pull/317) Update dependency react-use to ^13.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#322](https://github.com/tanem/react-nprogress/pull/322) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#321](https://github.com/tanem/react-nprogress/pull/321) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#319](https://github.com/tanem/react-nprogress/pull/319) Update dependency tanem-scripts to v5.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.11](https://github.com/tanem/react-nprogress/tree/v3.0.11) (2020-01-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.10...v3.0.11)
 
