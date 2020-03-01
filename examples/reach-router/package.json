@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reach/router": "1.3.1",
+    "@reach/router": "1.3.3",
     "@tanem/react-nprogress": "latest",
     "react": "16.13.0",
     "react-dom": "16.13.0",
