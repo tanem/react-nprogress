@@ -1,5 +1,20 @@
 # Changelog
 
+## [v3.0.17](https://github.com/tanem/react-nprogress/tree/v3.0.17) (2020-03-07)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.16...v3.0.17)
+
+#### :house: Internal
+
+- [#396](https://github.com/tanem/react-nprogress/pull/396) Update dependency uuid to v7.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#395](https://github.com/tanem/react-nprogress/pull/395) Update dependency react-use to ^13.27.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#394](https://github.com/tanem/react-nprogress/pull/394) Update typescript-eslint monorepo to v2.22.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#393](https://github.com/tanem/react-nprogress/pull/393) Update dependency tanem-scripts to v5.0.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#392](https://github.com/tanem/react-nprogress/pull/392) Update dependency typescript to v3.8.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#391](https://github.com/tanem/react-nprogress/pull/391) Update dependency rollup to v1.32.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#390](https://github.com/tanem/react-nprogress/pull/390) Update dependency @reach/router to v1.3.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#389](https://github.com/tanem/react-nprogress/pull/389) Update babel monorepo to v7.8.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#388](https://github.com/tanem/react-nprogress/pull/388) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.16](https://github.com/tanem/react-nprogress/tree/v3.0.16) (2020-02-29)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.15...v3.0.16)
 
