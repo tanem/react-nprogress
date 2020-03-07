@@ -17,6 +17,6 @@
     "next": "latest",
     "react": "16.13.0",
     "react-dom": "16.13.0",
-    "uuid": "7.0.1"
+    "uuid": "7.0.2"
   }
 }
