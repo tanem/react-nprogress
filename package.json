@@ -108,7 +108,7 @@
     "react-test-renderer": "16.13.0",
     "regenerator-runtime": "0.13.3",
     "rollup": "1.32.0",
-    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-filesize": "6.2.1",
     "rollup-plugin-node-resolve": "5.2.0",
