@@ -1,5 +1,20 @@
 # Changelog
 
+## [v3.0.18](https://github.com/tanem/react-nprogress/tree/v3.0.18) (2020-03-13)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.17...v3.0.18)
+
+#### :house: Internal
+
+- [#405](https://github.com/tanem/react-nprogress/pull/405) Update dependency rollup-plugin-terser to v5.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#404](https://github.com/tanem/react-nprogress/pull/404) Update typescript-eslint monorepo to v2.23.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#403](https://github.com/tanem/react-nprogress/pull/403) Update dependency tanem-scripts to v5.0.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#401](https://github.com/tanem/react-nprogress/pull/401) Update dependency eslint-plugin-react to v7.19.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#402](https://github.com/tanem/react-nprogress/pull/402) Update dependency rollup-plugin-babel to v4.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#400](https://github.com/tanem/react-nprogress/pull/400) Update dependency @types/jest to v25.1.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#399](https://github.com/tanem/react-nprogress/pull/399) Update dependency cross-env to v7.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#398](https://github.com/tanem/react-nprogress/pull/398) Update babel monorepo to v7.8.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#397](https://github.com/tanem/react-nprogress/pull/397) Update dependency @testing-library/react to v9.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.17](https://github.com/tanem/react-nprogress/tree/v3.0.17) (2020-03-07)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.16...v3.0.17)
 
