@@ -1,5 +1,15 @@
 # Changelog
 
+## [v3.0.19](https://github.com/tanem/react-nprogress/tree/v3.0.19) (2020-03-21)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.18...v3.0.19)
+
+#### :house: Internal
+
+- [#409](https://github.com/tanem/react-nprogress/pull/409) Update dependency tanem-scripts to v5.0.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#408](https://github.com/tanem/react-nprogress/pull/408) Update dependency @testing-library/react to v10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#407](https://github.com/tanem/react-nprogress/pull/407) Update dependency rollup to v2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#406](https://github.com/tanem/react-nprogress/pull/406) Update dependency regenerator-runtime to v0.13.5 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.18](https://github.com/tanem/react-nprogress/tree/v3.0.18) (2020-03-13)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.17...v3.0.18)
 
