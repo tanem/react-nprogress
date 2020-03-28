@@ -8,7 +8,7 @@ import Spinner from './Spinner'
 
 const Progress = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
-    isAnimating
+    isAnimating,
   })
 
   return (
@@ -20,7 +20,7 @@ const Progress = ({ isAnimating }) => {
 }
 
 Progress.propTypes = {
-  isAnimating: PropTypes.bool.isRequired
+  isAnimating: PropTypes.bool.isRequired,
 }
 
 export default Progress

@@ -18,7 +18,7 @@ const noop = () => undefined
 const initialState: State = {
   isFinished: false,
   progress: 0,
-  sideEffect: noop
+  sideEffect: noop,
 }
 
 const cleanup = () => {
@@ -30,7 +30,7 @@ export const useNProgress = ({
   animationDuration = 200,
   incrementDuration = 800,
   isAnimating = false,
-  minimum = 0.08
+  minimum = 0.08,
 }: Options = {}) => {
   const [get, setState] = useGetSetState(initialState)
 
@@ -40,10 +40,10 @@ export const useNProgress = ({
     if (n === 1) {
       cleanup()
 
-      queue(next => {
+      queue((next) => {
         setState({
           progress: n,
-          sideEffect: () => timeout(next, animationDuration)
+          sideEffect: () => timeout(next, animationDuration),
         })
       })
 
@@ -54,10 +54,10 @@ export const useNProgress = ({
       return
     }
 
-    queue(next => {
+    queue((next) => {
       setState({
         progress: n,
-        sideEffect: () => timeout(next, animationDuration)
+        sideEffect: () => timeout(next, animationDuration),
       })
     })
   }
@@ -69,7 +69,7 @@ export const useNProgress = ({
   const start = () => {
     const work = () => {
       trickle()
-      queue(next => {
+      queue((next) => {
         timeout(() => {
           work()
           next()
@@ -103,7 +103,7 @@ export const useNProgress = ({
     } else {
       setState({
         ...initialState,
-        sideEffect: start
+        sideEffect: start,
       })
     }
   }, [isAnimating])
@@ -111,6 +111,6 @@ export const useNProgress = ({
   return {
     animationDuration,
     isFinished: get().isFinished,
-    progress: get().progress
+    progress: get().progress,
   }
 }

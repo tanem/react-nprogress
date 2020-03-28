@@ -9,7 +9,7 @@ test('receives render props', () => {
 
   render(
     <NProgress>
-      {props => {
+      {(props) => {
         animationDuration = props.animationDuration
         isFinished = props.isFinished
         progress = props.progress

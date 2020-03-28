@@ -7,7 +7,7 @@ const Spinner = () => (
       position: 'fixed',
       right: 15,
       top: 15,
-      zIndex: 1031
+      zIndex: 1031,
     }}
   >
     <div
@@ -20,7 +20,7 @@ const Spinner = () => (
         borderTop: '2px solid #29d',
         boxSizing: 'border-box',
         height: 18,
-        width: 18
+        width: 18,
       }}
     />
   </div>

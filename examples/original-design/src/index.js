@@ -6,20 +6,20 @@ import Container from './Container'
 import './index.css'
 import Spinner from './Spinner'
 
-const callFakeAPI = delay =>
-  new Promise(resolve => {
+const callFakeAPI = (delay) =>
+  new Promise((resolve) => {
     setTimeout(resolve, delay)
   })
 
 class App extends React.Component {
   state = {
-    isLoading: true
+    isLoading: true,
   }
 
   async componentDidMount() {
     await callFakeAPI(3000)
     this.setState(() => ({
-      isLoading: false
+      isLoading: false,
     }))
   }
 

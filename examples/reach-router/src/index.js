@@ -20,7 +20,7 @@ const App = () => (
   </div>
 )
 
-const Page = props => (
+const Page = (props) => (
   <div
     className="page"
     style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
@@ -30,7 +30,7 @@ const Page = props => (
 )
 
 Page.propTypes = {
-  page: PropTypes.string.isRequired
+  page: PropTypes.string.isRequired,
 }
 
 const Container = ({ children, isFinished, animationDuration }) => (
@@ -38,7 +38,7 @@ const Container = ({ children, isFinished, animationDuration }) => (
     style={{
       opacity: isFinished ? 0 : 1,
       pointerEvents: 'none',
-      transition: `opacity ${animationDuration}ms linear`
+      transition: `opacity ${animationDuration}ms linear`,
     }}
   >
     {children}
@@ -48,7 +48,7 @@ const Container = ({ children, isFinished, animationDuration }) => (
 Container.propTypes = {
   animationDuration: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
-  isFinished: PropTypes.bool.isRequired
+  isFinished: PropTypes.bool.isRequired,
 }
 
 const Bar = ({ progress, animationDuration }) => (
@@ -62,7 +62,7 @@ const Bar = ({ progress, animationDuration }) => (
       top: 0,
       transition: `margin-left ${animationDuration}ms linear`,
       width: '100%',
-      zIndex: 1031
+      zIndex: 1031,
     }}
   >
     <div
@@ -74,7 +74,7 @@ const Bar = ({ progress, animationDuration }) => (
         position: 'absolute',
         right: 0,
         transform: 'rotate(3deg) translate(0px, -4px)',
-        width: 100
+        width: 100,
       }}
     />
   </div>
@@ -82,16 +82,16 @@ const Bar = ({ progress, animationDuration }) => (
 
 Bar.propTypes = {
   animationDuration: PropTypes.number.isRequired,
-  progress: PropTypes.number.isRequired
+  progress: PropTypes.number.isRequired,
 }
 
 class FadeTransitionRouter extends React.Component {
   propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
   }
 
   state = {
-    isLoading: false
+    isLoading: false,
   }
 
   render() {
@@ -119,12 +119,12 @@ class FadeTransitionRouter extends React.Component {
                 timeout={500}
                 onEnter={() => {
                   this.setState(() => ({
-                    isLoading: true
+                    isLoading: true,
                   }))
                 }}
                 onEntered={() => {
                   this.setState(() => ({
-                    isLoading: false
+                    isLoading: false,
                   }))
                 }}
               >

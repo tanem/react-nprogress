@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import Progress from './Progress'
 
-const callFakeAPI = delay =>
-  new Promise(resolve => {
+const callFakeAPI = (delay) =>
+  new Promise((resolve) => {
     setTimeout(resolve, delay)
   })
 

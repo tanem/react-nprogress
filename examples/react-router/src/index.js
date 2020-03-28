@@ -7,7 +7,7 @@ import {
   Link,
   Redirect,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Bar from './Bar'
@@ -21,13 +21,13 @@ styles.fill = {
   left: 0,
   right: 0,
   top: 0,
-  bottom: 0
+  bottom: 0,
 }
 
 styles.content = {
   ...styles.fill,
   top: '40px',
-  textAlign: 'center'
+  textAlign: 'center',
 }
 
 styles.nav = {
@@ -37,28 +37,28 @@ styles.nav = {
   top: 0,
   height: '40px',
   width: '100%',
-  display: 'flex'
+  display: 'flex',
 }
 
 styles.navItem = {
   textAlign: 'center',
   flex: 1,
   listStyleType: 'none',
-  padding: '10px'
+  padding: '10px',
 }
 
 styles.hsl = {
   ...styles.fill,
   color: 'white',
   paddingTop: '20px',
-  fontSize: '30px'
+  fontSize: '30px',
 }
 
 styles.rgb = {
   ...styles.fill,
   color: 'white',
   paddingTop: '20px',
-  fontSize: '30px'
+  fontSize: '30px',
 }
 
 function NavLink(props) {
@@ -75,7 +75,7 @@ function HSL({ match: { params } }) {
       style={{
         ...styles.fill,
         ...styles.hsl,
-        background: `hsl(${params.h}, ${params.s}%, ${params.l}%)`
+        background: `hsl(${params.h}, ${params.s}%, ${params.l}%)`,
       }}
     >
       hsl(
@@ -87,7 +87,7 @@ function HSL({ match: { params } }) {
 }
 
 HSL.propTypes = {
-  match: PropTypes.object.isRequired
+  match: PropTypes.object.isRequired,
 }
 
 function RGB({ match: { params } }) {
@@ -96,7 +96,7 @@ function RGB({ match: { params } }) {
       style={{
         ...styles.fill,
         ...styles.rgb,
-        background: `rgb(${params.r}, ${params.g}, ${params.b})`
+        background: `rgb(${params.r}, ${params.g}, ${params.b})`,
       }}
     >
       rgb(
@@ -106,12 +106,12 @@ function RGB({ match: { params } }) {
 }
 
 RGB.propTypes = {
-  match: PropTypes.object.isRequired
+  match: PropTypes.object.isRequired,
 }
 
 class AnimationExample extends React.Component {
   state = {
-    isLoading: false
+    isLoading: false,
   }
 
   render() {
@@ -167,12 +167,12 @@ class AnimationExample extends React.Component {
                       timeout={1200}
                       onEnter={() => {
                         this.setState(() => ({
-                          isLoading: true
+                          isLoading: true,
                         }))
                       }}
                       onEntered={() => {
                         this.setState(() => ({
-                          isLoading: false
+                          isLoading: false,
                         }))
                       }}
                     >

@@ -6,7 +6,7 @@ const Container = ({ children, isFinished, animationDuration }) => (
     style={{
       opacity: isFinished ? 0 : 1,
       pointerEvents: 'none',
-      transition: `opacity ${animationDuration}ms linear`
+      transition: `opacity ${animationDuration}ms linear`,
     }}
   >
     {children}
@@ -16,7 +16,7 @@ const Container = ({ children, isFinished, animationDuration }) => (
 Container.propTypes = {
   animationDuration: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
-  isFinished: PropTypes.bool.isRequired
+  isFinished: PropTypes.bool.isRequired,
 }
 
 export default Container

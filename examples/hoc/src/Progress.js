@@ -16,7 +16,7 @@ const Progress = ({ isFinished, progress, animationDuration }) => (
 Progress.propTypes = {
   animationDuration: PropTypes.number.isRequired,
   isFinished: PropTypes.bool.isRequired,
-  progress: PropTypes.number.isRequired
+  progress: PropTypes.number.isRequired,
 }
 
 export default withNProgress(Progress)

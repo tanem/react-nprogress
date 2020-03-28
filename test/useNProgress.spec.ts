@@ -12,7 +12,7 @@ test('defaults', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0
+    progress: 0,
   })
 
   unmount()
@@ -26,7 +26,7 @@ test('starts animating when isAnimating is true', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.1
+    progress: 0.1,
   })
 
   unmount()
@@ -43,7 +43,7 @@ test('starts animating when isAnimating changes from false to true', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.1
+    progress: 0.1,
   })
 
   unmount()
@@ -64,7 +64,7 @@ test('increments correctly', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.2
+    progress: 0.2,
   })
 
   unmount()
@@ -86,7 +86,7 @@ test('animates to finish if isAnimating was changed from true to false', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: true,
-    progress: 1
+    progress: 1,
   })
 
   unmount()
@@ -108,7 +108,7 @@ test('correctly restarts a finished animation', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: true,
-    progress: 1
+    progress: 1,
   })
 
   rerender({ isAnimating: true })
@@ -123,7 +123,7 @@ test('correctly restarts a finished animation', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.2
+    progress: 0.2,
   })
 
   unmount()

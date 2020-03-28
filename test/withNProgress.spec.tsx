@@ -7,7 +7,7 @@ test('wrapped component receives props', () => {
   let isFinished
   let progress
 
-  const EnhancedComponent = withNProgress(props => {
+  const EnhancedComponent = withNProgress((props) => {
     animationDuration = props.animationDuration
     isFinished = props.isFinished
     progress = props.progress
