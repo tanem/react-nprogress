@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class Forever extends Component {
   static async getInitialProps() {
-    await new Promise(resolve => {
+    await new Promise((resolve) => {
       setTimeout(resolve, 3000)
     })
     return {}

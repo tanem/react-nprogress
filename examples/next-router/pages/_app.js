@@ -5,13 +5,13 @@ import uuidv4 from 'uuid/v4'
 import Loading from '../components/Loading'
 
 const linkStyle = {
-  margin: '0 10px 0 0'
+  margin: '0 10px 0 0',
 }
 
 export default class MyApp extends App {
   state = {
     isRouteChanging: false,
-    loadingKey: null
+    loadingKey: null,
   }
 
   static async getInitialProps({ Component, ctx }) {
@@ -30,13 +30,13 @@ export default class MyApp extends App {
     const routeChangeStartHandler = () => {
       this.setState(() => ({
         isRouteChanging: true,
-        loadingKey: uuidv4().substr(0, 8)
+        loadingKey: uuidv4().substr(0, 8),
       }))
     }
 
     const routeChangeEndHandler = () => {
       this.setState(() => ({
-        isRouteChanging: false
+        isRouteChanging: false,
       }))
     }
 

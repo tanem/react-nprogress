@@ -9,7 +9,7 @@ const Loading = ({ isRouteChanging, loadingKey }) => (
         style={{
           opacity: isFinished ? 0 : 1,
           pointerEvents: 'none',
-          transition: `opacity ${animationDuration}ms linear`
+          transition: `opacity ${animationDuration}ms linear`,
         }}
       >
         <div
@@ -22,7 +22,7 @@ const Loading = ({ isRouteChanging, loadingKey }) => (
             top: 0,
             transition: `margin-left ${animationDuration}ms linear`,
             width: '100%',
-            zIndex: 1031
+            zIndex: 1031,
           }}
         >
           <div
@@ -34,7 +34,7 @@ const Loading = ({ isRouteChanging, loadingKey }) => (
               position: 'absolute',
               right: 0,
               transform: 'rotate(3deg) translate(0px, -4px)',
-              width: 100
+              width: 100,
             }}
           />
         </div>
@@ -45,7 +45,7 @@ const Loading = ({ isRouteChanging, loadingKey }) => (
 
 Loading.propTypes = {
   isRouteChanging: PropTypes.bool.isRequired,
-  loadingKey: PropTypes.string
+  loadingKey: PropTypes.string,
 }
 
 export default Loading

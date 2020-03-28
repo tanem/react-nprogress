@@ -5,7 +5,7 @@ jest.useFakeTimers()
 test('starts running when the first callback is pushed onto the queue', () => {
   const mockFn = jest.fn()
 
-  queue(next => {
+  queue((next) => {
     mockFn()
     next()
   })
@@ -14,15 +14,15 @@ test('starts running when the first callback is pushed onto the queue', () => {
 })
 
 test('executes callbacks in the queue sequentially', () => {
-  const mockFn = jest.fn(str => str)
+  const mockFn = jest.fn((str) => str)
 
-  queue(next => {
+  queue((next) => {
     setTimeout(() => {
       mockFn('first')
       next()
     }, 0)
   })
-  queue(next => {
+  queue((next) => {
     mockFn('second')
     next()
   })
@@ -36,8 +36,8 @@ test('executes callbacks in the queue sequentially', () => {
 test('can clear the queue', () => {
   const mockFn = jest.fn()
 
-  queue(next => setTimeout(next, 0))
-  queue(next => {
+  queue((next) => setTimeout(next, 0))
+  queue((next) => {
     mockFn()
     next()
   })

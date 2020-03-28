@@ -8,7 +8,7 @@ type Outer<P> = P & Options
 type Inner<P> = P & ReturnType<typeof useNProgress>
 
 export function withNProgress<P>(BaseComponent: React.ComponentType<Inner<P>>) {
-  const WithNProgress: React.FC<Outer<P>> = props => {
+  const WithNProgress: React.FC<Outer<P>> = (props) => {
     const hookProps = useNProgress(props)
     return <BaseComponent {...props} {...hookProps} />
   }

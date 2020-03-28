@@ -12,7 +12,7 @@ const Bar = ({ progress, animationDuration }) => (
       top: 0,
       transition: `margin-left ${animationDuration}ms linear`,
       width: '100%',
-      zIndex: 1031
+      zIndex: 1031,
     }}
   >
     <div
@@ -24,7 +24,7 @@ const Bar = ({ progress, animationDuration }) => (
         position: 'absolute',
         right: 0,
         transform: 'rotate(3deg) translate(0px, -4px)',
-        width: 100
+        width: 100,
       }}
     />
   </div>
@@ -32,7 +32,7 @@ const Bar = ({ progress, animationDuration }) => (
 
 Bar.propTypes = {
   animationDuration: PropTypes.number.isRequired,
-  progress: PropTypes.number.isRequired
+  progress: PropTypes.number.isRequired,
 }
 
 export default Bar
