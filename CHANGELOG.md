@@ -1,5 +1,22 @@
 # Changelog
 
+## [v3.0.20](https://github.com/tanem/react-nprogress/tree/v3.0.20) (2020-03-30)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.19...v3.0.20)
+
+#### :house: Internal
+
+- [#421](https://github.com/tanem/react-nprogress/pull/421) Update dependency eslint-plugin-react-hooks to v3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#415](https://github.com/tanem/react-nprogress/pull/415) Update dependency tanem-scripts to v5.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#411](https://github.com/tanem/react-nprogress/pull/411) Update dependency rollup to v2.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#417](https://github.com/tanem/react-nprogress/pull/417) Update dependency prettier to v2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#419](https://github.com/tanem/react-nprogress/pull/419) Update dependency react-use to ^13.27.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#418](https://github.com/tanem/react-nprogress/pull/418) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#420](https://github.com/tanem/react-nprogress/pull/420) Use codecov bash uploader ([@tanem](https://github.com/tanem))
+- [#410](https://github.com/tanem/react-nprogress/pull/410) Update typescript-eslint monorepo to v2.25.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#414](https://github.com/tanem/react-nprogress/pull/414) Update dependency react-scripts to v3.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#416](https://github.com/tanem/react-nprogress/pull/416) Update dependency eslint-config-prettier to v6.10.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#412](https://github.com/tanem/react-nprogress/pull/412) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.19](https://github.com/tanem/react-nprogress/tree/v3.0.19) (2020-03-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.18...v3.0.19)
 
