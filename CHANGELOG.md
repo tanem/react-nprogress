@@ -1,5 +1,21 @@
 # Changelog
 
+## [v3.0.22](https://github.com/tanem/react-nprogress/tree/v3.0.22) (2020-04-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.21...v3.0.22)
+
+#### :house: Internal
+
+- [#438](https://github.com/tanem/react-nprogress/pull/438) Update dependency @babel/preset-env to v7.9.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#437](https://github.com/tanem/react-nprogress/pull/437) Update typescript-eslint monorepo to v2.27.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#436](https://github.com/tanem/react-nprogress/pull/436) Update dependency rollup-plugin-filesize to v7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#435](https://github.com/tanem/react-nprogress/pull/435) Update dependency prettier to v2.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#434](https://github.com/tanem/react-nprogress/pull/434) Update dependency tanem-scripts to v5.0.18 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#433](https://github.com/tanem/react-nprogress/pull/433) Update dependency react-use to v14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#432](https://github.com/tanem/react-nprogress/pull/432) Update dependency @types/jest to v25.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#431](https://github.com/tanem/react-nprogress/pull/431) Update dependency ts-jest to v25.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#430](https://github.com/tanem/react-nprogress/pull/430) Update dependency jest to v25.2.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#413](https://github.com/tanem/react-nprogress/pull/413) Update dependency @types/react to v16.9.32 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.21](https://github.com/tanem/react-nprogress/tree/v3.0.21) (2020-04-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.20...v3.0.21)
 
