@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.23](https://github.com/tanem/react-nprogress/tree/v3.0.23) (2020-04-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.22...v3.0.23)
+
+#### :house: Internal
+
+- [#444](https://github.com/tanem/react-nprogress/pull/444) Update typescript-eslint monorepo to v2.28.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#443](https://github.com/tanem/react-nprogress/pull/443) Update dependency rollup to v2.6.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#442](https://github.com/tanem/react-nprogress/pull/442) Update dependency tanem-scripts to v5.0.19 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#441](https://github.com/tanem/react-nprogress/pull/441) Update dependency react-use to ^14.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#440](https://github.com/tanem/react-nprogress/pull/440) Update dependency @types/react to v16.9.34 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#439](https://github.com/tanem/react-nprogress/pull/439) Update dependency jest to v25.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.22](https://github.com/tanem/react-nprogress/tree/v3.0.22) (2020-04-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.21...v3.0.22)
 
