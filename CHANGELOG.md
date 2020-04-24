@@ -1,5 +1,18 @@
 # Changelog
 
+## [v3.0.24](https://github.com/tanem/react-nprogress/tree/v3.0.24) (2020-04-24)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.23...v3.0.24)
+
+#### :house: Internal
+
+- [#451](https://github.com/tanem/react-nprogress/pull/451) Update dependency eslint-config-prettier to v6.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#450](https://github.com/tanem/react-nprogress/pull/450) Update dependency prettier to v2.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#449](https://github.com/tanem/react-nprogress/pull/449) Update dependency @testing-library/react to v10.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#448](https://github.com/tanem/react-nprogress/pull/448) Update typescript-eslint monorepo to v2.29.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#447](https://github.com/tanem/react-nprogress/pull/447) Update dependency jest to v25.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#446](https://github.com/tanem/react-nprogress/pull/446) Update dependency tanem-scripts to v5.0.20 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#445](https://github.com/tanem/react-nprogress/pull/445) Update dependency ts-jest to v25.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.23](https://github.com/tanem/react-nprogress/tree/v3.0.23) (2020-04-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.22...v3.0.23)
 
