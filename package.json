@@ -81,7 +81,7 @@
     "@testing-library/react": "10.0.4",
     "@testing-library/react-hooks": "3.2.1",
     "@types/hoist-non-react-statics": "3.3.1",
-    "@types/jest": "25.2.1",
+    "@types/jest": "25.2.2",
     "@types/mock-raf": "1.0.2",
     "@types/prop-types": "15.7.3",
     "@types/react": "16.9.35",
