@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.27](https://github.com/tanem/react-nprogress/tree/v3.0.27) (2020-05-22)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.26...v3.0.27)
+
+#### :house: Internal
+
+- [#485](https://github.com/tanem/react-nprogress/pull/485) Update dependency @types/jest to v25.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#484](https://github.com/tanem/react-nprogress/pull/484) Update dependency react-use to v15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#483](https://github.com/tanem/react-nprogress/pull/483) Update dependency tanem-scripts to v5.0.23 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#482](https://github.com/tanem/react-nprogress/pull/482) Update dependency del-cli to v3.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#481](https://github.com/tanem/react-nprogress/pull/481) Update dependency ts-jest to v26 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#468](https://github.com/tanem/react-nprogress/pull/468) Update dependency rollup to v2.10.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.26](https://github.com/tanem/react-nprogress/tree/v3.0.26) (2020-05-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.25...v3.0.26)
 
