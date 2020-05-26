@@ -1,12 +1,12 @@
 let handle: number | undefined
 
-export const cancel = () => {
+export const cancel = (): void => {
   if (handle) {
     window.cancelAnimationFrame(handle)
   }
 }
 
-export const timeout = (callback: () => void, delay: number) => {
+export const timeout = (callback: () => void, delay: number): void => {
   let deltaTime
   let start: number | undefined
   const frame: FrameRequestCallback = (time) => {

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useCallback } from 'react'
 import { useEffectOnce, useGetSetState, useUpdateEffect } from 'react-use'
 import { clamp } from './clamp'
 import { increment } from './increment'
@@ -10,6 +10,12 @@ interface State {
   isFinished: boolean
   progress: number
   sideEffect: () => void
+}
+
+interface ReturnType {
+  animationDuration: number
+  isFinished: boolean
+  progress: number
 }
 
 /* istanbul ignore next */
@@ -31,14 +37,29 @@ export const useNProgress = ({
   incrementDuration = 800,
   isAnimating = false,
   minimum = 0.08,
-}: Options = {}) => {
+}: Options = {}): ReturnType => {
   const [get, setState] = useGetSetState(initialState)
 
-  const set = (n: number) => {
-    n = clamp(n, minimum, 1)
+  const set = useCallback(
+    (n: number) => {
+      n = clamp(n, minimum, 1)
 
-    if (n === 1) {
-      cleanup()
+      if (n === 1) {
+        cleanup()
+
+        queue((next) => {
+          setState({
+            progress: n,
+            sideEffect: () => timeout(next, animationDuration),
+          })
+        })
+
+        queue(() => {
+          setState({ isFinished: true, sideEffect: cleanup })
+        })
+
+        return
+      }
 
       queue((next) => {
         setState({
@@ -46,27 +67,15 @@ export const useNProgress = ({
           sideEffect: () => timeout(next, animationDuration),
         })
       })
+    },
+    [animationDuration, minimum, setState]
+  )
 
-      queue(() => {
-        setState({ isFinished: true, sideEffect: cleanup })
-      })
-
-      return
-    }
-
-    queue((next) => {
-      setState({
-        progress: n,
-        sideEffect: () => timeout(next, animationDuration),
-      })
-    })
-  }
-
-  const trickle = () => {
+  const trickle = useCallback(() => {
     set(increment(get().progress))
-  }
+  }, [get, set])
 
-  const start = () => {
+  const start = useCallback(() => {
     const work = () => {
       trickle()
       queue((next) => {
@@ -78,9 +87,11 @@ export const useNProgress = ({
     }
 
     work()
-  }
+  }, [incrementDuration, trickle])
 
   const savedTrickle = useRef<() => void>(noop)
+
+  const sideEffect = get().sideEffect
 
   useEffect(() => {
     savedTrickle.current = trickle
@@ -95,7 +106,7 @@ export const useNProgress = ({
 
   useUpdateEffect(() => {
     get().sideEffect()
-  }, [get().sideEffect])
+  }, [get, sideEffect])
 
   useUpdateEffect(() => {
     if (!isAnimating) {
@@ -106,7 +117,7 @@ export const useNProgress = ({
         sideEffect: start,
       })
     }
-  }, [isAnimating])
+  }, [isAnimating, set, setState, start])
 
   return {
     animationDuration,

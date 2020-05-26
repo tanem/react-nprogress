@@ -1,6 +1,6 @@
 import { clamp } from './clamp'
 
-export const increment = (progress: number) => {
+export const increment = (progress: number): number => {
   let amount = 0
   if (progress >= 0 && progress < 0.2) {
     amount = 0.1

@@ -21,7 +21,6 @@ module.exports = {
   ],
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
   },
@@ -29,6 +28,7 @@ module.exports = {
     {
       files: ['*.js'],
       rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
