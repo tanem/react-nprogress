@@ -13,12 +13,12 @@ const next: Next = () => {
   isRunning = false
 }
 
-export const clear = () => {
+export const clear = (): void => {
   isRunning = false
   pending = []
 }
 
-export const queue = (cb: Callback) => {
+export const queue = (cb: Callback): void => {
   pending.push(cb)
   if (!isRunning && pending.length === 1) {
     next()
