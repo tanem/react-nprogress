@@ -1,5 +1,21 @@
 # Changelog
 
+## [v3.0.28](https://github.com/tanem/react-nprogress/tree/v3.0.28) (2020-06-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.27...v3.0.28)
+
+#### :house: Internal
+
+- [#495](https://github.com/tanem/react-nprogress/pull/495) Update typescript-eslint monorepo to v3.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#493](https://github.com/tanem/react-nprogress/pull/493) Update dependency rollup-plugin-terser to v6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#488](https://github.com/tanem/react-nprogress/pull/488) Update typescript-eslint monorepo to v3 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#494](https://github.com/tanem/react-nprogress/pull/494) Update dependency eslint-plugin-react-hooks to v4.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#492](https://github.com/tanem/react-nprogress/pull/492) Update dependency rollup to v2.10.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#491](https://github.com/tanem/react-nprogress/pull/491) Update dependency rollup-plugin-size-snapshot to v0.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#490](https://github.com/tanem/react-nprogress/pull/490) Update dependency eslint to v7.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#489](https://github.com/tanem/react-nprogress/pull/489) Update dependency tanem-scripts to v5.0.24 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#487](https://github.com/tanem/react-nprogress/pull/487) Update dependency uuid to v8.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#486](https://github.com/tanem/react-nprogress/pull/486) Update dependency typescript to v3.9.3 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.27](https://github.com/tanem/react-nprogress/tree/v3.0.27) (2020-05-22)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.26...v3.0.27)
 
