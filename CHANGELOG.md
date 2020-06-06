@@ -1,5 +1,15 @@
 # Changelog
 
+## [v3.0.29](https://github.com/tanem/react-nprogress/tree/v3.0.29) (2020-06-06)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.28...v3.0.29)
+
+#### :house: Internal
+
+- [#499](https://github.com/tanem/react-nprogress/pull/499) Update typescript-eslint monorepo to v3.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#498](https://github.com/tanem/react-nprogress/pull/498) Update dependency ts-jest to v26.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#497](https://github.com/tanem/react-nprogress/pull/497) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#496](https://github.com/tanem/react-nprogress/pull/496) Update dependency react-use to ^15.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.28](https://github.com/tanem/react-nprogress/tree/v3.0.28) (2020-06-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.27...v3.0.28)
 
