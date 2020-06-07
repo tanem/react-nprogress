@@ -116,6 +116,6 @@
     "rollup-plugin-terser": "6.1.0",
     "tanem-scripts": "5.0.24",
     "ts-jest": "26.1.0",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   }
 }
