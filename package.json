@@ -105,7 +105,7 @@
     "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1",
     "regenerator-runtime": "0.13.5",
-    "rollup": "2.15.0",
+    "rollup": "2.16.1",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-filesize": "9.0.0",
