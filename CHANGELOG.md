@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.31](https://github.com/tanem/react-nprogress/tree/v3.0.31) (2020-06-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.30...v3.0.31)
+
+#### :house: Internal
+
+- [#514](https://github.com/tanem/react-nprogress/pull/514) Update typescript-eslint monorepo to v3.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#513](https://github.com/tanem/react-nprogress/pull/513) Update dependency react-use to ^15.2.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#512](https://github.com/tanem/react-nprogress/pull/512) Update dependency rollup-plugin-filesize to v9.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#511](https://github.com/tanem/react-nprogress/pull/511) Update dependency rollup to v2.16.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#510](https://github.com/tanem/react-nprogress/pull/510) Update dependency tanem-scripts to v5.0.27 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#509](https://github.com/tanem/react-nprogress/pull/509) Update dependency @types/react to v16.9.36 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.30](https://github.com/tanem/react-nprogress/tree/v3.0.30) (2020-06-12)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.29...v3.0.30)
 
