@@ -1,5 +1,22 @@
 # Changelog
 
+## [v3.0.32](https://github.com/tanem/react-nprogress/tree/v3.0.32) (2020-06-26)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.31...v3.0.32)
+
+#### :house: Internal
+
+- [#525](https://github.com/tanem/react-nprogress/pull/525) Update dependency jest to v26.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#524](https://github.com/tanem/react-nprogress/pull/524) Update dependency eslint to v7.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#523](https://github.com/tanem/react-nprogress/pull/523) Update typescript-eslint monorepo to v3.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#522](https://github.com/tanem/react-nprogress/pull/522) Update dependency ts-jest to v26.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#521](https://github.com/tanem/react-nprogress/pull/521) Update dependency rollup to v2.18.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#520](https://github.com/tanem/react-nprogress/pull/520) Update dependency tanem-scripts to v5.0.28 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#519](https://github.com/tanem/react-nprogress/pull/519) Update babel monorepo to v7.10.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#518](https://github.com/tanem/react-nprogress/pull/518) Update dependency react-use to ^15.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#517](https://github.com/tanem/react-nprogress/pull/517) Update dependency eslint to v7.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#516](https://github.com/tanem/react-nprogress/pull/516) Update dependency @testing-library/react to v10.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#515](https://github.com/tanem/react-nprogress/pull/515) Update dependency @types/react to v16.9.38 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.31](https://github.com/tanem/react-nprogress/tree/v3.0.31) (2020-06-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.30...v3.0.31)
 
