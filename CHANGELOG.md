@@ -1,5 +1,23 @@
 # Changelog
 
+## [v3.0.33](https://github.com/tanem/react-nprogress/tree/v3.0.33) (2020-07-03)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.32...v3.0.33)
+
+#### :house: Internal
+
+- [#537](https://github.com/tanem/react-nprogress/pull/537) Update babel monorepo to v7.10.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#536](https://github.com/tanem/react-nprogress/pull/536) Update dependency rollup-plugin-filesize to v9.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#535](https://github.com/tanem/react-nprogress/pull/535) Update dependency eslint-plugin-react-hooks to v4.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#534](https://github.com/tanem/react-nprogress/pull/534) Update typescript-eslint monorepo to v3.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#533](https://github.com/tanem/react-nprogress/pull/533) Update dependency react-use to ^15.3.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#532](https://github.com/tanem/react-nprogress/pull/532) Update dependency tanem-scripts to v5.0.29 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#531](https://github.com/tanem/react-nprogress/pull/531) Update dependency rollup to v2.18.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#530](https://github.com/tanem/react-nprogress/pull/530) Update dependency @reach/router to v1.3.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#529](https://github.com/tanem/react-nprogress/pull/529) Update dependency @testing-library/react to v10.4.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#528](https://github.com/tanem/react-nprogress/pull/528) Update dependency @types/jest to v26.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#527](https://github.com/tanem/react-nprogress/pull/527) Update dependency @types/react to v16.9.41 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#526](https://github.com/tanem/react-nprogress/pull/526) Update dependency uuid to v8.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.32](https://github.com/tanem/react-nprogress/tree/v3.0.32) (2020-06-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.31...v3.0.32)
 
