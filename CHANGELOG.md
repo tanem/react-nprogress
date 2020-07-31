@@ -1,5 +1,20 @@
 # Changelog
 
+## [v3.0.37](https://github.com/tanem/react-nprogress/tree/v3.0.37) (2020-07-31)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.36...v3.0.37)
+
+#### :house: Internal
+
+- [#568](https://github.com/tanem/react-nprogress/pull/568) Update dependency ts-jest to v26.1.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#567](https://github.com/tanem/react-nprogress/pull/567) Update dependency uuid to v8.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#566](https://github.com/tanem/react-nprogress/pull/566) Update typescript-eslint monorepo to v3.7.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#565](https://github.com/tanem/react-nprogress/pull/565) Update dependency tanem-scripts to v5.0.33 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#564](https://github.com/tanem/react-nprogress/pull/564) Update dependency react-use to ^15.3.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#563](https://github.com/tanem/react-nprogress/pull/563) Update dependency @types/jest to v26.0.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#562](https://github.com/tanem/react-nprogress/pull/562) Update dependency rollup to v2.23.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#561](https://github.com/tanem/react-nprogress/pull/561) Update dependency @testing-library/react-hooks to v3.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#560](https://github.com/tanem/react-nprogress/pull/560) Update dependency regenerator-runtime to v0.13.7 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.36](https://github.com/tanem/react-nprogress/tree/v3.0.36) (2020-07-24)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.35...v3.0.36)
 
