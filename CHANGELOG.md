@@ -1,5 +1,18 @@
 # Changelog
 
+## [v3.0.42](https://github.com/tanem/react-nprogress/tree/v3.0.42) (2020-09-04)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.41...v3.0.42)
+
+#### :house: Internal
+
+- [#608](https://github.com/tanem/react-nprogress/pull/608) Update typescript-eslint monorepo to v4 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#607](https://github.com/tanem/react-nprogress/pull/607) Update dependency @types/react to v16.9.49 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#605](https://github.com/tanem/react-nprogress/pull/605) Update dependency tanem-scripts to v5.0.38 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#604](https://github.com/tanem/react-nprogress/pull/604) Update dependency rollup-plugin-terser to v7.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#603](https://github.com/tanem/react-nprogress/pull/603) Update dependency @types/react to v16.9.48 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#602](https://github.com/tanem/react-nprogress/pull/602) Update dependency ts-jest to v26.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#601](https://github.com/tanem/react-nprogress/pull/601) Update dependency prettier to v2.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.41](https://github.com/tanem/react-nprogress/tree/v3.0.41) (2020-08-28)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.40...v3.0.41)
 
