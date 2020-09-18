@@ -1,5 +1,16 @@
 # Changelog
 
+## [v3.0.44](https://github.com/tanem/react-nprogress/tree/v3.0.44) (2020-09-18)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.43...v3.0.44)
+
+#### :house: Internal
+
+- [#622](https://github.com/tanem/react-nprogress/pull/622) Update typescript-eslint monorepo to v4.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#621](https://github.com/tanem/react-nprogress/pull/621) Update dependency @testing-library/react to v11.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#620](https://github.com/tanem/react-nprogress/pull/620) Update dependency eslint to v7.9.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#619](https://github.com/tanem/react-nprogress/pull/619) Update dependency tanem-scripts to v5.0.40 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#618](https://github.com/tanem/react-nprogress/pull/618) Update dependency eslint-plugin-react-hooks to v4.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.43](https://github.com/tanem/react-nprogress/tree/v3.0.43) (2020-09-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.42...v3.0.43)
 
