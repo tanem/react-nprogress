@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app'
 import Link from 'next/link'
 import React from 'react'
-import uuidv4 from 'uuid/v4'
+import { v4 as uuidv4 } from 'uuid'
 import Loading from '../components/Loading'
 
 const linkStyle = {
