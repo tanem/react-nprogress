@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useEffectOnce, useGetSetState, useUpdateEffect } from 'react-use'
 import { clamp } from './clamp'
 import { increment } from './increment'
@@ -22,7 +22,7 @@ interface ReturnType {
 const noop = () => undefined
 
 const initialState: State = {
-  isFinished: false,
+  isFinished: true,
   progress: 0,
   sideEffect: noop,
 }
@@ -63,6 +63,7 @@ export const useNProgress = ({
 
       queue((next) => {
         setState({
+          isFinished: false,
           progress: n,
           sideEffect: () => timeout(next, animationDuration),
         })
