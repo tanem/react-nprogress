@@ -17,6 +17,6 @@ test('wrapped component receives props', () => {
   render(<EnhancedComponent />)
 
   expect(animationDuration).toBe(200)
-  expect(isFinished).toBe(false)
+  expect(isFinished).toBe(true)
   expect(progress).toBe(0)
 })

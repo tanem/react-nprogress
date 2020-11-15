@@ -11,7 +11,7 @@ test('defaults', () => {
 
   expect(result.current).toEqual({
     animationDuration: 200,
-    isFinished: false,
+    isFinished: true,
     progress: 0,
   })
 

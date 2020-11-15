@@ -19,6 +19,6 @@ test('receives render props', () => {
   )
 
   expect(animationDuration).toBe(200)
-  expect(isFinished).toBe(false)
+  expect(isFinished).toBe(true)
   expect(progress).toBe(0)
 })
