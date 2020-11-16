@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid'
 import { AppProps } from 'next/app'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -10,7 +9,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   const [state, setState] = useState({
     isRouteChanging: false,
-    loadingKey: nanoid(),
+    loadingKey: 0,
   })
 
   useEffect(() => {
@@ -18,7 +17,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       setState((prevState) => ({
         ...prevState,
         isRouteChanging: true,
-        loadingKey: nanoid(),
+        loadingKey: prevState.loadingKey ^ 1,
       }))
     }
 
