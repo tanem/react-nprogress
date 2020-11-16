@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@tanem/react-nprogress": "latest",
-    "nanoid": "3.1.16",
     "next": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1"
