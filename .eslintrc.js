@@ -37,7 +37,7 @@ module.exports = {
       },
     },
     {
-      files: ['examples/next-router/**/*', 'examples/original-design/**/*'],
+      files: ['examples/hoc/**/*', 'examples/next-router/**/*', 'examples/original-design/**/*'],
       rules: {
         'react/prop-types': 'off',
       },
