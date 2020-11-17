@@ -1,8 +1,8 @@
 import { withNProgress } from '@tanem/react-nprogress'
 import React from 'react'
+
 import Bar from './Bar'
 import Container from './Container'
-import './index.css'
 import Spinner from './Spinner'
 
 const Progress: React.FC<{

@@ -4,6 +4,7 @@ import nodeResolve from 'rollup-plugin-node-resolve'
 import replace from 'rollup-plugin-replace'
 import sourcemaps from 'rollup-plugin-sourcemaps'
 import { terser } from 'rollup-plugin-terser'
+
 import pkg from './package.json'
 
 const CJS_DEV = 'CJS_DEV'

@@ -1,10 +1,11 @@
+import './index.css'
+
 import { Link, Location, Router } from '@reach/router'
 import { NProgress } from '@tanem/react-nprogress'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { render } from 'react-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import './index.css'
 
 const App = () => (
   <div className="app">

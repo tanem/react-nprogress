@@ -1,5 +1,6 @@
 import { render } from '@testing-library/react'
 import * as React from 'react'
+
 import { NProgress } from '../src'
 
 test('receives render props', () => {
