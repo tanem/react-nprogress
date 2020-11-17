@@ -23,9 +23,9 @@ module.exports = {
   ],
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'simple-import-sort'],
   rules: {
-    "simple-import-sort/exports": "error",    
-    "simple-import-sort/imports": "error",
-    "sort-imports": "off",
+    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': 'error',
+    'sort-imports': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-uses-react': 'off',
@@ -40,7 +40,11 @@ module.exports = {
       },
     },
     {
-      files: ['examples/hoc/**/*', 'examples/next-router/**/*', 'examples/original-design/**/*'],
+      files: [
+        'examples/hoc/**/*',
+        'examples/next-router/**/*',
+        'examples/original-design/**/*',
+      ],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         'react/prop-types': 'off',

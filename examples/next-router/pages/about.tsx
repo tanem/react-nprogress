@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const AboutPage: React.FC = () => <p>This is about Next.js!</p>
 

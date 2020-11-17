@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const ForeverPage: React.FC = () => <p>This page was rendered for a while!</p>
 
