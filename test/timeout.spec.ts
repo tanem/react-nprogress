@@ -1,4 +1,5 @@
 import createMockRaf from 'mock-raf'
+
 import { cancel, timeout } from '../src/timeout'
 
 const mockRaf = createMockRaf()

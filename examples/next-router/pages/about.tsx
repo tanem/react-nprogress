@@ -1,4 +1,6 @@
-const AboutPage = () => <p>This is about Next.js!</p>
+import React from 'react'
+
+const AboutPage: React.FC = () => <p>This is about Next.js!</p>
 
 export async function getServerSideProps() {
   await new Promise((resolve) => {

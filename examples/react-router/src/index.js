@@ -1,3 +1,5 @@
+import './index.css'
+
 import { NProgress } from '@tanem/react-nprogress'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -10,9 +12,9 @@ import {
   Switch,
 } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+
 import Bar from './Bar'
 import Container from './Container'
-import './index.css'
 
 const styles = {}
 

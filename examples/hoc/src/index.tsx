@@ -5,12 +5,12 @@ import ReactDOM from 'react-dom'
 
 import Progress from './Progress'
 
-const callFakeAPI = (delay) =>
+const callFakeAPI = (delay: number) =>
   new Promise((resolve) => {
     setTimeout(resolve, delay)
   })
 
-const App = () => {
+const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -21,10 +21,10 @@ const App = () => {
   }, [])
 
   return (
-    <React.Fragment>
+    <>
       <Progress isAnimating={isLoading} />
       <h1>{isLoading ? 'Loading...' : 'Loaded!'}</h1>
-    </React.Fragment>
+    </>
   )
 }
 

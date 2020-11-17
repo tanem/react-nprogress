@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import { Options } from './types'
 import { useNProgress } from './useNProgress'
 

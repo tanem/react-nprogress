@@ -1,4 +1,6 @@
-const ForeverPage = () => <p>This page was rendered for a while!</p>
+import React from 'react'
+
+const ForeverPage: React.FC = () => <p>This page was rendered for a while!</p>
 
 export async function getServerSideProps() {
   await new Promise((resolve) => {

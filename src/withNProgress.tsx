@@ -1,5 +1,6 @@
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import * as React from 'react'
+
 import { Options } from './types'
 import { useNProgress } from './useNProgress'
 

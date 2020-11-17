@@ -1,5 +1,6 @@
 import { act, renderHook } from '@testing-library/react-hooks'
 import createMockRaf from 'mock-raf'
+
 import { useNProgress } from '../src/useNProgress'
 
 const mockRaf = createMockRaf()
