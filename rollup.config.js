@@ -48,8 +48,8 @@ const getBabelConfig = (bundleType) => {
   const options = {
     babelrc: false,
     exclude: 'node_modules/**',
-    presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
     plugins: ['@babel/transform-runtime'],
+    presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
     runtimeHelpers: true,
   }
 
@@ -99,20 +99,20 @@ const getPlugins = (bundleType) => [
   sourcemaps(),
   isProduction(bundleType) &&
     terser({
-      output: { comments: false },
       compress: {
         keep_infinity: true,
         pure_getters: true,
       },
-      warnings: true,
       ecma: 5,
+      output: { comments: false },
       toplevel: false,
+      warnings: true,
     }),
 ]
 
 const getCjsConfig = (bundleType) => ({
-  input,
   external: getExternal(bundleType),
+  input,
   output: {
     exports,
     file: `dist/react-nprogress.cjs.${
@@ -125,8 +125,8 @@ const getCjsConfig = (bundleType) => ({
 })
 
 const getEsConfig = () => ({
-  input,
   external: getExternal(ES),
+  input,
   output: {
     exports,
     file: pkg.module,
@@ -137,8 +137,8 @@ const getEsConfig = () => ({
 })
 
 const getUmdConfig = (bundleType) => ({
-  input,
   external: getExternal(bundleType),
+  input,
   output: {
     exports,
     file: `dist/react-nprogress.umd.${
@@ -147,8 +147,8 @@ const getUmdConfig = (bundleType) => ({
     format: 'umd',
     globals: {
       ...(isProduction(bundleType) ? {} : { 'prop-types': 'PropTypes' }),
-      'react-dom': 'ReactDOM',
       react: 'React',
+      'react-dom': 'ReactDOM',
     },
     name: 'NProgress',
     sourcemap: true,

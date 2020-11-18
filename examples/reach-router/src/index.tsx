@@ -1,7 +1,7 @@
 import './index.css'
 
 import { Link, Location, RouteComponentProps, Router } from '@reach/router'
-import { NProgress } from '@tanem/react-nprogress'
+import { useNProgress } from '@tanem/react-nprogress'
 import React, { useState } from 'react'
 import { render } from 'react-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
@@ -14,7 +14,7 @@ const App: React.FC = () => (
     </nav>
 
     <FadeTransitionRouter>
-      <Page path="/" page="1" />
+      <Page page="1" path="/" />
       <Page path="page/:page" />
     </FadeTransitionRouter>
   </div>
@@ -80,6 +80,18 @@ const Bar: React.FC<{ animationDuration: number; progress: number }> = ({
   </div>
 )
 
+const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
+  const { animationDuration, isFinished, progress } = useNProgress({
+    isAnimating,
+  })
+
+  return (
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
+    </Container>
+  )
+}
+
 const FadeTransitionRouter: React.FC = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false)
 
@@ -87,19 +99,7 @@ const FadeTransitionRouter: React.FC = ({ children }) => {
     <Location>
       {({ location }) => (
         <React.Fragment>
-          <NProgress isAnimating={isLoading} key={location.key}>
-            {({ animationDuration, isFinished, progress }) => (
-              <Container
-                animationDuration={animationDuration}
-                isFinished={isFinished}
-              >
-                <Bar
-                  animationDuration={animationDuration}
-                  progress={progress}
-                />
-              </Container>
-            )}
-          </NProgress>
+          <Progress isAnimating={isLoading} key={location.key} />
           <TransitionGroup className="transition-group">
             <CSSTransition
               classNames="fade"

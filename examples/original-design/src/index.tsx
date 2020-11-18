@@ -28,10 +28,10 @@ const App: React.FC = () => {
       <NProgress isAnimating={isLoading}>
         {({ isFinished, progress, animationDuration }) => (
           <Container
-            isFinished={isFinished}
             animationDuration={animationDuration}
+            isFinished={isFinished}
           >
-            <Bar progress={progress} animationDuration={animationDuration} />
+            <Bar animationDuration={animationDuration} progress={progress} />
             <Spinner />
           </Container>
         )}

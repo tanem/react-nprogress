@@ -19,48 +19,48 @@ import Container from './Container'
 const styles = {}
 
 styles.fill = {
-  position: 'absolute',
+  bottom: 0,
   left: 0,
+  position: 'absolute',
   right: 0,
   top: 0,
-  bottom: 0,
 }
 
 styles.content = {
   ...styles.fill,
-  top: '40px',
   textAlign: 'center',
+  top: '40px',
 }
 
 styles.nav = {
-  padding: 0,
+  display: 'flex',
+  height: '40px',
   margin: 0,
+  padding: 0,
   position: 'absolute',
   top: 0,
-  height: '40px',
   width: '100%',
-  display: 'flex',
 }
 
 styles.navItem = {
-  textAlign: 'center',
   flex: 1,
   listStyleType: 'none',
   padding: '10px',
+  textAlign: 'center',
 }
 
 styles.hsl = {
   ...styles.fill,
   color: 'white',
-  paddingTop: '20px',
   fontSize: '30px',
+  paddingTop: '20px',
 }
 
 styles.rgb = {
   ...styles.fill,
   color: 'white',
-  paddingTop: '20px',
   fontSize: '30px',
+  paddingTop: '20px',
 }
 
 function NavLink(props) {
@@ -130,12 +130,12 @@ class AnimationExample extends React.Component {
               <NProgress isAnimating={this.state.isLoading} key={location.key}>
                 {({ isFinished, progress, animationDuration }) => (
                   <Container
-                    isFinished={isFinished}
                     animationDuration={animationDuration}
+                    isFinished={isFinished}
                   >
                     <Bar
-                      progress={progress}
                       animationDuration={animationDuration}
+                      progress={progress}
                     />
                     {/*
                     This example doesn't use a spinner component so the UI stays
@@ -164,9 +164,8 @@ class AnimationExample extends React.Component {
                     for demo purposes.
                     */}
                     <CSSTransition
-                      key={location.key}
                       classNames="fade"
-                      timeout={1200}
+                      key={location.key}
                       onEnter={() => {
                         this.setState(() => ({
                           isLoading: true,
@@ -177,10 +176,11 @@ class AnimationExample extends React.Component {
                           isLoading: false,
                         }))
                       }}
+                      timeout={1200}
                     >
                       <Switch location={location}>
-                        <Route exact path="/hsl/:h/:s/:l" component={HSL} />
-                        <Route exact path="/rgb/:r/:g/:b" component={RGB} />
+                        <Route component={HSL} exact path="/hsl/:h/:s/:l" />
+                        <Route component={RGB} exact path="/rgb/:r/:g/:b" />
                         <Route render={() => <div>Not Found</div>} />
                       </Switch>
                     </CSSTransition>

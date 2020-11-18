@@ -11,8 +11,8 @@ const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   })
 
   return (
-    <Container isFinished={isFinished} animationDuration={animationDuration}>
-      <Bar progress={progress} animationDuration={animationDuration} />
+    <Container animationDuration={animationDuration} isFinished={isFinished}>
+      <Bar animationDuration={animationDuration} progress={progress} />
       <Spinner />
     </Container>
   )
