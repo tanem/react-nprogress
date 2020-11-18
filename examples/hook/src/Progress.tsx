@@ -1,12 +1,11 @@
 import { useNProgress } from '@tanem/react-nprogress'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
 
-const Progress = ({ isAnimating }) => {
+const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
   })
@@ -17,10 +16,6 @@ const Progress = ({ isAnimating }) => {
       <Spinner />
     </Container>
   )
-}
-
-Progress.propTypes = {
-  isAnimating: PropTypes.bool.isRequired,
 }
 
 export default Progress

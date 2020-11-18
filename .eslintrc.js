@@ -42,6 +42,7 @@ module.exports = {
     {
       files: [
         'examples/hoc/**/*',
+        'examples/hook/**/*',
         'examples/next-router/**/*',
         'examples/original-design/**/*',
       ],

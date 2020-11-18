@@ -5,12 +5,12 @@ import ReactDOM from 'react-dom'
 
 import Progress from './Progress'
 
-const callFakeAPI = (delay) =>
+const callFakeAPI = (delay: number) =>
   new Promise((resolve) => {
     setTimeout(resolve, delay)
   })
 
-const App = () => {
+const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
