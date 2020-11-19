@@ -22,6 +22,7 @@ module.exports = {
         'examples/next-router/**/*',
         'examples/original-design/**/*',
         'examples/reach-router/**/*',
+        'examples/react-router/**/*',
       ],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
