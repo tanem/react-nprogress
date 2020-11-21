@@ -16,14 +16,7 @@ module.exports = {
       },
     },
     {
-      files: [
-        'examples/hoc/**/*',
-        'examples/hook/**/*',
-        'examples/next-router/**/*',
-        'examples/original-design/**/*',
-        'examples/reach-router/**/*',
-        'examples/react-router/**/*',
-      ],
+      files: ['examples/**/*'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         'react/prop-types': 'off',
