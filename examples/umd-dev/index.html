@@ -13,9 +13,9 @@
   <body>
     <div id="app"></div>
     <script type="text/babel">
-      const { NProgress } = window.NProgress
+      const { useNProgress } = window.NProgress
 
-      const Container = ({ children, isFinished, animationDuration }) => (
+      const Container = ({ animationDuration, children, isFinished }) => (
         <div
           style={{
             opacity: isFinished ? 0 : 1,
@@ -27,7 +27,7 @@
         </div>
       )
 
-      const Bar = ({ progress, animationDuration }) => (
+      const Bar = ({ animationDuration, progress }) => (
         <div
           style={{
             background: '#29d',
@@ -82,48 +82,39 @@
         </div>
       )
 
+      const Progress= ({ isAnimating }) => {
+        const { animationDuration, isFinished, progress } = useNProgress({
+          isAnimating,
+        })
+
+        return (
+          <Container animationDuration={animationDuration} isFinished={isFinished}>
+            <Bar animationDuration={animationDuration} progress={progress} />
+            <Spinner />
+          </Container>
+        )
+      }
+
       const callFakeAPI = delay =>
         new Promise(resolve => {
           setTimeout(resolve, delay)
         })
 
-      class App extends React.Component {
-        constructor(props) {
-          super(props)
-          this.state = {
-            isLoading: true
-          }
-        }
+      const App = () => {
+        const [isLoading, setIsLoading] = React.useState(true)
 
-        componentDidMount() {
+        React.useEffect(() => {
           callFakeAPI(3000).then(() => {
-            this.setState(() => ({
-              isLoading: false
-            }))
+            setIsLoading(false)
           })
-        }
+        }, [])
 
-        render() {
-          return (
-            <React.Fragment>
-              <NProgress isAnimating={this.state.isLoading}>
-                {({ isFinished, progress, animationDuration }) => (
-                  <Container
-                    isFinished={isFinished}
-                    animationDuration={animationDuration}
-                  >
-                    <Bar
-                      progress={progress}
-                      animationDuration={animationDuration}
-                    />
-                    <Spinner />
-                  </Container>
-                )}
-              </NProgress>
-              <h1>{this.state.isLoading ? 'Loading...' : 'Loaded!'}</h1>
-            </React.Fragment>
-          )
-        }
+        return (
+          <React.Fragment>
+            <Progress isAnimating={isLoading} />
+            <h1>{isLoading ? 'Loading...' : 'Loaded!'}</h1>
+          </React.Fragment>
+        )
       }
 
       ReactDOM.render(<App />, document.getElementById('app'))
