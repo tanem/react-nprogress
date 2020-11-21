@@ -1,12 +1,9 @@
 import './index.css'
 
-import { NProgress } from '@tanem/react-nprogress'
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 
-import Bar from './Bar'
-import Container from './Container'
-import Spinner from './Spinner'
+import Progress from './Progress'
 
 const callFakeAPI = (delay: number) =>
   new Promise((resolve) => {
@@ -25,17 +22,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <NProgress isAnimating={isLoading}>
-        {({ isFinished, progress, animationDuration }) => (
-          <Container
-            animationDuration={animationDuration}
-            isFinished={isFinished}
-          >
-            <Bar animationDuration={animationDuration} progress={progress} />
-            <Spinner />
-          </Container>
-        )}
-      </NProgress>
+      <Progress isAnimating={isLoading} />
       <h1>{isLoading ? 'Loading...' : 'Loaded!'}</h1>
     </>
   )
