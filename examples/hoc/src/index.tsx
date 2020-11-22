@@ -18,9 +18,7 @@ const App: React.FC = () => {
         onClick={() => {
           setState((prevState) => ({
             isAnimating: !prevState.isAnimating,
-            key: prevState.isAnimating
-              ? prevState.key
-              : prevState.key ^ 1,
+            key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
           }))
         }}
       >
