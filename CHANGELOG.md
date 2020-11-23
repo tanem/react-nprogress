@@ -1,5 +1,30 @@
 # Changelog
 
+## [v3.0.49](https://github.com/tanem/react-nprogress/tree/v3.0.49) (2020-11-23)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.48...v3.0.49)
+
+#### :memo: Documentation
+
+- [#709](https://github.com/tanem/react-nprogress/pull/709) Tidy examples ([@tanem](https://github.com/tanem))
+- [#708](https://github.com/tanem/react-nprogress/pull/708) Add render-props example ([@tanem](https://github.com/tanem))
+- [#706](https://github.com/tanem/react-nprogress/pull/706) Modernise umd examples ([@tanem](https://github.com/tanem))
+- [#705](https://github.com/tanem/react-nprogress/pull/705) Use hook in original-design example ([@tanem](https://github.com/tanem))
+- [#704](https://github.com/tanem/react-nprogress/pull/704) Update badge ([@tanem](https://github.com/tanem))
+- [#702](https://github.com/tanem/react-nprogress/pull/702) Convert react-router example to TS ([@tanem](https://github.com/tanem))
+- [#701](https://github.com/tanem/react-nprogress/pull/701) Convert reach-router example to TS ([@tanem](https://github.com/tanem))
+- [#700](https://github.com/tanem/react-nprogress/pull/700) Convert hook example to TS ([@tanem](https://github.com/tanem))
+- [#697](https://github.com/tanem/react-nprogress/pull/697) Use xor instead of nanoid in next-router example ([@tanem](https://github.com/tanem))
+- [#695](https://github.com/tanem/react-nprogress/pull/695) Convert original-design example to ts ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#711](https://github.com/tanem/react-nprogress/pull/711) Update dependency @types/node to v14.14.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#710](https://github.com/tanem/react-nprogress/pull/710) Update dependency eslint-plugin-simple-import-sort to v6.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#707](https://github.com/tanem/react-nprogress/pull/707) Update dependency rollup to v2.33.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#703](https://github.com/tanem/react-nprogress/pull/703) Update typescript-eslint monorepo to v4.8.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#698](https://github.com/tanem/react-nprogress/pull/698) Update dependency rollup to v2.33.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#699](https://github.com/tanem/react-nprogress/pull/699) Convert hoc example to TS plus some housekeeping ([@tanem](https://github.com/tanem))
+
 ## [v3.0.48](https://github.com/tanem/react-nprogress/tree/v3.0.48) (2020-11-15)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.47...v3.0.48)
 
