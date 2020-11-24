@@ -1,29 +1,29 @@
 import './index.css'
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
 import Progress from './Progress'
 
-const callFakeAPI = (delay: number) =>
-  new Promise((resolve) => {
-    setTimeout(resolve, delay)
-  })
-
 const App: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    ;(async () => {
-      await callFakeAPI(3000)
-      setIsLoading(false)
-    })()
-  }, [])
+  const [state, setState] = useState({
+    isAnimating: false,
+    key: 0,
+  })
 
   return (
     <>
-      <Progress isAnimating={isLoading} />
-      <h1>{isLoading ? 'Loading...' : 'Loaded!'}</h1>
+      <Progress isAnimating={state.isAnimating} key={state.key} />
+      <button
+        onClick={() => {
+          setState((prevState) => ({
+            isAnimating: !prevState.isAnimating,
+            key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
+          }))
+        }}
+      >
+        {state.isAnimating ? 'Stop' : 'Start'}
+      </button>
     </>
   )
 }
