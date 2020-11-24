@@ -70,11 +70,13 @@ const NavLink: React.FC<NavLinkProps> = (props) => (
   </li>
 )
 
-const HSL: React.FC<RouteComponentProps<{
-  h: string
-  s: string
-  l: string
-}>> = ({ match: { params } }) => (
+const HSL: React.FC<
+  RouteComponentProps<{
+    h: string
+    s: string
+    l: string
+  }>
+> = ({ match: { params } }) => (
   <div
     style={{
       ...styles.fill,
@@ -89,11 +91,13 @@ const HSL: React.FC<RouteComponentProps<{
   </div>
 )
 
-const RGB: React.FC<RouteComponentProps<{
-  r: string
-  g: string
-  b: string
-}>> = ({ match: { params } }) => (
+const RGB: React.FC<
+  RouteComponentProps<{
+    r: string
+    g: string
+    b: string
+  }>
+> = ({ match: { params } }) => (
   <div
     style={{
       ...styles.fill,
