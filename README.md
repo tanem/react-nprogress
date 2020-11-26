@@ -92,6 +92,7 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 ## Live Examples
 
 - HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/hoc)
+- Material UI: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/material-ui) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/material-ui)
 - Next Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/next-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/next-router)
 - Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/original-design)
 - Reach Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/reach-router) | [Sandbox](https://codesandbox.io/s/github/tanem/react-nprogress/tree/master/examples/reach-router)
