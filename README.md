@@ -16,7 +16,7 @@ This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](
 
 ## Usage
 
-In the following examples, `Container`, `Bar` and `Spinner` are custom components. `NProgress` doesn't render anything itself.
+In the following examples, `Container`, `Bar` and `Spinner` are custom components.
 
 **Hook**
 
@@ -24,13 +24,14 @@ In the following examples, `Container`, `Bar` and `Spinner` are custom component
 import { useNProgress } from '@tanem/react-nprogress'
 import React from 'react'
 import { render } from 'react-dom'
+
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
 
 const Progress = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
-    isAnimating
+    isAnimating,
   })
 
   return (
@@ -50,6 +51,7 @@ render(<Progress isAnimating />, document.getElementById('root'))
 import { NProgress } from '@tanem/react-nprogress'
 import React from 'react'
 import { render } from 'react-dom'
+
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
@@ -73,6 +75,7 @@ render(
 import { withNProgress } from '@tanem/react-nprogress'
 import React from 'react'
 import { render } from 'react-dom'
+
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
