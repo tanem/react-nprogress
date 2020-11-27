@@ -1,5 +1,25 @@
 # Changelog
 
+## [v3.0.50](https://github.com/tanem/react-nprogress/tree/v3.0.50) (2020-11-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.49...v3.0.50)
+
+#### :memo: Documentation
+
+- [#725](https://github.com/tanem/react-nprogress/pull/725) Tidy docs ([@tanem](https://github.com/tanem))
+- [#721](https://github.com/tanem/react-nprogress/pull/721) Add material ui example ([@tanem](https://github.com/tanem))
+- [#719](https://github.com/tanem/react-nprogress/pull/719) Use button trigger in original-design example ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#723](https://github.com/tanem/react-nprogress/pull/723) Update dependency tanem-scripts to v6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#722](https://github.com/tanem/react-nprogress/pull/722) Update typescript-eslint monorepo to v4.8.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#720](https://github.com/tanem/react-nprogress/pull/720) Update dependency react-scripts to v4.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#713](https://github.com/tanem/react-nprogress/pull/713) Update dependency prettier to v2.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#718](https://github.com/tanem/react-nprogress/pull/718) Update dependency @types/react-dom to v17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#717](https://github.com/tanem/react-nprogress/pull/717) Update dependency @types/react to v17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#716](https://github.com/tanem/react-nprogress/pull/716) Update dependency @testing-library/react to v11.2.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#715](https://github.com/tanem/react-nprogress/pull/715) Update dependency eslint to v7.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.49](https://github.com/tanem/react-nprogress/tree/v3.0.49) (2020-11-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.48...v3.0.49)
 
