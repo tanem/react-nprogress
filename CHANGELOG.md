@@ -1,5 +1,18 @@
 # Changelog
 
+## [v3.0.51](https://github.com/tanem/react-nprogress/tree/v3.0.51) (2020-12-04)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.50...v3.0.51)
+
+#### :house: Internal
+
+- [#730](https://github.com/tanem/react-nprogress/pull/730) Update typescript-eslint monorepo to v4.9.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#731](https://github.com/tanem/react-nprogress/pull/731) Housekeeping ([@tanem](https://github.com/tanem))
+- [#729](https://github.com/tanem/react-nprogress/pull/729) Update dependency rollup to v2.34.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#728](https://github.com/tanem/react-nprogress/pull/728) Update dependency prettier to v2.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#727](https://github.com/tanem/react-nprogress/pull/727) Update dependency tanem-scripts to v6.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#726](https://github.com/tanem/react-nprogress/pull/726) Update dependency @types/node to v14.14.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#714](https://github.com/tanem/react-nprogress/pull/714) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.50](https://github.com/tanem/react-nprogress/tree/v3.0.50) (2020-11-27)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.49...v3.0.50)
 
