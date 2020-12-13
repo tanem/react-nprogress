@@ -9,7 +9,7 @@
   "dependencies": {
     "@material-ui/core": "4.11.2",
     "@tanem/react-nprogress": "latest",
-    "@types/jest": "26.0.16",
+    "@types/jest": "26.0.19",
     "@types/node": "14.14.10",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
