@@ -1,5 +1,27 @@
 # Changelog
 
+## [v3.0.52](https://github.com/tanem/react-nprogress/tree/v3.0.52) (2020-12-18)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.51...v3.0.52)
+
+#### :house: Internal
+
+- [#747](https://github.com/tanem/react-nprogress/pull/747) Update dependency @types/node to v14.14.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#746](https://github.com/tanem/react-nprogress/pull/746) Update typescript-eslint monorepo to v4.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#745](https://github.com/tanem/react-nprogress/pull/745) Update dependency rollup to v2.35.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#744](https://github.com/tanem/react-nprogress/pull/744) Update dependency @types/jest to v26.0.19 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#743](https://github.com/tanem/react-nprogress/pull/743) Update babel monorepo to v7.12.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#742](https://github.com/tanem/react-nprogress/pull/742) Update dependency eslint-plugin-simple-import-sort to v7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#741](https://github.com/tanem/react-nprogress/pull/741) Update dependency @testing-library/react-hooks to v3.7.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#740](https://github.com/tanem/react-nprogress/pull/740) Update typescript-eslint monorepo to v4.9.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#739](https://github.com/tanem/react-nprogress/pull/739) Update dependency rollup to v2.34.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#738](https://github.com/tanem/react-nprogress/pull/738) Update dependency eslint-config-prettier to v7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#737](https://github.com/tanem/react-nprogress/pull/737) Update dependency eslint to v7.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#736](https://github.com/tanem/react-nprogress/pull/736) Update dependency rollup-plugin-filesize to v9.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#735](https://github.com/tanem/react-nprogress/pull/735) Update dependency tanem-scripts to v6.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#734](https://github.com/tanem/react-nprogress/pull/734) Update dependency @material-ui/core to v4.11.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#733](https://github.com/tanem/react-nprogress/pull/733) Update dependency cross-env to v7.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#732](https://github.com/tanem/react-nprogress/pull/732) Update dependency @types/jest to v26.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.51](https://github.com/tanem/react-nprogress/tree/v3.0.51) (2020-12-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.50...v3.0.51)
 
