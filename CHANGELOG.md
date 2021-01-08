@@ -1,5 +1,24 @@
 # Changelog
 
+## [v3.0.53](https://github.com/tanem/react-nprogress/tree/v3.0.53) (2021-01-08)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.52...v3.0.53)
+
+#### :house: Internal
+
+- [#760](https://github.com/tanem/react-nprogress/pull/760) Update deps ([@tanem](https://github.com/tanem))
+- [#758](https://github.com/tanem/react-nprogress/pull/758) Update dependency @types/node to v14.14.20 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#759](https://github.com/tanem/react-nprogress/pull/759) Update typescript-eslint monorepo to v4.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#757](https://github.com/tanem/react-nprogress/pull/757) Update dependency eslint to v7.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#756](https://github.com/tanem/react-nprogress/pull/756) Update dependency @types/react-router-dom to v5.1.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#755](https://github.com/tanem/react-nprogress/pull/755) Update dependency eslint-plugin-react to v7.22.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#754](https://github.com/tanem/react-nprogress/pull/754) Update typescript-eslint monorepo to v4.11.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#753](https://github.com/tanem/react-nprogress/pull/753) Update dependency @types/node to v14.14.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#752](https://github.com/tanem/react-nprogress/pull/752) Update typescript-eslint monorepo to v4.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#751](https://github.com/tanem/react-nprogress/pull/751) Update dependency eslint-config-prettier to v7.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#750](https://github.com/tanem/react-nprogress/pull/750) Update dependency eslint to v7.16.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#749](https://github.com/tanem/react-nprogress/pull/749) Update dependency tanem-scripts to v6.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#748](https://github.com/tanem/react-nprogress/pull/748) Update dependency @babel/preset-env to v7.12.11 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.52](https://github.com/tanem/react-nprogress/tree/v3.0.52) (2020-12-18)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.51...v3.0.52)
 
