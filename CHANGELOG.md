@@ -1,5 +1,22 @@
 # Changelog
 
+## [v3.0.57](https://github.com/tanem/react-nprogress/tree/v3.0.57) (2021-03-02)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.56...v3.0.57)
+
+#### :house: Internal
+
+- [#806](https://github.com/tanem/react-nprogress/pull/806) Update dependency eslint-config-prettier to v8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#812](https://github.com/tanem/react-nprogress/pull/812) Update dependency rollup to v2.40.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#811](https://github.com/tanem/react-nprogress/pull/811) Update dependency typescript to v4.2.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#810](https://github.com/tanem/react-nprogress/pull/810) Update dependency ts-jest to v26.5.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#809](https://github.com/tanem/react-nprogress/pull/809) Update dependency rollup to v2.39.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#808](https://github.com/tanem/react-nprogress/pull/808) Update typescript-eslint monorepo to v4.15.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#807](https://github.com/tanem/react-nprogress/pull/807) Update dependency react-scripts to v4.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#805](https://github.com/tanem/react-nprogress/pull/805) Update dependency tanem-scripts to v6.0.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#803](https://github.com/tanem/react-nprogress/pull/803) Update dependency @types/react-transition-group to v4.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#802](https://github.com/tanem/react-nprogress/pull/802) Update dependency @types/node to v14.14.31 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#801](https://github.com/tanem/react-nprogress/pull/801) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.56](https://github.com/tanem/react-nprogress/tree/v3.0.56) (2021-02-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.55...v3.0.56)
 
