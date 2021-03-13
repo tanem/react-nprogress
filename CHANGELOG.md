@@ -1,5 +1,24 @@
 # Changelog
 
+## [v3.0.58](https://github.com/tanem/react-nprogress/tree/v3.0.58) (2021-03-13)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.57...v3.0.58)
+
+#### :house: Internal
+
+- [#825](https://github.com/tanem/react-nprogress/pull/825) Update babel monorepo to v7.13.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#824](https://github.com/tanem/react-nprogress/pull/824) Update dependency @types/react-dom to v17.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#823](https://github.com/tanem/react-nprogress/pull/823) Update typescript-eslint monorepo to v4.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#822](https://github.com/tanem/react-nprogress/pull/822) Update dependency react-use to v17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#820](https://github.com/tanem/react-nprogress/pull/820) Update dependency typescript to v4.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#821](https://github.com/tanem/react-nprogress/pull/821) Update dependency @types/react to v17.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#819](https://github.com/tanem/react-nprogress/pull/819) Update dependency ts-jest to v26.5.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#818](https://github.com/tanem/react-nprogress/pull/818) Update dependency tanem-scripts to v6.0.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#817](https://github.com/tanem/react-nprogress/pull/817) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#816](https://github.com/tanem/react-nprogress/pull/816) Update typescript-eslint monorepo to v4.16.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#815](https://github.com/tanem/react-nprogress/pull/815) Update dependency @testing-library/react-hooks to v5.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#814](https://github.com/tanem/react-nprogress/pull/814) Update dependency eslint to v7.21.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#813](https://github.com/tanem/react-nprogress/pull/813) Update dependency rollup-plugin-filesize to v9.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.57](https://github.com/tanem/react-nprogress/tree/v3.0.57) (2021-03-02)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.56...v3.0.57)
 
