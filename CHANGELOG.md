@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.60](https://github.com/tanem/react-nprogress/tree/v3.0.60) (2021-03-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.59...v3.0.60)
+
+#### :house: Internal
+
+- [#840](https://github.com/tanem/react-nprogress/pull/840) Update dependency eslint-plugin-react to v7.23.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#839](https://github.com/tanem/react-nprogress/pull/839) Update dependency @types/react-dom to v17.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#838](https://github.com/tanem/react-nprogress/pull/838) Update react monorepo to v17.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#837](https://github.com/tanem/react-nprogress/pull/837) Update typescript-eslint monorepo to v4.19.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#836](https://github.com/tanem/react-nprogress/pull/836) Update dependency @babel/preset-env to v7.13.12 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#835](https://github.com/tanem/react-nprogress/pull/835) Update dependency tanem-scripts to v6.0.12 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.59](https://github.com/tanem/react-nprogress/tree/v3.0.59) (2021-03-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.58...v3.0.59)
 
