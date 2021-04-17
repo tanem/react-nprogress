@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.63](https://github.com/tanem/react-nprogress/tree/v3.0.63) (2021-04-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.62...v3.0.63)
+
+#### :house: Internal
+
+- [#860](https://github.com/tanem/react-nprogress/pull/860) Update dependency eslint-config-prettier to v8.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#859](https://github.com/tanem/react-nprogress/pull/859) Update dependency rollup to v2.45.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#858](https://github.com/tanem/react-nprogress/pull/858) Update typescript-eslint monorepo to v4.22.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#857](https://github.com/tanem/react-nprogress/pull/857) Update dependency eslint to v7.24.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#856](https://github.com/tanem/react-nprogress/pull/856) Update dependency eslint-plugin-react to v7.23.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#854](https://github.com/tanem/react-nprogress/pull/854) Update babel monorepo to v7.13.15 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.62](https://github.com/tanem/react-nprogress/tree/v3.0.62) (2021-04-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.61...v3.0.62)
 
