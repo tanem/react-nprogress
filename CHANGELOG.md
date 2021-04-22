@@ -1,5 +1,14 @@
 # Changelog
 
+## [v3.0.64](https://github.com/tanem/react-nprogress/tree/v3.0.64) (2021-04-22)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.63...v3.0.64)
+
+#### :house: Internal
+
+- [#863](https://github.com/tanem/react-nprogress/pull/863) Update dependency tanem-scripts to v6.0.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#862](https://github.com/tanem/react-nprogress/pull/862) Update dependency ts-jest to v26.5.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#861](https://github.com/tanem/react-nprogress/pull/861) Update dependency @types/node to v14.14.41 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.63](https://github.com/tanem/react-nprogress/tree/v3.0.63) (2021-04-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.62...v3.0.63)
 
