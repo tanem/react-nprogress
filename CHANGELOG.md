@@ -1,5 +1,26 @@
 # Changelog
 
+## [v3.0.65](https://github.com/tanem/react-nprogress/tree/v3.0.65) (2021-05-07)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.64...v3.0.65)
+
+#### :house: Internal
+
+- [#879](https://github.com/tanem/react-nprogress/pull/879) Update typescript-eslint monorepo to v4.22.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#878](https://github.com/tanem/react-nprogress/pull/878) Update dependency rollup to v2.47.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#877](https://github.com/tanem/react-nprogress/pull/877) Update dependency @babel/preset-env to v7.14.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#875](https://github.com/tanem/react-nprogress/pull/875) Update babel monorepo to v7.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#874](https://github.com/tanem/react-nprogress/pull/874) Update dependency rollup to v2.46.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#873](https://github.com/tanem/react-nprogress/pull/873) Update dependency @material-ui/core to v4.11.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#872](https://github.com/tanem/react-nprogress/pull/872) Update dependency @types/node to v14.14.43 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#871](https://github.com/tanem/react-nprogress/pull/871) Update dependency @types/react to v17.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#870](https://github.com/tanem/react-nprogress/pull/870) Update dependency @types/jest to v26.0.23 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#869](https://github.com/tanem/react-nprogress/pull/869) Update dependency eslint-config-prettier to v8.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#868](https://github.com/tanem/react-nprogress/pull/868) Update dependency eslint to v7.25.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#867](https://github.com/tanem/react-nprogress/pull/867) Update dependency react-use to ^17.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#866](https://github.com/tanem/react-nprogress/pull/866) Update dependency tanem-scripts to v6.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#865](https://github.com/tanem/react-nprogress/pull/865) Update dependency @testing-library/react-hooks to v5.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#864](https://github.com/tanem/react-nprogress/pull/864) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.64](https://github.com/tanem/react-nprogress/tree/v3.0.64) (2021-04-22)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.63...v3.0.64)
 
