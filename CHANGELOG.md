@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.66](https://github.com/tanem/react-nprogress/tree/v3.0.66) (2021-05-14)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.65...v3.0.66)
+
+#### :house: Internal
+
+- [#885](https://github.com/tanem/react-nprogress/pull/885) Update typescript-eslint monorepo to v4.23.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#884](https://github.com/tanem/react-nprogress/pull/884) Update dependency prettier to v2.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#883](https://github.com/tanem/react-nprogress/pull/883) Update dependency eslint to v7.26.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#882](https://github.com/tanem/react-nprogress/pull/882) Update dependency ts-jest to v26.5.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#881](https://github.com/tanem/react-nprogress/pull/881) Update dependency @types/node to v14.14.44 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#880](https://github.com/tanem/react-nprogress/pull/880) Update dependency @types/react to v17.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.65](https://github.com/tanem/react-nprogress/tree/v3.0.65) (2021-05-07)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.64...v3.0.65)
 
