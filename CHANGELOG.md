@@ -1,5 +1,23 @@
 # Changelog
 
+## [v3.0.67](https://github.com/tanem/react-nprogress/tree/v3.0.67) (2021-05-22)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.66...v3.0.67)
+
+#### :house: Internal
+
+- [#897](https://github.com/tanem/react-nprogress/pull/897) Update dependency @types/node to v14.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#896](https://github.com/tanem/react-nprogress/pull/896) Update dependency @types/react to v17.0.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#895](https://github.com/tanem/react-nprogress/pull/895) Update dependency @testing-library/react-hooks to v6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#894](https://github.com/tanem/react-nprogress/pull/894) Update dependency @testing-library/react-hooks to v5.1.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#893](https://github.com/tanem/react-nprogress/pull/893) Update babel monorepo to v7.14.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#892](https://github.com/tanem/react-nprogress/pull/892) Update typescript-eslint monorepo to v4.24.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#891](https://github.com/tanem/react-nprogress/pull/891) Update dependency rollup to v2.48.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#890](https://github.com/tanem/react-nprogress/pull/890) Update dependency tanem-scripts to v6.0.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#889](https://github.com/tanem/react-nprogress/pull/889) Update dependency @testing-library/react to v11.2.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#888](https://github.com/tanem/react-nprogress/pull/888) Update dependency @types/react-dom to v17.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#887](https://github.com/tanem/react-nprogress/pull/887) Update dependency @types/node to v14.14.45 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#886](https://github.com/tanem/react-nprogress/pull/886) Update babel monorepo to v7.14.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.66](https://github.com/tanem/react-nprogress/tree/v3.0.66) (2021-05-14)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.65...v3.0.66)
 
