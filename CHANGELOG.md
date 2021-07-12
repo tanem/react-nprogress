@@ -1,5 +1,26 @@
 # Changelog
 
+## [v3.0.73](https://github.com/tanem/react-nprogress/tree/v3.0.73) (2021-07-12)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.72...v3.0.73)
+
+#### :house: Internal
+
+- [#962](https://github.com/tanem/react-nprogress/pull/962) Update dependency @types/mock-raf to v1.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#961](https://github.com/tanem/react-nprogress/pull/961) Update dependency @types/react-transition-group to v4.4.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#960](https://github.com/tanem/react-nprogress/pull/960) Update dependency @types/react-router-dom to v5.1.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#959](https://github.com/tanem/react-nprogress/pull/959) Update dependency @types/react-dom to v17.0.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#958](https://github.com/tanem/react-nprogress/pull/958) Update dependency @types/react to v17.0.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#957](https://github.com/tanem/react-nprogress/pull/957) Update dependency @types/reach__router to v1.3.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#956](https://github.com/tanem/react-nprogress/pull/956) Update dependency @types/prop-types to v15.7.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#955](https://github.com/tanem/react-nprogress/pull/955) Update dependency @types/node to v14.17.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#954](https://github.com/tanem/react-nprogress/pull/954) Update dependency @material-ui/core to v4.12.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#953](https://github.com/tanem/react-nprogress/pull/953) Update dependency @types/jest to v26.0.24 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#952](https://github.com/tanem/react-nprogress/pull/952) Update typescript-eslint monorepo to v4.28.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#951](https://github.com/tanem/react-nprogress/pull/951) Update dependency tanem-scripts to v6.0.22 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#950](https://github.com/tanem/react-nprogress/pull/950) Update dependency eslint to v7.30.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#949](https://github.com/tanem/react-nprogress/pull/949) Update dependency rollup to v2.52.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#948](https://github.com/tanem/react-nprogress/pull/948) Update dependency @types/react to v17.0.13 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.72](https://github.com/tanem/react-nprogress/tree/v3.0.72) (2021-07-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.71...v3.0.72)
 
