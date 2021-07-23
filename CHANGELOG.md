@@ -1,5 +1,16 @@
 # Changelog
 
+## [v3.0.75](https://github.com/tanem/react-nprogress/tree/v3.0.75) (2021-07-23)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.74...v3.0.75)
+
+#### :house: Internal
+
+- [#970](https://github.com/tanem/react-nprogress/pull/970) Update typescript-eslint monorepo to v4.28.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#969](https://github.com/tanem/react-nprogress/pull/969) Update dependency @material-ui/core to v4.12.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#968](https://github.com/tanem/react-nprogress/pull/968) Update dependency eslint to v7.31.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#967](https://github.com/tanem/react-nprogress/pull/967) Update dependency tanem-scripts to v6.0.24 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#966](https://github.com/tanem/react-nprogress/pull/966) Update dependency rollup to v2.53.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.74](https://github.com/tanem/react-nprogress/tree/v3.0.74) (2021-07-16)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.73...v3.0.74)
 
