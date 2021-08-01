@@ -1,5 +1,19 @@
 # Changelog
 
+## [v3.0.76](https://github.com/tanem/react-nprogress/tree/v3.0.76) (2021-08-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.75...v3.0.76)
+
+#### :house: Internal
+
+- [#978](https://github.com/tanem/react-nprogress/pull/978) Update typescript-eslint monorepo to v4.28.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#977](https://github.com/tanem/react-nprogress/pull/977) Update dependency @types/node to v14.17.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#976](https://github.com/tanem/react-nprogress/pull/976) Update dependency @types/react to v17.0.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#975](https://github.com/tanem/react-nprogress/pull/975) Update dependency tanem-scripts to v6.0.26 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#974](https://github.com/tanem/react-nprogress/pull/974) Update dependency regenerator-runtime to v0.13.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#973](https://github.com/tanem/react-nprogress/pull/973) Update dependency ts-jest to v27.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#972](https://github.com/tanem/react-nprogress/pull/972) Update dependency rollup to v2.53.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#971](https://github.com/tanem/react-nprogress/pull/971) Update babel monorepo to v7.14.8 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.75](https://github.com/tanem/react-nprogress/tree/v3.0.75) (2021-07-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.74...v3.0.75)
 
