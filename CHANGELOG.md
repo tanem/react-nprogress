@@ -1,5 +1,16 @@
 # Changelog
 
+## [v3.0.81](https://github.com/tanem/react-nprogress/tree/v3.0.81) (2021-10-15)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.80...v3.0.81)
+
+#### :house: Internal
+
+- [#1058](https://github.com/tanem/react-nprogress/pull/1058) Update typescript-eslint monorepo to v5 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1056](https://github.com/tanem/react-nprogress/pull/1056) Update dependency jest to v27.2.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1055](https://github.com/tanem/react-nprogress/pull/1055) Update dependency @types/react-router-dom to v5.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1054](https://github.com/tanem/react-nprogress/pull/1054) Update babel monorepo to v7.15.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1053](https://github.com/tanem/react-nprogress/pull/1053) Update dependency @types/node to v14.17.21 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v3.0.80](https://github.com/tanem/react-nprogress/tree/v3.0.80) (2021-10-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.79...v3.0.80)
 
