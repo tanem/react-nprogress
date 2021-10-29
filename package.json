@@ -84,7 +84,7 @@
     "@types/jest": "27.0.2",
     "@types/mock-raf": "1.0.3",
     "@types/prop-types": "15.7.4",
-    "@types/react": "17.0.31",
+    "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
     "@typescript-eslint/eslint-plugin": "5.2.0",
     "@typescript-eslint/parser": "5.2.0",
