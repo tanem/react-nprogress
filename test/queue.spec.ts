@@ -1,11 +1,13 @@
-import { clear, queue } from '../src/queue'
+import { createQueue } from '../src/createQueue'
+
+const { clear, enqueue } = createQueue()
 
 jest.useFakeTimers()
 
 test('starts running when the first callback is pushed onto the queue', () => {
   const mockFn = jest.fn()
 
-  queue((next) => {
+  enqueue((next) => {
     mockFn()
     next()
   })
@@ -16,13 +18,13 @@ test('starts running when the first callback is pushed onto the queue', () => {
 test('executes callbacks in the queue sequentially', () => {
   const mockFn = jest.fn((str) => str)
 
-  queue((next) => {
+  enqueue((next) => {
     setTimeout(() => {
       mockFn('first')
       next()
     }, 0)
   })
-  queue((next) => {
+  enqueue((next) => {
     mockFn('second')
     next()
   })
@@ -36,8 +38,8 @@ test('executes callbacks in the queue sequentially', () => {
 test('can clear the queue', () => {
   const mockFn = jest.fn()
 
-  queue((next) => setTimeout(next, 0))
-  queue((next) => {
+  enqueue((next) => setTimeout(next, 0))
+  enqueue((next) => {
     mockFn()
     next()
   })

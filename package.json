@@ -22,7 +22,7 @@
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
     "compile": "tsc -p tsconfig.base.json",
-    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "format": "npm run lint -- --fix && prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint --ext js,ts,tsx .",
     "postbundle": "npm run clean:compiled && shx cp ./index.js ./dist/index.js",
     "release": "tanem-scripts release",

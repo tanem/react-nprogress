@@ -2,35 +2,22 @@ import { useCallback, useEffect, useRef } from 'react'
 import { useEffectOnce, useGetSetState, useUpdateEffect } from 'react-use'
 
 import { clamp } from './clamp'
+import { createQueue } from './createQueue'
+import { createTimeout } from './createTimeout'
 import { increment } from './increment'
-import { clear as clearQueue, queue } from './queue'
-import { cancel as cancelCurrentTimeout, timeout } from './timeout'
 import { Options } from './types'
-
-interface State {
-  isFinished: boolean
-  progress: number
-  sideEffect: () => void
-}
-
-interface ReturnType {
-  animationDuration: number
-  isFinished: boolean
-  progress: number
-}
 
 /* istanbul ignore next */
 const noop = () => undefined
 
-const initialState: State = {
+const initialState: {
+  isFinished: boolean
+  progress: number
+  sideEffect: () => void
+} = {
   isFinished: true,
   progress: 0,
   sideEffect: noop,
-}
-
-const cleanup = () => {
-  cancelCurrentTimeout()
-  clearQueue()
 }
 
 export const useNProgress = ({
@@ -38,8 +25,25 @@ export const useNProgress = ({
   incrementDuration = 800,
   isAnimating = false,
   minimum = 0.08,
-}: Options = {}): ReturnType => {
+}: Options = {}): {
+  animationDuration: number
+  isFinished: boolean
+  progress: number
+} => {
   const [get, setState] = useGetSetState(initialState)
+
+  const queue = useRef<ReturnType<typeof createQueue> | null>(null)
+  const timeout = useRef<ReturnType<typeof createTimeout> | null>(null)
+
+  useEffectOnce(() => {
+    queue.current = createQueue()
+    timeout.current = createTimeout()
+  })
+
+  const cleanup = useCallback(() => {
+    timeout.current?.cancel()
+    queue.current?.clear()
+  }, [])
 
   const set = useCallback(
     (n: number) => {
@@ -48,29 +52,30 @@ export const useNProgress = ({
       if (n === 1) {
         cleanup()
 
-        queue((next) => {
+        queue.current?.enqueue((next) => {
           setState({
             progress: n,
-            sideEffect: () => timeout(next, animationDuration),
+            sideEffect: () =>
+              timeout.current?.schedule(next, animationDuration),
           })
         })
 
-        queue(() => {
+        queue.current?.enqueue(() => {
           setState({ isFinished: true, sideEffect: cleanup })
         })
 
         return
       }
 
-      queue((next) => {
+      queue.current?.enqueue((next) => {
         setState({
           isFinished: false,
           progress: n,
-          sideEffect: () => timeout(next, animationDuration),
+          sideEffect: () => timeout.current?.schedule(next, animationDuration),
         })
       })
     },
-    [animationDuration, minimum, setState]
+    [animationDuration, cleanup, minimum, queue, setState, timeout]
   )
 
   const trickle = useCallback(() => {
@@ -80,8 +85,8 @@ export const useNProgress = ({
   const start = useCallback(() => {
     const work = () => {
       trickle()
-      queue((next) => {
-        timeout(() => {
+      queue.current?.enqueue((next) => {
+        timeout.current?.schedule(() => {
           work()
           next()
         }, incrementDuration)
@@ -89,7 +94,7 @@ export const useNProgress = ({
     }
 
     work()
-  }, [incrementDuration, trickle])
+  }, [incrementDuration, queue, timeout, trickle])
 
   const savedTrickle = useRef<() => void>(noop)
 
