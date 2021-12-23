@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef } from 'react'
-import { useEffectOnce, useGetSetState, useUpdateEffect } from 'react-use'
 
 import { clamp } from './clamp'
 import { createQueue } from './createQueue'
 import { createTimeout } from './createTimeout'
 import { increment } from './increment'
 import { Options } from './types'
+import { useEffectOnce } from './useEffectOnce'
+import { useGetSetState } from './useGetSetState'
+import { useUpdateEffect } from './useUpdateEffect'
 
 /* istanbul ignore next */
 const noop = () => undefined
