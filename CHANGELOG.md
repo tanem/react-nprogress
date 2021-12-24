@@ -1,5 +1,14 @@
 # Changelog
 
+## [v4.0.1](https://github.com/tanem/react-nprogress/tree/v4.0.1) (2021-12-24)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.0...v4.0.1)
+
+#### :house: Internal
+
+- [#1003](https://github.com/tanem/react-nprogress/pull/1003) Update dependency typescript to v4.5.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1125](https://github.com/tanem/react-nprogress/pull/1125) Pull react-use hooks into this project ([@tanem](https://github.com/tanem))
+- [#1124](https://github.com/tanem/react-nprogress/pull/1124) Update typescript-eslint monorepo to v5.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.0](https://github.com/tanem/react-nprogress/tree/v4.0.0) (2021-12-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v3.0.82...v4.0.0)
 
