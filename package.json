@@ -68,7 +68,7 @@
   "dependencies": {
     "@babel/runtime": "^7.16.7",
     "hoist-non-react-statics": "^3.3.2",
-    "prop-types": "^15.8.0"
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@babel/core": "7.16.7",
