@@ -1,5 +1,17 @@
 # Changelog
 
+## [v4.0.3](https://github.com/tanem/react-nprogress/tree/v4.0.3) (2022-01-16)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.2...v4.0.3)
+
+#### :house: Internal
+
+- [#1146](https://github.com/tanem/react-nprogress/pull/1146) Update babel monorepo to v7.16.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1145](https://github.com/tanem/react-nprogress/pull/1145) Update typescript-eslint monorepo to v5.9.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1144](https://github.com/tanem/react-nprogress/pull/1144) Update dependency rollup-plugin-filesize to v9.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1143](https://github.com/tanem/react-nprogress/pull/1143) Update dependency shx to v0.3.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1142](https://github.com/tanem/react-nprogress/pull/1142) Update dependency tanem-scripts to v6.0.36 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1141](https://github.com/tanem/react-nprogress/pull/1141) Update dependency jest to v27.4.7 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.2](https://github.com/tanem/react-nprogress/tree/v4.0.2) (2022-01-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.1...v4.0.2)
 
