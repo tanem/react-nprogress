@@ -1,5 +1,16 @@
 # Changelog
 
+## [v4.0.4](https://github.com/tanem/react-nprogress/tree/v4.0.4) (2022-01-21)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.3...v4.0.4)
+
+#### :house: Internal
+
+- [#1151](https://github.com/tanem/react-nprogress/pull/1151) Update typescript-eslint monorepo to v5.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1150](https://github.com/tanem/react-nprogress/pull/1150) Update dependency tanem-scripts to v6.0.37 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1149](https://github.com/tanem/react-nprogress/pull/1149) Update dependency eslint to v8.7.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1148](https://github.com/tanem/react-nprogress/pull/1148) Update dependency ts-jest to v27.1.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1147](https://github.com/tanem/react-nprogress/pull/1147) Update dependency rollup to v2.64.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.3](https://github.com/tanem/react-nprogress/tree/v4.0.3) (2022-01-16)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.2...v4.0.3)
 
