@@ -1,5 +1,19 @@
 # Changelog
 
+## [v4.0.7](https://github.com/tanem/react-nprogress/tree/v4.0.7) (2022-02-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.6...v4.0.7)
+
+#### :house: Internal
+
+- [#1167](https://github.com/tanem/react-nprogress/pull/1167) Update dependency jest to v27.5.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1170](https://github.com/tanem/react-nprogress/pull/1170) Update typescript-eslint monorepo to v5.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1169](https://github.com/tanem/react-nprogress/pull/1169) Update dependency node-fetch to 2.6.7 [SECURITY] ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1168](https://github.com/tanem/react-nprogress/pull/1168) Update dependency json-schema to 0.4.0 [SECURITY] ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1166](https://github.com/tanem/react-nprogress/pull/1166) Update dependency tanem-scripts to v6.0.40 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1165](https://github.com/tanem/react-nprogress/pull/1165) Update dependency @types/react to v17.0.39 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1164](https://github.com/tanem/react-nprogress/pull/1164) Update babel monorepo to v7.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1163](https://github.com/tanem/react-nprogress/pull/1163) Update dependency rollup to v2.67.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.6](https://github.com/tanem/react-nprogress/tree/v4.0.6) (2022-02-04)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.5...v4.0.6)
 
