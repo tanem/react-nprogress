@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Link,
-  NavLinkProps,
+  LinkProps,
   Redirect,
   Route,
   RouteComponentProps,
@@ -64,7 +64,7 @@ styles.rgb = {
   paddingTop: '20px',
 }
 
-const NavLink: React.FC<NavLinkProps> = (props) => (
+const NavLink: React.FC<LinkProps> = (props) => (
   <li style={styles.navItem}>
     <Link {...props} style={{ color: 'inherit' }} />
   </li>
