@@ -1,5 +1,12 @@
 # Changelog
 
+## [v4.0.10](https://github.com/tanem/react-nprogress/tree/v4.0.10) (2022-03-11)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.9...v4.0.10)
+
+#### :house: Internal
+
+- [#1199](https://github.com/tanem/react-nprogress/pull/1199) Update dependency rollup to v2.70.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.9](https://github.com/tanem/react-nprogress/tree/v4.0.9) (2022-03-08)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.8...v4.0.9)
 
