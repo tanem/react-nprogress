@@ -1,5 +1,16 @@
 # Changelog
 
+## [v4.0.12](https://github.com/tanem/react-nprogress/tree/v4.0.12) (2022-03-25)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.11...v4.0.12)
+
+#### :house: Internal
+
+- [#1214](https://github.com/tanem/react-nprogress/pull/1214) Update typescript-eslint monorepo to v5.16.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1213](https://github.com/tanem/react-nprogress/pull/1213) Update dependency tanem-scripts to v6.0.44 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1212](https://github.com/tanem/react-nprogress/pull/1212) Update dependency @types/react-dom to v17.0.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1211](https://github.com/tanem/react-nprogress/pull/1211) Update dependency @types/react to v17.0.41 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1210](https://github.com/tanem/react-nprogress/pull/1210) Update babel monorepo to v7.17.8 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.11](https://github.com/tanem/react-nprogress/tree/v4.0.11) (2022-03-21)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.10...v4.0.11)
 
