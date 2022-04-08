@@ -5,4 +5,5 @@ module.exports = Object.assign({}, srcConfig, {
   moduleNameMapper: {
     '^../src$': `<rootDir>/dist/react-nprogress.umd.development.js`,
   },
+  testMatch: ['<rootDir>/test/(use|with)?NProgress.spec.ts?(x)'],
 })
