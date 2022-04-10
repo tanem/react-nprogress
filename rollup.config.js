@@ -1,7 +1,7 @@
-import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
-import nodeResolve from 'rollup-plugin-node-resolve'
-import replace from 'rollup-plugin-replace'
+import babel from '@rollup/plugin-babel'
+import commonjs from '@rollup/plugin-commonjs'
+import nodeResolve from '@rollup/plugin-node-resolve'
+import replace from '@rollup/plugin-replace'
 import sourcemaps from 'rollup-plugin-sourcemaps'
 import { terser } from 'rollup-plugin-terser'
 
@@ -34,8 +34,6 @@ const getExternal = (bundleType) => {
     case CJS_PROD:
     case ES:
       return makeExternalPredicate([...peerDependencies, ...dependencies])
-    case UMD_DEV:
-      return makeExternalPredicate([...peerDependencies, 'prop-types'])
     default:
       return makeExternalPredicate(peerDependencies)
   }
@@ -44,54 +42,22 @@ const getExternal = (bundleType) => {
 const isProduction = (bundleType) =>
   bundleType === CJS_PROD || bundleType === UMD_PROD
 
-const getBabelConfig = (bundleType) => {
-  const options = {
-    babelrc: false,
-    exclude: 'node_modules/**',
-    plugins: ['@babel/transform-runtime'],
-    presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
-    runtimeHelpers: true,
-  }
-
-  switch (bundleType) {
-    case ES:
-      return {
-        ...options,
-        plugins: [
-          ...options.plugins,
-          ['transform-react-remove-prop-types', { mode: 'wrap' }],
-        ],
-      }
-    case UMD_PROD:
-    case CJS_PROD:
-      return {
-        ...options,
-        plugins: [
-          ...options.plugins,
-          ['transform-react-remove-prop-types', { removeImport: true }],
-        ],
-      }
-    default:
-      return options
-  }
-}
+const getBabelConfig = () => ({
+  babelHelpers: 'runtime',
+  babelrc: false,
+  exclude: 'node_modules/**',
+  plugins: ['@babel/transform-runtime'],
+  presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
+})
 
 const getPlugins = (bundleType) => [
   nodeResolve(),
   commonjs({
     include: 'node_modules/**',
-    namedExports: {
-      'node_modules/prop-types/index.js': [
-        'bool',
-        'func',
-        'object',
-        'oneOf',
-        'string',
-      ],
-    },
   }),
   babel(getBabelConfig(bundleType)),
   replace({
+    preventAssignment: true,
     'process.env.NODE_ENV': JSON.stringify(
       isProduction(bundleType) ? 'production' : 'development'
     ),
@@ -146,7 +112,6 @@ const getUmdConfig = (bundleType) => ({
     }.js`,
     format: 'umd',
     globals: {
-      ...(isProduction(bundleType) ? {} : { 'prop-types': 'PropTypes' }),
       react: 'React',
       'react-dom': 'ReactDOM',
     },

@@ -1,5 +1,9 @@
 # Migrating
 
+## v5.0.0
+
+The prop-types package is no longer required for using the UMD builds.
+
 ## v4.0.0
 
 Allows multiple instances of `react-nprogress` on a page. Technically this isn't a breaking change, but it was decided to bump the major version in order to reduce the chance of bugs slipping into consuming code.
