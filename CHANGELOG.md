@@ -1,5 +1,24 @@
 # Changelog
 
+## [v5.0.0](https://github.com/tanem/react-nprogress/tree/v5.0.0) (2022-04-10)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.13...v5.0.0)
+
+#### :boom: Breaking Change
+
+- [#1231](https://github.com/tanem/react-nprogress/pull/1231) Tidy deps ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#1230](https://github.com/tanem/react-nprogress/pull/1230) Update babel monorepo to v7.17.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1224](https://github.com/tanem/react-nprogress/pull/1224) Update dependency @testing-library/react to v13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1223](https://github.com/tanem/react-nprogress/pull/1223) Update react monorepo to v18 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1229](https://github.com/tanem/react-nprogress/pull/1229) Fix test setup ([@tanem](https://github.com/tanem))
+- [#1228](https://github.com/tanem/react-nprogress/pull/1228) Update typescript-eslint monorepo to v5.18.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1227](https://github.com/tanem/react-nprogress/pull/1227) Update dependency @material-ui/core to v4.12.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1226](https://github.com/tanem/react-nprogress/pull/1226) Update dependency prettier to v2.6.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1225](https://github.com/tanem/react-nprogress/pull/1225) Update dependency tanem-scripts to v6.0.46 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1222](https://github.com/tanem/react-nprogress/pull/1222) Update dependency eslint-plugin-react-hooks to v4.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v4.0.13](https://github.com/tanem/react-nprogress/tree/v4.0.13) (2022-04-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v4.0.12...v4.0.13)
 
