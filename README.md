@@ -201,7 +201,6 @@ For the non-minified development version, make sure you have already included:
 
 - [`React`](https://unpkg.com/react/umd/react.development.js)
 - [`ReactDOM`](https://unpkg.com/react-dom/umd/react-dom.development.js)
-- [`PropTypes`](https://unpkg.com/prop-types/prop-types.js)
 
 For the minified production version, make sure you have already included:
 
