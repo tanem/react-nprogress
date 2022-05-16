@@ -10,7 +10,7 @@
     "@material-ui/core": "4.12.4",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "27.5.1",
-    "@types/node": "16.11.33",
+    "@types/node": "16.11.35",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "react": "18.1.0",
