@@ -10,10 +10,14 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+      - uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version-file: '.nvmrc'
+          check-latest: true
       - run: npm ci
       - run: npm test
       - run: bash <(curl -s https://codecov.io/bash)
