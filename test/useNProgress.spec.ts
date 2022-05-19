@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks'
+import { act, renderHook } from '@testing-library/react'
 import createMockRaf from 'mock-raf'
 
 import { useNProgress } from '../src'
