@@ -4,7 +4,7 @@
 // `react-use` appears to be unmaintained, so moving the required code into
 // this project for now.
 
-import { act, renderHook } from '@testing-library/react-hooks'
+import { act, renderHook } from '@testing-library/react'
 
 import { useGetSetState } from '../src/useGetSetState'
 
