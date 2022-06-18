@@ -1,5 +1,12 @@
 # Changelog
 
+## [v5.0.4](https://github.com/tanem/react-nprogress/tree/v5.0.4) (2022-06-18)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.3...v5.0.4)
+
+#### :house: Internal
+
+- [#1310](https://github.com/tanem/react-nprogress/pull/1310) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.3](https://github.com/tanem/react-nprogress/tree/v5.0.3) (2022-06-18)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.2...v5.0.3)
 
