@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.0.6](https://github.com/tanem/react-nprogress/tree/v5.0.6) (2022-07-02)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.5...v5.0.6)
+
+#### :house: Internal
+
+- [#1327](https://github.com/tanem/react-nprogress/pull/1327) Update dependency tanem-scripts to v6.0.51 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1326](https://github.com/tanem/react-nprogress/pull/1326) Update babel monorepo to v7.18.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1325](https://github.com/tanem/react-nprogress/pull/1325) Update typescript-eslint monorepo to v5.30.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1324](https://github.com/tanem/react-nprogress/pull/1324) Update styfle/cancel-workflow-action action to v0.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.5](https://github.com/tanem/react-nprogress/tree/v5.0.5) (2022-06-28)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.4...v5.0.5)
 
