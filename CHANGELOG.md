@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.0.11](https://github.com/tanem/react-nprogress/tree/v5.0.11) (2022-08-14)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.10...v5.0.11)
+
+#### :house: Internal
+
+- [#1358](https://github.com/tanem/react-nprogress/pull/1358) Update typescript-eslint monorepo to v5.33.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1357](https://github.com/tanem/react-nprogress/pull/1357) Update dependency @types/react to v18.0.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1356](https://github.com/tanem/react-nprogress/pull/1356) Update dependency tanem-scripts to v6.0.56 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1355](https://github.com/tanem/react-nprogress/pull/1355) Update dependency @rollup/plugin-commonjs to v22.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.10](https://github.com/tanem/react-nprogress/tree/v5.0.10) (2022-08-07)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.9...v5.0.10)
 
