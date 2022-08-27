@@ -9,7 +9,7 @@
   "dependencies": {
     "@tanem/react-nprogress": "latest",
     "@types/jest": "28.1.7",
-    "@types/node": "16.11.49",
+    "@types/node": "16.11.56",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "@types/react-router-dom": "5.3.3",
