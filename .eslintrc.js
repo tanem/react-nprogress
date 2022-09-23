@@ -18,6 +18,12 @@ module.exports = {
       files: ['examples/**/*'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'react/no-unknown-property': [
+          'error',
+          {
+            ignore: ['jsx'],
+          },
+        ],
         'react/prop-types': 'off',
       },
     },
