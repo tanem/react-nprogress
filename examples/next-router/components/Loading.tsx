@@ -12,7 +12,7 @@ const Loading: React.FC<{ isRouteChanging: boolean }> = ({
       <style jsx>{`
         .container {
           opacity: ${isFinished ? 0 : 1};
-          pointerevents: none;
+          pointer-events: none;
           transition: opacity ${animationDuration}ms linear;
         }
 
