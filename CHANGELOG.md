@@ -1,5 +1,18 @@
 # Changelog
 
+## [v5.0.18](https://github.com/tanem/react-nprogress/tree/v5.0.18) (2022-11-19)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.17...v5.0.18)
+
+#### :house: Internal
+
+- [#1429](https://github.com/tanem/react-nprogress/pull/1429) Update dependency rollup to v3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1466](https://github.com/tanem/react-nprogress/pull/1466) Update typescript-eslint monorepo to v5.43.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1468](https://github.com/tanem/react-nprogress/pull/1468) Update dependency @types/react-dom to v18.0.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1467](https://github.com/tanem/react-nprogress/pull/1467) Update dependency @types/jest to v29.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1465](https://github.com/tanem/react-nprogress/pull/1465) Update dependency regenerator-runtime to v0.13.11 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1464](https://github.com/tanem/react-nprogress/pull/1464) Update dependency tanem-scripts to v6.0.63 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1463](https://github.com/tanem/react-nprogress/pull/1463) Update jest monorepo to v29.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.17](https://github.com/tanem/react-nprogress/tree/v5.0.17) (2022-11-11)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.16...v5.0.17)
 
