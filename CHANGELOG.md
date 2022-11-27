@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.0.19](https://github.com/tanem/react-nprogress/tree/v5.0.19) (2022-11-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.18...v5.0.19)
+
+#### :house: Internal
+
+- [#1475](https://github.com/tanem/react-nprogress/pull/1475) Update dependency prettier to v2.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1474](https://github.com/tanem/react-nprogress/pull/1474) Update dependency rollup to v3.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1473](https://github.com/tanem/react-nprogress/pull/1473) Update typescript-eslint monorepo to v5.44.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1472](https://github.com/tanem/react-nprogress/pull/1472) Update dependency tanem-scripts to v6.0.64 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1471](https://github.com/tanem/react-nprogress/pull/1471) Update dependency eslint to v8.28.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1470](https://github.com/tanem/react-nprogress/pull/1470) Update dependency eslint-plugin-react to v7.31.11 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.18](https://github.com/tanem/react-nprogress/tree/v5.0.18) (2022-11-19)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.17...v5.0.18)
 
