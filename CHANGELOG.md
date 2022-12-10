@@ -1,5 +1,23 @@
 # Changelog
 
+## [v5.0.20](https://github.com/tanem/react-nprogress/tree/v5.0.20) (2022-12-10)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.19...v5.0.20)
+
+#### :house: Internal
+
+- [#1488](https://github.com/tanem/react-nprogress/pull/1488) Update dependency rollup to v3.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1486](https://github.com/tanem/react-nprogress/pull/1486) Update dependency @types/jest to v29.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1484](https://github.com/tanem/react-nprogress/pull/1484) Update dependency @types/react to v18.0.26 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1485](https://github.com/tanem/react-nprogress/pull/1485) Update dependency eslint to v8.29.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1483](https://github.com/tanem/react-nprogress/pull/1483) Update dependency rollup to v3.5.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1482](https://github.com/tanem/react-nprogress/pull/1482) Update dependency @types/node to v18.11.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1480](https://github.com/tanem/react-nprogress/pull/1480) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1481](https://github.com/tanem/react-nprogress/pull/1481) Update typescript-eslint monorepo to v5.45.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1479](https://github.com/tanem/react-nprogress/pull/1479) Update dependency tanem-scripts to v6.0.65 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1478](https://github.com/tanem/react-nprogress/pull/1478) Update dependency @rollup/plugin-commonjs to v23.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1476](https://github.com/tanem/react-nprogress/pull/1476) Update dependency @rollup/plugin-babel to v6.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1477](https://github.com/tanem/react-nprogress/pull/1477) Update dependency rollup to v3.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.19](https://github.com/tanem/react-nprogress/tree/v5.0.19) (2022-11-27)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.18...v5.0.19)
 
