@@ -1,6 +1,6 @@
 {
   "name": "@tanem/react-nprogress",
-  "version": "5.0.21",
+  "version": "5.0.22",
   "description": "A React primitive for building slim progress bars.",
   "main": "dist/index.js",
   "module": "dist/react-nprogress.esm.js",
