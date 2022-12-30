@@ -1,7 +1,7 @@
 # react-nprogress
 
 [![npm version](https://img.shields.io/npm/v/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
-[![build status](https://img.shields.io/github/workflow/status/tanem/react-nprogress/CI?style=flat-square)](https://github.com/tanem/react-nprogress/actions?query=workflow%3ACI)
+[![build status](https://img.shields.io/github/actions/workflow/status/tanem/react-nprogress/ci.yml?style=flat-square)](https://github.com/tanem/react-nprogress/actions?query=workflow%3ACI)
 [![coverage status](https://img.shields.io/codecov/c/github/tanem/react-nprogress.svg?style=flat-square)](https://codecov.io/gh/tanem/react-nprogress)
 [![npm downloads](https://img.shields.io/npm/dm/@tanem/react-nprogress.svg?style=flat-square)](https://www.npmjs.com/package/@tanem/react-nprogress)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/@tanem/react-nprogress?style=flat-square)](https://bundlephobia.com/result?p=@tanem/react-nprogress)

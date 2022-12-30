@@ -22,7 +22,13 @@
         "react-router-dom"
       ],
       "allowedVersions": "< 6.0.0"
-  }
+    },
+    {
+      "matchPackageNames": [
+        "@rollup/plugin-terser"
+      ],
+      "allowedVersions": "0.1.0"
+    }
   ],
   "prCreation": "not-pending",
   "stabilityDays": 3
