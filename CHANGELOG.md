@@ -1,5 +1,27 @@
 # Changelog
 
+## [v5.0.23](https://github.com/tanem/react-nprogress/tree/v5.0.23) (2023-01-06)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.22...v5.0.23)
+
+#### :house: Internal
+
+- [#1528](https://github.com/tanem/react-nprogress/pull/1528) Update typescript-eslint monorepo to v5.48.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1527](https://github.com/tanem/react-nprogress/pull/1527) Update dependency eslint-config-prettier to v8.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1526](https://github.com/tanem/react-nprogress/pull/1526) Update dependency rollup to v3.9.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1525](https://github.com/tanem/react-nprogress/pull/1525) Update dependency eslint to v8.31.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1524](https://github.com/tanem/react-nprogress/pull/1524) Update dependency @types/jest to v29.2.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1523](https://github.com/tanem/react-nprogress/pull/1523) Update dependency rollup to v3.9.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1469](https://github.com/tanem/react-nprogress/pull/1469) Update dependency typescript to v4.9.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1522](https://github.com/tanem/react-nprogress/pull/1522) Fix badge link & pin dep version ([@tanem](https://github.com/tanem))
+- [#1521](https://github.com/tanem/react-nprogress/pull/1521) Update typescript-eslint monorepo to v5.47.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1520](https://github.com/tanem/react-nprogress/pull/1520) Update dependency @types/node to v18.11.18 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1519](https://github.com/tanem/react-nprogress/pull/1519) Update dependency tanem-scripts to v6.0.68 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1518](https://github.com/tanem/react-nprogress/pull/1518) Update dependency @types/react-dom to v18.0.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1517](https://github.com/tanem/react-nprogress/pull/1517) Update dependency rollup to v3.8.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1516](https://github.com/tanem/react-nprogress/pull/1516) Update babel monorepo to v7.20.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1515](https://github.com/tanem/react-nprogress/pull/1515) Update dependency rollup to v3.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1487](https://github.com/tanem/react-nprogress/pull/1487) Update dependency @rollup/plugin-terser to v0.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.22](https://github.com/tanem/react-nprogress/tree/v5.0.22) (2022-12-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.21...v5.0.22)
 
