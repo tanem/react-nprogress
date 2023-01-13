@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.0.24](https://github.com/tanem/react-nprogress/tree/v5.0.24) (2023-01-13)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.23...v5.0.24)
+
+#### :house: Internal
+
+- [#1532](https://github.com/tanem/react-nprogress/pull/1532) Update typescript-eslint monorepo to v5.48.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1531](https://github.com/tanem/react-nprogress/pull/1531) Bump @rollup/plugin-terser ([@tanem](https://github.com/tanem))
+- [#1530](https://github.com/tanem/react-nprogress/pull/1530) Update dependency prettier to v2.8.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1529](https://github.com/tanem/react-nprogress/pull/1529) Update dependency @babel/core to v7.20.12 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.23](https://github.com/tanem/react-nprogress/tree/v5.0.23) (2023-01-06)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.22...v5.0.23)
 
