@@ -1,5 +1,29 @@
 # Changelog
 
+## [v5.0.26](https://github.com/tanem/react-nprogress/tree/v5.0.26) (2023-02-04)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.25...v5.0.26)
+
+#### :house: Internal
+
+- [#1560](https://github.com/tanem/react-nprogress/pull/1560) Update dependency rollup to v3.12.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1559](https://github.com/tanem/react-nprogress/pull/1559) Update typescript-eslint monorepo to v5.50.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1558](https://github.com/tanem/react-nprogress/pull/1558) Update dependency typescript to v4.9.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1557](https://github.com/tanem/react-nprogress/pull/1557) Update dependency eslint-plugin-react to v7.32.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1556](https://github.com/tanem/react-nprogress/pull/1556) Update dependency eslint to v8.33.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1555](https://github.com/tanem/react-nprogress/pull/1555) Update dependency rollup to v3.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1554](https://github.com/tanem/react-nprogress/pull/1554) Update dependency eslint-plugin-simple-import-sort to v10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1553](https://github.com/tanem/react-nprogress/pull/1553) Update jest monorepo to v29.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1552](https://github.com/tanem/react-nprogress/pull/1552) Update dependency rollup to v3.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1551](https://github.com/tanem/react-nprogress/pull/1551) Update dependency @types/jest to v29.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1550](https://github.com/tanem/react-nprogress/pull/1550) Update jest monorepo to v29.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1549](https://github.com/tanem/react-nprogress/pull/1549) Update dependency @rollup/plugin-terser to v0.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1548](https://github.com/tanem/react-nprogress/pull/1548) Update typescript-eslint monorepo to v5.49.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1547](https://github.com/tanem/react-nprogress/pull/1547) Update dependency @babel/runtime to ^7.20.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1546](https://github.com/tanem/react-nprogress/pull/1546) Update dependency @rollup/plugin-commonjs to v24.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1545](https://github.com/tanem/react-nprogress/pull/1545) Update dependency rollup to v3.10.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1544](https://github.com/tanem/react-nprogress/pull/1544) Update dependency @types/react to v18.0.27 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1543](https://github.com/tanem/react-nprogress/pull/1543) Update dependency @types/jest to v29.2.6 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.25](https://github.com/tanem/react-nprogress/tree/v5.0.25) (2023-01-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.24...v5.0.25)
 
