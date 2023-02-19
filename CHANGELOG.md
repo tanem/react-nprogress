@@ -1,5 +1,13 @@
 # Changelog
 
+## [v5.0.29](https://github.com/tanem/react-nprogress/tree/v5.0.29) (2023-02-19)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.28...v5.0.29)
+
+#### :house: Internal
+
+- [#1575](https://github.com/tanem/react-nprogress/pull/1575) Update jest monorepo to v29.4.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1574](https://github.com/tanem/react-nprogress/pull/1574) Update dependency @types/react-dom to v18.0.11 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.28](https://github.com/tanem/react-nprogress/tree/v5.0.28) (2023-02-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.27...v5.0.28)
 
