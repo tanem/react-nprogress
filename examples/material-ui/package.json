@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "4.12.4",
+    "@mui/material": "5.0.0",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "29.4.0",
     "@types/node": "18.15.0",
