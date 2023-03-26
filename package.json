@@ -110,5 +110,8 @@
     "tanem-scripts": "6.0.76",
     "ts-jest": "29.0.5",
     "typescript": "4.9.5"
+  },
+  "overrides": {
+    "universal-user-agent": "6.0.0"
   }
 }
