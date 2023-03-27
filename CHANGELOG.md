@@ -1,5 +1,19 @@
 # Changelog
 
+## [v5.0.33](https://github.com/tanem/react-nprogress/tree/v5.0.33) (2023-03-27)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.32...v5.0.33)
+
+#### :house: Internal
+
+- [#1605](https://github.com/tanem/react-nprogress/pull/1605) Update tanem-scripts ([@tanem](https://github.com/tanem))
+- [#1604](https://github.com/tanem/react-nprogress/pull/1604) Add universal-user-agent override ([@tanem](https://github.com/tanem))
+- [#1603](https://github.com/tanem/react-nprogress/pull/1603) Replace dependency @material-ui/core with @mui/material 5.0.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1602](https://github.com/tanem/react-nprogress/pull/1602) Update dependency eslint to v8.36.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1601](https://github.com/tanem/react-nprogress/pull/1601) Update dependency tanem-scripts to v6.0.76 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1600](https://github.com/tanem/react-nprogress/pull/1600) Update dependency rollup to v3.19.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1599](https://github.com/tanem/react-nprogress/pull/1599) Update dependency rollup to v3.19.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1598](https://github.com/tanem/react-nprogress/pull/1598) Update dependency @types/node to v18.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.32](https://github.com/tanem/react-nprogress/tree/v5.0.32) (2023-03-10)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.31...v5.0.32)
 
