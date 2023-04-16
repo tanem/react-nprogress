@@ -7,13 +7,17 @@
     ":masterIssue",
     ":enableVulnerabilityAlerts"
   ],
-  "ignorePaths": ["**/node_modules/**"],
+  "ignorePaths": [
+    "**/node_modules/**"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
+      "depTypeList": [
+        "dependencies"
+      ],
       "rangeStrategy": "bump"
     },
     {
@@ -22,6 +26,15 @@
         "react-router-dom"
       ],
       "allowedVersions": "< 6.0.0"
+    },
+    {
+      "matchPaths": [
+        "examples/**/package.json"
+      ],
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "< 5.0.0"
     }
   ],
   "prCreation": "not-pending",
