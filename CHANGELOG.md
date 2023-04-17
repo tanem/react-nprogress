@@ -1,5 +1,17 @@
 # Changelog
 
+## [v5.0.34](https://github.com/tanem/react-nprogress/tree/v5.0.34) (2023-04-17)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.33...v5.0.34)
+
+#### :house: Internal
+
+- [#1611](https://github.com/tanem/react-nprogress/pull/1611) Update dependency @rollup/plugin-terser to v0.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1610](https://github.com/tanem/react-nprogress/pull/1610) Update dependency @rollup/plugin-node-resolve to v15.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1609](https://github.com/tanem/react-nprogress/pull/1609) Update babel monorepo to v7.21.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1608](https://github.com/tanem/react-nprogress/pull/1608) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1607](https://github.com/tanem/react-nprogress/pull/1607) Restrict TS version in examples ([@tanem](https://github.com/tanem))
+- [#1606](https://github.com/tanem/react-nprogress/pull/1606) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.33](https://github.com/tanem/react-nprogress/tree/v5.0.33) (2023-03-27)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.32...v5.0.33)
 
