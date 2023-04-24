@@ -1,5 +1,40 @@
 # Changelog
 
+## [v5.0.35](https://github.com/tanem/react-nprogress/tree/v5.0.35) (2023-04-24)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.34...v5.0.35)
+
+#### undefined
+
+- [#1612](https://github.com/tanem/react-nprogress/pull/1612) Use default renovate prCreation setting ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#1637](https://github.com/tanem/react-nprogress/pull/1637) Update dependency rollup to v3.20.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1636](https://github.com/tanem/react-nprogress/pull/1636) Update dependency @types/node to v18.15.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1635](https://github.com/tanem/react-nprogress/pull/1635) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1634](https://github.com/tanem/react-nprogress/pull/1634) Update dependency @types/node to v18.15.12 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1633](https://github.com/tanem/react-nprogress/pull/1633) Update dependency @types/jest to v29.5.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1632](https://github.com/tanem/react-nprogress/pull/1632) Update dependency rollup to v3.20.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1631](https://github.com/tanem/react-nprogress/pull/1631) Update typescript-eslint monorepo to v5.59.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1630](https://github.com/tanem/react-nprogress/pull/1630) Update dependency @mui/material to v5.12.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1615](https://github.com/tanem/react-nprogress/pull/1615) Update dependency @types/react to v18.0.37 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1629](https://github.com/tanem/react-nprogress/pull/1629) Update dependency rollup to v3.20.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1627](https://github.com/tanem/react-nprogress/pull/1627) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1628](https://github.com/tanem/react-nprogress/pull/1628) Update dependency rollup to v3.20.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1626](https://github.com/tanem/react-nprogress/pull/1626) Update dependency typescript to v5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1625](https://github.com/tanem/react-nprogress/pull/1625) Update typescript-eslint monorepo to v5.58.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1624](https://github.com/tanem/react-nprogress/pull/1624) Update dependency ts-jest to v29.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1622](https://github.com/tanem/react-nprogress/pull/1622) Update dependency eslint-config-prettier to v8.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1623](https://github.com/tanem/react-nprogress/pull/1623) Update dependency rollup to v3.20.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1621](https://github.com/tanem/react-nprogress/pull/1621) Update dependency eslint to v8.38.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1620](https://github.com/tanem/react-nprogress/pull/1620) Update dependency @types/jest to v29.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1619](https://github.com/tanem/react-nprogress/pull/1619) Update dependency @rollup/plugin-commonjs to v24.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1618](https://github.com/tanem/react-nprogress/pull/1618) Update dependency @mui/material to v5.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1617](https://github.com/tanem/react-nprogress/pull/1617) Update dependency tanem-scripts to v7.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1616](https://github.com/tanem/react-nprogress/pull/1616) Update dependency prettier to v2.8.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1613](https://github.com/tanem/react-nprogress/pull/1613) Update dependency @types/node to v18.15.11 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1614](https://github.com/tanem/react-nprogress/pull/1614) Update dependency @types/react to v18.0.35 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.34](https://github.com/tanem/react-nprogress/tree/v5.0.34) (2023-04-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.33...v5.0.34)
 
