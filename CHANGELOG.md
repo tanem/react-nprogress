@@ -1,11 +1,24 @@
 # Changelog
 
+## [v5.0.36](https://github.com/tanem/react-nprogress/tree/v5.0.36) (2023-04-29)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.35...v5.0.36)
+
+#### :house: Internal
+
+- [#1648](https://github.com/tanem/react-nprogress/pull/1648) Update dependency @types/react-dom to v18.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1647](https://github.com/tanem/react-nprogress/pull/1647) Update dependency @types/node to v18.16.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1646](https://github.com/tanem/react-nprogress/pull/1646) Update dependency @mui/material to v5.12.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1645](https://github.com/tanem/react-nprogress/pull/1645) Update react monorepo to v18.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1644](https://github.com/tanem/react-nprogress/pull/1644) Update dependency tanem-scripts to v7.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1643](https://github.com/tanem/react-nprogress/pull/1643) Update typescript-eslint monorepo to v5.59.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1642](https://github.com/tanem/react-nprogress/pull/1642) Update dependency rollup to v3.21.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1641](https://github.com/tanem/react-nprogress/pull/1641) Update dependency prettier to v2.8.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1640](https://github.com/tanem/react-nprogress/pull/1640) Update dependency @types/node to v18.16.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1639](https://github.com/tanem/react-nprogress/pull/1639) Update dependency @types/react to v18.0.38 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1638](https://github.com/tanem/react-nprogress/pull/1638) Update dependency eslint to v8.39.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.35](https://github.com/tanem/react-nprogress/tree/v5.0.35) (2023-04-24)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.34...v5.0.35)
-
-#### undefined
-
-- [#1612](https://github.com/tanem/react-nprogress/pull/1612) Use default renovate prCreation setting ([@tanem](https://github.com/tanem))
 
 #### :house: Internal
 
@@ -34,6 +47,7 @@
 - [#1616](https://github.com/tanem/react-nprogress/pull/1616) Update dependency prettier to v2.8.7 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#1613](https://github.com/tanem/react-nprogress/pull/1613) Update dependency @types/node to v18.15.11 ([@renovate[bot]](https://github.com/apps/renovate))
 - [#1614](https://github.com/tanem/react-nprogress/pull/1614) Update dependency @types/react to v18.0.35 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1612](https://github.com/tanem/react-nprogress/pull/1612) Use default renovate prCreation setting ([@tanem](https://github.com/tanem))
 
 ## [v5.0.34](https://github.com/tanem/react-nprogress/tree/v5.0.34) (2023-04-17)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.33...v5.0.34)
