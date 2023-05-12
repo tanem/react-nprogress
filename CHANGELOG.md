@@ -1,5 +1,28 @@
 # Changelog
 
+## [v5.0.38](https://github.com/tanem/react-nprogress/tree/v5.0.38) (2023-05-12)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.37...v5.0.38)
+
+#### :house: Internal
+
+- [#1674](https://github.com/tanem/react-nprogress/pull/1674) Update dependency @types/node to v18.16.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1673](https://github.com/tanem/react-nprogress/pull/1673) Update typescript-eslint monorepo to v5.59.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1672](https://github.com/tanem/react-nprogress/pull/1672) Update dependency @types/react to v18.2.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1671](https://github.com/tanem/react-nprogress/pull/1671) Update dependency eslint to v8.40.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1669](https://github.com/tanem/react-nprogress/pull/1669) Update dependency tanem-scripts to v7.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1670](https://github.com/tanem/react-nprogress/pull/1670) Update dependency @types/node to v18.16.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1668](https://github.com/tanem/react-nprogress/pull/1668) Update dependency @types/react-dom to v18.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1667](https://github.com/tanem/react-nprogress/pull/1667) Update dependency @types/node to v18.16.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1666](https://github.com/tanem/react-nprogress/pull/1666) Update dependency rollup to v3.21.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1665](https://github.com/tanem/react-nprogress/pull/1665) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1664](https://github.com/tanem/react-nprogress/pull/1664) Update dependency @types/react-transition-group to v4.4.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1663](https://github.com/tanem/react-nprogress/pull/1663) Update dependency @types/react to v18.2.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1662](https://github.com/tanem/react-nprogress/pull/1662) Update dependency @types/react to v18.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1660](https://github.com/tanem/react-nprogress/pull/1660) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1661](https://github.com/tanem/react-nprogress/pull/1661) Update dependency rollup to v3.21.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1659](https://github.com/tanem/react-nprogress/pull/1659) Update dependency @mui/material to v5.12.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1658](https://github.com/tanem/react-nprogress/pull/1658) Update dependency @babel/core to v7.21.8 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.37](https://github.com/tanem/react-nprogress/tree/v5.0.37) (2023-05-05)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.36...v5.0.37)
 
