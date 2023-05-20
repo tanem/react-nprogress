@@ -1,5 +1,21 @@
 # Changelog
 
+## [v5.0.39](https://github.com/tanem/react-nprogress/tree/v5.0.39) (2023-05-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.38...v5.0.39)
+
+#### :house: Internal
+
+- [#1685](https://github.com/tanem/react-nprogress/pull/1685) Update dependency @rollup/plugin-terser to v0.4.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1684](https://github.com/tanem/react-nprogress/pull/1684) Update dependency @types/node to v18.16.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1683](https://github.com/tanem/react-nprogress/pull/1683) Update typescript-eslint monorepo to v5.59.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1682](https://github.com/tanem/react-nprogress/pull/1682) Update dependency @types/node to v18.16.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1681](https://github.com/tanem/react-nprogress/pull/1681) Update dependency tanem-scripts to v7.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1680](https://github.com/tanem/react-nprogress/pull/1680) Update dependency @rollup/plugin-commonjs to v25 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1679](https://github.com/tanem/react-nprogress/pull/1679) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1678](https://github.com/tanem/react-nprogress/pull/1678) Update dependency @types/node to v18.16.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1677](https://github.com/tanem/react-nprogress/pull/1677) Update dependency @mui/material to v5.13.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1676](https://github.com/tanem/react-nprogress/pull/1676) Update dependency @types/node to v18.16.7 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.38](https://github.com/tanem/react-nprogress/tree/v5.0.38) (2023-05-12)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.37...v5.0.38)
 
