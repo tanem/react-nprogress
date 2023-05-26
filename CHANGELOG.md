@@ -1,5 +1,23 @@
 # Changelog
 
+## [v5.0.40](https://github.com/tanem/react-nprogress/tree/v5.0.40) (2023-05-26)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.39...v5.0.40)
+
+#### :house: Internal
+
+- [#1696](https://github.com/tanem/react-nprogress/pull/1696) Update typescript-eslint monorepo to v5.59.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1695](https://github.com/tanem/react-nprogress/pull/1695) Update dependency @mui/material to v5.13.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1694](https://github.com/tanem/react-nprogress/pull/1694) Update dependency rollup to v3.23.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1693](https://github.com/tanem/react-nprogress/pull/1693) Update dependency @types/node to v18.16.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1675](https://github.com/tanem/react-nprogress/pull/1675) Update dependency rollup to v3.22.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1692](https://github.com/tanem/react-nprogress/pull/1692) Update dependency tanem-scripts to v7.0.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1691](https://github.com/tanem/react-nprogress/pull/1691) Update dependency eslint to v8.41.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1690](https://github.com/tanem/react-nprogress/pull/1690) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1689](https://github.com/tanem/react-nprogress/pull/1689) Update dependency @types/node to v18.16.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1688](https://github.com/tanem/react-nprogress/pull/1688) Update dependency @rollup/plugin-terser to v0.4.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1687](https://github.com/tanem/react-nprogress/pull/1687) Update dependency @mui/material to v5.13.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1686](https://github.com/tanem/react-nprogress/pull/1686) Update dependency @types/node to v18.16.12 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.39](https://github.com/tanem/react-nprogress/tree/v5.0.39) (2023-05-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.38...v5.0.39)
 
