@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/material": "5.13.3",
+    "@mui/material": "5.13.4",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "29.5.2",
     "@types/node": "18.16.16",
