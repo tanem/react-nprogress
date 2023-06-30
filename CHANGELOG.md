@@ -1,5 +1,24 @@
 # Changelog
 
+## [v5.0.44](https://github.com/tanem/react-nprogress/tree/v5.0.44) (2023-06-30)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.43...v5.0.44)
+
+#### :house: Internal
+
+- [#1743](https://github.com/tanem/react-nprogress/pull/1743) Update dependency rollup to v3.25.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1742](https://github.com/tanem/react-nprogress/pull/1742) Update typescript-eslint monorepo to v5.60.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1741](https://github.com/tanem/react-nprogress/pull/1741) Update dependency rollup to v3.25.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1740](https://github.com/tanem/react-nprogress/pull/1740) Update dependency @types/react to v18.2.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1739](https://github.com/tanem/react-nprogress/pull/1739) Update dependency @mui/material to v5.13.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1738](https://github.com/tanem/react-nprogress/pull/1738) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1737](https://github.com/tanem/react-nprogress/pull/1737) Update typescript-eslint monorepo to v5.60.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1736](https://github.com/tanem/react-nprogress/pull/1736) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1735](https://github.com/tanem/react-nprogress/pull/1735) Update dependency @rollup/plugin-commonjs to v25.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1734](https://github.com/tanem/react-nprogress/pull/1734) Update dependency tanem-scripts to v7.0.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1733](https://github.com/tanem/react-nprogress/pull/1733) Update dependency eslint to v8.43.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1732](https://github.com/tanem/react-nprogress/pull/1732) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1729](https://github.com/tanem/react-nprogress/pull/1729) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.43](https://github.com/tanem/react-nprogress/tree/v5.0.43) (2023-06-18)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.42...v5.0.43)
 
