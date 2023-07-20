@@ -1,5 +1,39 @@
 # Changelog
 
+## [v5.0.45](https://github.com/tanem/react-nprogress/tree/v5.0.45) (2023-07-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.44...v5.0.45)
+
+#### :house: Internal
+
+- [#1772](https://github.com/tanem/react-nprogress/pull/1772) Update dependency rollup to v3.26.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1771](https://github.com/tanem/react-nprogress/pull/1771) Update dependency @rollup/plugin-commonjs to v25.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1770](https://github.com/tanem/react-nprogress/pull/1770) Update dependency eslint to v8.45.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1769](https://github.com/tanem/react-nprogress/pull/1769) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1768](https://github.com/tanem/react-nprogress/pull/1768) Update dependency @types/react to v18.2.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1767](https://github.com/tanem/react-nprogress/pull/1767) Update dependency @types/react-dom to v18.2.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1766](https://github.com/tanem/react-nprogress/pull/1766) Update babel monorepo to v7.22.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1765](https://github.com/tanem/react-nprogress/pull/1765) Update dependency @mui/material to v5.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1764](https://github.com/tanem/react-nprogress/pull/1764) Update typescript-eslint monorepo to v6 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1763](https://github.com/tanem/react-nprogress/pull/1763) Update typescript-eslint monorepo to v5.62.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1762](https://github.com/tanem/react-nprogress/pull/1762) Update dependency @types/jest to v29.5.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1761](https://github.com/tanem/react-nprogress/pull/1761) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1760](https://github.com/tanem/react-nprogress/pull/1760) Update jest monorepo to v29.6.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1759](https://github.com/tanem/react-nprogress/pull/1759) Update dependency rollup to v3.26.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1758](https://github.com/tanem/react-nprogress/pull/1758) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1756](https://github.com/tanem/react-nprogress/pull/1756) Update dependency rollup to v3.26.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1755](https://github.com/tanem/react-nprogress/pull/1755) Update jest monorepo to v29.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1754](https://github.com/tanem/react-nprogress/pull/1754) Update dependency @mui/material to v5.13.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1753](https://github.com/tanem/react-nprogress/pull/1753) Update babel monorepo to v7.22.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1752](https://github.com/tanem/react-nprogress/pull/1752) Update typescript-eslint monorepo to v5.61.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1751](https://github.com/tanem/react-nprogress/pull/1751) Update dependency eslint to v8.44.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1750](https://github.com/tanem/react-nprogress/pull/1750) Update dependency @types/node to v18.16.19 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1749](https://github.com/tanem/react-nprogress/pull/1749) Update dependency tanem-scripts to v7.0.11 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1748](https://github.com/tanem/react-nprogress/pull/1748) Update dependency ts-jest to v29.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1747](https://github.com/tanem/react-nprogress/pull/1747) Update dependency rollup to v3.26.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1746](https://github.com/tanem/react-nprogress/pull/1746) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1745](https://github.com/tanem/react-nprogress/pull/1745) Update dependency typescript to v5.1.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1744](https://github.com/tanem/react-nprogress/pull/1744) Update dependency typescript to v5.1.5 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.44](https://github.com/tanem/react-nprogress/tree/v5.0.44) (2023-06-30)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.43...v5.0.44)
 
