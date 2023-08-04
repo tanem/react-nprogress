@@ -3,7 +3,7 @@ import './index.css'
 import { Link, Location, RouteComponentProps, Router } from '@reach/router'
 import { useNProgress } from '@tanem/react-nprogress'
 import React, { useState } from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const App: React.FC = () => (
@@ -123,4 +123,6 @@ const FadeTransitionRouter: React.FC = ({ children }) => {
   )
 }
 
-render(<App />, document.getElementById('root'))
+const container = document.getElementById('root')
+const root = createRoot(container!)
+root.render(<App />)

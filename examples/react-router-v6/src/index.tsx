@@ -2,7 +2,7 @@ import './index.css'
 
 import { useNProgress } from '@tanem/react-nprogress'
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import {
   BrowserRouter as Router,
   Link,
@@ -187,4 +187,6 @@ const AnimationExample: React.FC = () => {
   )
 }
 
-ReactDOM.render(<AnimationExample />, document.getElementById('root'))
+const container = document.getElementById('root')
+const root = createRoot(container!)
+root.render(<AnimationExample />)
