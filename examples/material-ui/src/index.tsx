@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
 import { makeStyles } from '@material-ui/core/styles'
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 import Progress from './Progress'
 
@@ -47,4 +47,6 @@ const App: React.FC = () => {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const container = document.getElementById('root')
+const root = createRoot(container!)
+root.render(<App />)
