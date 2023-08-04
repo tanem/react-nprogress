@@ -29,7 +29,9 @@ const Loading: React.FC<{ isRouteChanging: boolean }> = ({
         }
 
         .spinner {
-          box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+          box-shadow:
+            0 0 10px #29d,
+            0 0 5px #29d;
           display: block;
           height: 100%;
           opacity: 1;

@@ -77,7 +77,7 @@ export const useNProgress = ({
         })
       })
     },
-    [animationDuration, cleanup, minimum, queue, setState, timeout]
+    [animationDuration, cleanup, minimum, queue, setState, timeout],
   )
 
   const trickle = useCallback(() => {
