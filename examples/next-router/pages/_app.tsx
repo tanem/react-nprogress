@@ -49,9 +49,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
             margin: 0 10px 0 0;
           }
         `}</style>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/forever">Forever</Link>
+        <Link href="/">Home</Link> <Link href="/about">About</Link>{' '}
+        <Link href="/forever">Forever</Link>{' '}
         <a href="/non-existing">Non Existing Page</a>
       </nav>
       <Component {...pageProps} />
