@@ -15,7 +15,7 @@ const useUpdate = () => {
 
 export const useGetSetState = <T extends object>(
   /* istanbul ignore next */
-  initialState: T = {} as T
+  initialState: T = {} as T,
 ): [() => T, (patch: Partial<T>) => void] => {
   const update = useUpdate()
   const state = useRef<T>({ ...(initialState as object) } as T)

@@ -16,7 +16,7 @@ test('receives render props', () => {
         progress = props.progress
         return <></>
       }}
-    </NProgress>
+    </NProgress>,
   )
 
   expect(animationDuration).toBe(200)

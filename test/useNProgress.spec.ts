@@ -21,7 +21,7 @@ test('defaults', () => {
 
 test('starts animating when isAnimating is true', () => {
   const { result, unmount } = renderHook(() =>
-    useNProgress({ isAnimating: true })
+    useNProgress({ isAnimating: true }),
   )
 
   expect(result.current).toEqual({
@@ -36,7 +36,7 @@ test('starts animating when isAnimating is true', () => {
 test('starts animating when isAnimating changes from false to true', () => {
   const { result, rerender, unmount } = renderHook(
     ({ isAnimating }) => useNProgress({ isAnimating }),
-    { initialProps: { isAnimating: false } }
+    { initialProps: { isAnimating: false } },
   )
 
   rerender({ isAnimating: true })
@@ -52,7 +52,7 @@ test('starts animating when isAnimating changes from false to true', () => {
 
 test('increments correctly', () => {
   const { result, unmount } = renderHook(() =>
-    useNProgress({ isAnimating: true })
+    useNProgress({ isAnimating: true }),
   )
 
   act(() => {
@@ -74,7 +74,7 @@ test('increments correctly', () => {
 test('animates to finish if isAnimating was changed from true to false', () => {
   const { result, rerender, unmount } = renderHook(
     ({ isAnimating }) => useNProgress({ isAnimating }),
-    { initialProps: { isAnimating: true } }
+    { initialProps: { isAnimating: true } },
   )
 
   rerender({ isAnimating: false })
@@ -96,7 +96,7 @@ test('animates to finish if isAnimating was changed from true to false', () => {
 test('correctly restarts a finished animation', () => {
   const { result, rerender, unmount } = renderHook(
     ({ isAnimating }) => useNProgress({ isAnimating }),
-    { initialProps: { isAnimating: true } }
+    { initialProps: { isAnimating: true } },
   )
 
   rerender({ isAnimating: false })
