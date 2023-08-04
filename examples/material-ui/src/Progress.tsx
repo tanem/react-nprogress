@@ -1,6 +1,6 @@
-import Container from '@material-ui/core/Container'
-import LinearProgress from '@material-ui/core/LinearProgress'
-import { makeStyles, Theme } from '@material-ui/core/styles'
+import Container from '@mui/material/Container'
+import LinearProgress from '@mui/material/LinearProgress'
+import { makeStyles, Theme } from '@mui/styles'
 import { useNProgress } from '@tanem/react-nprogress'
 import React from 'react'
 

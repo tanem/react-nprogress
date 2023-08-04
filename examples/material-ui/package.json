@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "@mui/material": "5.14.3",
+    "@mui/styles": "5.14.3",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "29.5.3",
     "@types/node": "18.17.1",
