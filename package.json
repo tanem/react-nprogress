@@ -107,7 +107,7 @@
     "rollup": "3.27.2",
     "rollup-plugin-sourcemaps": "0.6.3",
     "shx": "0.3.4",
-    "tanem-scripts": "7.0.12",
+    "tanem-scripts": "7.0.13",
     "ts-jest": "29.1.1",
     "typescript": "5.1.6"
   }
