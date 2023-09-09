@@ -1,5 +1,22 @@
 # Changelog
 
+## [v5.0.50](https://github.com/tanem/react-nprogress/tree/v5.0.50) (2023-09-09)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.49...v5.0.50)
+
+#### :house: Internal
+
+- [#1856](https://github.com/tanem/react-nprogress/pull/1856) Update dependency rollup to v3.29.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1855](https://github.com/tanem/react-nprogress/pull/1855) Update dependency @mui/material to v5.14.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1854](https://github.com/tanem/react-nprogress/pull/1854) Update typescript-eslint monorepo to v6.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1853](https://github.com/tanem/react-nprogress/pull/1853) Update actions/checkout action to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1852](https://github.com/tanem/react-nprogress/pull/1852) Update babel monorepo to v7.22.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1851](https://github.com/tanem/react-nprogress/pull/1851) Update dependency @types/node to v18.17.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1850](https://github.com/tanem/react-nprogress/pull/1850) Update dependency @types/node to v18.17.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1849](https://github.com/tanem/react-nprogress/pull/1849) Update dependency tanem-scripts to v7.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1848](https://github.com/tanem/react-nprogress/pull/1848) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1847](https://github.com/tanem/react-nprogress/pull/1847) Update dependency @babel/preset-env to v7.22.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#1846](https://github.com/tanem/react-nprogress/pull/1846) Update material-ui monorepo to v5.14.7 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.49](https://github.com/tanem/react-nprogress/tree/v5.0.49) (2023-09-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.48...v5.0.49)
 
