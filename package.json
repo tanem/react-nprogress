@@ -70,11 +70,11 @@
     "hoist-non-react-statics": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/core": "7.23.2",
-    "@babel/plugin-transform-runtime": "7.23.2",
-    "@babel/preset-env": "7.23.2",
-    "@babel/preset-react": "7.22.15",
-    "@babel/preset-typescript": "7.23.2",
+    "@babel/core": "7.23.3",
+    "@babel/plugin-transform-runtime": "7.23.3",
+    "@babel/preset-env": "7.23.3",
+    "@babel/preset-react": "7.23.3",
+    "@babel/preset-typescript": "7.23.3",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-commonjs": "25.0.7",
     "@rollup/plugin-node-resolve": "15.2.3",
