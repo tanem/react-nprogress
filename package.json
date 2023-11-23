@@ -66,12 +66,12 @@
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.2",
+    "@babel/runtime": "^7.23.4",
     "hoist-non-react-statics": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.23.3",
-    "@babel/plugin-transform-runtime": "7.23.3",
+    "@babel/plugin-transform-runtime": "7.23.4",
     "@babel/preset-env": "7.23.3",
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
