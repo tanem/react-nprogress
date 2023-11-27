@@ -84,7 +84,7 @@
     "@types/hoist-non-react-statics": "3.3.5",
     "@types/jest": "29.5.10",
     "@types/mock-raf": "1.0.6",
-    "@types/node": "20.9.5",
+    "@types/node": "20.10.0",
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.17",
     "@typescript-eslint/eslint-plugin": "6.12.0",
