@@ -104,7 +104,7 @@
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
     "regenerator-runtime": "0.14.1",
-    "rollup": "4.9.1",
+    "rollup": "4.9.2",
     "rollup-plugin-sourcemaps": "0.6.3",
     "shx": "0.3.4",
     "tanem-scripts": "7.0.25",
