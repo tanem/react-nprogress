@@ -13,7 +13,7 @@
     "@mui/styles": "5.15.14",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "29.5.12",
-    "@types/node": "20.11.29",
+    "@types/node": "20.11.30",
     "@types/react": "18.2.67",
     "@types/react-dom": "18.2.22",
     "react": "18.2.0",
