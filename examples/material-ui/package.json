@@ -9,8 +9,8 @@
   "dependencies": {
     "@emotion/react": "11.13.3",
     "@emotion/styled": "11.13.0",
-    "@mui/material": "6.0.0",
-    "@mui/styles": "6.0.0",
+    "@mui/material": "6.0.1",
+    "@mui/styles": "6.0.1",
     "@tanem/react-nprogress": "latest",
     "@types/jest": "29.5.12",
     "@types/node": "20.16.2",
