@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:tanem/react-nprogress"
+    "url": "git+https://github.com/tanem/react-nprogress.git"
   },
   "keywords": [
     "animation",
