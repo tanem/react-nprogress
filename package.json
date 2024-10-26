@@ -85,7 +85,7 @@
     "@rollup/plugin-terser": "0.4.4",
     "@testing-library/react": "16.0.1",
     "@types/hoist-non-react-statics": "3.3.5",
-    "@types/jest": "29.5.13",
+    "@types/jest": "29.5.14",
     "@types/mock-raf": "1.0.6",
     "@types/node": "20.16.14",
     "@types/react": "18.3.11",
