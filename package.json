@@ -66,15 +66,15 @@
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.25.9",
+    "@babel/runtime": "^7.26.0",
     "hoist-non-react-statics": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/core": "7.25.9",
+    "@babel/core": "7.26.0",
     "@babel/plugin-transform-runtime": "7.25.9",
-    "@babel/preset-env": "7.25.9",
+    "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.25.9",
-    "@babel/preset-typescript": "7.25.9",
+    "@babel/preset-typescript": "7.26.0",
     "@eslint/compat": "1.2.1",
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.13.0",
