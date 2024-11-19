@@ -75,7 +75,7 @@
     "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.25.9",
     "@babel/preset-typescript": "7.26.0",
-    "@eslint/compat": "1.2.2",
+    "@eslint/compat": "1.2.3",
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.13.0",
     "@rollup/plugin-babel": "6.0.4",
