@@ -5,7 +5,7 @@ import replace from '@rollup/plugin-replace'
 import terser from '@rollup/plugin-terser'
 import sourcemaps from 'rollup-plugin-sourcemaps'
 
-import pkg from './package.json' assert { type: 'json' }
+import pkg from './package.json' with { type: 'json' }
 
 const CJS_DEV = 'CJS_DEV'
 const CJS_PROD = 'CJS_PROD'
@@ -59,7 +59,7 @@ const getPlugins = (bundleType) => [
   replace({
     preventAssignment: true,
     'process.env.NODE_ENV': JSON.stringify(
-      isProduction(bundleType) ? 'production' : 'development'
+      isProduction(bundleType) ? 'production' : 'development',
     ),
   }),
   sourcemaps(),
