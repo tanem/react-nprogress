@@ -3,7 +3,6 @@ import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import terser from '@rollup/plugin-terser'
-import sourcemaps from 'rollup-plugin-sourcemaps'
 
 import pkg from './package.json' with { type: 'json' }
 
@@ -46,6 +45,7 @@ const getBabelConfig = () => ({
   babelHelpers: 'runtime',
   babelrc: false,
   exclude: 'node_modules/**',
+  inputSourceMap: true,
   plugins: ['@babel/transform-runtime'],
   presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
 })
@@ -62,7 +62,6 @@ const getPlugins = (bundleType) => [
       isProduction(bundleType) ? 'production' : 'development',
     ),
   }),
-  sourcemaps(),
   isProduction(bundleType) &&
     terser({
       compress: {
