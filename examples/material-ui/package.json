@@ -7,8 +7,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "11.13.3",
-    "@emotion/styled": "11.13.0",
+    "@emotion/react": "11.13.5",
+    "@emotion/styled": "11.13.5",
     "@mui/material": "6.1.7",
     "@mui/styles": "6.1.7",
     "@tanem/react-nprogress": "latest",
