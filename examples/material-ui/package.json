@@ -15,7 +15,7 @@
     "@types/jest": "29.5.14",
     "@types/node": "22.10.1",
     "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-scripts": "5.0.1",
