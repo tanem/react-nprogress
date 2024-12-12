@@ -89,7 +89,7 @@
     "@types/mock-raf": "1.0.6",
     "@types/node": "22.10.1",
     "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "@typescript-eslint/eslint-plugin": "8.17.0",
     "@typescript-eslint/parser": "8.17.0",
     "babel-core": "6.26.3",
