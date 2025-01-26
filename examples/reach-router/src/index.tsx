@@ -94,6 +94,7 @@ const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
 
 const FadeTransitionRouter: React.FC = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false)
+  const nodeRef = React.useRef(null)
 
   return (
     <Location>
@@ -104,6 +105,7 @@ const FadeTransitionRouter: React.FC = ({ children }) => {
             <CSSTransition
               classNames="fade"
               key={location.key}
+              nodeRef={nodeRef}
               onEnter={() => {
                 setIsLoading(true)
               }}
