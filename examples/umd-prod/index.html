@@ -3,13 +3,16 @@
     <meta charset="UTF-8" />
     <title>ReactNProgress UMD Prod Example</title>
     <link href="main.css" rel="stylesheet" />
-    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
     <script src="https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.production.js"></script>
   </head>
 
   <body>
+    <p>
+      Note: UMD builds were removed in React 19. This example uses React 18.
+    </p>
     <div id="app"></div>
     <script type="text/babel">
       const { useNProgress } = window.NProgress

@@ -130,6 +130,7 @@ const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false)
   const location = useLocation()
+  const nodeRef = React.useRef(null)
 
   return (
     <>
@@ -155,6 +156,7 @@ const Home = () => {
             <CSSTransition
               classNames="fade"
               key={location.key}
+              nodeRef={nodeRef}
               onEnter={() => {
                 setIsLoading(true)
               }}

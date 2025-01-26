@@ -192,20 +192,20 @@ const Enhanced = withNProgress(Inner)
 $ npm install @tanem/react-nprogress
 ```
 
-There are also UMD builds available via [unpkg](https://unpkg.com/):
+UMD builds are also available for use with pre-React 19 via [unpkg](https://unpkg.com/):
 
 - https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.development.js
 - https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.production.js
 
 For the non-minified development version, make sure you have already included:
 
-- [`React`](https://unpkg.com/react/umd/react.development.js)
-- [`ReactDOM`](https://unpkg.com/react-dom/umd/react-dom.development.js)
+- [`React`](https://unpkg.com/react@18/umd/react.development.js)
+- [`ReactDOM`](https://unpkg.com/react-dom@18/umd/react-dom.development.js)
 
 For the minified production version, make sure you have already included:
 
-- [`React`](https://unpkg.com/react/umd/react.production.min.js)
-- [`ReactDOM`](https://unpkg.com/react-dom/umd/react-dom.production.min.js)
+- [`React`](https://unpkg.com/react@18/umd/react.production.min.js)
+- [`ReactDOM`](https://unpkg.com/react-dom@18/umd/react-dom.production.min.js)
 
 ## License
 
