@@ -129,6 +129,7 @@ const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
 
 const AnimationExample: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false)
+  const nodeRef = React.useRef(null)
 
   return (
     <Router>
@@ -162,6 +163,7 @@ const AnimationExample: React.FC = () => {
                   <CSSTransition
                     classNames="fade"
                     key={location.key}
+                    nodeRef={nodeRef}
                     onEnter={() => {
                       setIsLoading(true)
                     }}
