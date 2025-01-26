@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.0.55](https://github.com/tanem/react-nprogress/tree/v5.0.55) (2025-01-26)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.54...v5.0.55)
+
+#### :memo: Documentation
+
+- [#2575](https://github.com/tanem/react-nprogress/pull/2575) Fix examples for React 19 ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#2573](https://github.com/tanem/react-nprogress/pull/2573) Update dependency @types/node to v22.10.10 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.54](https://github.com/tanem/react-nprogress/tree/v5.0.54) (2025-01-26)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.53...v5.0.54)
 
