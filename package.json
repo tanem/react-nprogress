@@ -25,6 +25,7 @@
     "format": "npm run lint -- --fix && prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint .",
     "postbundle": "npm run clean:compiled && shx cp ./index.js ./dist/index.js",
+    "prepare": "npm run build",
     "release": "tanem-scripts release",
     "test": "run-s check:* lint build test:*",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
