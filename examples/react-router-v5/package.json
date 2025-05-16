@@ -11,7 +11,7 @@
     "@types/jest": "29.5.14",
     "@types/node": "22.15.17",
     "@types/react": "19.1.4",
-    "@types/react-dom": "19.1.4",
+    "@types/react-dom": "19.1.5",
     "@types/react-router-dom": "5.3.3",
     "@types/react-transition-group": "4.4.12",
     "react": "19.1.0",
