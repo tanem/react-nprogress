@@ -110,7 +110,7 @@
     "rollup": "4.40.2",
     "shx": "0.4.0",
     "tanem-scripts": "7.0.27",
-    "ts-jest": "29.3.3",
+    "ts-jest": "29.3.4",
     "typescript": "5.8.3"
   }
 }
