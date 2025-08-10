@@ -4,38 +4,27 @@
     ":rebaseStalePrs",
     ":automergeAll",
     ":label(internal)",
-    ":masterIssue",
+    ":dependencyDashboard",
     ":enableVulnerabilityAlerts"
   ],
-  "ignorePaths": [
-    "**/node_modules/**"
-  ],
+  "ignorePaths": ["**/node_modules/**"],
   "lockFileMaintenance": {
     "enabled": true
   },
   "packageRules": [
     {
-      "depTypeList": [
-        "dependencies"
-      ],
+      "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump"
     },
     {
-      "matchPackageNames": [
-        "@types/react-router-dom",
-        "react-router-dom"
-      ],
+      "matchPackageNames": ["@types/react-router-dom", "react-router-dom"],
       "allowedVersions": "< 6.0.0"
     },
     {
-      "matchPaths": [
-        "examples/**/package.json"
-      ],
-      "matchPackageNames": [
-        "typescript"
-      ],
+      "matchFileNames": ["examples/**/package.json"],
+      "matchPackageNames": ["typescript"],
       "allowedVersions": "< 5.0.0"
     }
   ],
-  "stabilityDays": 3
+  "minimumReleaseAge": "3 days"
 }
