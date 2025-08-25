@@ -10,7 +10,7 @@
     "@tanem/react-nprogress": "latest",
     "@types/jest": "30.0.0",
     "@types/node": "22.17.2",
-    "@types/react": "19.1.10",
+    "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
     "@types/react-router-dom": "5.3.3",
     "@types/react-transition-group": "4.4.12",
