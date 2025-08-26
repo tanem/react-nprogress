@@ -107,7 +107,7 @@
     "react-dom": "19.1.1",
     "react-test-renderer": "19.1.1",
     "regenerator-runtime": "0.14.1",
-    "rollup": "4.47.1",
+    "rollup": "4.48.0",
     "shx": "0.4.0",
     "tanem-scripts": "7.0.27",
     "ts-jest": "29.4.1",
