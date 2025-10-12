@@ -93,7 +93,6 @@
     "@types/react-dom": "19.2.1",
     "@typescript-eslint/eslint-plugin": "8.46.0",
     "@typescript-eslint/parser": "8.46.0",
-    "babel-core": "6.26.3",
     "eslint": "9.37.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-react": "7.37.5",
