@@ -10,6 +10,6 @@
     "start": "npx serve . --single --listen 1234"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "serve": "14.2.5"
   }
 }
