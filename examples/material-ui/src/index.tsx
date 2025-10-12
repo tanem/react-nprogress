@@ -1,27 +1,12 @@
+import { GlobalStyles } from '@mui/material'
 import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
-import { makeStyles } from '@mui/styles'
 import React, { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import Progress from './Progress'
 
-const useStyles = makeStyles({
-  '@global': {
-    body: {
-      margin: 0,
-    },
-  },
-  container: {
-    alignItems: 'center',
-    display: 'flex',
-    height: '100vh',
-    justifyContent: 'center',
-  },
-})
-
 const App: React.FC = () => {
-  const classes = useStyles()
   const [state, setState] = useState({
     isAnimating: false,
     key: 0,
@@ -29,8 +14,22 @@ const App: React.FC = () => {
 
   return (
     <>
+      <GlobalStyles
+        styles={{
+          body: {
+            margin: 0,
+          },
+        }}
+      />
       <Progress isAnimating={state.isAnimating} key={state.key} />
-      <Container classes={{ root: classes.container }}>
+      <Container
+        sx={{
+          alignItems: 'center',
+          display: 'flex',
+          height: '100vh',
+          justifyContent: 'center',
+        }}
+      >
         <Button
           onClick={() => {
             setState((prevState) => ({
