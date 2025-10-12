@@ -1,33 +1,28 @@
 import Container from '@mui/material/Container'
 import LinearProgress from '@mui/material/LinearProgress'
-import { makeStyles, Theme } from '@mui/styles'
 import { useNProgress } from '@tanem/react-nprogress'
 import React from 'react'
-
-const useStyles = makeStyles<
-  Theme,
-  Pick<ReturnType<typeof useNProgress>, 'animationDuration' | 'isFinished'>
->({
-  bar: ({ animationDuration }) => ({
-    transitionDuration: `${animationDuration}ms`,
-  }),
-  container: ({ animationDuration, isFinished }) => ({
-    opacity: isFinished ? 0 : 1,
-    pointerEvents: 'none',
-    transition: `opacity ${animationDuration}ms linear`,
-  }),
-})
 
 const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
   })
-  const classes = useStyles({ animationDuration, isFinished })
 
   return (
-    <Container classes={{ root: classes.container }} disableGutters={true}>
+    <Container
+      disableGutters={true}
+      sx={{
+        opacity: isFinished ? 0 : 1,
+        pointerEvents: 'none',
+        transition: `opacity ${animationDuration}ms linear`,
+      }}
+    >
       <LinearProgress
-        classes={{ bar1Determinate: classes.bar }}
+        sx={{
+          '& .MuiLinearProgress-bar1Determinate': {
+            transitionDuration: `${animationDuration}ms`,
+          },
+        }}
         value={progress * 100}
         variant="determinate"
       />
