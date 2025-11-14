@@ -13,7 +13,7 @@
     "@tanem/react-nprogress": "latest",
     "@types/jest": "30.0.0",
     "@types/node": "24.10.0",
-    "@types/react": "19.2.2",
+    "@types/react": "19.2.3",
     "@types/react-dom": "19.2.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
