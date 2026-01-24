@@ -1,5 +1,12 @@
 # Changelog
 
+## [v5.0.58](https://github.com/tanem/react-nprogress/tree/v5.0.58) (2026-01-24)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.57...v5.0.58)
+
+#### :house: Internal
+
+- [#2974](https://github.com/tanem/react-nprogress/pull/2974) Fix audit issues ([@tanem](https://github.com/tanem))
+
 ## [v5.0.57](https://github.com/tanem/react-nprogress/tree/v5.0.57) (2026-01-24)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.56...v5.0.57)
 
