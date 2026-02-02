@@ -1,5 +1,16 @@
 # Changelog
 
+## [v5.0.59](https://github.com/tanem/react-nprogress/tree/v5.0.59) (2026-02-02)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.58...v5.0.59)
+
+#### :house: Internal
+
+- [#2979](https://github.com/tanem/react-nprogress/pull/2979) Update dependency @types/react to v19.2.10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2978](https://github.com/tanem/react-nprogress/pull/2978) Update dependency rollup to v4.57.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2977](https://github.com/tanem/react-nprogress/pull/2977) Update react monorepo to v19.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2976](https://github.com/tanem/react-nprogress/pull/2976) Update typescript-eslint monorepo to v8.54.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2975](https://github.com/tanem/react-nprogress/pull/2975) Update dependency rollup to v4.56.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.58](https://github.com/tanem/react-nprogress/tree/v5.0.58) (2026-01-24)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.57...v5.0.58)
 
