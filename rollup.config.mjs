@@ -47,7 +47,10 @@ const getBabelConfig = () => ({
   exclude: 'node_modules/**',
   inputSourceMap: true,
   plugins: ['@babel/transform-runtime'],
-  presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
+  presets: [
+    ['@babel/env', { modules: false }],
+    ['@babel/react', { runtime: 'automatic' }],
+  ],
 })
 
 const getPlugins = (bundleType) => [
@@ -68,10 +71,7 @@ const getPlugins = (bundleType) => [
         keep_infinity: true,
         pure_getters: true,
       },
-      ecma: 5,
       output: { comments: false },
-      toplevel: false,
-      warnings: true,
     }),
 ]
 
@@ -113,6 +113,7 @@ const getUmdConfig = (bundleType) => ({
     globals: {
       react: 'React',
       'react-dom': 'ReactDOM',
+      'react/jsx-runtime': 'React',
     },
     name: 'NProgress',
     sourcemap: true,

@@ -1,16 +1,13 @@
-import * as React from 'react'
+import type { FC, ReactElement } from 'react'
 
-import { Options } from './types'
+import type { Options } from './types'
 import { useNProgress } from './useNProgress'
 
 type Props = Options & {
-  children: (renderProps: ReturnType<typeof useNProgress>) => React.ReactElement
+  children: (renderProps: ReturnType<typeof useNProgress>) => ReactElement
 }
 
-export const NProgress: React.FC<Props> = ({
-  children,
-  ...restProps
-}: Props) => {
+export const NProgress: FC<Props> = ({ children, ...restProps }: Props) => {
   const renderProps = useNProgress(restProps)
   return children(renderProps)
 }

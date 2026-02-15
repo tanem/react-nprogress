@@ -1,49 +1,37 @@
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { fixupPluginRules } from '@eslint/compat'
-import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
-import typescriptEslint from '@typescript-eslint/eslint-plugin'
-import tsParser from '@typescript-eslint/parser'
+import eslintConfigPrettier from 'eslint-config-prettier'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-  allConfig: js.configs.all,
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-})
 
-export default [
+export default tseslint.config(
   {
     ignores: ['**/compiled/', '**/coverage/', '**/dist/', '**/node_modules/'],
   },
-  ...compat.extends(
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ),
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  react.configs.flat.recommended,
+  eslintConfigPrettier,
   {
     languageOptions: {
-      ecmaVersion: 5,
-      parser: tsParser,
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
         project: path.join(__dirname, 'tsconfig.eslint.json'),
       },
-      sourceType: 'module',
     },
 
     plugins: {
-      '@typescript-eslint': typescriptEslint,
-      react,
-      'react-hooks': fixupPluginRules(reactHooks),
+      'react-hooks': reactHooks,
       'simple-import-sort': simpleImportSort,
     },
 
@@ -67,9 +55,22 @@ export default [
   },
   {
     files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
     rules: {
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-require-imports': 'off',
+    },
+  },
+  {
+    files: ['examples/plain-js/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
     },
   },
   {
@@ -85,4 +86,4 @@ export default [
       'react/prop-types': 'off',
     },
   },
-]
+)
