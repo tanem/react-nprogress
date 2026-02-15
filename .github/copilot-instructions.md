@@ -135,6 +135,7 @@ npm run test:umdprod       # Test UMD prod build
 - Use proper technical terminology consistently
 
 Example:
+
 ```javascript
 // Good: NZ English in user code
 const progressColour = '#0066cc'
@@ -160,6 +161,30 @@ not how. Reference any relevant issues.
 - No period at end of subject line
 - Separate subject from body with blank line
 ```
+
+### Dependency Management
+
+This project uses **Renovate** for automated dependency updates. The `config:js-lib` preset governs versioning strategy — respect these conventions when adding or modifying dependencies:
+
+- **devDependencies**: Always use **pinned exact versions** (no `^` or `~` prefix). Renovate pins devDependencies for reproducible builds.
+- **Production dependencies** (`dependencies`): Use **`^` (caret) ranges**. Renovate applies a `bump` strategy, raising the minimum version in the range.
+- **Peer dependencies**: Use explicit range expressions (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0`) to document supported versions.
+
+Example:
+
+```json
+{
+  "dependencies": {
+    "@babel/runtime": "^7.28.6"
+  },
+  "devDependencies": {
+    "jest": "30.2.0",
+    "typescript": "5.9.3"
+  }
+}
+```
+
+Do **not** add `allowedVersions` constraints to `renovate.json` unless there is a clear, documented reason (e.g., a confirmed incompatibility). Stale constraints silently block updates.
 
 ## Architecture Patterns
 
