@@ -1,5 +1,20 @@
 # Changelog
 
+## [v5.0.61](https://github.com/tanem/react-nprogress/tree/v5.0.61) (2026-02-15)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.60...v5.0.61)
+
+#### :house: Internal
+
+- [#2997](https://github.com/tanem/react-nprogress/pull/2997) Pin dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2996](https://github.com/tanem/react-nprogress/pull/2996) Update examples, migrate them to Vite and trim legacy routers ([@tanem](https://github.com/tanem))
+- [#2995](https://github.com/tanem/react-nprogress/pull/2995) Modernise tooling configuration ([@tanem](https://github.com/tanem))
+- [#2994](https://github.com/tanem/react-nprogress/pull/2994) Update dependency @mui/material to v7.3.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2993](https://github.com/tanem/react-nprogress/pull/2993) Update dependency @types/react to v19.2.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2992](https://github.com/tanem/react-nprogress/pull/2992) Update dependency @types/node to v24.10.13 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2991](https://github.com/tanem/react-nprogress/pull/2991) Update typescript-eslint monorepo to v8.55.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2990](https://github.com/tanem/react-nprogress/pull/2990) Update dependency tanem-scripts to v8.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#2989](https://github.com/tanem/react-nprogress/pull/2989) Update dependency @types/node to v24.10.12 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.60](https://github.com/tanem/react-nprogress/tree/v5.0.60) (2026-02-09)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.59...v5.0.60)
 
