@@ -1,5 +1,12 @@
 # Changelog
 
+## [v5.0.62](https://github.com/tanem/react-nprogress/tree/v5.0.62) (2026-02-15)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.61...v5.0.62)
+
+#### :memo: Documentation
+
+- [#2998](https://github.com/tanem/react-nprogress/pull/2998) Add Next App Router example with onNavigate ([@tanem](https://github.com/tanem))
+
 ## [v5.0.61](https://github.com/tanem/react-nprogress/tree/v5.0.61) (2026-02-15)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.60...v5.0.61)
 
