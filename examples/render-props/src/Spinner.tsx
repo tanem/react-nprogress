@@ -1,6 +1,6 @@
-import React from 'react'
+import type { FC } from 'react'
 
-const Spinner: React.FC = () => (
+const Spinner: FC = () => (
   <div
     style={{
       display: 'block',

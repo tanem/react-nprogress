@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container'
 import LinearProgress from '@mui/material/LinearProgress'
 import { useNProgress } from '@tanem/react-nprogress'
-import React from 'react'
+import type { FC } from 'react'
 
-const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
+const Progress: FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
   })

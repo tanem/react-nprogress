@@ -1,0 +1,71 @@
+import './index.css'
+
+import { useState } from 'react'
+import { createRoot } from 'react-dom/client'
+
+import Progress from './Progress'
+
+const A = () => {
+  const [state, setState] = useState({
+    isAnimating: false,
+    key: 0,
+  })
+
+  return (
+    <div style={{ left: 0, position: 'absolute', right: 0, top: 0 }}>
+      <Progress
+        isAnimating={state.isAnimating}
+        key={state.key}
+        position="top"
+      />
+      <button
+        onClick={() => {
+          setState((prevState) => ({
+            isAnimating: !prevState.isAnimating,
+            key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
+          }))
+        }}
+      >
+        {state.isAnimating ? 'Stop A' : 'Start A'}
+      </button>
+    </div>
+  )
+}
+
+const B = () => {
+  const [state, setState] = useState({
+    isAnimating: false,
+    key: 0,
+  })
+
+  return (
+    <div style={{ left: 0, position: 'absolute', right: 0, top: 100 }}>
+      <Progress
+        isAnimating={state.isAnimating}
+        key={state.key}
+        position="bottom"
+      />
+      <button
+        onClick={() => {
+          setState((prevState) => ({
+            isAnimating: !prevState.isAnimating,
+            key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
+          }))
+        }}
+      >
+        {state.isAnimating ? 'Stop B' : 'Start B'}
+      </button>
+    </div>
+  )
+}
+
+const App = () => (
+  <>
+    <A />
+    <B />
+  </>
+)
+
+const container = document.getElementById('root')
+const root = createRoot(container!)
+root.render(<App />)
