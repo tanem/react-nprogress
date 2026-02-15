@@ -30,9 +30,9 @@ export function useNavigationProgress() {
   return context
 }
 
-// Watches pathname/searchParams changes to detect when
-// navigation has completed. Wrapped in Suspense because
-// useSearchParams() requires a Suspense boundary.
+// Watches pathname/searchParams changes to detect when navigation has
+// completed. Wrapped in Suspense because useSearchParams() requires a Suspense
+// boundary.
 function NavigationComplete({ onComplete }: { onComplete: () => void }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -49,10 +49,9 @@ function NavigationComplete({ onComplete }: { onComplete: () => void }) {
   return null
 }
 
-// Provides navigation progress state to the component
-// tree. Navigation start is signalled via the onNavigate
-// prop on a <ProgressLink>, and completion is detected by
-// watching usePathname()/useSearchParams().
+// Provides navigation progress state to the component tree. Navigation start is
+// signalled via the onNavigate prop on a <ProgressLink>, and completion is
+// detected by watching usePathname()/useSearchParams().
 export default function NavigationProgress({
   children,
 }: {
