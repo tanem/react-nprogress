@@ -4,8 +4,7 @@
   "description": "A React primitive for building slim progress bars.",
   "main": "dist/index.js",
   "module": "dist/react-nprogress.esm.js",
-  "jsnext:main": "dist/react-nprogress.esm.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist"
@@ -71,13 +70,11 @@
     "hoist-non-react-statics": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/core": "7.29.0",
-    "@babel/plugin-transform-runtime": "7.29.0",
-    "@babel/preset-env": "7.29.0",
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-transform-runtime": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
-    "@eslint/compat": "2.0.2",
-    "@eslint/eslintrc": "3.3.3",
     "@eslint/js": "9.39.2",
     "@rollup/plugin-babel": "6.1.0",
     "@rollup/plugin-commonjs": "29.0.0",
@@ -91,13 +88,12 @@
     "@types/node": "24.10.13",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@typescript-eslint/eslint-plugin": "8.55.0",
-    "@typescript-eslint/parser": "8.55.0",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-simple-import-sort": "12.1.1",
+    "globals": "^17.3.0",
     "jest": "30.2.0",
     "jest-environment-jsdom": "30.2.0",
     "mock-raf": "1.0.1",
@@ -105,12 +101,11 @@
     "prettier": "3.8.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-test-renderer": "19.2.4",
-    "regenerator-runtime": "0.14.1",
     "rollup": "4.57.1",
     "shx": "0.4.0",
     "tanem-scripts": "8.0.2",
     "ts-jest": "29.4.6",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.55.0"
   }
 }
