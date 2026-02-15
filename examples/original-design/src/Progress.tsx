@@ -1,11 +1,11 @@
 import { useNProgress } from '@tanem/react-nprogress'
-import React from 'react'
+import type { FC } from 'react'
 
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
 
-const Progress: React.FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
+const Progress: FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
   })

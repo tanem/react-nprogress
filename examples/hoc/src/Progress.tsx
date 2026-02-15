@@ -1,11 +1,11 @@
 import { withNProgress } from '@tanem/react-nprogress'
-import React from 'react'
+import type { FC } from 'react'
 
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
 
-const Progress: React.FC<{
+const Progress: FC<{
   animationDuration: number
   isFinished: boolean
   progress: number

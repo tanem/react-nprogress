@@ -1,6 +1,6 @@
-import React from 'react'
+import type { FC } from 'react'
 
-const Bar: React.FC<{ animationDuration: number; progress: number }> = ({
+const Bar: FC<{ animationDuration: number; progress: number }> = ({
   animationDuration,
   progress,
 }) => (

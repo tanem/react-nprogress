@@ -7,7 +7,6 @@
     ":dependencyDashboard",
     ":enableVulnerabilityAlerts"
   ],
-  "ignorePaths": ["**/node_modules/**"],
   "lockFileMaintenance": {
     "enabled": true
   },
@@ -15,15 +14,6 @@
     {
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump"
-    },
-    {
-      "matchPackageNames": ["@types/react-router-dom", "react-router-dom"],
-      "allowedVersions": "< 6.0.0"
-    },
-    {
-      "matchFileNames": ["examples/**/package.json"],
-      "matchPackageNames": ["typescript"],
-      "allowedVersions": "< 5.0.0"
     }
   ],
   "minimumReleaseAge": "3 days"

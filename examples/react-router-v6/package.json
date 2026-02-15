@@ -6,28 +6,25 @@
   ],
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@tanem/react-nprogress": "latest",
-    "@types/jest": "30.0.0",
-    "@types/node": "24.10.13",
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
-    "@types/react-router-dom": "5.3.3",
-    "@types/react-transition-group": "4.4.12",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-router-dom": "6.2.1",
-    "react-scripts": "5.0.1",
-    "react-transition-group": "4.4.5",
-    "typescript": "4.9.5"
+    "react-router-dom": "6.30.3",
+    "react-transition-group": "4.4.5"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/react-transition-group": "4.4.12",
+    "@vitejs/plugin-react": "5.1.4",
+    "typescript": "5.9.3",
+    "vite": "7.3.1"
   },
   "scripts": {
-    "start": "react-scripts start"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  }
 }
