@@ -125,6 +125,12 @@ npm run test:umdprod       # Test UMD prod build
 - Custom hooks follow `use*` naming convention
 - Export everything through main `index.tsx`
 
+### Code Comment Style
+
+- Use `//` line comments, not `/* */` or `/** */` block comments
+- Wrap comment lines to fit within Prettier's line width (80 characters by default in this project)
+- Keep comments concise and informative — explain _why_, not _what_
+
 ### Language & Documentation Standards
 
 - **Use New Zealand English** at all times (e.g., "colour", "behaviour", "centre", "organisation")
