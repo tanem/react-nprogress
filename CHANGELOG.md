@@ -1,5 +1,12 @@
 # Changelog
 
+## [v5.0.63](https://github.com/tanem/react-nprogress/tree/v5.0.63) (2026-02-16)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.62...v5.0.63)
+
+#### :memo: Documentation
+
+- [#2999](https://github.com/tanem/react-nprogress/pull/2999) Tidy comments ([@tanem](https://github.com/tanem))
+
 ## [v5.0.62](https://github.com/tanem/react-nprogress/tree/v5.0.62) (2026-02-15)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.61...v5.0.62)
 
