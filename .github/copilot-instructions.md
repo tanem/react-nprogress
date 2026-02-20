@@ -60,6 +60,31 @@ Managed by Renovate (`config:js-lib` preset):
 - Always run `npm test` after changes; use `npm run test:src` for quick
   source-only feedback during development
 
+## Examples
+
+Examples live in `examples/` and are designed to open on CodeSandbox. Their
+"platform" dependencies (vite, @vitejs/plugin-react, next, typescript,
+@types/react, @types/react-dom) must match the official CodeSandbox
+sandbox-templates at
+https://github.com/codesandbox/sandbox-templates/tree/main.
+
+Reference templates:
+
+- Vite-based examples → `react-vite` / `react-vite-ts`
+- Next.js examples → `nextjs`
+
+Renovate is disabled for `examples/**` (via `ignorePaths` in
+`renovate.json`). Updates are manual: check the reference template, update all
+examples in one commit, and verify at least one example still opens correctly
+on CodeSandbox.
+
+Example-specific deps (e.g. `@mui/material`, `react-router-dom`,
+`react-transition-group`) are not governed by the templates: update these as
+needed but test on CodeSandbox before merging.
+
+Do not bump vite, @vitejs/plugin-react, next, or typescript in examples
+beyond the versions in the reference templates.
+
 ## Versioning
 
 Strict semver — no breaking changes without a major version bump, including
