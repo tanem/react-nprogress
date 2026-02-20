@@ -118,11 +118,6 @@ const Progress: FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   return (
     <Container animationDuration={animationDuration} isFinished={isFinished}>
       <Bar animationDuration={animationDuration} progress={progress} />
-      {/*
-      This example doesn't use a spinner component so the UI stays
-      tidy. You're free to render whatever is appropriate for your
-      use-case.
-      */}
     </Container>
   )
 }
@@ -135,8 +130,8 @@ const Home = () => {
   return (
     <>
       {/*
-      Setting a key means that a new NProgress instance is created if
-      the location is changing, giving us the UI behaviour we want. See:
+      A key change creates a new NProgress instance, resetting progress
+      when the location changes. See:
       https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key.
       */}
       <Progress isAnimating={isLoading} key={location.key} />
