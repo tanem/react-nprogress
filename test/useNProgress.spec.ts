@@ -58,8 +58,6 @@ test('increments correctly', () => {
   act(() => {
     mockRaf.step()
     mockRaf.step({ time: 201 })
-    mockRaf.step()
-    mockRaf.step({ time: 801 })
   })
 
   expect(result.current).toEqual({
@@ -117,8 +115,6 @@ test('correctly restarts a finished animation', () => {
   act(() => {
     mockRaf.step()
     mockRaf.step({ time: 201 })
-    mockRaf.step()
-    mockRaf.step({ time: 801 })
   })
 
   expect(result.current).toEqual({
@@ -126,6 +122,71 @@ test('correctly restarts a finished animation', () => {
     isFinished: false,
     progress: 0.2,
   })
+
+  unmount()
+})
+
+test('respects custom minimum', () => {
+  const { result, unmount } = renderHook(() =>
+    useNProgress({ isAnimating: true, minimum: 0.3 }),
+  )
+
+  // increment(0) = 0.1, clamped to minimum of 0.3.
+  expect(result.current.progress).toBe(0.3)
+
+  unmount()
+})
+
+test('respects custom animationDuration', () => {
+  const { result, rerender, unmount } = renderHook(
+    ({ isAnimating }) => useNProgress({ animationDuration: 500, isAnimating }),
+    { initialProps: { isAnimating: true } },
+  )
+
+  expect(result.current.animationDuration).toBe(500)
+
+  rerender({ isAnimating: false })
+
+  // Completion waits animationDuration (500ms) before isFinished.
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 300 })
+  })
+
+  expect(result.current.isFinished).toBe(false)
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 501 })
+  })
+
+  expect(result.current.isFinished).toBe(true)
+
+  unmount()
+})
+
+test('respects custom incrementDuration', () => {
+  const { result, unmount } = renderHook(() =>
+    useNProgress({ incrementDuration: 500, isAnimating: true }),
+  )
+
+  expect(result.current.progress).toBe(0.1)
+
+  // Not enough time for a second trickle.
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current.progress).toBe(0.1)
+
+  // Enough time for the second trickle.
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 501 })
+  })
+
+  expect(result.current.progress).toBe(0.2)
 
   unmount()
 })

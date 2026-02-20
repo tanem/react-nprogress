@@ -20,3 +20,19 @@ test('wrapped component receives props', () => {
   expect(isFinished).toBe(true)
   expect(progress).toBe(0)
 })
+
+test('passes animating state to wrapped component', () => {
+  let isFinished
+  let progress
+
+  const EnhancedComponent = withNProgress((props) => {
+    isFinished = props.isFinished
+    progress = props.progress
+    return <></>
+  })
+
+  render(<EnhancedComponent isAnimating />)
+
+  expect(isFinished).toBe(false)
+  expect(progress).toBe(0.1)
+})

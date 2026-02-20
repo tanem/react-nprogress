@@ -7,7 +7,7 @@ changes agent behaviour and cannot be inferred from the codebase or tooling.
 
 TypeScript React library providing a slim progress bar primitive via three
 patterns: `useNProgress` hook, `NProgress` render-props component, and
-`withNProgress` HOC. Exports logic only — no rendering. All exports go through
+`withNProgress` HOC. Exports logic only, not rendering. All exports go through
 `src/index.tsx`. Types live in `src/types.ts`.
 
 ## Key Commands
@@ -22,14 +22,15 @@ npm run format    # fix lint and formatting
 
 ### Comments
 
-- Use `//` line comments only — never `/* */` or `/** */`
+- Use `//` line comments only, never `/* */` or `/** */`
 - Explain _why_, not _what_; wrap at 80 characters
+- End every comment with a full stop, even single-line comments
 
 ### Language
 
 Use **New Zealand English** in all user-facing text, variable names, and
 comments (e.g. "colour", "behaviour", "organisation"). Standardised API names
-(`color`, `textAlign`) are fixed — leave them unchanged.
+(`color`, `textAlign`) are fixed: leave them unchanged.
 
 ```javascript
 const progressColour = '#0066cc'
@@ -49,9 +50,9 @@ subject, no trailing period, blank line between subject and body.
 
 Managed by Renovate (`config:js-lib` preset):
 
-- `devDependencies` — pinned exact versions (no `^` or `~`)
-- `dependencies` — caret ranges (`^`)
-- `peerDependencies` — explicit OR ranges (e.g. `^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0`)
+- `devDependencies`: pinned exact versions (no `^` or `~`)
+- `dependencies`: caret ranges (`^`)
+- `peerDependencies`: explicit OR ranges (e.g. `^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0`)
 - Do **not** add `allowedVersions` to `renovate.json` without a documented reason
 
 ## Testing
@@ -85,7 +86,23 @@ needed but test on CodeSandbox before merging.
 Do not bump vite, @vitejs/plugin-react, next, or typescript in examples
 beyond the versions in the reference templates.
 
+## Writing Style
+
+- Avoid marketing or promotional language. State facts plainly.
+- Follow best practices for technical writing: be clear, direct, and
+  concise.
+- Avoid em dashes. Use colons, commas, or separate sentences instead.
+- Use present tense and active voice where practical.
+- Keep sentences short. One idea per sentence.
+
 ## Versioning
 
-Strict semver — no breaking changes without a major version bump, including
+Strict semver: no breaking changes without a major version bump, including
 technical refactors.
+
+## Documentation
+
+- After each code change, update all related docs and markdown files
+  (README.md, MIGRATION.md, example READMEs, etc.) in the same pass.
+- Do not manually modify CHANGELOG.md. It is auto-generated during
+  release.
