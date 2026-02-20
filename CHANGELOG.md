@@ -1,5 +1,24 @@
 # Changelog
 
+## [v6.0.0](https://github.com/tanem/react-nprogress/tree/v6.0.0) (2026-02-20)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.63...v6.0.0)
+
+#### :boom: Breaking Change
+
+- [#3006](https://github.com/tanem/react-nprogress/pull/3006) Align logic more closely with the original nprogress, add React boundary tests ([@tanem](https://github.com/tanem))
+
+#### :memo: Documentation
+
+- [#3005](https://github.com/tanem/react-nprogress/pull/3005) Migrate examples to vite and latest codesandbox template config ([@tanem](https://github.com/tanem))
+- [#3004](https://github.com/tanem/react-nprogress/pull/3004) Tidy up comments ([@tanem](https://github.com/tanem))
+- [#3003](https://github.com/tanem/react-nprogress/pull/3003) Streamline instructions ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#3002](https://github.com/tanem/react-nprogress/pull/3002) Improve workflows ([@tanem](https://github.com/tanem))
+- [#3001](https://github.com/tanem/react-nprogress/pull/3001) Update dependency typescript-eslint to v8.56.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3000](https://github.com/tanem/react-nprogress/pull/3000) Update dependency tanem-scripts to v8.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v5.0.63](https://github.com/tanem/react-nprogress/tree/v5.0.63) (2026-02-16)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.62...v5.0.63)
 
