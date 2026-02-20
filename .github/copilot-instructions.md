@@ -60,6 +60,32 @@ Managed by Renovate (`config:js-lib` preset):
 - **100% code coverage** required across all build formats
 - Always run `npm test` after changes; use `npm run test:src` for quick
   source-only feedback during development
+- Use `npm run test:react` for the full React version matrix independently.
+  It also runs as part of `npm test` (via the `test:*` glob).
+
+### React version matrix
+
+We test boundary versions only: first and last minor of each supported
+major. See `test/react/` for current versions.
+
+Current boundaries: 16.14, 17.0, 18.0, 18.3, 19.0.
+
+React 16.14 is the practical lower bound. Hooks require 16.8 and
+`@testing-library/react-hooks` requires 16.9.
+
+When adding a new boundary:
+
+1. Add `test/react/<version>/package.json` with correct `react`,
+   `react-dom`, and `@testing-library/react` (12.x for React 16–17,
+   16.x for React 18+). React 16–17 also need
+   `@testing-library/react-hooks` (8.x) and `react-test-renderer`.
+2. Replace the previous "latest minor" for that major.
+3. Verify with a single-version run before the full matrix:
+   ```bash
+   cd test/react/<version> && npm i --no-package-lock --quiet --no-progress
+   REACT_VERSION=<version> npx jest --config ./scripts/jest/config.src.js --coverage false
+   ```
+4. Update the boundary list above.
 
 ## Examples
 
