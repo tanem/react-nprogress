@@ -14,7 +14,7 @@ test('executes a callback after a delay', () => {
   schedule(mockFn, 10)
   mockRaf.step()
   mockRaf.step()
-  expect(mockFn).toHaveBeenCalled()
+  expect(mockFn).toHaveBeenCalledTimes(1)
 })
 
 test('can cancel a pending callback', () => {
@@ -24,4 +24,16 @@ test('can cancel a pending callback', () => {
   cancel()
   mockRaf.step()
   expect(mockFn).not.toHaveBeenCalled()
+})
+
+test('cancels a pending callback when rescheduling', () => {
+  const mockFn1 = jest.fn()
+  const mockFn2 = jest.fn()
+  schedule(mockFn1, 10)
+  mockRaf.step()
+  schedule(mockFn2, 10)
+  mockRaf.step()
+  mockRaf.step()
+  expect(mockFn1).not.toHaveBeenCalled()
+  expect(mockFn2).toHaveBeenCalled()
 })

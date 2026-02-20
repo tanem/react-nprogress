@@ -22,3 +22,21 @@ test('receives render props', () => {
   expect(isFinished).toBe(true)
   expect(progress).toBe(0)
 })
+
+test('passes animating state to children', () => {
+  let isFinished
+  let progress
+
+  render(
+    <NProgress isAnimating>
+      {(props) => {
+        isFinished = props.isFinished
+        progress = props.progress
+        return <></>
+      }}
+    </NProgress>,
+  )
+
+  expect(isFinished).toBe(false)
+  expect(progress).toBe(0.1)
+})

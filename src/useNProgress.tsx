@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useRef } from 'react'
 
 import { clamp } from './clamp'
 import { createQueue } from './createQueue'
@@ -12,6 +12,11 @@ import { useUpdateEffect } from './useUpdateEffect'
 /* istanbul ignore next */
 const noop = () => undefined
 
+// State includes a `sideEffect` callback that bridges imperative queue
+// operations into React's declarative model. Each `setState` stores a callback;
+// `useUpdateEffect` fires it after React commits the update. This lets the
+// queue drive animations and schedule follow-up work without breaking React's
+// rendering lifecycle.
 const initialState: {
   isFinished: boolean
   progress: number
@@ -24,7 +29,7 @@ const initialState: {
 
 export const useNProgress = ({
   animationDuration = 200,
-  incrementDuration = 800,
+  incrementDuration = 200,
   isAnimating = false,
   minimum = 0.08,
 }: Options = {}): {
@@ -51,6 +56,10 @@ export const useNProgress = ({
     (n: number) => {
       n = clamp(n, minimum, 1)
 
+      // Unlike the original nprogress `done()`, completion does not include a
+      // random progress jump before animating to 1. This keeps the primitive
+      // predictable; consumers can set a higher progress value before stopping
+      // the animation if they want that effect.
       if (n === 1) {
         cleanup()
 
@@ -73,7 +82,7 @@ export const useNProgress = ({
         setState({
           isFinished: false,
           progress: n,
-          sideEffect: () => timeout.current?.schedule(next, animationDuration),
+          sideEffect: next,
         })
       })
     },
@@ -85,6 +94,10 @@ export const useNProgress = ({
   }, [get, set])
 
   const start = useCallback(() => {
+    // The original nprogress calls set(0) - which clamps to `minimum` - before
+    // the first trickle. Here, the first trickle starts from increment(0) =
+    // 0.1, so the bar appears at max(0.1, minimum) rather than exactly
+    // `minimum`. The difference is negligible at the default minimum of 0.08.
     const work = () => {
       trickle()
       queue.current?.enqueue((next) => {
@@ -98,13 +111,7 @@ export const useNProgress = ({
     work()
   }, [incrementDuration, queue, timeout, trickle])
 
-  const savedTrickle = useRef<() => void>(noop)
-
   const sideEffect = get().sideEffect
-
-  useEffect(() => {
-    savedTrickle.current = trickle
-  })
 
   useEffectOnce(() => {
     if (isAnimating) {

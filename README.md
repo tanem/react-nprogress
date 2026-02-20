@@ -111,7 +111,7 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 **Props**
 
 - `animationDuration` - _Optional_ Number indicating the animation duration in `ms`. Defaults to `200`.
-- `incrementDuration` - _Optional_ Number indicating the length of time between progress bar increments in `ms`. Defaults to `800`.
+- `incrementDuration` - _Optional_ Number indicating the length of time between progress bar increments in `ms`. Defaults to `200`.
 - `isAnimating` - _Optional_ Boolean indicating if the progress bar is animating. Defaults to `false`.
 - `minimum` - _Optional_ Number between `0` and `1` indicating the minimum value of the progress bar. Defaults to `0.08`.
 

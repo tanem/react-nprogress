@@ -1,8 +1,13 @@
 import { createQueue } from '../src/createQueue'
 
-const { clear, enqueue } = createQueue()
-
 jest.useFakeTimers()
+
+let clear: ReturnType<typeof createQueue>['clear']
+let enqueue: ReturnType<typeof createQueue>['enqueue']
+
+beforeEach(() => {
+  ;({ clear, enqueue } = createQueue())
+})
 
 test('starts running when the first callback is pushed onto the queue', () => {
   const mockFn = jest.fn()
