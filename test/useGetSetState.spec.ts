@@ -95,12 +95,10 @@ it('should get and set expected state when used in nested functions', () => {
   const { result } = setUp({ counter: 0 })
   const [get, set] = result.current
 
-  // Simulate 3 clicks.
   onClick()
   onClick()
   onClick()
 
-  // Fast-forward until all timers have been executed.
   act(() => {
     jest.runAllTimers()
   })
