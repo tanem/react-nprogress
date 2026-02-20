@@ -61,6 +61,7 @@ const generateSetupFiles = (reactVersion) => {
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/*.{ts,tsx}'],
+  coverageReporters: ['lcov', 'text'],
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   moduleNameMapper: {
     ...generateReactVersionMappings(process.env.REACT_VERSION),

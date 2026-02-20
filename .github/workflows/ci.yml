@@ -26,6 +26,7 @@ jobs:
       - run: npm test
       - uses: codecov/codecov-action@v5
         with:
+          disable_search: true
           fail_ci_if_error: true
           files: ./coverage/lcov.info
           token: ${{ secrets.CODECOV_TOKEN }}
