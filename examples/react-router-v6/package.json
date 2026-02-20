@@ -15,16 +15,17 @@
     "react-transition-group": "4.4.5"
   },
   "devDependencies": {
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@types/react-transition-group": "4.4.12",
-    "@vitejs/plugin-react": "5.1.4",
-    "typescript": "5.9.3",
-    "vite": "7.3.1"
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "vite"
   }
 }

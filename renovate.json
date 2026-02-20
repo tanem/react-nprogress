@@ -7,6 +7,11 @@
     ":dependencyDashboard",
     ":enableVulnerabilityAlerts"
   ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/test/**",
+    "**/examples/**"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
