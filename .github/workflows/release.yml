@@ -4,13 +4,10 @@ on:
   schedule:
     - cron: '0 9 * * 1' # Every Monday at 9:00 AM UTC
   workflow_dispatch:
-    branches:
-      - master
 
 permissions:
   contents: write
   id-token: write
-  packages: write
 
 jobs:
   release:
@@ -28,7 +25,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
-          check-latest: true
+          cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Configure git
