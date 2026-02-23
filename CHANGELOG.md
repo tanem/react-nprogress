@@ -1,5 +1,12 @@
 # Changelog
 
+## [v6.0.1](https://github.com/tanem/react-nprogress/tree/v6.0.1) (2026-02-23)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.0...v6.0.1)
+
+#### :house: Internal
+
+- [#3007](https://github.com/tanem/react-nprogress/pull/3007) Fix coverage reporting ([@tanem](https://github.com/tanem))
+
 ## [v6.0.0](https://github.com/tanem/react-nprogress/tree/v6.0.0) (2026-02-20)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v5.0.63...v6.0.0)
 
