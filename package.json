@@ -105,7 +105,7 @@
     "react-dom": "19.2.4",
     "rollup": "4.59.0",
     "shx": "0.4.0",
-    "tanem-scripts": "8.0.3",
+    "tanem-scripts": "8.0.4",
     "ts-jest": "29.4.6",
     "typescript": "5.9.3",
     "typescript-eslint": "8.56.1"
