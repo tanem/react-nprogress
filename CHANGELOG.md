@@ -1,5 +1,17 @@
 # Changelog
 
+## [v6.0.2](https://github.com/tanem/react-nprogress/tree/v6.0.2) (2026-03-02)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.1...v6.0.2)
+
+#### :house: Internal
+
+- [#3014](https://github.com/tanem/react-nprogress/pull/3014) Update dependency @types/node to v24.10.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3012](https://github.com/tanem/react-nprogress/pull/3012) Update dependency tanem-scripts to v8.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3013](https://github.com/tanem/react-nprogress/pull/3013) Update dependency typescript-eslint to v8.56.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3011](https://github.com/tanem/react-nprogress/pull/3011) Update dependency rollup to v4.59.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3010](https://github.com/tanem/react-nprogress/pull/3010) Update dependency rollup to v4.58.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3009](https://github.com/tanem/react-nprogress/pull/3009) Update eslint monorepo to v9.39.3 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v6.0.1](https://github.com/tanem/react-nprogress/tree/v6.0.1) (2026-02-23)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.0...v6.0.1)
 
