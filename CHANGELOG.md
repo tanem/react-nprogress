@@ -1,5 +1,13 @@
 # Changelog
 
+## [v6.0.3](https://github.com/tanem/react-nprogress/tree/v6.0.3) (2026-03-09)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.2...v6.0.3)
+
+#### :house: Internal
+
+- [#3016](https://github.com/tanem/react-nprogress/pull/3016) Fix npm audit vulnerabilities ([@tanem](https://github.com/tanem))
+- [#3015](https://github.com/tanem/react-nprogress/pull/3015) Update dependency @types/node to v24.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v6.0.2](https://github.com/tanem/react-nprogress/tree/v6.0.2) (2026-03-02)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.1...v6.0.2)
 
