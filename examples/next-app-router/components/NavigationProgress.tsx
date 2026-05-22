@@ -4,8 +4,8 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import {
   createContext,
   Suspense,
+  use,
   useCallback,
-  useContext,
   useEffect,
   useRef,
   useState,
@@ -21,7 +21,7 @@ const NavigationProgressContext =
   createContext<NavigationProgressContextType | null>(null)
 
 export function useNavigationProgress() {
-  const context = useContext(NavigationProgressContext)
+  const context = use(NavigationProgressContext)
   if (!context) {
     throw new Error(
       'useNavigationProgress must be used within <NavigationProgress>',
@@ -67,12 +67,12 @@ export default function NavigationProgress({
   const handleComplete = useCallback(() => setIsRouteChanging(false), [])
 
   return (
-    <NavigationProgressContext.Provider value={contextValue}>
+    <NavigationProgressContext value={contextValue}>
       <Loading isRouteChanging={isRouteChanging} key={loadingKey} />
       <Suspense>
         <NavigationComplete onComplete={handleComplete} />
       </Suspense>
       {children}
-    </NavigationProgressContext.Provider>
+    </NavigationProgressContext>
   )
 }

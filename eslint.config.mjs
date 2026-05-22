@@ -2,8 +2,8 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import js from '@eslint/js'
+import eslintReact from '@eslint-react/eslint-plugin'
 import eslintConfigPrettier from 'eslint-config-prettier'
-import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
@@ -18,7 +18,7 @@ export default tseslint.config(
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  react.configs.flat.recommended,
+  eslintReact.configs['recommended-typescript'],
   eslintConfigPrettier,
   {
     languageOptions: {
@@ -36,21 +36,15 @@ export default tseslint.config(
     },
 
     rules: {
+      '@eslint-react/exhaustive-deps': 'off',
+      '@eslint-react/naming-convention-ref-name': 'off',
+      '@eslint-react/use-state': 'off',
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/rules-of-hooks': 'error',
-      'react/jsx-sort-props': 'error',
-      'react/jsx-uses-react': 'off',
-      'react/react-in-jsx-scope': 'off',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',
       'sort-imports': 'off',
       'sort-keys': 'error',
-    },
-
-    settings: {
-      react: {
-        version: 'detect',
-      },
     },
   },
   {
@@ -77,13 +71,6 @@ export default tseslint.config(
     files: ['examples/**/*'],
     rules: {
       '@typescript-eslint/explicit-module-boundary-types': 'off',
-      'react/no-unknown-property': [
-        'error',
-        {
-          ignore: ['jsx'],
-        },
-      ],
-      'react/prop-types': 'off',
     },
   },
 )
