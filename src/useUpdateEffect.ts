@@ -7,14 +7,14 @@
 import { useEffect, useRef } from 'react'
 
 const useFirstMountState = (): boolean => {
-  const isFirst = useRef(true)
+  const isFirstRef = useRef(true)
 
-  if (isFirst.current) {
-    isFirst.current = false
+  if (isFirstRef.current) {
+    isFirstRef.current = false
     return true
   }
 
-  return isFirst.current
+  return isFirstRef.current
 }
 
 export const useUpdateEffect: typeof useEffect = (effect, deps) => {

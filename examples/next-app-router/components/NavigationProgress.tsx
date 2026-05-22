@@ -34,12 +34,12 @@ export function useNavigationProgress() {
 function NavigationComplete({ onComplete }: { onComplete: () => void }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const currentUrl = useRef(pathname + searchParams.toString())
+  const currentUrlRef = useRef(pathname + searchParams.toString())
 
   useEffect(() => {
     const newUrl = pathname + searchParams.toString()
-    if (newUrl !== currentUrl.current) {
-      currentUrl.current = newUrl
+    if (newUrl !== currentUrlRef.current) {
+      currentUrlRef.current = newUrl
       onComplete()
     }
   }, [pathname, searchParams, onComplete])

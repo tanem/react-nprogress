@@ -36,9 +36,10 @@ export default tseslint.config(
     },
 
     rules: {
+      // Hooks are linted by the official eslint-plugin-react-hooks (React team);
+      // disable @eslint-react's overlapping ports to avoid double-linting.
       '@eslint-react/exhaustive-deps': 'off',
-      '@eslint-react/naming-convention-ref-name': 'off',
-      '@eslint-react/use-state': 'off',
+      '@eslint-react/rules-of-hooks': 'off',
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/rules-of-hooks': 'error',
       'simple-import-sort/exports': 'error',
