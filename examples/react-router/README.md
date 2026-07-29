@@ -1,4 +1,4 @@
-# ReactNProgress React Router V6 Example
+# ReactNProgress React Router Example
 
 ## Available Scripts
 
