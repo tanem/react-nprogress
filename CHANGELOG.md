@@ -1,5 +1,14 @@
 # Changelog
 
+## [v6.0.4](https://github.com/tanem/react-nprogress/tree/v6.0.4) (2026-07-29)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.3...v6.0.4)
+
+#### :house: Internal
+
+- [#3019](https://github.com/tanem/react-nprogress/pull/3019) Fix npm audit vulnerabilities and unblock Renovate lockfile maintenance ([@tanem](https://github.com/tanem))
+- [#2988](https://github.com/tanem/react-nprogress/pull/2988) Update eslint monorepo to v10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#3018](https://github.com/tanem/react-nprogress/pull/3018) chore(deps): replace eslint-plugin-react with @eslint-react/eslint-plugin ([@tanem](https://github.com/tanem))
+
 ## [v6.0.3](https://github.com/tanem/react-nprogress/tree/v6.0.3) (2026-03-09)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.2...v6.0.3)
 
