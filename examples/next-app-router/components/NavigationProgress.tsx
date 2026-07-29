@@ -4,8 +4,8 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import {
   createContext,
   Suspense,
+  use,
   useCallback,
-  useContext,
   useEffect,
   useRef,
   useState,
@@ -21,7 +21,7 @@ const NavigationProgressContext =
   createContext<NavigationProgressContextType | null>(null)
 
 export function useNavigationProgress() {
-  const context = useContext(NavigationProgressContext)
+  const context = use(NavigationProgressContext)
   if (!context) {
     throw new Error(
       'useNavigationProgress must be used within <NavigationProgress>',
@@ -34,12 +34,12 @@ export function useNavigationProgress() {
 function NavigationComplete({ onComplete }: { onComplete: () => void }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const currentUrl = useRef(pathname + searchParams.toString())
+  const currentUrlRef = useRef(pathname + searchParams.toString())
 
   useEffect(() => {
     const newUrl = pathname + searchParams.toString()
-    if (newUrl !== currentUrl.current) {
-      currentUrl.current = newUrl
+    if (newUrl !== currentUrlRef.current) {
+      currentUrlRef.current = newUrl
       onComplete()
     }
   }, [pathname, searchParams, onComplete])
@@ -57,6 +57,10 @@ export default function NavigationProgress({
   const [isRouteChanging, setIsRouteChanging] = useState(false)
   const [loadingKey, setLoadingKey] = useState(0)
 
+  // Read directly during render to lazily create a stable context value
+  // once; useRef's initial-value argument is only ever used on the very
+  // first render.
+  // eslint-disable-next-line react-hooks/refs
   const contextValue = useRef<NavigationProgressContextType>({
     start: () => {
       setIsRouteChanging(true)
@@ -67,12 +71,12 @@ export default function NavigationProgress({
   const handleComplete = useCallback(() => setIsRouteChanging(false), [])
 
   return (
-    <NavigationProgressContext.Provider value={contextValue}>
+    <NavigationProgressContext value={contextValue}>
       <Loading isRouteChanging={isRouteChanging} key={loadingKey} />
       <Suspense>
         <NavigationComplete onComplete={handleComplete} />
       </Suspense>
       {children}
-    </NavigationProgressContext.Provider>
+    </NavigationProgressContext>
   )
 }
