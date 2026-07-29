@@ -1,6 +1,6 @@
 {
-  "name": "react-router-v6",
-  "description": "ReactNProgress React Router V6 Example",
+  "name": "react-router",
+  "description": "ReactNProgress React Router Example",
   "keywords": [
     "@tanem/react-nprogress"
   ],
@@ -11,7 +11,7 @@
     "@tanem/react-nprogress": "latest",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-router-dom": "6.30.3",
+    "react-router-dom": "7.18.2",
     "react-transition-group": "4.4.5"
   },
   "devDependencies": {
