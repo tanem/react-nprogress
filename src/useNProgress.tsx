@@ -39,17 +39,17 @@ export const useNProgress = ({
 } => {
   const [get, setState] = useGetSetState(initialState)
 
-  const queue = useRef<ReturnType<typeof createQueue> | null>(null)
-  const timeout = useRef<ReturnType<typeof createTimeout> | null>(null)
+  const queueRef = useRef<ReturnType<typeof createQueue> | null>(null)
+  const timeoutRef = useRef<ReturnType<typeof createTimeout> | null>(null)
 
   useEffectOnce(() => {
-    queue.current = createQueue()
-    timeout.current = createTimeout()
+    queueRef.current = createQueue()
+    timeoutRef.current = createTimeout()
   })
 
   const cleanup = useCallback(() => {
-    timeout.current?.cancel()
-    queue.current?.clear()
+    timeoutRef.current?.cancel()
+    queueRef.current?.clear()
   }, [])
 
   const set = useCallback(
@@ -63,22 +63,22 @@ export const useNProgress = ({
       if (n === 1) {
         cleanup()
 
-        queue.current?.enqueue((next) => {
+        queueRef.current?.enqueue((next) => {
           setState({
             progress: n,
             sideEffect: () =>
-              timeout.current?.schedule(next, animationDuration),
+              timeoutRef.current?.schedule(next, animationDuration),
           })
         })
 
-        queue.current?.enqueue(() => {
+        queueRef.current?.enqueue(() => {
           setState({ isFinished: true, sideEffect: cleanup })
         })
 
         return
       }
 
-      queue.current?.enqueue((next) => {
+      queueRef.current?.enqueue((next) => {
         setState({
           isFinished: false,
           progress: n,
@@ -86,7 +86,7 @@ export const useNProgress = ({
         })
       })
     },
-    [animationDuration, cleanup, minimum, queue, setState, timeout],
+    [animationDuration, cleanup, minimum, queueRef, setState, timeoutRef],
   )
 
   const trickle = useCallback(() => {
@@ -100,8 +100,8 @@ export const useNProgress = ({
     // `minimum`. The difference is negligible at the default minimum of 0.08.
     const work = () => {
       trickle()
-      queue.current?.enqueue((next) => {
-        timeout.current?.schedule(() => {
+      queueRef.current?.enqueue((next) => {
+        timeoutRef.current?.schedule(() => {
           work()
           next()
         }, incrementDuration)
@@ -109,7 +109,7 @@ export const useNProgress = ({
     }
 
     work()
-  }, [incrementDuration, queue, timeout, trickle])
+  }, [incrementDuration, queueRef, timeoutRef, trickle])
 
   const sideEffect = get().sideEffect
 

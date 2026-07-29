@@ -7,14 +7,19 @@
 import { useEffect, useRef } from 'react'
 
 const useFirstMountState = (): boolean => {
-  const isFirst = useRef(true)
+  const isFirstRef = useRef(true)
 
-  if (isFirst.current) {
-    isFirst.current = false
+  // Read and mutated directly during render (rather than in an effect) so
+  // the first-mount result is available synchronously on the very first
+  // render, before any effect has run.
+  /* eslint-disable react-hooks/refs -- intentional, see comment above */
+  if (isFirstRef.current) {
+    isFirstRef.current = false
     return true
   }
 
-  return isFirst.current
+  return isFirstRef.current
+  /* eslint-enable react-hooks/refs */
 }
 
 export const useUpdateEffect: typeof useEffect = (effect, deps) => {

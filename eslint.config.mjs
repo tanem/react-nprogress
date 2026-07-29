@@ -1,16 +1,11 @@
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
 import js from '@eslint/js'
+import eslintReact from '@eslint-react/eslint-plugin'
 import eslintConfigPrettier from 'eslint-config-prettier'
-import react from 'eslint-plugin-react'
+import perfectionist from 'eslint-plugin-perfectionist'
 import reactHooks from 'eslint-plugin-react-hooks'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
 
 export default tseslint.config(
   {
@@ -18,39 +13,27 @@ export default tseslint.config(
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  react.configs.flat.recommended,
-  eslintConfigPrettier,
+  eslintReact.configs['recommended-typescript'],
   {
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-        project: path.join(__dirname, 'tsconfig.eslint.json'),
-      },
-    },
-
     plugins: {
+      perfectionist,
       'react-hooks': reactHooks,
       'simple-import-sort': simpleImportSort,
     },
 
     rules: {
-      'react-hooks/exhaustive-deps': 'warn',
-      'react-hooks/rules-of-hooks': 'error',
-      'react/jsx-sort-props': 'error',
-      'react/jsx-uses-react': 'off',
-      'react/react-in-jsx-scope': 'off',
+      ...reactHooks.configs['recommended-latest'].rules,
+      // eslint-plugin-react-hooks (above) is the source of truth for hooks
+      // rules, since it's backed by the React team's compiler. Disable the
+      // overlapping rules from @eslint-react/eslint-plugin's recommended
+      // config to avoid duplicate reports.
+      '@eslint-react/exhaustive-deps': 'off',
+      '@eslint-react/rules-of-hooks': 'off',
+      'perfectionist/sort-jsx-props': 'error',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',
       'sort-imports': 'off',
       'sort-keys': 'error',
-    },
-
-    settings: {
-      react: {
-        version: 'detect',
-      },
     },
   },
   {
@@ -61,7 +44,6 @@ export default tseslint.config(
       },
     },
     rules: {
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-require-imports': 'off',
     },
   },
@@ -73,17 +55,5 @@ export default tseslint.config(
       },
     },
   },
-  {
-    files: ['examples/**/*'],
-    rules: {
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
-      'react/no-unknown-property': [
-        'error',
-        {
-          ignore: ['jsx'],
-        },
-      ],
-      'react/prop-types': 'off',
-    },
-  },
+  eslintConfigPrettier,
 )

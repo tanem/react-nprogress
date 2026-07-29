@@ -4,13 +4,11 @@
 // `react-use` appears to be unmaintained, so moving the required code into
 // this project for now.
 
-import { useCallback, useRef, useState } from 'react'
-
-const incrementParameter = (num: number): number => ++num % 1_000_000
+import { useCallback, useReducer, useRef } from 'react'
 
 const useUpdate = () => {
-  const [, setState] = useState(0)
-  return useCallback(() => setState(incrementParameter), [])
+  const [, update] = useReducer((num: number) => (num + 1) % 1_000_000, 0)
+  return update
 }
 
 export const useGetSetState = <T extends object>(
@@ -18,13 +16,13 @@ export const useGetSetState = <T extends object>(
   initialState: T = {} as T,
 ): [() => T, (patch: Partial<T>) => void] => {
   const update = useUpdate()
-  const state = useRef<T>({ ...(initialState as object) } as T)
-  const get = useCallback(() => state.current, [])
+  const stateRef = useRef<T>({ ...(initialState as object) } as T)
+  const get = useCallback(() => stateRef.current, [])
   const set = useCallback((patch: Partial<T>) => {
     if (!patch) {
       return
     }
-    Object.assign(state.current, patch)
+    Object.assign(stateRef.current, patch)
     update()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
