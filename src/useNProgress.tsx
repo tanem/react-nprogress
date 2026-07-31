@@ -29,10 +29,10 @@ const initialState: State = {
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case 'complete':
-      // Unlike the original nprogress `done()`, completion does not include a
-      // random progress jump before animating to 1. This keeps the primitive
-      // predictable; consumers can set a higher progress value before stopping
-      // the animation if they want that effect.
+      // The original nprogress `done()` computes a random progress jump before
+      // animating to 1, but its queue runs both steps in the same tick, so the
+      // jump's CSS is overwritten before paint and never renders. Omitting the
+      // jump changes nothing visually.
       //
       // Ignored unless an animation is actually running, which is what makes a
       // StrictMode double-mount a no-op rather than a spurious completion.
