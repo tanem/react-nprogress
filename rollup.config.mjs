@@ -15,6 +15,13 @@ const UMD_PROD = 'UMD_PROD'
 const input = './compiled/index.js'
 const exports = 'named'
 
+// Every export is or wraps a hook, and the timers run on
+// `window.requestAnimationFrame`, so the package is client-only. Rollup strips
+// file-level directives while bundling, so the marker is added as an output
+// banner rather than in the source. UMD bundles are script-tag targets and are
+// never resolved through a server/client module graph, so they are left alone.
+const banner = `'use client';`
+
 const getExternal = (bundleType) => {
   const peerDependencies = Object.keys(pkg.peerDependencies)
   const dependencies = Object.keys(pkg.dependencies)
@@ -68,6 +75,9 @@ const getPlugins = (bundleType) => [
   isProduction(bundleType) &&
     terser({
       compress: {
+        // Terser treats `'use client'` as a non-standard directive and drops
+        // it from the minified output unless directive removal is disabled.
+        directives: false,
         keep_infinity: true,
         pure_getters: true,
       },
@@ -79,6 +89,7 @@ const getCjsConfig = (bundleType) => ({
   external: getExternal(bundleType),
   input,
   output: {
+    banner,
     exports,
     file: `dist/react-nprogress.cjs.${
       isProduction(bundleType) ? 'production' : 'development'
@@ -93,6 +104,7 @@ const getEsConfig = () => ({
   external: getExternal(ES),
   input,
   output: {
+    banner,
     exports,
     file: pkg.module,
     format: 'es',

@@ -28,6 +28,7 @@
     "prepare": "npm run build",
     "release": "tanem-scripts release",
     "test": "run-s check:* lint build test:*",
+    "test:bundles": "jest --config ./scripts/jest/config.bundles.js",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
     "test:cjsprod": "jest --config ./scripts/jest/config.cjsprod.js",
     "test:es": "jest --config ./scripts/jest/config.es.js",
