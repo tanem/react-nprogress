@@ -8,7 +8,7 @@
 
 > A React primitive for building slim progress bars.
 
-[Background](#background) | [When to Use This](#when-to-use-this) | [Usage](#usage) | [Live Examples](#live-examples) | [API](#api) | [Installation](#installation) | [Contributing](#contributing) | [License](#license)
+[Background](#background) | [When to Use This](#when-to-use-this) | [Usage](#usage) | [API](#api) | [Live Examples](#live-examples) | [Installation](#installation) | [Contributing](#contributing) | [License](#license)
 
 ## Background
 
@@ -24,7 +24,7 @@ This package is a headless primitive. It renders no markup and ships no CSS, sup
 
 ## Usage
 
-In the following examples, `Container`, `Bar` and `Spinner` are custom components.
+`Container`, `Bar` and `Spinner` are components you write: this package renders nothing itself. Every entry in [Live Examples](#live-examples) contains a working implementation of all three.
 
 **Hook**
 
@@ -70,59 +70,26 @@ const Progress = ({ isAnimating }) => (
 )
 ```
 
-## Live Examples
-
-- Material UI: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/material-ui) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/material-ui)
-- Multiple Instances: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/multiple-instances) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/multiple-instances)
-- Next App Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/next-app-router) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-app-router)
-- Next Pages Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/next-pages-router) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-pages-router)
-- Original Design: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/original-design) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/original-design)
-- Plain JS: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/plain-js) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/plain-js)
-- React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/react-router)
-- Render Props: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/render-props) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/render-props)
-
 ## API
 
-**Props**
+The package exports one hook and one component. Both take the same [options](#options) and produce the same [values](#return-value), so the choice between them is a matter of which pattern suits the calling code.
 
-- `animationDuration` - _Optional_ Number indicating the animation duration in `ms`. Defaults to `200`.
-- `incrementDuration` - _Optional_ Number indicating the length of time between progress bar increments in `ms`. Defaults to `200`.
-- `isAnimating` - _Optional_ Boolean indicating if the progress bar is animating. Defaults to `false`.
-- `minimum` - _Optional_ Number between `0` and `1` indicating the minimum value of the progress bar. Defaults to `0.08`.
+### `useNProgress`
 
-**Hook Example**
+Returns the state of one progress bar. Call it once per bar: two calls, or two mounted `NProgress` components, track their progress independently.
 
 ```jsx
-const Progress = ({
-  animationDuration,
-  incrementDuration,
-  isAnimating,
-  minimum
-}) => {
-  const { isFinished, progress } = useNProgress({
-    animationDuration,
-    incrementDuration,
-    isAnimating,
-    minimum
-  })
-
-  return (
-    <Container animationDuration={animationDuration} isFinished={isFinished}>
-      <Bar animationDuration={animationDuration} progress={progress} />
-      <Spinner />
-    </Container>
-  )
-}
-
-<Progress
-  animationDuration={300}
-  incrementDuration={500}
-  isAnimating
-  minimum={0.1}
-/>
+const { animationDuration, isFinished, progress } = useNProgress({
+  animationDuration: 300,
+  incrementDuration: 500,
+  isAnimating: true,
+  minimum: 0.1,
+})
 ```
 
-**Render Props Example**
+### `NProgress`
+
+Takes the options as props and calls `children` with the values the hook returns. `children` is required and must return a React element.
 
 ```jsx
 <NProgress
@@ -131,14 +98,61 @@ const Progress = ({
   isAnimating
   minimum={0.1}
 >
-  {({ animationDuration, isFinished, progress }) => (
-    <Container animationDuration={animationDuration} isFinished={isFinished}>
-      <Bar animationDuration={animationDuration} progress={progress} />
-      <Spinner />
-    </Container>
+  {({ animationDuration, progress }) => (
+    <Bar animationDuration={animationDuration} progress={progress} />
   )}
 </NProgress>
 ```
+
+### Options
+
+All four options are optional.
+
+| Option                                    | Type      | Default |
+| ----------------------------------------- | --------- | ------- |
+| [`animationDuration`](#animationduration) | `number`  | `200`   |
+| [`incrementDuration`](#incrementduration) | `number`  | `200`   |
+| [`isAnimating`](#isanimating)             | `boolean` | `false` |
+| [`minimum`](#minimum)                     | `number`  | `0.08`  |
+
+#### `animationDuration`
+
+Milliseconds the bar is given to animate out once it completes. `progress` reaches `1` as soon as `isAnimating` goes `false`, and `isFinished` follows this many milliseconds later, leaving that window for the exit transition. The value is also returned unchanged, so a single number drives both the timing and the CSS transitions.
+
+#### `incrementDuration`
+
+Milliseconds between increments while the bar is animating. It controls the trickle pacing only: the size of each increment is not configurable, and shrinks as `progress` grows.
+
+#### `isAnimating`
+
+Whether the bar is running. Going `true` starts it, going `false` completes it. Completion is what drives the final state: `progress` is set to `1`, and `animationDuration` later `isFinished` becomes `true`.
+
+#### `minimum`
+
+Lower bound for `progress`, between `0` and `1`. The first increment starts from `0.1` rather than from `0`, so the bar appears at `max(0.1, minimum)` and the option only shows through when it is set above `0.1`. Changing it while the bar is animating restarts the bar from that first increment.
+
+### Return Value
+
+`useNProgress` returns these values, and `NProgress` passes the same object to `children`.
+
+| Value               | Type      | Description                                                                                                                                                   |
+| ------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `animationDuration` | `number`  | The `animationDuration` option, passed through so rendering code can transition with it.                                                                      |
+| `isFinished`        | `boolean` | `true` before the bar starts and again once it has animated out. `false` from when `isAnimating` goes `true` until `animationDuration` after it goes `false`. |
+| `progress`          | `number`  | Starts at `0` and trickles up in shrinking steps to a ceiling of `0.994`, then goes to `1` on completion.                                                     |
+
+## Live Examples
+
+| Example                                                                                                | Sandbox                                                                                                      |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| [Material UI](https://github.com/tanem/react-nprogress/tree/master/examples/material-ui)               | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/material-ui)        |
+| [Multiple Instances](https://github.com/tanem/react-nprogress/tree/master/examples/multiple-instances) | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/multiple-instances) |
+| [Next App Router](https://github.com/tanem/react-nprogress/tree/master/examples/next-app-router)       | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-app-router)    |
+| [Next Pages Router](https://github.com/tanem/react-nprogress/tree/master/examples/next-pages-router)   | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-pages-router)  |
+| [Original Design](https://github.com/tanem/react-nprogress/tree/master/examples/original-design)       | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/original-design)    |
+| [Plain JS](https://github.com/tanem/react-nprogress/tree/master/examples/plain-js)                     | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/plain-js)           |
+| [React Router](https://github.com/tanem/react-nprogress/tree/master/examples/react-router)             | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/react-router)       |
+| [Render Props](https://github.com/tanem/react-nprogress/tree/master/examples/render-props)             | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/render-props)       |
 
 ## Installation
 
