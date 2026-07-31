@@ -2,6 +2,20 @@
 
 ## v7.0.0
 
+### `withNProgress` removed
+
+React's docs treat higher-order components as a legacy pattern, and the HOC
+was the package's only reason to depend on `hoist-non-react-statics`.
+
+**Action required:** wrap the component yourself:
+
+```jsx
+const Enhanced = (props) => <Inner {...props} {...useNProgress(props)} />
+```
+
+Statics hoisting goes with it. If the wrapped component has statics that
+consumers read off the wrapper, copy them across yourself.
+
 ### UMD builds removed
 
 `dist/react-nprogress.umd.development.js` and

@@ -69,32 +69,8 @@ render(
 )
 ```
 
-**HOC**
-
-```jsx
-import { withNProgress } from '@tanem/react-nprogress'
-import React from 'react'
-import { render } from 'react-dom'
-
-import Bar from './Bar'
-import Container from './Container'
-import Spinner from './Spinner'
-
-const Inner = ({ animationDuration, isFinished, progress }) => (
-  <Container animationDuration={animationDuration} isFinished={isFinished}>
-    <Bar animationDuration={animationDuration} progress={progress} />
-    <Spinner />
-  </Container>
-)
-
-const Enhanced = withNProgress(Inner)
-
-render(<Enhanced isAnimating />, document.getElementById('root'))
-```
-
 ## Live Examples
 
-- HOC: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/hoc) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/hoc)
 - Material UI: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/material-ui) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/material-ui)
 - Multiple Instances: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/multiple-instances) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/multiple-instances)
 - Next App Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/next-app-router) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-app-router)
@@ -161,26 +137,6 @@ const Progress = ({
     </Container>
   )}
 </NProgress>
-```
-
-**HOC Example**
-
-```jsx
-const Inner = ({ animationDuration, isFinished, progress }) => (
-  <Container animationDuration={animationDuration} isFinished={isFinished}>
-    <Bar animationDuration={animationDuration} progress={progress} />
-    <Spinner />
-  </Container>
-)
-
-const Enhanced = withNProgress(Inner)
-
-<Enhanced
-  animationDuration={300}
-  incrementDuration={500}
-  isAnimating
-  minimum={0.1}
-/>
 ```
 
 ## Installation

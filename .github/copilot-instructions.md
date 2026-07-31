@@ -5,10 +5,10 @@ changes agent behaviour and cannot be inferred from the codebase or tooling.
 
 ## Project
 
-TypeScript React library providing a slim progress bar primitive via three
-patterns: `useNProgress` hook, `NProgress` render-props component, and
-`withNProgress` HOC. Exports logic only, not rendering. All exports go through
-`src/index.tsx`. Types live in `src/types.ts`.
+TypeScript React library providing a slim progress bar primitive via two
+patterns: `useNProgress` hook and `NProgress` render-props component. Exports
+logic only, not rendering. All exports go through `src/index.tsx`. Types live
+in `src/types.ts`.
 
 ## Key Commands
 

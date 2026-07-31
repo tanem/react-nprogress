@@ -46,8 +46,6 @@
   "keywords": [
     "animation",
     "component",
-    "higher-order-component",
-    "hoc",
     "hook",
     "hooks",
     "javascript",
@@ -73,8 +71,7 @@
     "brace-expansion": "^5.0.8"
   },
   "dependencies": {
-    "@babel/runtime": "^7.28.6",
-    "hoist-non-react-statics": "^3.3.2"
+    "@babel/runtime": "^7.28.6"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.5",
@@ -91,7 +88,6 @@
     "@rollup/plugin-replace": "6.0.3",
     "@rollup/plugin-terser": "1.0.0",
     "@testing-library/react": "16.3.2",
-    "@types/hoist-non-react-statics": "3.3.7",
     "@types/jest": "30.0.0",
     "@types/mock-raf": "1.0.6",
     "@types/node": "24.11.0",
