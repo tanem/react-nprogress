@@ -64,6 +64,9 @@ export default function NavigationProgress({
   const contextValue = useRef<NavigationProgressContextType>({
     start: () => {
       setIsRouteChanging(true)
+      // A new key on each start remounts the bar, so it re-enters from the
+      // left rather than animating backwards from where the last navigation
+      // finished.
       setLoadingKey((prev) => prev ^ 1)
     },
   }).current

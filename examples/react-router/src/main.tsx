@@ -169,6 +169,9 @@ const Home = () => {
       A key change creates a new NProgress instance, resetting progress
       when the location changes. See:
       https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key.
+      Remounting is also what makes the bar re-enter from the left on the
+      next navigation, rather than animating backwards from where the last
+      one finished.
       */}
       <Progress isAnimating={isLoading} key={location.key} />
       <div style={styles.fill}>

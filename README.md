@@ -72,6 +72,24 @@ const Progress = ({ isAnimating }) => (
 )
 ```
 
+**Restarting**
+
+Both patterns leave the bar mounted between runs, and `progress` returns to `minimum` when it starts again. A bar that transitions `margin-left` or `transform` therefore animates backwards from where it finished, in full view, before it starts trickling forward. Back to back navigations hit this every time.
+
+Change a `key` on the bar whenever it starts, so React mounts a fresh element at `minimum` instead:
+
+```jsx
+const [state, setState] = useState({ isAnimating: false, key: 0 })
+
+const start = () => {
+  setState((prevState) => ({ isAnimating: true, key: prevState.key ^ 1 }))
+}
+
+return <Progress isAnimating={state.isAnimating} key={state.key} />
+```
+
+Every entry in [Live Examples](#live-examples) does this. Dropping the transition while `isFinished` is not an alternative: `isFinished` is already `false` by the time `progress` resets, so the transition is back on for the step that moves the bar.
+
 ## API
 
 The package exports one hook and one component. Both take the same [options](#options) and produce the same [values](#return-value), so the choice between them is a matter of which pattern suits the calling code. Both shapes are exported as types, for typing code that wraps either entry point:
