@@ -14,6 +14,8 @@
 
 This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](https://github.com/rstacruz/nprogress) module. It exposes an API that encapsulates the logic of `nprogress` and renders nothing, allowing consumers to implement their own rendering.
 
+Two versions of `nprogress` are in circulation and they trickle differently. The 2014 npm release, `0.2.0`, adds a random amount of at most `0.02` every 800ms. The repository's master branch, never published to npm, adds tiered amounts every 200ms. This library mirrors master, so a side by side comparison against the npm package or the official demo page will show a different pace. The [`increment`](#increment) option covers the `0.2.0` pacing if you prefer the older feel.
+
 ## When to Use This
 
 This package is a headless primitive. It renders no markup and ships no CSS, supplying only the pacing state: a `progress` value that trickles towards completion, an `isFinished` flag, and the `animationDuration` to transition with. The bar itself is yours to write.
@@ -132,7 +134,7 @@ Size of each trickle step. The function is called with the current `progress` an
 
 The return value is clamped to between `minimum` and `1`, and nothing else. A custom function therefore owns its own ceiling. Leave it short of `1`, since reaching `1` is what completion means, and let `isAnimating` going `false` take the bar the rest of the way.
 
-Returning a random amount is fine, but keep the function free of other side effects. It runs inside a React state update, and StrictMode calls it twice per increment in development. This trickles a random amount of at most `0.02` every 800ms, which is how nprogress 0.2.0 paces itself:
+Returning a random amount is fine, but keep the function free of other side effects. It runs inside a React state update, and StrictMode calls it twice per increment in development. This trickles a random amount of at most `0.02` every 800ms, which is how nprogress `0.2.0` paces itself:
 
 ```jsx
 const { progress } = useNProgress({
@@ -141,6 +143,8 @@ const { progress } = useNProgress({
   isAnimating,
 })
 ```
+
+`0.2.0` also transitions the bar with `ease` where master uses `linear`. Easing lives in your renderer's CSS, so match it there if you want the rest of that look.
 
 A new function identity on every render is fine too: passing an inline function does not restart the trickle timer. The next increment uses the latest function.
 
