@@ -8,7 +8,7 @@
 
 > A React primitive for building slim progress bars.
 
-[Background](#background) | [When to Use This](#when-to-use-this) | [Usage](#usage) | [Live Examples](#live-examples) | [API](#api) | [Installation](#installation) | [License](#license)
+[Background](#background) | [When to Use This](#when-to-use-this) | [Usage](#usage) | [Live Examples](#live-examples) | [API](#api) | [Installation](#installation) | [Contributing](#contributing) | [License](#license)
 
 ## Background
 
@@ -145,6 +145,10 @@ const Progress = ({
 ```
 $ npm install @tanem/react-nprogress
 ```
+
+## Contributing
+
+Issues and pull requests are welcome. The development loop is `npm run test:src`, and `npm test` runs the full suite. Repository conventions, for humans and coding agents alike, live in [`AGENTS.md`](AGENTS.md).
 
 ## License
 
