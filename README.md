@@ -162,7 +162,7 @@ const { progress } = useNProgress({
 })
 ```
 
-`0.2.0` also transitions the bar with `ease` where master uses `linear`. Easing lives in your renderer's CSS, so match it there if you want the rest of that look.
+`0.2.0` also transitions the bar with `ease` where master uses `linear`. Easing lives in your renderer's CSS, so match it there if you want the rest of that look. The [Classic 0.2.0](https://github.com/tanem/react-nprogress/tree/master/examples/classic-020) example puts both together.
 
 A new function identity on every render is fine too: passing an inline function does not restart the trickle timer. The next increment uses the latest function.
 
@@ -192,6 +192,7 @@ Lower bound for `progress`, between `0` and `1`. The bar first appears at this v
 
 | Example                                                                                                | Sandbox                                                                                                      |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| [Classic 0.2.0](https://github.com/tanem/react-nprogress/tree/master/examples/classic-020)             | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/classic-020)        |
 | [Material UI](https://github.com/tanem/react-nprogress/tree/master/examples/material-ui)               | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/material-ui)        |
 | [Multiple Instances](https://github.com/tanem/react-nprogress/tree/master/examples/multiple-instances) | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/multiple-instances) |
 | [Next App Router](https://github.com/tanem/react-nprogress/tree/master/examples/next-app-router)       | [Open](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/next-app-router)    |
