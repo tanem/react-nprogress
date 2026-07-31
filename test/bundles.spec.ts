@@ -12,6 +12,22 @@ const publishedModules = fs
   .readdirSync(distDir)
   .filter((file) => /\.[cm]?js$/.test(file))
 
+// Derived the same way, and for the same reason, as `publishedModules`.
+const declarationFiles = fs
+  .readdirSync(distDir)
+  .filter((file) => /\.d\.[cm]?ts$/.test(file))
+
+// Consumers writing a typed wrapper around the hook or the render-props
+// component need names for the option and return shapes, so both are part of
+// the public API rather than internal declarations the bundler happened to
+// inline.
+const publicNames = [
+  'NProgress',
+  'NProgressOptions',
+  'NProgressState',
+  'useNProgress',
+]
+
 describe('published modules', () => {
   it('should be present', () => {
     expect(publishedModules.length).toBeGreaterThan(0)
@@ -24,4 +40,19 @@ describe('published modules', () => {
       expect(contents).toMatch(/^["']use client["']/)
     },
   )
+})
+
+describe('declaration files', () => {
+  it('should be present', () => {
+    expect(declarationFiles.length).toBeGreaterThan(0)
+  })
+
+  it.each(declarationFiles)('%s should export the public API', (file) => {
+    const contents = fs.readFileSync(path.join(distDir, file), 'utf8')
+    const exported = (contents.match(/export\s*\{[^}]*\}/g) ?? []).join(' ')
+
+    for (const name of publicNames) {
+      expect(exported).toMatch(new RegExp(`\\b${name}\\b`))
+    }
+  })
 })

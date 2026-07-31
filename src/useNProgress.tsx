@@ -3,7 +3,7 @@ import { useEffect, useReducer } from 'react'
 import { clamp } from './clamp'
 import { createTimeout } from './createTimeout'
 import { increment } from './increment'
-import type { Options } from './types'
+import type { NProgressOptions, NProgressState } from './types'
 
 // A four-phase state machine. `idle` and `finished` both report
 // `isFinished: true` and differ only in the progress they hold, so the phase,
@@ -74,11 +74,7 @@ export const useNProgress = ({
   incrementDuration = 200,
   isAnimating = false,
   minimum = 0.08,
-}: Options = {}): {
-  animationDuration: number
-  isFinished: boolean
-  progress: number
-} => {
+}: NProgressOptions = {}): NProgressState => {
   const [{ phase, progress }, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {

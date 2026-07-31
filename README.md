@@ -72,7 +72,11 @@ const Progress = ({ isAnimating }) => (
 
 ## API
 
-The package exports one hook and one component. Both take the same [options](#options) and produce the same [values](#return-value), so the choice between them is a matter of which pattern suits the calling code.
+The package exports one hook and one component. Both take the same [options](#options) and produce the same [values](#return-value), so the choice between them is a matter of which pattern suits the calling code. Both shapes are exported as types, for typing code that wraps either entry point:
+
+```ts
+import type { NProgressOptions, NProgressState } from '@tanem/react-nprogress'
+```
 
 ### `useNProgress`
 
@@ -106,7 +110,7 @@ Takes the options as props and calls `children` with the values the hook returns
 
 ### Options
 
-All four options are optional.
+All four options are optional. The type is `NProgressOptions`.
 
 | Option                                    | Type      | Default |
 | ----------------------------------------- | --------- | ------- |
@@ -133,7 +137,7 @@ Lower bound for `progress`, between `0` and `1`. The first increment starts from
 
 ### Return Value
 
-`useNProgress` returns these values, and `NProgress` passes the same object to `children`.
+`useNProgress` returns these values, and `NProgress` passes the same object to `children`. The type is `NProgressState`.
 
 | Value               | Type      | Description                                                                                                                                                   |
 | ------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
