@@ -354,6 +354,104 @@ test('keeps trickling when animationDuration changes mid-animation', () => {
   unmount()
 })
 
+test('respects a custom increment', () => {
+  const { result, unmount } = renderHook(() =>
+    useNProgress({
+      increment: (progress) => progress + 0.25,
+      isAnimating: true,
+    }),
+  )
+
+  expect(result.current.progress).toBe(0.08)
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current.progress).toBe(0.33)
+
+  unmount()
+})
+
+test('clamps a custom increment to the documented range', () => {
+  const { result, rerender, unmount } = renderHook(
+    ({ increment }) => useNProgress({ increment, isAnimating: true }),
+    { initialProps: { increment: () => 5 } },
+  )
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current.progress).toBe(1)
+
+  rerender({ increment: () => -5 })
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 401 })
+  })
+
+  expect(result.current.progress).toBe(0.08)
+
+  unmount()
+})
+
+test('uses the latest increment on the next trickle', () => {
+  const { result, rerender, unmount } = renderHook(
+    ({ increment }) => useNProgress({ increment, isAnimating: true }),
+    { initialProps: { increment: (progress: number) => progress + 0.1 } },
+  )
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current.progress).toBe(0.18)
+
+  rerender({ increment: (progress: number) => progress + 0.25 })
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 401 })
+  })
+
+  expect(result.current.progress).toBe(0.43)
+
+  unmount()
+})
+
+// Consumers commonly pass an inline function, so a new identity arrives on
+// every render. That must not cancel the pending trickle timer.
+test('keeps trickling when a new increment identity arrives mid-animation', () => {
+  const { result, rerender, unmount } = renderHook(
+    ({ increment }) => useNProgress({ increment, isAnimating: true }),
+    { initialProps: { increment: (progress: number) => progress + 0.1 } },
+  )
+
+  act(() => {
+    mockRaf.step()
+    mockRaf.step({ time: 201 })
+  })
+
+  expect(result.current.progress).toBe(0.18)
+
+  act(() => {
+    mockRaf.step({ time: 399 })
+  })
+  rerender({ increment: (progress: number) => progress + 0.1 })
+  act(() => {
+    mockRaf.step({ time: 401 })
+  })
+
+  expect(result.current.progress).toBe(0.28)
+
+  unmount()
+})
+
 test('applies a new animationDuration to the completion it owns', () => {
   const { result, rerender, unmount } = renderHook(
     ({ animationDuration, isAnimating }) =>

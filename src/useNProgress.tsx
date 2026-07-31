@@ -1,8 +1,8 @@
-import { useEffect, useReducer } from 'react'
+import { useEffect, useReducer, useRef } from 'react'
 
 import { clamp } from './clamp'
 import { createTimeout } from './createTimeout'
-import { increment } from './increment'
+import { increment as defaultIncrement } from './increment'
 import type { NProgressOptions, NProgressState } from './types'
 
 // A four-phase state machine. `idle` and `finished` both report
@@ -16,8 +16,12 @@ interface State {
 }
 
 type Action =
+  | {
+      increment: (progress: number) => number
+      minimum: number
+      type: 'trickle'
+    }
   | { minimum: number; type: 'start' }
-  | { minimum: number; type: 'trickle' }
   | { type: 'complete' }
   | { type: 'finish' }
 
@@ -59,20 +63,35 @@ const reducer = (state: State, action: Action): State => {
           }
 
     case 'trickle':
+      // Clamped here rather than trusted from the increment function, so a
+      // custom one cannot take the bar outside the documented range. Stopping
+      // short of 1 is that function's own business: 1 is what completion
+      // means.
       return {
         ...state,
-        progress: clamp(increment(state.progress), action.minimum, 1),
+        progress: clamp(action.increment(state.progress), action.minimum, 1),
       }
   }
 }
 
 export const useNProgress = ({
   animationDuration = 200,
+  increment = defaultIncrement,
   incrementDuration = 200,
   isAnimating = false,
   minimum = 0.08,
 }: NProgressOptions = {}): NProgressState => {
   const [{ phase, progress }, dispatch] = useReducer(reducer, initialState)
+
+  // Held in a ref so the trickle timer can read the latest increment function
+  // without listing it as a dependency. Consumers commonly pass an inline
+  // function, whose identity changes every render; depending on it directly
+  // would cancel and recreate the timer each time, and a render loop faster
+  // than `incrementDuration` would stop the bar advancing altogether.
+  const incrementRef = useRef(increment)
+  useEffect(() => {
+    incrementRef.current = increment
+  })
 
   useEffect(() => {
     dispatch(isAnimating ? { minimum, type: 'start' } : { type: 'complete' })
@@ -91,7 +110,7 @@ export const useNProgress = ({
     const timeout = createTimeout()
 
     const trickle = () => {
-      dispatch({ minimum, type: 'trickle' })
+      dispatch({ increment: incrementRef.current, minimum, type: 'trickle' })
       timeout.schedule(trickle, incrementDuration)
     }
     timeout.schedule(trickle, incrementDuration)

@@ -85,6 +85,7 @@ Returns the state of one progress bar. Call it once per bar: two calls, or two m
 ```jsx
 const { animationDuration, isFinished, progress } = useNProgress({
   animationDuration: 300,
+  increment: (progress) => progress + 0.01,
   incrementDuration: 500,
   isAnimating: true,
   minimum: 0.1,
@@ -98,6 +99,7 @@ Takes the options as props and calls `children` with the values the hook returns
 ```jsx
 <NProgress
   animationDuration={300}
+  increment={(progress) => progress + 0.01}
   incrementDuration={500}
   isAnimating
   minimum={0.1}
@@ -110,22 +112,41 @@ Takes the options as props and calls `children` with the values the hook returns
 
 ### Options
 
-All four options are optional. The type is `NProgressOptions`.
+All five options are optional. The type is `NProgressOptions`.
 
-| Option                                    | Type      | Default |
-| ----------------------------------------- | --------- | ------- |
-| [`animationDuration`](#animationduration) | `number`  | `200`   |
-| [`incrementDuration`](#incrementduration) | `number`  | `200`   |
-| [`isAnimating`](#isanimating)             | `boolean` | `false` |
-| [`minimum`](#minimum)                     | `number`  | `0.08`  |
+| Option                                    | Type                           | Default        |
+| ----------------------------------------- | ------------------------------ | -------------- |
+| [`animationDuration`](#animationduration) | `number`                       | `200`          |
+| [`increment`](#increment)                 | `(progress: number) => number` | tiered trickle |
+| [`incrementDuration`](#incrementduration) | `number`                       | `200`          |
+| [`isAnimating`](#isanimating)             | `boolean`                      | `false`        |
+| [`minimum`](#minimum)                     | `number`                       | `0.08`         |
 
 #### `animationDuration`
 
 Milliseconds the bar is given to animate out once it completes. `progress` reaches `1` as soon as `isAnimating` goes `false`, and `isFinished` follows this many milliseconds later, leaving that window for the exit transition. The value is also returned unchanged, so a single number drives both the timing and the CSS transitions.
 
+#### `increment`
+
+Size of each trickle step. The function is called with the current `progress` and returns the next value. The default is the tiered curve nprogress uses: `+0.1` below `0.2`, then `+0.04`, `+0.02`, and `+0.005` as `progress` grows, held at a ceiling of `0.994` so the bar never looks complete before it is.
+
+The return value is clamped to between `minimum` and `1`, and nothing else. A custom function therefore owns its own ceiling. Leave it short of `1`, since reaching `1` is what completion means, and let `isAnimating` going `false` take the bar the rest of the way.
+
+Returning a random amount is fine, but keep the function free of other side effects. It runs inside a React state update, and StrictMode calls it twice per increment in development. This trickles a random amount of at most `0.02` every 800ms, which is how nprogress 0.2.0 paces itself:
+
+```jsx
+const { progress } = useNProgress({
+  increment: (progress) => Math.min(progress + Math.random() * 0.02, 0.994),
+  incrementDuration: 800,
+  isAnimating,
+})
+```
+
+A new function identity on every render is fine too: passing an inline function does not restart the trickle timer. The next increment uses the latest function.
+
 #### `incrementDuration`
 
-Milliseconds between increments while the bar is animating. It controls the trickle pacing only: the size of each increment is not configurable, and shrinks as `progress` grows.
+Milliseconds between increments while the bar is animating. It controls the trickle pacing only. Step size is [`increment`](#increment).
 
 #### `isAnimating`
 
@@ -143,7 +164,7 @@ Lower bound for `progress`, between `0` and `1`. The bar first appears at this v
 | ------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `animationDuration` | `number`  | The `animationDuration` option, passed through so rendering code can transition with it.                                                                      |
 | `isFinished`        | `boolean` | `true` before the bar starts and again once it has animated out. `false` from when `isAnimating` goes `true` until `animationDuration` after it goes `false`. |
-| `progress`          | `number`  | Starts at `0` and trickles up in shrinking steps to a ceiling of `0.994`, then goes to `1` on completion.                                                     |
+| `progress`          | `number`  | Starts at `0`, appears at `minimum` when the bar starts, then trickles up by [`increment`](#increment) and goes to `1` on completion.                         |
 
 ## Live Examples
 
