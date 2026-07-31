@@ -126,6 +126,18 @@ needed but test on CodeSandbox before merging.
 Do not bump vite, @vitejs/plugin-react, next, or typescript in examples
 beyond the versions in the reference templates.
 
+Before a release that changes packaging, smoke-test the examples against the
+tarball rather than the registry: `npm run build && npm pack` at the repo
+root, point each example's `@tanem/react-nprogress` dependency at the tarball,
+clean-install so it wins over any stale `node_modules`, then run the example
+and drive its progress bar in a browser. The Next examples also need
+`next build && next start`, since they resolve the CJS entry on the server.
+Restore the `"latest"` pin afterwards: CodeSandbox resolves the registry.
+
+`next-env.d.ts` in the Next examples is generated, and `next dev` and
+`next build` write different contents into it, so it is gitignored and listed
+in `.prettierignore` rather than tracked.
+
 ## Writing Style
 
 - Avoid marketing or promotional language. State facts plainly.

@@ -1,4 +1,5 @@
 README.md
 coverage
 dist
+next-env.d.ts
 package.json

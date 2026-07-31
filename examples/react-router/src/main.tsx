@@ -13,6 +13,7 @@ import {
   useParams,
 } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import type { CSSTransitionProps } from 'react-transition-group/CSSTransition'
 
 import Bar from './Bar'
 import Container from './Container'
@@ -122,10 +123,45 @@ const Progress: FC<{ isAnimating: boolean }> = ({ isAnimating }) => {
   )
 }
 
+// `nodeRef` has to resolve to a mounted DOM node, and `<Routes>` cannot take a
+// ref, so the transition owns a wrapper element to point at. It also has to be
+// a fresh ref per `key`, which is why this is a component rather than a ref
+// held by `Home`. With an unresolved ref, react-transition-group ends the
+// transition on the next tick: the fade classes never apply and `onEntered`
+// fires immediately, so the progress bar completes on click instead of over
+// `timeout`. TransitionGroup clones its children with the props it manages, so
+// everything else is forwarded through.
+const Fade: FC<
+  {
+    children: ReactNode
+    onEnter(): void
+    onEntered(): void
+  } & Pick<
+    CSSTransitionProps<HTMLDivElement>,
+    'appear' | 'enter' | 'exit' | 'in' | 'onExited'
+  >
+> = ({ children, onEnter, onEntered, ...managed }) => {
+  const nodeRef = useRef<HTMLDivElement>(null)
+
+  return (
+    <CSSTransition
+      {...managed}
+      classNames="fade"
+      nodeRef={nodeRef}
+      onEnter={onEnter}
+      onEntered={onEntered}
+      // Timeout has been increased by 4x from the original version for demo
+      // purposes.
+      timeout={1200}
+    >
+      <div ref={nodeRef}>{children}</div>
+    </CSSTransition>
+  )
+}
+
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false)
   const location = useLocation()
-  const nodeRef = useRef(null)
 
   return (
     <>
@@ -144,21 +180,14 @@ const Home = () => {
         </ul>
         <div style={styles.content}>
           <TransitionGroup>
-            {/*
-            Timeout has been increased by 4x from the original version
-            for demo purposes.
-            */}
-            <CSSTransition
-              classNames="fade"
+            <Fade
               key={location.key}
-              nodeRef={nodeRef}
               onEnter={() => {
                 setIsLoading(true)
               }}
               onEntered={() => {
                 setIsLoading(false)
               }}
-              timeout={1200}
             >
               <Routes location={location}>
                 <Route element={<HSL home={true} />} path="/" />
@@ -166,7 +195,7 @@ const Home = () => {
                 <Route element={<RGB />} path="/rgb/:r/:g/:b" />
                 <Route element={<div>Not Found</div>} path="*" />
               </Routes>
-            </CSSTransition>
+            </Fade>
           </TransitionGroup>
         </div>
       </div>
