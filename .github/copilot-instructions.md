@@ -68,7 +68,7 @@ Managed by Renovate (`config:js-lib` preset):
 We test boundary versions only: first and last minor of each supported
 major. See `test/react/` for current versions.
 
-Current boundaries: 16.14, 17.0, 18.0, 18.3, 19.0.
+Current boundaries: 16.14, 17.0, 18.0, 18.3, 19.0, 19.2.
 
 React 16.14 is the practical lower bound. Hooks require 16.8 and
 `@testing-library/react-hooks` requires 16.9.

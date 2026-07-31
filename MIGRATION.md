@@ -86,12 +86,12 @@ behaviour.
 
 ### Intermediate progress updates no longer wait for `animationDuration`
 
-Non-completion `set()` calls previously waited `animationDuration`
-(200 ms) before advancing the internal queue. This wait has been
+Intermediate progress updates previously waited `animationDuration`
+(200 ms) before the next one could be scheduled. This wait has been
 removed for intermediate updates so that only `incrementDuration`
-controls trickle pacing. The completion path (`set(1)`) still waits
-`animationDuration` before marking the bar as finished, giving
-consumers time to animate the bar to 100% before it disappears.
+controls trickle pacing. Completion still waits `animationDuration`
+before marking the bar as finished, giving consumers time to animate
+the bar to 100% before it disappears.
 
 **Action required:** none in most cases. If your rendering code relied
 on intermediate progress updates being spaced at least

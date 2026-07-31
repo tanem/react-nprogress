@@ -1,30 +1,72 @@
-import { useCallback, useRef } from 'react'
+import { useEffect, useReducer } from 'react'
 
 import { clamp } from './clamp'
-import { createQueue } from './createQueue'
 import { createTimeout } from './createTimeout'
 import { increment } from './increment'
 import type { Options } from './types'
-import { useEffectOnce } from './useEffectOnce'
-import { useGetSetState } from './useGetSetState'
-import { useUpdateEffect } from './useUpdateEffect'
 
-/* istanbul ignore next */
-const noop = () => undefined
+// A four-phase state machine. `idle` and `finished` both report
+// `isFinished: true` and differ only in the progress they hold, so the phase,
+// not `isFinished`, is what decides which transitions and timers apply.
+type Phase = 'animating' | 'completing' | 'finished' | 'idle'
 
-// State includes a `sideEffect` callback that bridges imperative queue
-// operations into React's declarative model. Each `setState` stores a callback;
-// `useUpdateEffect` fires it after React commits the update. This lets the
-// queue drive animations and schedule follow-up work without breaking React's
-// rendering lifecycle.
-const initialState: {
-  isFinished: boolean
+interface State {
+  phase: Phase
   progress: number
-  sideEffect: () => void
-} = {
-  isFinished: true,
+}
+
+type Action =
+  | { minimum: number; type: 'start' }
+  | { minimum: number; type: 'trickle' }
+  | { type: 'complete' }
+  | { type: 'finish' }
+
+const initialState: State = {
+  phase: 'idle',
   progress: 0,
-  sideEffect: noop,
+}
+
+const reducer = (state: State, action: Action): State => {
+  switch (action.type) {
+    case 'complete':
+      // Unlike the original nprogress `done()`, completion does not include a
+      // random progress jump before animating to 1. This keeps the primitive
+      // predictable; consumers can set a higher progress value before stopping
+      // the animation if they want that effect.
+      //
+      // Ignored unless an animation is actually running, which is what makes a
+      // StrictMode double-mount a no-op rather than a spurious completion.
+      return state.phase === 'animating'
+        ? { phase: 'completing', progress: 1 }
+        : state
+
+    case 'finish':
+      return { phase: 'finished', progress: 1 }
+
+    case 'start':
+      // The original nprogress calls set(0) - which clamps to `minimum` -
+      // before the first trickle. Here, the first trickle starts from
+      // increment(0) = 0.1, so the bar appears at max(0.1, minimum) rather
+      // than exactly `minimum`. The difference is negligible at the default
+      // minimum of 0.08.
+      //
+      // Guarded the same way as `complete`, and for the same reason: a repeat
+      // dispatch against a running animation must not rewind the bar. That
+      // happens whenever `minimum` changes mid-animation, as well as on a
+      // StrictMode double-mount.
+      return state.phase === 'animating'
+        ? state
+        : {
+            phase: 'animating',
+            progress: clamp(increment(0), action.minimum, 1),
+          }
+
+    case 'trickle':
+      return {
+        ...state,
+        progress: clamp(increment(state.progress), action.minimum, 1),
+      }
+  }
 }
 
 export const useNProgress = ({
@@ -37,107 +79,47 @@ export const useNProgress = ({
   isFinished: boolean
   progress: number
 } => {
-  const [get, setState] = useGetSetState(initialState)
+  const [{ phase, progress }, dispatch] = useReducer(reducer, initialState)
 
-  const queueRef = useRef<ReturnType<typeof createQueue> | null>(null)
-  const timeoutRef = useRef<ReturnType<typeof createTimeout> | null>(null)
+  useEffect(() => {
+    dispatch(isAnimating ? { minimum, type: 'start' } : { type: 'complete' })
+  }, [isAnimating, minimum])
 
-  useEffectOnce(() => {
-    queueRef.current = createQueue()
-    timeoutRef.current = createTimeout()
-  })
-
-  const cleanup = useCallback(() => {
-    timeoutRef.current?.cancel()
-    queueRef.current?.clear()
-  }, [])
-
-  const set = useCallback(
-    (n: number) => {
-      n = clamp(n, minimum, 1)
-
-      // Unlike the original nprogress `done()`, completion does not include a
-      // random progress jump before animating to 1. This keeps the primitive
-      // predictable; consumers can set a higher progress value before stopping
-      // the animation if they want that effect.
-      if (n === 1) {
-        cleanup()
-
-        queueRef.current?.enqueue((next) => {
-          setState({
-            progress: n,
-            sideEffect: () =>
-              timeoutRef.current?.schedule(next, animationDuration),
-          })
-        })
-
-        queueRef.current?.enqueue(() => {
-          setState({ isFinished: true, sideEffect: cleanup })
-        })
-
-        return
-      }
-
-      queueRef.current?.enqueue((next) => {
-        setState({
-          isFinished: false,
-          progress: n,
-          sideEffect: next,
-        })
-      })
-    },
-    [animationDuration, cleanup, minimum, queueRef, setState, timeoutRef],
-  )
-
-  const trickle = useCallback(() => {
-    set(increment(get().progress))
-  }, [get, set])
-
-  const start = useCallback(() => {
-    // The original nprogress calls set(0) - which clamps to `minimum` - before
-    // the first trickle. Here, the first trickle starts from increment(0) =
-    // 0.1, so the bar appears at max(0.1, minimum) rather than exactly
-    // `minimum`. The difference is negligible at the default minimum of 0.08.
-    const work = () => {
-      trickle()
-      queueRef.current?.enqueue((next) => {
-        timeoutRef.current?.schedule(() => {
-          work()
-          next()
-        }, incrementDuration)
-      })
+  // A timer per running phase, rather than one effect branching over both.
+  // Each then depends only on the options its own phase reads, so changing an
+  // option the running phase ignores cannot cancel its timer. Both are keyed
+  // on the phase rather than on progress, so trickling does not tear down and
+  // recreate the timer mid-animation.
+  useEffect(() => {
+    if (phase !== 'animating') {
+      return
     }
 
-    work()
-  }, [incrementDuration, queueRef, timeoutRef, trickle])
+    const timeout = createTimeout()
 
-  const sideEffect = get().sideEffect
-
-  useEffectOnce(() => {
-    if (isAnimating) {
-      start()
+    const trickle = () => {
+      dispatch({ minimum, type: 'trickle' })
+      timeout.schedule(trickle, incrementDuration)
     }
-    return cleanup
-  })
+    timeout.schedule(trickle, incrementDuration)
 
-  useUpdateEffect(() => {
-    get().sideEffect()
-  }, [get, sideEffect])
+    return () => timeout.cancel()
+  }, [incrementDuration, minimum, phase])
 
-  useUpdateEffect(() => {
-    if (!isAnimating) {
-      set(1)
-    } else {
-      setState({
-        ...initialState,
-        sideEffect: start,
-      })
+  useEffect(() => {
+    if (phase !== 'completing') {
+      return
     }
-  }, [isAnimating, set, setState, start])
+
+    const timeout = createTimeout()
+    timeout.schedule(() => dispatch({ type: 'finish' }), animationDuration)
+
+    return () => timeout.cancel()
+  }, [animationDuration, phase])
 
   return {
     animationDuration,
-    isFinished: get().isFinished,
-    progress: get().progress,
+    isFinished: phase === 'finished' || phase === 'idle',
+    progress,
   }
 }
