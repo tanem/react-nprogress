@@ -8,11 +8,19 @@
 
 > A React primitive for building slim progress bars.
 
-[Background](#background) | [Usage](#usage) | [Live Examples](#live-examples) | [API](#api) | [Installation](#installation) | [License](#license)
+[Background](#background) | [When to Use This](#when-to-use-this) | [Usage](#usage) | [Live Examples](#live-examples) | [API](#api) | [Installation](#installation) | [License](#license)
 
 ## Background
 
 This is a React port of [rstacruz](https://github.com/rstacruz)'s [`nprogress`](https://github.com/rstacruz/nprogress) module. It exposes an API that encapsulates the logic of `nprogress` and renders nothing, allowing consumers to implement their own rendering.
+
+## When to Use This
+
+This package is a headless primitive. It renders no markup and ships no CSS, supplying only the pacing state: a `progress` value that trickles towards completion, an `isFinished` flag, and the `animationDuration` to transition with. The bar itself is yours to write.
+
+- Use a drop-in bar such as [`nextjs-toploader`](https://github.com/TheSGJ/nextjs-toploader), [`next-nprogress-bar`](https://github.com/Skyleen77/next-nprogress-bar), or [`nprogress`](https://github.com/rstacruz/nprogress) itself when you want a styled bar wired up to your router with no rendering work.
+- Use this package when you render the bar yourself, for example with design-system components or custom containers and spinners, and want only the trickle and completion logic handled for you.
+- Use this package when you need several progress bars on one page, each tracking its own state.
 
 ## Usage
 
@@ -22,8 +30,6 @@ In the following examples, `Container`, `Bar` and `Spinner` are custom component
 
 ```jsx
 import { useNProgress } from '@tanem/react-nprogress'
-import React from 'react'
-import { render } from 'react-dom'
 
 import Bar from './Bar'
 import Container from './Container'
@@ -41,31 +47,26 @@ const Progress = ({ isAnimating }) => {
     </Container>
   )
 }
-
-render(<Progress isAnimating />, document.getElementById('root'))
 ```
 
 **Render Props**
 
 ```jsx
 import { NProgress } from '@tanem/react-nprogress'
-import React from 'react'
-import { render } from 'react-dom'
 
 import Bar from './Bar'
 import Container from './Container'
 import Spinner from './Spinner'
 
-render(
-  <NProgress isAnimating>
+const Progress = ({ isAnimating }) => (
+  <NProgress isAnimating={isAnimating}>
     {({ animationDuration, isFinished, progress }) => (
       <Container animationDuration={animationDuration} isFinished={isFinished}>
         <Bar animationDuration={animationDuration} progress={progress} />
         <Spinner />
       </Container>
     )}
-  </NProgress>,
-  document.getElementById('root')
+  </NProgress>
 )
 ```
 
