@@ -61,7 +61,7 @@ const generateSetupFiles = (reactVersion) => {
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/*.{ts,tsx}'],
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'mjs', 'cjs', 'json'],
   moduleNameMapper: {
     ...generateReactVersionMappings(process.env.REACT_VERSION),
   },
@@ -71,5 +71,9 @@ module.exports = {
   setupFilesAfterEnv: generateSetupFiles(process.env.REACT_VERSION),
   testEnvironment: 'jsdom',
   testMatch: ['<rootDir>/test/*.spec.ts?(x)'],
-  transform: { '^.+\\.(js|tsx?)$': 'ts-jest' },
+  // The bundle spec reads `dist`, so it runs from `config.bundles.js` after a
+  // build rather than here, where it would make the source loop and the React
+  // matrix depend on one.
+  testPathIgnorePatterns: ['/node_modules/', '<rootDir>/test/bundles.spec.ts'],
+  transform: { '^.+\\.([cm]?js|tsx?)$': 'ts-jest' },
 }

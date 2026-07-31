@@ -1,10 +1,7 @@
 *.log
 .DS_Store
 .vscode
-compiled
 coverage
 dist
 examples/*/package-lock.json
-examples/umd-dev/.cache
-examples/umd-prod/.cache
 node_modules
