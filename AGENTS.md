@@ -62,10 +62,15 @@ Managed by Renovate (`config:js-lib` preset):
 ## Testing
 
 - **100% code coverage** of `src` is required. Coverage is collected by
-  `npm run test:src` only.
+  `npm run test:src` only. No `coverageThreshold` is configured, so a drop
+  will not fail the run: read the report.
 - `npm run test:cjs` and `npm run test:es` re-run the hook and component
   specs against `dist/react-nprogress.cjs` and `dist/react-nprogress.mjs`,
-  so they need a build first. `npm test` builds before running them.
+  and `npm run test:bundles` asserts what the build emits, so all three need
+  a build first. `npm test` builds before running them.
+- `test/bundles.spec.ts` is excluded from `config.src.js` so that `test:src`
+  and the React matrix stay runnable without a build. A new spec that reads
+  `dist` belongs in `config.bundles.js`, not alongside the source specs.
 - Always run `npm test` after changes; use `npm run test:src` for quick
   source-only feedback during development.
 - Use `npm run test:react` for the full React version matrix independently.
@@ -88,9 +93,11 @@ When adding a new boundary:
    16.x for React 18+). React 16–17 also need
    `@testing-library/react-hooks` (8.x) and `react-test-renderer`.
 2. Replace the previous "latest minor" for that major.
-3. Verify with a single-version run before the full matrix:
+3. Verify with a single-version run before the full matrix. Install inside
+   the version directory, but run jest from the repo root: the config sets
+   `rootDir` to the current working directory.
    ```bash
-   cd test/react/<version> && npm i --no-package-lock --quiet --no-progress
+   (cd test/react/<version> && npm i --no-package-lock --quiet --no-progress)
    REACT_VERSION=<version> npx jest --config ./scripts/jest/config.src.js --coverage false
    ```
 4. Update the boundary list above.
@@ -151,6 +158,20 @@ in `.prettierignore` rather than tracked.
 
 Strict semver: no breaking changes without a major version bump, including
 technical refactors.
+
+Every breaking change needs a MIGRATION.md entry under the target major's
+heading, describing the change and the action required.
+
+## Releases
+
+`.github/workflows/release.yml` runs on a Monday cron against master with no
+content gate: whatever is on master ships in the next release.
+
+`tanem-scripts release` derives the bump from PR labels. Every PR merged
+since the last tag must carry exactly one label, ignoring `safe to test`. It
+throws on unlabelled and on multi-labelled PRs. `breaking` selects a major,
+`enhancement` a minor, anything else a patch. Renovate labels its own PRs
+`internal`.
 
 ## Documentation
 
