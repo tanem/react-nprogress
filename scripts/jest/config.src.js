@@ -61,7 +61,7 @@ const generateSetupFiles = (reactVersion) => {
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/*.{ts,tsx}'],
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'mjs', 'cjs', 'json'],
   moduleNameMapper: {
     ...generateReactVersionMappings(process.env.REACT_VERSION),
   },
@@ -75,5 +75,5 @@ module.exports = {
   // build rather than here, where it would make the source loop and the React
   // matrix depend on one.
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/test/bundles.spec.ts'],
-  transform: { '^.+\\.(js|tsx?)$': 'ts-jest' },
+  transform: { '^.+\\.([cm]?js|tsx?)$': 'ts-jest' },
 }

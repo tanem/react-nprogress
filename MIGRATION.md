@@ -27,6 +27,47 @@ worked with React 18 and earlier.
 `@tanem/react-nprogress@^6`. Otherwise install the package and consume it
 through a bundler.
 
+### `exports` map added
+
+`@tanem/react-nprogress` and `@tanem/react-nprogress/package.json` are the
+only entry points. Paths into `dist` are no longer reachable, even though the
+top-level `main`, `module` and `types` fields are still set for webpack 4 and
+TypeScript `node10` resolution. Node ESM consumers now get the ES module
+build rather than falling back to CommonJS, which Node did previously because
+it ignores `module`.
+
+**Action required:** import from the package name. `src` is now published
+alongside `dist` so the declaration maps resolve.
+
+### Build output filenames changed
+
+The build moved from TypeScript plus Rollup and Babel to
+[tsdown](https://tsdown.dev). The CommonJS build is
+`dist/react-nprogress.cjs` (was `dist/index.js` switching between
+`dist/react-nprogress.cjs.development.js` and
+`dist/react-nprogress.cjs.production.js`) and the ES module build is
+`dist/react-nprogress.mjs` (was `dist/react-nprogress.esm.js`). Type
+declarations are `dist/react-nprogress.d.cts` and
+`dist/react-nprogress.d.mts`, replacing `dist/index.d.ts` plus one file per
+source module. Output still targets ES2019.
+
+**Action required:** none if you import `@tanem/react-nprogress`.
+
+### Separate development and production CommonJS builds removed
+
+`process.env.NODE_ENV` is no longer read at require time. The two builds
+differed only by minification, which bundlers apply themselves.
+
+**Action required:** none. Tooling that shimmed `process.env` solely to
+require this package can drop the shim.
+
+### `@babel/runtime` no longer a dependency
+
+The package now has no runtime dependencies, only peers.
+
+**Action required:** none, unless you depended on `@babel/runtime` being
+installed transitively, in which case depend on it directly.
+
 ## v6.0.0
 
 Trickle pacing was adjusted to more closely match the original

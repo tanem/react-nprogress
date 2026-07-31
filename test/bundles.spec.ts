@@ -10,7 +10,7 @@ const distDir = path.join(process.cwd(), 'dist')
 // bundle names, so the assertions hold whichever tool produces the bundles.
 const publishedModules = fs
   .readdirSync(distDir)
-  .filter((file) => file.endsWith('.js'))
+  .filter((file) => /\.[cm]?js$/.test(file))
 
 describe('published modules', () => {
   it('should be present', () => {

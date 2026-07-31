@@ -2,39 +2,49 @@
   "name": "@tanem/react-nprogress",
   "version": "6.0.4",
   "description": "A React primitive for building slim progress bars.",
-  "main": "dist/index.js",
-  "module": "dist/react-nprogress.esm.js",
-  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/react-nprogress.d.mts",
+        "default": "./dist/react-nprogress.mjs"
+      },
+      "default": {
+        "types": "./dist/react-nprogress.d.cts",
+        "default": "./dist/react-nprogress.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/react-nprogress.cjs",
+  "module": "dist/react-nprogress.mjs",
+  "types": "dist/react-nprogress.d.cts",
   "sideEffects": false,
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "authors": "tanem-scripts authors > AUTHORS",
-    "build": "run-s clean compile bundle",
-    "bundle": "rollup -c",
+    "build": "run-s clean bundle",
+    "bundle": "tsdown",
     "changelog": "tanem-scripts changelog -f v$npm_package_version > CHANGELOG.md",
-    "check:format": "prettier --list-different \"**/*.{js,ts,tsx}\"",
+    "check:format": "prettier --list-different \"**/*.{cjs,cts,js,mjs,mts,ts,tsx}\"",
     "check:types": "tsc --noEmit",
     "clean": "run-p clean:*",
-    "clean:compiled": "shx rm -rf compiled",
     "clean:coverage": "shx rm -rf coverage",
-    "clean:dist": "shx rm -rf dist",
     "clean:react": "node ./scripts/clean-react.js",
-    "compile": "tsc -p tsconfig.base.json",
-    "format": "eslint . --fix && prettier --write \"**/*.{js,ts,tsx}\"",
+    "format": "eslint . --fix && prettier --write \"**/*.{cjs,cts,js,mjs,mts,ts,tsx}\"",
     "lint": "eslint . --max-warnings=0",
     "package:attw": "node ./scripts/attw.js",
     "package:publint": "publint",
     "postbuild": "run-s package:*",
-    "postbundle": "npm run clean:compiled && shx cp ./index.js ./dist/index.js",
     "prepare": "npm run build",
     "release": "tanem-scripts release",
     "test": "run-s check:* lint build test:*",
     "test:bundles": "jest --config ./scripts/jest/config.bundles.js",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
-    "test:cjsprod": "jest --config ./scripts/jest/config.cjsprod.js",
-    "test:es": "jest --config ./scripts/jest/config.es.js",
+    "test:es": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --config ./scripts/jest/config.es.js",
     "test:react": "node ./scripts/test-react.js",
     "test:src": "jest --config ./scripts/jest/config.src.js",
     "version": "run-s test changelog authors && git add ."
@@ -70,23 +80,10 @@
   "overrides": {
     "brace-expansion": "^5.0.8"
   },
-  "dependencies": {
-    "@babel/runtime": "^7.28.6"
-  },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.5",
-    "@babel/core": "7.29.7",
-    "@babel/plugin-transform-runtime": "7.29.0",
-    "@babel/preset-env": "7.29.0",
-    "@babel/preset-react": "7.28.5",
-    "@babel/preset-typescript": "7.28.5",
     "@eslint-react/eslint-plugin": "5.18.0",
     "@eslint/js": "10.0.1",
-    "@rollup/plugin-babel": "6.1.0",
-    "@rollup/plugin-commonjs": "29.0.0",
-    "@rollup/plugin-node-resolve": "16.0.3",
-    "@rollup/plugin-replace": "6.0.3",
-    "@rollup/plugin-terser": "1.0.0",
     "@testing-library/react": "16.3.2",
     "@types/jest": "30.0.0",
     "@types/mock-raf": "1.0.6",
@@ -107,10 +104,10 @@
     "publint": "0.3.22",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "rollup": "4.59.0",
     "shx": "0.4.0",
     "tanem-scripts": "8.0.4",
     "ts-jest": "29.4.6",
+    "tsdown": "0.22.14",
     "typescript": "5.9.3",
     "typescript-eslint": "8.56.1"
   }

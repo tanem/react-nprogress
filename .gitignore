@@ -1,7 +1,6 @@
 *.log
 .DS_Store
 .vscode
-compiled
 coverage
 dist
 examples/*/package-lock.json
