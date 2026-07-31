@@ -145,6 +145,13 @@ Restore the `"latest"` pin afterwards: CodeSandbox resolves the registry.
 `next build` write different contents into it, so it is gitignored and listed
 in `.prettierignore` rather than tracked.
 
+Both Next examples carry a `next.config.ts` that sets
+`allowedDevOrigins: ['*.csb.app']`. The CodeSandbox templates have no such
+config, but without it the sandbox preview never hydrates: Next only trusts
+localhost and LAN addresses as dev origins, so `<Link>` stays an inert `<a>`,
+every click becomes a full page load, and the progress bar never runs. Verify
+in a sandbox before removing it. The symptom is silent, with no console error.
+
 ## Writing Style
 
 - Avoid marketing or promotional language. State facts plainly.
