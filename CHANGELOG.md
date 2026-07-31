@@ -1,5 +1,16 @@
 # Changelog
 
+## [v7.0.0](https://github.com/tanem/react-nprogress/tree/v7.0.0) (2026-07-31)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.4...v7.0.0)
+
+#### :boom: Breaking Change
+
+- [#3022](https://github.com/tanem/react-nprogress/pull/3022) v7.0.0 ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#3020](https://github.com/tanem/react-nprogress/pull/3020) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v6.0.4](https://github.com/tanem/react-nprogress/tree/v6.0.4) (2026-07-29)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.3...v6.0.4)
 
