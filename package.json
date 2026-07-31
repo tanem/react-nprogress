@@ -24,6 +24,9 @@
     "compile": "tsc -p tsconfig.base.json",
     "format": "eslint . --fix && prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint . --max-warnings=0",
+    "package:attw": "node ./scripts/attw.js",
+    "package:publint": "publint",
+    "postbuild": "run-s package:*",
     "postbundle": "npm run clean:compiled && shx cp ./index.js ./dist/index.js",
     "prepare": "npm run build",
     "release": "tanem-scripts release",
@@ -76,6 +79,7 @@
     "hoist-non-react-statics": "^3.3.2"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
     "@babel/core": "7.29.7",
     "@babel/plugin-transform-runtime": "7.29.0",
     "@babel/preset-env": "7.29.0",
@@ -106,6 +110,7 @@
     "mock-raf": "1.0.1",
     "npm-run-all2": "8.0.4",
     "prettier": "3.8.1",
+    "publint": "0.3.22",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "rollup": "4.59.0",
