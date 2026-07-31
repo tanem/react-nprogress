@@ -129,7 +129,7 @@ Milliseconds between increments while the bar is animating. It controls the tric
 
 #### `isAnimating`
 
-Whether the bar is running. Going `true` starts it, going `false` completes it. Completion is what drives the final state: `progress` is set to `1`, and `animationDuration` later `isFinished` becomes `true`.
+Whether the bar is running. Going `true` starts it, going `false` completes it. Completion is what drives the final state: `progress` is set to `1`, and `isFinished` becomes `true` `animationDuration` milliseconds later.
 
 #### `minimum`
 
