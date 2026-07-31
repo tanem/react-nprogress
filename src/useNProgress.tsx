@@ -44,11 +44,8 @@ const reducer = (state: State, action: Action): State => {
       return { phase: 'finished', progress: 1 }
 
     case 'start':
-      // The original nprogress calls set(0) - which clamps to `minimum` -
-      // before the first trickle. Here, the first trickle starts from
-      // increment(0) = 0.1, so the bar appears at max(0.1, minimum) rather
-      // than exactly `minimum`. The difference is negligible at the default
-      // minimum of 0.08.
+      // Matches the original nprogress `start()`, which calls set(0) and so
+      // paints first at `minimum` before any trickle runs.
       //
       // Guarded the same way as `complete`, and for the same reason: a repeat
       // dispatch against a running animation must not rewind the bar. That
@@ -58,7 +55,7 @@ const reducer = (state: State, action: Action): State => {
         ? state
         : {
             phase: 'animating',
-            progress: clamp(increment(0), action.minimum, 1),
+            progress: clamp(0, action.minimum, 1),
           }
 
     case 'trickle':

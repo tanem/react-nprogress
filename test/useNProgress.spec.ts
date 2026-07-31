@@ -35,7 +35,7 @@ test('starts animating when isAnimating is true', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.1,
+    progress: 0.08,
   })
 
   unmount()
@@ -52,7 +52,7 @@ test('starts animating when isAnimating changes from false to true', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.1,
+    progress: 0.08,
   })
 
   unmount()
@@ -71,7 +71,7 @@ test('increments correctly', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.2,
+    progress: 0.18,
   })
 
   unmount()
@@ -128,7 +128,7 @@ test('correctly restarts a finished animation', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.2,
+    progress: 0.18,
   })
 
   unmount()
@@ -139,7 +139,7 @@ test('respects custom minimum', () => {
     useNProgress({ isAnimating: true, minimum: 0.3 }),
   )
 
-  // increment(0) = 0.1, clamped to minimum of 0.3.
+  // The start value of 0 is clamped up to the minimum of 0.3.
   expect(result.current.progress).toBe(0.3)
 
   unmount()
@@ -211,11 +211,11 @@ test('starts and trickles once under StrictMode', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.1,
+    progress: 0.08,
   })
 
   // A duplicate timer from the dev double-mount would trickle twice here,
-  // taking progress to increment(0.2) = 0.24.
+  // taking progress to increment(0.18) = 0.28.
   act(() => {
     mockRaf.step()
     mockRaf.step({ time: 201 })
@@ -224,7 +224,7 @@ test('starts and trickles once under StrictMode', () => {
   expect(result.current).toEqual({
     animationDuration: 200,
     isFinished: false,
-    progress: 0.2,
+    progress: 0.18,
   })
 
   unmount()
@@ -279,7 +279,7 @@ test('respects custom incrementDuration', () => {
     useNProgress({ incrementDuration: 500, isAnimating: true }),
   )
 
-  expect(result.current.progress).toBe(0.1)
+  expect(result.current.progress).toBe(0.08)
 
   // Not enough time for a second trickle.
   act(() => {
@@ -287,7 +287,7 @@ test('respects custom incrementDuration', () => {
     mockRaf.step({ time: 201 })
   })
 
-  expect(result.current.progress).toBe(0.1)
+  expect(result.current.progress).toBe(0.08)
 
   // Enough time for the second trickle.
   act(() => {
@@ -295,7 +295,7 @@ test('respects custom incrementDuration', () => {
     mockRaf.step({ time: 501 })
   })
 
-  expect(result.current.progress).toBe(0.2)
+  expect(result.current.progress).toBe(0.18)
 
   unmount()
 })
@@ -314,13 +314,13 @@ test('keeps its place when minimum changes mid-animation', () => {
     mockRaf.step({ time: 201 })
   })
 
-  expect(result.current.progress).toBe(0.2)
+  expect(result.current.progress).toBe(0.18)
 
   rerender({ minimum: 0.09 })
 
   // A `start` dispatch against a running animation is ignored, so progress
-  // holds rather than dropping back to increment(0).
-  expect(result.current.progress).toBe(0.2)
+  // holds rather than dropping back to the minimum.
+  expect(result.current.progress).toBe(0.18)
 
   unmount()
 })
@@ -337,7 +337,7 @@ test('keeps trickling when animationDuration changes mid-animation', () => {
     mockRaf.step({ time: 201 })
   })
 
-  expect(result.current.progress).toBe(0.2)
+  expect(result.current.progress).toBe(0.18)
 
   // The animating phase does not read `animationDuration`, so changing it just
   // before the next trickle is due must not cancel the pending timer.
@@ -349,10 +349,7 @@ test('keeps trickling when animationDuration changes mid-animation', () => {
     mockRaf.step({ time: 401 })
   })
 
-  // increment(0.2) is 0.24 in decimal but 0.24000000000000002 in binary
-  // floating point, so this is the one assertion in the file that cannot use
-  // an exact match.
-  expect(result.current.progress).toBeCloseTo(0.24, 10)
+  expect(result.current.progress).toBe(0.28)
 
   unmount()
 })
