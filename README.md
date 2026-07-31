@@ -133,7 +133,7 @@ Whether the bar is running. Going `true` starts it, going `false` completes it. 
 
 #### `minimum`
 
-Lower bound for `progress`, between `0` and `1`. The first increment starts from `0.1` rather than from `0`, so the bar appears at `max(0.1, minimum)` and the option only shows through when it is set above `0.1`. Changing it while the bar is animating restarts the bar from that first increment.
+Lower bound for `progress`, between `0` and `1`. The first increment starts from `0.1` rather than from `0`, so the bar appears at `max(0.1, minimum)` and the option only shows through when it is set above `0.1`. Changing it while the bar is animating does not rewind the bar. Progress holds where it is, and the new bound applies from the next increment.
 
 ### Return Value
 
