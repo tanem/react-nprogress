@@ -1,5 +1,18 @@
 # Migrating
 
+## v7.0.0
+
+### UMD builds removed
+
+`dist/react-nprogress.umd.development.js` and
+`dist/react-nprogress.umd.production.js` are no longer published. React 19
+does not ship a UMD build of its own, so the script-tag path already only
+worked with React 18 and earlier.
+
+**Action required:** for script-tag usage, pin
+`@tanem/react-nprogress@^6`. Otherwise install the package and consume it
+through a bundler.
+
 ## v6.0.0
 
 Trickle pacing was adjusted to more closely match the original

@@ -4,14 +4,13 @@ import path from 'path'
 const distDir = path.join(process.cwd(), 'dist')
 
 // The package is client-only, so every published module a bundler can resolve
-// has to carry the `"use client"` marker. UMD bundles are excluded: they are
-// script-tag targets that never enter a server/client module graph.
+// has to carry the `"use client"` marker.
 //
 // Deliberately derived from what is in `dist`, not from a hard-coded list of
 // bundle names, so the assertions hold whichever tool produces the bundles.
 const publishedModules = fs
   .readdirSync(distDir)
-  .filter((file) => file.endsWith('.js') && !file.includes('.umd.'))
+  .filter((file) => file.endsWith('.js'))
 
 describe('published modules', () => {
   it('should be present', () => {

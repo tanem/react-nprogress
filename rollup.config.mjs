@@ -9,8 +9,6 @@ import pkg from './package.json' with { type: 'json' }
 const CJS_DEV = 'CJS_DEV'
 const CJS_PROD = 'CJS_PROD'
 const ES = 'ES'
-const UMD_DEV = 'UMD_DEV'
-const UMD_PROD = 'UMD_PROD'
 
 const input = './compiled/index.js'
 const exports = 'named'
@@ -18,35 +16,22 @@ const exports = 'named'
 // Every export is or wraps a hook, and the timers run on
 // `window.requestAnimationFrame`, so the package is client-only. Rollup strips
 // file-level directives while bundling, so the marker is added as an output
-// banner rather than in the source. UMD bundles are script-tag targets and are
-// never resolved through a server/client module graph, so they are left alone.
+// banner rather than in the source.
 const banner = `'use client';`
 
-const getExternal = (bundleType) => {
-  const peerDependencies = Object.keys(pkg.peerDependencies)
-  const dependencies = Object.keys(pkg.dependencies)
+// Every bundle is resolved by a bundler or by Node, so peers and dependencies
+// are always left for the consumer to resolve.
+// Hat-tip: https://github.com/rollup/rollup-plugin-babel/issues/148#issuecomment-399696316.
+const external = (() => {
+  const externals = [
+    ...Object.keys(pkg.peerDependencies),
+    ...Object.keys(pkg.dependencies),
+  ]
+  const pattern = new RegExp(`^(${externals.join('|')})($|/)`)
+  return (id) => pattern.test(id)
+})()
 
-  // Hat-tip: https://github.com/rollup/rollup-plugin-babel/issues/148#issuecomment-399696316.
-  const makeExternalPredicate = (externals) => {
-    if (externals.length === 0) {
-      return () => false
-    }
-    const pattern = new RegExp(`^(${externals.join('|')})($|/)`)
-    return (id) => pattern.test(id)
-  }
-
-  switch (bundleType) {
-    case CJS_DEV:
-    case CJS_PROD:
-    case ES:
-      return makeExternalPredicate([...peerDependencies, ...dependencies])
-    default:
-      return makeExternalPredicate(peerDependencies)
-  }
-}
-
-const isProduction = (bundleType) =>
-  bundleType === CJS_PROD || bundleType === UMD_PROD
+const isProduction = (bundleType) => bundleType === CJS_PROD
 
 const getBabelConfig = () => ({
   babelHelpers: 'runtime',
@@ -86,7 +71,7 @@ const getPlugins = (bundleType) => [
 ]
 
 const getCjsConfig = (bundleType) => ({
-  external: getExternal(bundleType),
+  external,
   input,
   output: {
     banner,
@@ -101,7 +86,7 @@ const getCjsConfig = (bundleType) => ({
 })
 
 const getEsConfig = () => ({
-  external: getExternal(ES),
+  external,
   input,
   output: {
     banner,
@@ -113,30 +98,4 @@ const getEsConfig = () => ({
   plugins: getPlugins(ES),
 })
 
-const getUmdConfig = (bundleType) => ({
-  external: getExternal(bundleType),
-  input,
-  output: {
-    exports,
-    file: `dist/react-nprogress.umd.${
-      isProduction(bundleType) ? 'production' : 'development'
-    }.js`,
-    format: 'umd',
-    globals: {
-      react: 'React',
-      'react-dom': 'ReactDOM',
-      'react/jsx-runtime': 'React',
-    },
-    name: 'NProgress',
-    sourcemap: true,
-  },
-  plugins: getPlugins(bundleType),
-})
-
-export default [
-  getCjsConfig(CJS_DEV),
-  getCjsConfig(CJS_PROD),
-  getEsConfig(),
-  getUmdConfig(UMD_DEV),
-  getUmdConfig(UMD_PROD),
-]
+export default [getCjsConfig(CJS_DEV), getCjsConfig(CJS_PROD), getEsConfig()]

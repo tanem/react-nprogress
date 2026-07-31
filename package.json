@@ -37,8 +37,6 @@
     "test:es": "jest --config ./scripts/jest/config.es.js",
     "test:react": "node ./scripts/test-react.js",
     "test:src": "jest --config ./scripts/jest/config.src.js",
-    "test:umd": "jest --config ./scripts/jest/config.umd.js",
-    "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
     "version": "run-s test changelog authors && git add ."
   },
   "repository": {

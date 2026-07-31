@@ -103,8 +103,6 @@ render(<Enhanced isAnimating />, document.getElementById('root'))
 - Plain JS: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/plain-js) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/plain-js)
 - React Router: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/react-router) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/react-router)
 - Render Props: [Source](https://github.com/tanem/react-nprogress/tree/master/examples/render-props) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/render-props)
-- UMD Build (Development): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-dev) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/umd-dev)
-- UMD Build (Production): [Source](https://github.com/tanem/react-nprogress/tree/master/examples/umd-prod) | [Sandbox](https://codesandbox.io/p/devbox/github/tanem/react-nprogress/tree/master/examples/umd-prod)
 
 ## API
 
@@ -190,21 +188,6 @@ const Enhanced = withNProgress(Inner)
 ```
 $ npm install @tanem/react-nprogress
 ```
-
-UMD builds are also available for use with pre-React 19 via [unpkg](https://unpkg.com/):
-
-- https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.development.js
-- https://unpkg.com/@tanem/react-nprogress/dist/react-nprogress.umd.production.js
-
-For the non-minified development version, make sure you have already included:
-
-- [`React`](https://unpkg.com/react@18/umd/react.development.js)
-- [`ReactDOM`](https://unpkg.com/react-dom@18/umd/react-dom.development.js)
-
-For the minified production version, make sure you have already included:
-
-- [`React`](https://unpkg.com/react@18/umd/react.production.min.js)
-- [`ReactDOM`](https://unpkg.com/react-dom@18/umd/react-dom.production.min.js)
 
 ## License
 
