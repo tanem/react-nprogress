@@ -38,5 +38,5 @@ test('passes animating state to children', () => {
   )
 
   expect(isFinished).toBe(false)
-  expect(progress).toBe(0.1)
+  expect(progress).toBe(0.08)
 })

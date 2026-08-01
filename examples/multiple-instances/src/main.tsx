@@ -22,6 +22,9 @@ const A = () => {
         onClick={() => {
           setState((prevState) => ({
             isAnimating: !prevState.isAnimating,
+            // A new key on each start remounts the bar, so it re-enters from
+            // the left rather than animating backwards from where the last
+            // run finished.
             key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
           }))
         }}
@@ -49,6 +52,9 @@ const B = () => {
         onClick={() => {
           setState((prevState) => ({
             isAnimating: !prevState.isAnimating,
+            // A new key on each start remounts the bar, so it re-enters from
+            // the left rather than animating backwards from where the last
+            // run finished.
             key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
           }))
         }}

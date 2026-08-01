@@ -1,5 +1,6 @@
 export interface NProgressOptions {
   animationDuration?: number
+  increment?: (progress: number) => number
   incrementDuration?: number
   isAnimating?: boolean
   minimum?: number
