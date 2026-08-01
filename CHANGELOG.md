@@ -1,5 +1,17 @@
 # Changelog
 
+## [v7.1.0](https://github.com/tanem/react-nprogress/tree/v7.1.0) (2026-08-01)
+[Full Changelog](https://github.com/tanem/react-nprogress/compare/v7.0.0...v7.1.0)
+
+#### :rocket: Enhancement
+
+- [#3025](https://github.com/tanem/react-nprogress/pull/3025) Match nprogress timing more closely ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#3024](https://github.com/tanem/react-nprogress/pull/3024) Fix the Next examples on CodeSandbox ([@tanem](https://github.com/tanem))
+- [#3023](https://github.com/tanem/react-nprogress/pull/3023) Fix the CodeSandbox setup failure in the examples ([@tanem](https://github.com/tanem))
+
 ## [v7.0.0](https://github.com/tanem/react-nprogress/tree/v7.0.0) (2026-07-31)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v6.0.4...v7.0.0)
 
