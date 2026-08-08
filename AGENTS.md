@@ -165,7 +165,9 @@ heading, describing the change and the action required.
 ## Releases
 
 `.github/workflows/release.yml` runs on a Monday cron against master with no
-content gate: whatever is on master ships in the next release.
+content gate: whatever is on master ships in the next release. It runs against
+master only — a manual dispatch aimed at a version branch is a no-op, which is
+what stops a staged major shipping before it is finished.
 
 [`tanem/release-action`](https://github.com/tanem/release-action) derives the
 bump from PR labels. Every PR merged since the last tag must carry exactly one
