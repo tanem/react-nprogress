@@ -1,5 +1,9 @@
 # Changelog
 
+This file is frozen history: it covers releases up to and including v7.1.0, and
+is not regenerated any more. Everything released after that lives on
+[GitHub Releases](https://github.com/tanem/react-nprogress/releases).
+
 ## [v7.1.0](https://github.com/tanem/react-nprogress/tree/v7.1.0) (2026-08-01)
 [Full Changelog](https://github.com/tanem/react-nprogress/compare/v7.0.0...v7.1.0)
 

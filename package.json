@@ -39,10 +39,8 @@
     "src"
   ],
   "scripts": {
-    "authors": "tanem-scripts authors > AUTHORS",
     "build": "run-s clean bundle",
     "bundle": "tsdown",
-    "changelog": "tanem-scripts changelog -f v$npm_package_version > CHANGELOG.md",
     "check:format": "prettier --list-different \"**/*.{cjs,cts,js,mjs,mts,ts,tsx}\"",
     "check:types": "tsc --noEmit",
     "clean": "run-p clean:*",
@@ -54,15 +52,13 @@
     "package:publint": "publint",
     "postbuild": "run-s package:*",
     "prepare": "npm run build",
-    "release": "tanem-scripts release",
     "size": "size-limit",
     "test": "run-s check:* lint build size test:*",
     "test:bundles": "jest --config ./scripts/jest/config.bundles.js",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
     "test:es": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --config ./scripts/jest/config.es.js",
     "test:react": "node ./scripts/test-react.js",
-    "test:src": "jest --config ./scripts/jest/config.src.js",
-    "version": "run-s test changelog authors && git add ."
+    "test:src": "jest --config ./scripts/jest/config.src.js"
   },
   "repository": {
     "type": "git",
@@ -122,7 +118,6 @@
     "react-dom": "19.2.4",
     "shx": "0.4.0",
     "size-limit": "13.0.2",
-    "tanem-scripts": "8.0.4",
     "ts-jest": "29.4.6",
     "tsdown": "0.22.14",
     "typescript": "5.9.3",

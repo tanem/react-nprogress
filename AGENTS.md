@@ -167,15 +167,20 @@ heading, describing the change and the action required.
 `.github/workflows/release.yml` runs on a Monday cron against master with no
 content gate: whatever is on master ships in the next release.
 
-`tanem-scripts release` derives the bump from PR labels. Every PR merged
-since the last tag must carry exactly one label, ignoring `safe to test`. It
-throws on unlabelled and on multi-labelled PRs. `breaking` selects a major,
-`enhancement` a minor, anything else a patch. Renovate labels its own PRs
-`internal`.
+[`tanem/release-action`](https://github.com/tanem/release-action) derives the
+bump from PR labels. Every PR merged since the last tag must carry exactly one
+label, ignoring `safe to test`. It fails the run on unlabelled and on
+multi-labelled PRs. `breaking` selects a major, `enhancement` a minor, anything
+else a patch. Renovate labels its own PRs `internal`. A week with no merged PRs
+is a clean skip, not a failure.
+
+Release notes are published to
+[GitHub Releases](https://github.com/tanem/react-nprogress/releases),
+categorised by those same labels via `.github/release.yml`.
 
 ## Documentation
 
 - After each code change, update all related docs and markdown files
   (README.md, MIGRATION.md, example READMEs, etc.) in the same pass.
-- Do not manually modify CHANGELOG.md. It is auto-generated during
-  release.
+- Do not modify CHANGELOG.md. It is frozen history as of v7.1.0; everything
+  after that lives on GitHub Releases.
