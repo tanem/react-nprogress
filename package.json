@@ -1,6 +1,6 @@
 {
   "name": "@tanem/react-nprogress",
-  "version": "7.1.2",
+  "version": "7.1.3",
   "description": "A React primitive for building slim progress bars.",
   "type": "commonjs",
   "exports": {
