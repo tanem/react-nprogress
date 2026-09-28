@@ -96,7 +96,7 @@
     "@eslint-react/eslint-plugin": "5.18.0",
     "@eslint/js": "10.0.1",
     "@size-limit/file": "13.0.2",
-    "@testing-library/react": "16.3.2",
+    "@testing-library/react": "16.3.3",
     "@types/jest": "30.0.0",
     "@types/mock-raf": "1.0.6",
     "@types/node": "24.11.0",
