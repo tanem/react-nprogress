@@ -121,6 +121,6 @@
     "ts-jest": "29.4.14",
     "tsdown": "0.22.14",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.56.1"
+    "typescript-eslint": "8.71.0"
   }
 }
