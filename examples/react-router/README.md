@@ -1,15 +1,9 @@
 # ReactNProgress React Router Example
 
-## Available Scripts
+Shows the bar during React Router navigations. `react-transition-group` fades each route in, and the bar runs for the length of the fade. To run it:
 
-### `npm run dev`
+```
+$ npm i && npm run dev
+```
 
-Runs the app in development mode.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Previews the production build locally.
+Then open the URL Vite prints to view it in the browser.

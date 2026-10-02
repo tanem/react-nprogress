@@ -1,15 +1,9 @@
 # ReactNProgress Original Design Example
 
-## Available Scripts
+Recreates the nprogress bar and spinner with the `useNProgress` hook and the library defaults. To run it:
 
-### `npm run dev`
+```
+$ npm i && npm run dev
+```
 
-Runs the app in development mode.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Previews the production build locally.
+Then open the URL Vite prints to view it in the browser.

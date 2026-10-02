@@ -1,15 +1,9 @@
 # ReactNProgress Multiple Instances Example
 
-## Available Scripts
+Runs two progress bars on one page, each tracking its own state through its own `useNProgress` call. To run it:
 
-### `npm run dev`
+```
+$ npm i && npm run dev
+```
 
-Runs the app in development mode.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Previews the production build locally.
+Then open the URL Vite prints to view it in the browser.
