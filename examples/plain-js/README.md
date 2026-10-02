@@ -1,15 +1,9 @@
 # ReactNProgress Plain JS Example
 
-## Available Scripts
+The [Original Design](../original-design) example written in JavaScript rather than TypeScript. To run it:
 
-### `npm run dev`
+```
+$ npm i && npm run dev
+```
 
-Runs the app in development mode.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Previews the production build locally.
+Then open the URL Vite prints to view it in the browser.

@@ -1,15 +1,9 @@
 # ReactNProgress Render Props Example
 
-## Available Scripts
+The [Original Design](../original-design) example using the `NProgress` render-props component instead of the hook. To run it:
 
-### `npm run dev`
+```
+$ npm i && npm run dev
+```
 
-Runs the app in development mode.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Previews the production build locally.
+Then open the URL Vite prints to view it in the browser.

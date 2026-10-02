@@ -1,6 +1,6 @@
 # ReactNProgress Next Pages Router Example
 
-This project is based on [the Next.js `with-loading` example](https://github.com/zeit/next.js/tree/canary/examples/with-loading). To run it:
+Demonstrates `@tanem/react-nprogress` with the Next.js Pages Router, using `router.events` to start and finish the bar. To run it:
 
 ```
 $ npm i && npm run dev
