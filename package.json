@@ -120,7 +120,7 @@
     "size-limit": "14.1.0",
     "ts-jest": "29.4.14",
     "tsdown": "0.22.14",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.71.1"
   }
 }
