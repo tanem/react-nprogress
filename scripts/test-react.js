@@ -27,8 +27,11 @@ for (const version of versions) {
 
   try {
     execSync(
-      `REACT_VERSION=${version} npx jest --config ./scripts/jest/config.src.js --coverage false`,
-      { stdio: 'inherit' },
+      'npx jest --config ./scripts/jest/config.src.js --coverage false',
+      {
+        env: { ...process.env, REACT_VERSION: version },
+        stdio: 'inherit',
+      },
     )
   } catch {
     console.error(`Fail testing React ${version}`)
